@@ -1,0 +1,4402 @@
+[
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 100,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 100,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 101,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 101,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 102,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 102,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 103,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 103,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 104,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 104,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 105,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 105,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 106,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 106,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 107,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 107,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 108,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 108,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 109,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 109,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 110,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 110,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 111,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 111,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 112,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 112,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 113,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 113,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 114,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 114,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 115,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 115,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 116,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 116,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 117,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 117,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 118,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 118,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 119,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 119,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 120,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 120,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 121,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 121,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 122,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 122,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 123,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 123,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 124,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 124,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 125,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 125,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 126,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 126,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 127,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 127,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 128,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 128,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 129,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 129,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 130,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 130,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 131,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 131,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 132,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 132,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 133,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 133,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 134,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 134,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 135,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 135,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 136,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 136,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 137,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 137,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 138,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 138,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 139,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 139,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 140,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 140,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 141,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 141,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 142,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 142,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 143,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 143,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 144,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 144,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 145,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 145,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 146,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 146,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 147,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 147,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 148,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 148,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 149,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 149,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 100,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 100,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 101,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 101,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 102,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 102,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 103,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 103,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 104,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 104,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 105,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 105,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 106,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 106,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 107,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 107,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 108,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 108,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 109,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 109,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 110,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 110,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 111,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 111,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 112,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 112,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 113,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 113,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 114,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 114,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 115,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 115,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 116,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 116,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 117,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 117,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 118,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 118,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 119,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 119,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 120,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 120,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 121,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 121,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 122,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 122,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 123,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 123,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 124,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 124,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 125,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 125,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 126,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 126,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 127,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 127,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 128,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 128,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 129,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 129,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 130,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 130,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 131,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 131,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 132,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 132,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 133,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 133,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 134,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 134,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 135,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 135,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 136,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 136,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 137,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 137,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 138,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 138,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 139,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 139,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 140,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 140,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 141,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 141,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 142,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 142,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 143,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 143,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 144,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 144,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 145,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 145,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 146,
+    "seed": 8,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 146,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 147,
+    "seed": 8,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 147,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 148,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 148,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 149,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 149,
+    "seed": 8,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 100,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 100,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 101,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 101,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 102,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 102,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 103,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 103,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 104,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 104,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 105,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 105,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 106,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 106,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 107,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 107,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 108,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 108,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 109,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 109,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 110,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 110,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 111,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 111,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 112,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 112,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 113,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 113,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 114,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 114,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 115,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 115,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 116,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 116,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 117,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 117,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 118,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 118,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 119,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 119,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 120,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 120,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 121,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 121,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 122,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 122,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 123,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 123,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 124,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 124,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 125,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 125,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 126,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 126,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 127,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 127,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 128,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 128,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 129,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 129,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 130,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 130,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 131,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 131,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 132,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 132,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 133,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 133,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 134,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 134,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 135,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 135,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 136,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 136,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 137,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 137,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 138,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 138,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 139,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 139,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 140,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 140,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 141,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 141,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 142,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 142,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 143,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 143,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 144,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 144,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 145,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 145,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 146,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 146,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 147,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 147,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 148,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 148,
+    "seed": 9,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitCount",
+    "episode": 149,
+    "seed": 9,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "main",
+    "task": "FruitOccludedRipe",
+    "episode": 149,
+    "seed": 9,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 100,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 100,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 101,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 101,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 102,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 102,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 103,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 103,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 104,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 104,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 105,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 105,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 106,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 106,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 107,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 107,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 108,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 108,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 109,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 109,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 110,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 110,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 111,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 111,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 112,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 112,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 113,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 113,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 114,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 114,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 115,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 115,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 116,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 116,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 117,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 117,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 118,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 118,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 119,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 119,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 120,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 120,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 121,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 121,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 122,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 122,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 123,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 123,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 124,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 124,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 125,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 125,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 126,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 126,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 127,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 127,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 128,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 128,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 129,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 129,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 130,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 130,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 131,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 131,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 132,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 132,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 133,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 133,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 134,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 134,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 135,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 135,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 136,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 136,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 137,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 137,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 138,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 138,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 139,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 139,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 140,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 140,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 141,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 141,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 142,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 142,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 143,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 143,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 144,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K8",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 144,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 145,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K0",
+      "K4"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 145,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 146,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 146,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 147,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 147,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 148,
+    "seed": 7,
+    "condition_order": [
+      "K0",
+      "K4",
+      "K8"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 148,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K8",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitCount",
+    "episode": 149,
+    "seed": 7,
+    "condition_order": [
+      "K8",
+      "K4",
+      "K0"
+    ]
+  },
+  {
+    "stage": "sensitivity",
+    "task": "FruitOccludedRipe",
+    "episode": 149,
+    "seed": 7,
+    "condition_order": [
+      "K4",
+      "K0",
+      "K8"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "instruction_revision": 12,
+  "created_utc": "2026-11-09T08:33:25.032063+00:00",
+  "cause": "The episode wrapper passed pick_index=0 on every solver.pick call, so later pick cycles were mislabeled and the two selected DART cycles did not both receive noise.",
+  "original_status_sha256": "f654f6c5938f01d3e17a96c3e9848ad73a146d7dab1fad9d8bb7e7b56cc07f1e",
+  "original_status": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/status_failed_before_dart_cycle_selection_recovery.json",
+  "gpu_validation_sha256": "a62754bab91cd9203bd1b14c51434bfc516d3e19dd3a23c5a9ca15feecdc1d2d",
+  "gpu_validation_passed": true,
+  "accepted_clean_count": 100,
+  "accepted_clean_occluded_ripe": 100,
+  "accepted_DART_manifests": 0,
+  "incomplete_DART_attempts": 16,
+  "incomplete_DART_attempt_keys": [
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep103_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep105_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep104_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep107_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep101_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep106_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep100_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep102_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep101_attempt1",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep102_attempt1",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep104_attempt1",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep106_attempt1",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep105_attempt1",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep100_attempt2",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep107_attempt2",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep103_attempt2"
+  ],
+  "audit_failure_attempt": {
+    "attempt": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep102_attempt1",
+    "result_sha256": "9cc7eb29a62eca7b14ddc868153eb055b299b0446071566ee42ebfbbff9635df",
+    "actions_sha256": "b474bfd5fb6d7bd1699470fe79f5a252b6165b4d587a3c55287e9694469cdc57",
+    "success": true,
+    "outcome": "finish_signal",
+    "N": 4,
+    "selected_cycles": [
+      0,
+      1
+    ],
+    "observed_noisy_cycles": [
+      0
+    ],
+    "actions": 1169,
+    "actions_missing_cycle_annotation": 0,
+    "retained_without_manifest": true
+  },
+  "resume_policy": "Preserve all clean manifests and every prior DART attempt; retry each unfinished DART episode at the next unused attempt with its paired clean N/layout and a new noise seed; do not rerun GPU validation."
+}

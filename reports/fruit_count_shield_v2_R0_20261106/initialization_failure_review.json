@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-11-06T12:46:21.060756+00:00",
+  "read_only_review": true,
+  "passed": false,
+  "failure_kind": "engineering_initialization_error",
+  "error": "local pose cannot be modified once attached to component",
+  "source": "fruit_picking/count_shield_v2_env.py:37",
+  "cause": "Attempted to assign RenderShape.local_pose after the shape had been attached to its RenderBodyComponent.",
+  "original_prefix": {
+    "completed": true,
+    "observations": 579,
+    "original_first_visible_step": 578,
+    "hand_basket_pixels_at_578": 1
+  },
+  "new_shield_environment_initialized": false,
+  "new_shield_observation_available": false,
+  "new_full_DART_diagnostic_started": false,
+  "new_R0_cases": 0,
+  "new_data_episodes": 0,
+  "training": false,
+  "new_CPU_geometry_checks_remain_only_offline_checks": true,
+  "diagnostic_process_wall_seconds": 17.483967427164316,
+  "original_68_source_hashes_unchanged": true,
+  "frozen_old_products_preserved": true,
+  "evidence_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/command.json": "fb70e5ec4f9fa181819c124f44fd9a8cabfe3b6281a9a09edc18af22e66500e9",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/process_exit.json": "81b6f5515c90fc2c5a5e2f2956f6095a1504c7f9afe7f3e9a7c4cab40d88df7a",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/console.log": "d2a041744f68b89d0dd16ae20d1eb92f9eeccabdf8dd0ceaaec8fa60ba8b2f20",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/status.json": "baa45654df70ef4223df4ea5cc7948931cd0e49d01886a8291e38a12770f8f46",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/plan.json": "8765962877266c268020ebc6645a3c96401badaf75f9d3b1cb813d31eea8b449",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/diagnostics/ep112_original_prefix/physical_and_visibility.jsonl": "9c2de7dd4965c87b21cea6f19ddcc9a16b250c8bc0b21b434c1e7c3623482707"
+  },
+  "proposed_implementation_correction": "Apply the same fixed 2mm decoration offsets to actor-builder visual records before shapes are attached/built. Keep collision records and all geometric parameters unchanged.",
+  "decision": "Stop under approved plan and HANDOFF §17.7/§18.3; no repair or retry performed in this status turn. Await user review."
+}

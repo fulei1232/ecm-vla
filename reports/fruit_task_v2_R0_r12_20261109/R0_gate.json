@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "instruction_revision": 12,
+  "scope": "GPU validation artifacts only",
+  "R11_R0_reused": true,
+  "data_generation_authorized": true,
+  "reason": "R12 data generation is locked until gpu_validation.json passes.",
+  "gpu_validation_sha256": "a62754bab91cd9203bd1b14c51434bfc516d3e19dd3a23c5a9ca15feecdc1d2d",
+  "gate_reason": "R12 GPU validations were already passed and are reused after the scoped metadata recovery."
+}

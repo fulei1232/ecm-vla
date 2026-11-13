@@ -1,0 +1,28 @@
+{
+  "revision": 8,
+  "passed": true,
+  "created_utc": "2026-11-05T13:45:08.688272+00:00",
+  "geometry_confirmed": {
+    "confirmed": true,
+    "source": "fruit_picking/env.py",
+    "source_sha256": "a79b51ec65d384c8647edd02481d8e1c4f727b17a1b3da72063ee88527114749",
+    "bottom_local_center_z": 0.003,
+    "bottom_half_thickness": 0.003,
+    "bottom_world_min_z": 0.15,
+    "bottom_world_max_z": 0.156,
+    "walls_world_min_z": 0.15,
+    "rim_world_z": 0.27,
+    "new_predicate": "abs(rel_x)<.09 and abs(rel_y)<.09 and 0<rel_z<.12"
+  },
+  "unit_checks": {
+    "a_resting_on_floor": true,
+    "b_under_basket_excluded": true,
+    "c_above_rim_excluded": true,
+    "d_ep245_recorded_state_replay_no_wind_basket_flag": true
+  },
+  "native_method_and_v1_compatibility_checked": true,
+  "ep245_frames_replayed": 90,
+  "native_physics_ep245_replay": "pending; must pass before new R0 audit",
+  "ep245_trace_sha256": "5eb4775d2d06fdbf8989267f8d11a9b87c5fcd69850f526a6c4d6958a7dfead4",
+  "source_sha256": "49a8be59005f6921969cca8646bc44a5e88a5e8f006c40efdd8ada2080287674"
+}

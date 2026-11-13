@@ -1,0 +1,128 @@
+%% HarvestMem 中文稿（v1.0 草稿）。编译：./build.sh
+%% 数值一律通过 \V{键名} 从 data/values.yaml 读取：真实结果正常显示，理想示意值显示为红色，待确认信息显示为橙色方括号。
+%% 投稿前：所有 ideal/todo 项替换为实测并改为 real，再把 \shownotestrue 改为 \shownotesfalse 去掉写作附录。
+\documentclass[zihao=5,a4paper,UTF8,fontset=fandol]{ctexart}
+
+\usepackage[top=2.4cm,bottom=2.4cm,left=2.3cm,right=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{booktabs,multirow,array,longtable,threeparttable}
+\usepackage[table]{xcolor}
+\usepackage[font=small,labelfont=bf,labelsep=quad,skip=4pt]{caption}
+\usepackage{subcaption}
+\usepackage{algorithm,algpseudocode}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric,shapes.misc,fit,backgrounds,calc,decorations.pathreplacing}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{amsthm}
+\usepackage{pifont}
+\usepackage{gbt7714}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+
+\graphicspath{{figures/}}
+\linespread{1.32}
+\setlength{\parskip}{0.2em}
+\setlist{nosep,leftmargin=2.2em}
+\ctexset{
+  section={format=\large\bfseries\heiti,name={,},number=\arabic{section},aftername=\quad,beforeskip=1.1em,afterskip=0.6em},
+  subsection={format=\normalsize\bfseries\heiti,beforeskip=0.8em,afterskip=0.4em},
+  subsubsection={format=\normalsize\heiti,beforeskip=0.5em,afterskip=0.3em},
+  abstractname={摘\quad 要}
+}
+\floatname{algorithm}{算法}
+\renewcommand{\algorithmicrequire}{\textbf{输入：}}
+\renewcommand{\algorithmicensure}{\textbf{输出：}}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.85}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+
+%% ---------------- 数值宏
+\newif\ifshownotes \shownotestrue
+\theoremstyle{definition}
+\newtheorem{proposition}{命题}
+\newtheorem{definition}{定义}
+\makeatletter
+\newcommand{\defval}[3]{\expandafter\def\csname val@#1\endcsname{\csname fmt@#2\endcsname{#3}}}
+\expandafter\def\csname fmt@real\endcsname#1{#1}
+\expandafter\def\csname fmt@ideal\endcsname#1{\textcolor{red}{#1}}
+\expandafter\def\csname fmt@todo\endcsname#1{\textcolor{orange!85!black}{[#1]}}
+\newcommand{\V}[1]{\ifcsname val@#1\endcsname\csname val@#1\endcsname\else\textbf{\textcolor{magenta}{??#1}}\PackageWarning{values}{Undefined value #1}\fi}
+\makeatother
+\input{build/values.tex}
+\newcommand{\pct}[1]{\V{#1}\%}
+\newcommand{\pp}{个百分点}
+\newcommand{\cmark}{$\checkmark$}
+\newcommand{\xmark}{$\times$}
+\newcommand{\pekm}{PEKM}
+\newcommand{\hem}{HEM}
+\newcommand{\Ci}{\ding{172}}\newcommand{\Cii}{\ding{173}}\newcommand{\Ciii}{\ding{174}}
+\newcommand{\sq}[1]{\textcolor{#1}{\rule{0.9em}{0.9em}}}
+\newcommand{\pedet}{PEDet}
+\newcommand{\fdm}{SAM-FDM}
+\newcommand{\bench}{HarvestMem-Sim}
+\newcommand{\todo}[1]{\textcolor{orange!85!black}{【#1】}}
+
+\begin{document}
+
+\begin{center}
+{\zihao{-2}\heiti HarvestMem：面向果实采摘机器人的\\[2pt]事件中心分层记忆视觉-语言-动作模型}
+
+\vspace{0.8em}
+{\zihao{4}\fangsong \V{author1}$^{1}$，\V{author2}$^{1}$，\V{author3}$^{1*}$}
+
+\vspace{0.4em}
+{\zihao{6}（1. \V{affil}）}
+\end{center}
+
+\begin{abstract}
+\noindent\textbf{目的：}采收是果园和温室中用工最多、季节性最强的环节。视觉-语言-动作（vision-language-action，VLA）大模型为“一个模型、多种作业”的通用采摘机器人提供了可能，但现有通用 VLA 面向短时、全可观测的桌面任务设计，其按时间均匀采样的固定帧数记忆在长时采摘作业中会系统性地遗忘关键事件：被风吹动的枝叶遮住成熟果实，集果篮不在视野中，已摘数量无从回看。本文旨在构建一种面向农业场景、具备事件感知记忆能力的 VLA 采摘模型。\textbf{方法：}提出 HarvestMem。首先证明均匀记忆对已完成采摘的覆盖率随作业时长按 $1/t$ 衰减。在此基础上提出三项技术创新：(1) 物理监督的学习型采摘事件检测器 \pedet，融合腕部视觉与本体感知，以仿真物理状态零人工标注训练，因果地识别成功采摘并与抓空、滑脱等失败尝试相区分；(2) 事件中心分层记忆 \hem，把固定的记忆预算组织为场景锚、工作事件、情景摘要和时间上下文四层，以“事件拼图帧”压缩远期采摘，并用类型-时间嵌入标注每帧记忆的语义与时龄，在记忆帧数和推理开销不变的条件下把 16 帧预算可保留的采摘次数从约 \V{cap_u} 次提升到 \V{cap_hem} 次；(3) 事件鲁棒训练与免标注真机适配，训练时按检测器误差模型扰动事件，部署时仅凭夹爪与腕部相机的作业结果事后确认、自动生成伪标签。同时构建经捷径审计的 \bench{} 基准，把场景记忆与事件记忆分开检验。\textbf{结果：}在预先登记的仿真闭环评测中，依赖事件记忆的计数任务成功率由 \pct{c_k0_s} 提高到 \pct{c_hem_s}（\V{c_dh}~\pp），多株长时配额任务由 \pct{l_k0_s} 提高到 \pct{l_hem_s}，比平坦关键帧记忆高 \V{l_dh8}~\pp；只依赖场景记忆的遮挡任务上与均匀记忆等效，与事先预测一致。\pedet{} 事件 F1 为 \V{det_pe_f1}，光照扰动下保持 \V{det_pe_light}；真机上无需任何人工标注即可从 \V{rd_zero.3} 自适应提升到 \V{rd_hsl.3}。真机计数任务成功率由 \pct{rc_k0_s} 提高到 \pct{rc_hem_s}。\textbf{结论：}按物理事件组织记忆，是通用 VLA 走向农业长时作业的关键能力；HarvestMem 即插即用、不增加推理开销，可为田间采摘机器人的部署提供支撑。
+
+\vspace{0.4em}
+\noindent\textbf{关键词：}采摘机器人；视觉-语言-动作模型；事件记忆；分层记忆；事件检测；仿真到真实迁移
+\end{abstract}
+
+\begin{center}
+\begin{minipage}{0.93\linewidth}
+\small
+\textbf{HarvestMem: An event-centric hierarchical memory vision-language-action model for fruit-harvesting robots}
+
+\textbf{Abstract:} Vision-language-action (VLA) models promise general-purpose harvesting robots, but their fixed, uniformly sampled frame memory systematically forgets the short interaction events that long-horizon harvesting depends on; we show that its coverage of completed picks decays inversely with operating time. We present HarvestMem, an agriculture-specific VLA memory with three contributions: a physically supervised Picking Event Detector (PEDet) that detects successful picks from wrist images and proprioception and separates them from failed attempts, trained without human labels; an Event-centric Hierarchical Memory (HEM) that organizes the fixed budget into scene anchors, working events, mosaic-compressed episodic summaries and temporal context, raising the number of picks retained by a 16-frame memory from about \V{cap_u} to \V{cap_hem} at unchanged inference cost; and event-robust training with label-free real-robot adaptation by outcome-confirmed self-training. On a shortcut-audited benchmark, HarvestMem raised success on the event-memory quota task from \V{c_k0_s}\% to \V{c_hem_s}\% and on a multi-plant long-horizon task from \V{l_k0_s}\% to \V{l_hem_s}\%, matched uniform memory on the scene-memory task as pre-registered, and raised real-robot quota success from \V{rc_k0_s}\% to \V{rc_hem_s}\%.
+
+\textbf{Keywords:} harvesting robot; vision-language-action model; event memory; hierarchical memory; event detection; sim-to-real transfer
+\end{minipage}
+\end{center}
+
+\ifshownotes
+\begin{mdframed}[linecolor=red,linewidth=0.8pt,backgroundcolor=red!3,innertopmargin=4pt,innerbottommargin=4pt]
+\small\textbf{草稿说明（投稿前删除）：}本稿按“实验均已取得预期结果”撰写。\textcolor{red}{红色数字}为理想示意值（\NumIdeal{} 项），\textcolor{orange!85!black}{[橙色方括号]}为待确认信息（\NumTodo{} 项），黑色数字为已有真实运行结果（\NumReal{} 项）；带“示意数据”水印的图由示意值绘制。所有数值集中在 \texttt{data/values.yaml}，替换方法、待做实验和需要决定的事项见文末附录~A。
+\end{mdframed}
+\fi
+
+\input{sections/1_intro}
+\input{sections/2_related}
+\input{sections/3_problem}
+\input{sections/4_method}
+\input{sections/5_benchmark}
+\input{sections/6_design}
+\input{sections/7_results}
+\input{sections/8_discussion}
+
+\vspace{0.6em}
+\noindent{\heiti 基金项目：}\V{fund}
+
+\noindent{\heiti 数据与代码：}仿真基准、训练配置、预登记协议与评测脚本将在论文接收后公开 \todo{仓库地址}。
+
+{\small\linespread{1.08}\selectfont
+\setlength{\bibsep}{1pt plus 0.5pt}
+\bibliographystyle{gbt7714-numerical}
+\bibliography{references}
+}
+
+\ifshownotes
+\input{sections/A_notes}
+\fi
+
+\end{document}

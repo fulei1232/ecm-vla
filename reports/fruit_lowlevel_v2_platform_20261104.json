@@ -1,0 +1,66 @@
+{
+  "base_platform_identity_sha256": "0aec2ee6035113edb0af802335ef384a56ff4521f47c4356318b3f929fe7f8cb",
+  "base_platform": {
+    "G1_reference_plan_sha256": "872fd891adbe18277bd50b52071b98d98582f64a4358ff896739e605abe17dc4",
+    "base_condition": "A0",
+    "joint_guard": "v2",
+    "exec_horizon": 16,
+    "obs_horizon": 16,
+    "observe_hold_steps": 30,
+    "total_step_budget": 1300,
+    "selected_expert": "canonical_v3.1_20261102",
+    "files_sha256": {
+      "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/guard_v2.json": "899c15bbd9927396b68cac063ab8b72dd2ef0f654b58bc3a4a7d79efe350a092",
+      "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/guard_choice.json": "e7ae2ab456885d83fa5030b8065022f0b6c96e0b02b92344f8e50ff1d613466b",
+      "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/expert_profile.json": "fc6a547c24e89a12c73765022e4365d89d310595288408142bf7f16fd190f56a",
+      "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_rescue_platform.py": "62131ece3a41995f0cd3e4e05c24a549e9dc01e46a4639450bbf294fc05120f3",
+      "/media/fulei/fuleivla/ecm_vla/scripts/evaluate_fruit_rescue_episode.py": "cbf0cd6887ef97ed70449a24ca19645184c09cddca6eca87510c719d1caa0300",
+      "/media/fulei/fuleivla/ecm_vla/scripts/evaluate_fruit_lowlevel_v2_episode.py": "57e2d5958c8e2930221614a805685dde04defa0f7cdd4ca947c12217628abd8c",
+      "/media/fulei/fuleivla/ecm_vla/scripts/audit_fruit_rescue_memory.py": "2b9e3f2e0e8d47669e73934fc60c0d7f18fdd9a38426c803e7080b4aeb0c5a26",
+      "/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_diagnosis.py": "a412d00e621aa65ca72c9a3131a6ddc01a610007aef9cf3c1841a7093193d585",
+      "/media/fulei/fuleivla/ecm_vla/scripts/serve_teacher_policy.py": "6d2043b30b3ce5775eef598867dc4bb6fe267e4a0feb97e120bfb6490b305f07",
+      "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_eval.py": "d567b0ec5cc8dd778600c23ed45d3b8ee59616ad5cdbee6c8383297836d886d8",
+      "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_distance.py": "df4af894320d411089ab405e9208156e6e089a51b8a56337a3c24f6ba264d592",
+      "/media/fulei/fuleivla/ecm_vla/src/memory_management/event_keyframes.py": "d554086f2112a3c443879f4e81164b770e941fa78d8439af7b2a280080c76161",
+      "/media/fulei/fuleivla/ecm_vla/src/memory_management/validation/teacher_oracle.py": "5d935f63ccefb06b1bd9be30220806c49621d5f3ce480f1f4af7a9112b881f8a",
+      "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning/examples/robomme/eval.py": "ae6b2d4f451476113c95e5356e75271b8a1db3f3c65b5b0f5a082b200acee349",
+      "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning/examples/robomme/subgoal_predictor.py": "ad982b1434d10558fce1f8acf0a9825ed38bb178dc68693584c0697e323e0ae3",
+      "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning/scripts/serve_policy.py": "8174f5ba7dd8a0e84c0ad39315ec6617c1f30a1911b154c590f5d486a620163f"
+    },
+    "client_extension": "Only condition/model-seed routing generalized; same G1 evaluator/prefix/recorder/guard."
+  },
+  "files_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/guard_v2.json": "899c15bbd9927396b68cac063ab8b72dd2ef0f654b58bc3a4a7d79efe350a092",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/guard_choice.json": "e7ae2ab456885d83fa5030b8065022f0b6c96e0b02b92344f8e50ff1d613466b",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/expert_profile.json": "fc6a547c24e89a12c73765022e4365d89d310595288408142bf7f16fd190f56a",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_rescue_platform.py": "62131ece3a41995f0cd3e4e05c24a549e9dc01e46a4639450bbf294fc05120f3",
+    "/media/fulei/fuleivla/ecm_vla/scripts/evaluate_fruit_rescue_episode.py": "cbf0cd6887ef97ed70449a24ca19645184c09cddca6eca87510c719d1caa0300",
+    "/media/fulei/fuleivla/ecm_vla/scripts/evaluate_fruit_lowlevel_v2_episode.py": "57e2d5958c8e2930221614a805685dde04defa0f7cdd4ca947c12217628abd8c",
+    "/media/fulei/fuleivla/ecm_vla/scripts/audit_fruit_rescue_memory.py": "2b9e3f2e0e8d47669e73934fc60c0d7f18fdd9a38426c803e7080b4aeb0c5a26",
+    "/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_diagnosis.py": "a412d00e621aa65ca72c9a3131a6ddc01a610007aef9cf3c1841a7093193d585",
+    "/media/fulei/fuleivla/ecm_vla/scripts/serve_teacher_policy.py": "6d2043b30b3ce5775eef598867dc4bb6fe267e4a0feb97e120bfb6490b305f07",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_eval.py": "d567b0ec5cc8dd778600c23ed45d3b8ee59616ad5cdbee6c8383297836d886d8",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_distance.py": "df4af894320d411089ab405e9208156e6e089a51b8a56337a3c24f6ba264d592",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/event_keyframes.py": "d554086f2112a3c443879f4e81164b770e941fa78d8439af7b2a280080c76161",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/validation/teacher_oracle.py": "5d935f63ccefb06b1bd9be30220806c49621d5f3ce480f1f4af7a9112b881f8a",
+    "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning/examples/robomme/eval.py": "ae6b2d4f451476113c95e5356e75271b8a1db3f3c65b5b0f5a082b200acee349",
+    "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning/examples/robomme/subgoal_predictor.py": "ad982b1434d10558fce1f8acf0a9825ed38bb178dc68693584c0697e323e0ae3",
+    "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning/scripts/serve_policy.py": "8174f5ba7dd8a0e84c0ad39315ec6617c1f30a1911b154c590f5d486a620163f",
+    "/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_lowlevel_v2_eval.py": "bfa4fa5c9b9656abde8b2e838667fc21656ddfc98e0c64836151854ab3756d65",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/env.py": "a79b51ec65d384c8647edd02481d8e1c4f727b17a1b3da72063ee88527114749",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/agent.py": "256a75fff65a47dddb1b06a1b5eccd567153057891b1c6c87c6f453198e56e18",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/layout.py": "e31b7cb45ffd2e0e1a1039fddfc52562415188e3b8c21aee5b5abb459ed263ee",
+    "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning/src/mme_vla_suite/policies/policy.py": "fd7852a99853908b388363094077b5c6ee550a8eb2779982bc52d61cdd7671c7"
+  },
+  "main": {
+    "guard": "v2",
+    "exec_horizon": 16,
+    "observe_hold_steps": 30,
+    "total_step_budget": 1300
+  },
+  "sensitivity": {
+    "guard": "off",
+    "other_platform_settings_identical": true
+  },
+  "seed_routing": "One unchanged policy server per seed7/8/9; three checkpoints per process; simulator GPU3/4/5."
+}

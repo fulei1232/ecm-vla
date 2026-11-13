@@ -1,0 +1,14 @@
+\section{Conclusions}
+\label{sec:conclusions}
+
+This paper showed that the time-indexed memory of current vision--language--action policies is structurally unsuited to selective harvesting, and proposed HarvestMem, which couples a spatial memory of 3D fruit anchors, acquired by promptable segmentation while fruits are visible, with an episodic memory that reserves the contact and detachment keyframes of picks in the policy's fixed memory budget. The main findings are:
+\begin{enumerate}
+\item Uniform memory covers completed picks as $c_U(t) \approx \min(1, (B-1)|S|/t)$ (to within 0.012); at 16 frames, coverage of the most recent pick falls from 97.8\% to 21.7\% after 600 frames.
+\item Picking events are detected exactly from the end-effector-to-fruit distance over a 1--4~cm range of the radius, on clean and perturbed demonstrations alike.
+\item Picking-Event Keyframe Memory retains 99.6\% of completed picks against 57.0\% for uniform memory, keeps the most recent pick at every decision time, and with 8 frames outperforms uniform memory with 16, at no additional cost.
+\item From RGB-D images and proprioception, the SAM-based fruit distance module localizes fruits to 0.48~cm, recovers every leaf-hidden ripe fruit and reproduces the ground-truth events exactly.
+\item Spatial memory acquired before occlusion is a precondition for event memory: anchors built after occlusion are just as accurate, yet they miss all 138 leaf-hidden ripe fruits (anchor recall 78.3\% versus 99.8\%), 138 of 251 picks in the occluded task go undetected, and no occluded-task episode is counted correctly.
+\item Event memory tolerates 1.5--2~cm distance errors, dropouts and bias; prompted SAM gives the most accurate fruit masks, and its prompt generator is the component to adapt to field illumination.
+\item \tbd{One sentence on closed-loop success with PEKM and DART-H (E7--E9).}
+\end{enumerate}
+By moving agricultural knowledge into the definition of events rather than into network parameters, HarvestMem offers a principled, auditable way to adapt robot foundation models to the long, partially observable operations of agriculture.

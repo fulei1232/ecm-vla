@@ -1,0 +1,44 @@
+\clearpage
+\appendix
+\section*{附录 A\quad 写作说明与待替换清单（投稿前删除）}
+\addcontentsline{toc}{section}{附录 A 写作说明与待替换清单}
+\markboth{附录 A\quad 写作说明}{附录 A\quad 写作说明}
+\small
+
+\subsection*{A.1 数值的三种状态}
+全部数值集中在 \texttt{data/values.yaml}，每项为 \texttt{[值, 状态, 来源]}。\texttt{real}（\NumReal{} 项）来自已有运行，正常显示；\texttt{ideal}（\NumIdeal{} 项）为理想示意值，正文中显示为\textcolor{red}{红色}，相关图片带“示意数据”水印；\texttt{todo}（\NumTodo{} 项）为待确认信息，显示为\textcolor{orange!85!black}{[橙色方括号]}。实验完成后，把实测值填入对应项并把状态改为 \texttt{real}，运行 \texttt{./build.sh} 即可同步更新正文、表格和图片。表~\ref{tab:coverage} 和第~\ref{sec:res_general} 节的数字是真实结果，直接引自英文稿 v0.4（\texttt{paper/results/memory\_coverage.json} 与 RoboMME 评测），未经 \texttt{values.yaml}。
+
+\textbf{示意值不是预测。}示意值是按“实验取得预期结果”设定的、内部自洽的数字（例如失败分类之和等于总次数，分层成功率与总成功率一致），只用于搭建叙事。实测结果的方向或大小与示意值不同时，不仅要改数字，还要改依赖结论方向的句子，主要在：摘要与引言贡献列表的结果句；第~\ref{sec:res_closed}、\ref{sec:res_long} 节各段的小标题和首句；第~\ref{sec:res_ablation} 节“事件来源”“事件扰动训练”两段；第~\ref{sec:res_real} 节；结论。图~\ref{fig:capacity} 与第~\ref{sec:coverage}、\ref{sec:hem} 节的容量数字（约 \V{cap_u}、约 \V{cap_k8}、\V{cap_hem}、\V{cap_flat_max}）是按设计参数真实计算的，由 \texttt{tools/make\_figures\_zh.py} 中的 \texttt{fig\_capacity} 生成；改动 $m_w$、$c$、$s_{\max}$ 后需重新运行。
+
+\subsection*{A.2 尚待实现与完成的实验（对应章节）}
+\begin{enumerate}
+\item \textbf{R0 捷径审计}（表~\ref{tab:audit}）：交接文档修订 7 第 15.4 节，正在执行；FruitRow 一行需在 R0 之后追加。
+\item \textbf{\hem{} 的实现}（第~\ref{sec:hem} 节）：分层选帧函数（含场景锚、自适应分配）、拼图帧构造（脱离后第 3 帧前置图像、以 TCP 投影为中心裁剪 $112\times112$、$2\times2$ 拼接、空格屏蔽）、类型-时间嵌入（零初始化，接到记忆分支 token 上）。训练与部署须调用同一函数；需新增“记忆帧与声明规则一致”的逐决策核验。
+\item \textbf{\pedet{} 的实现与训练}（第~\ref{sec:pedet} 节，表~\ref{tab:detect}，图~\ref{fig:events}(c)）：从仿真读取指尖接触与果柄约束生成逐帧标签；采集基础策略在训练布局上的闭环回放；实现域随机化。网络结构与超参数为设计值，按实际实现修改。
+\item \textbf{事件扰动训练 EPT}（第~\ref{sec:ept} 节）：在训练样本的记忆构造前对事件表做删除、误插和抖动；扰动率以真机检测误差为准。
+\item \textbf{FruitRow 环境}（第~\ref{sec:tasks} 节）：3 株植物、换株信号、整行配额、风落果；专家示范与审计。
+\item \textbf{v2 示范、K0/K4/K8/HEM 训练与正式评测}（表~\ref{tab:closed}、图~\ref{fig:simmain}、正对照）：修订 7 第 15.5 节需相应扩展为四个条件和三个任务，主假设族改为 H1--H3；协议须事先写明部署时事件由 \pedet{} 给出、K4/K8 与 HEM 共用 EPT。
+\item \textbf{消融}（表~\ref{tab:ablation}）：(a) 为推理期变体，(b) 中各项及“去掉 EPT”需重新训练。
+\item \textbf{仿真光照扰动}：渲染亮度增益 0.5--1.6，用于图~\ref{fig:events}(c) 与消融。
+\item \textbf{真机实验}（第~\ref{sec:real_design} 节全部）：番茄实验架与弹簧果梗夹（拉脱力标定）、舵机拨杆与叶帘、窄带照明可分性验证、第三视角相机与双人标注流程、遥操作示范、事后确认自训练（持物段阈值、篮区标定、指间区域像素差阈值）、检测评测与闭环评测、温室验证。表~\ref{tab:hardware} 的硬件型号均待确认；图~\ref{fig:realsetup} 待替换为实物照片。
+\item \textbf{运行开销}：测量仿真与真机上的 VLA 推理、\pedet{} 和 \hem{} 构造耗时。
+\item \textbf{可选}：用 v2 示范重算第~\ref{sec:res_memory} 节的离线覆盖率分析，并加入 \hem{} 一行，使离线与闭环结果来自同一版本的数据。
+\end{enumerate}
+
+\subsection*{A.3 需要你决定的事项}
+\begin{enumerate}
+\item \textbf{方法范围。}\hem{}、拼图帧、类型-时间嵌入、EPT、HSL 和 FruitRow 都是本稿新增的设计，尚未写入交接文档，也未经封存协议。按约定，修改记忆方法与系统定义需要你确认后才能交给执行端实现。
+\item \textbf{事件定义。}本稿以“与成熟度无关的物理采摘事件（接触 + 脱离）”为主定义，几何距离事件作为基线。当前代码（\texttt{fruit\_distance.py}）计算的是到“成熟且仍挂树”果实的距离，与本稿不一致。
+\item \textbf{基础模型的引用。}正文按要求不突出基础模型的名称，只在第~\ref{sec:base} 节以“当前主流结构”描述并引用 $\pi_0$/$\pi_{0.5}$；记忆分支的结构来源建议仍保留一处引用（第~\ref{sec:related} 节已有），以符合学术规范。
+\item \textbf{是否保留 v1 的零结果}（第~\ref{sec:v1} 节与表~\ref{tab:v1}）。这些是真实结果，写成“基准有效性”的动机能增强可信度。
+\item \textbf{目标期刊与格式。}本稿按中文期刊常见结构撰写；若投英文期刊，可在定稿后翻译并改用 elsarticle 模板。
+\item \textbf{真机规模。}每条件 30 次只能可靠检测约 30~\pp{} 量级的差异，真机 HEM$-$K8 的差距预计不显著；若希望真机上也体现分层优势，需要增加一个真机长时任务（如两株番茄架连续作业）或增加布局数。
+\end{enumerate}
+
+\subsection*{A.4 需要核对的参考文献与数字}
+\texttt{shi2025memoryvla}、\texttt{fang2025sam2act}、\texttt{kim2024imagegrid} 的作者、题目和出处需要核对；引言中 Bac 等综述的“平均成功率约 66\%、作业周期约 33~s”需对照原文核实；番茄果梗分离力需补充文献。其余文献沿用英文稿 v0.4 的已核对条目，新增的经典文献（RT-1、Q-attention、TCN、域随机化、捷径学习、ResNet、focal loss、伪标签、Noisy Student、HER、bootstrap、Wilson 区间）建议投稿前统一再核一次页码与卷期。
+
+\subsection*{A.5 示意值与待确认信息清单}
+{\footnotesize
+\input{build/value_list.tex}
+}

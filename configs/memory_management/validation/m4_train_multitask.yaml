@@ -1,0 +1,59 @@
+v_b:
+  demo_source: train_h5
+  tasks: [BinFill, VideoUnmaskSwap, PatternLock, PickHighlight]
+  episodes_per_task: 3
+  episode_ids: {start: 0, stop: 3}
+  boundaries_per_episode: 2
+  min_cutoff_frame: 64
+  decision_stride_frames: 16
+  partition: {anchor_slots: 1, recent_d0_slots: 4}
+  candidates:
+    kemo_peaks: 2
+    planner_keyframe: 1
+    random: 3
+    kemo: {joint_dims: 7, window: 16, peak_left: 8, peak_right: 4, min_event_gap_frames: 8}
+  interventions:
+    k1: exhaustive
+    k2: {random_sets: 12, greedy_sets: 2}
+    k4: {random_sets: 12, greedy_sets: 2}
+  future:
+    offsets: [0, 1, 2, 3, 4, 5, 6, 7]
+    memory: freeze_history_refresh_recent
+    discount_primary: 0.7
+    discount_sensitivity: [0.5, 0.85, 1.0]
+  loss:
+    target: expert_demo
+    action_dims: 8
+    store_padded_dims: true
+    mc_samples: 16
+    tau: beta_1.5_1_stratified_quantiles
+    split_halves: even_odd
+    prefix_kv_cache: true
+    compute_dtype: float32
+    checkpoint_restore_dtype: bfloat16
+    matmul_precision: highest
+  runtime:
+    batch_size: 4
+    encode_batch_size: 8
+    g0b_report: results/V_B_cached_loss_g0b_fp32.json
+    feature_cache: cache/v_b_features
+    model_seed: 7
+  references: [D0_u, base_u, hist_off_u]
+  gates:
+    identity_gain_abs_max: 0.0
+    cached_vs_full_rel_err_max: 1.0e-3
+  reliability_thresholds:
+    min_tasks: 2
+    spearman_brown_median: 0.5
+    snr: 1.0
+    top1_agreement: {k1: 0.111, k2: 0.214, k4: 0.214}
+    memory_sensitive_fraction: 0.30
+    additivity_slope: [0.5, 1.5]
+  positive_gain_thresholds:
+    min_tasks: 2
+    xfit_rel_mean_ci95_lower: 0.0
+    frac_boundaries_xfit_gt_2se: 0.20
+    xfit_o0_mean_ci95_lower: 0.0
+    bootstrap_cluster: episode
+    bh_q: 0.1
+  rerun_on_fail: {boundaries: 20, mc_samples: 64}

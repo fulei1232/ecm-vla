@@ -1,0 +1,4465 @@
+{
+  "passed": true,
+  "created_utc": "2026-11-06T02:50:26.284973+00:00",
+  "terminal_state": "awaiting_R0_review",
+  "plan_sha256": "bfdc4f1273d5301c8a27eecf88b6073a901879644e9dccedd058421403a4d9e4",
+  "clock_fit_sha256": "818c31322cc3f725c8a3286c90146df82a200c218c30d6c7dfefd66051f55451",
+  "pinned_source_files_unchanged": 23,
+  "valid_cases_checked": 480,
+  "frames_checked": 429584,
+  "attempts_without_validity": [],
+  "check_failure_records": {},
+  "decisions_in_checked_cases": 2052,
+  "distance_signal_max_abs_error": 0.0,
+  "expert_signal_comparison": {
+    "count": {
+      "expert_episodes": 50,
+      "different_event_intervals_episodes": 0,
+      "unequal_distance_frames": 0,
+      "expert_trace_frames": 47762,
+      "interpretation": "Expert event agreement does not remove the maturity privilege in the original function."
+    },
+    "occluded_ripe": {
+      "expert_episodes": 50,
+      "different_event_intervals_episodes": 0,
+      "unequal_distance_frames": 8428,
+      "expert_trace_frames": 18292,
+      "interpretation": "Expert event agreement does not remove the maturity privilege in the original function."
+    }
+  },
+  "D5_D6_R7_preservation_passed": true,
+  "groups": {
+    "audit/count/clock": {
+      "episodes": 50,
+      "successes": 13,
+      "decisions": 218,
+      "checked": 44605,
+      "clipped": 31,
+      "unequal_distance_frames": 0,
+      "trace_frames": 46155
+    },
+    "audit/count/clock_onset": {
+      "episodes": 50,
+      "successes": 45,
+      "decisions": 227,
+      "checked": 45315,
+      "clipped": 35,
+      "unequal_distance_frames": 0,
+      "trace_frames": 46865
+    },
+    "audit/count/current": {
+      "episodes": 50,
+      "successes": 0,
+      "decisions": 232,
+      "checked": 47315,
+      "clipped": 35,
+      "unequal_distance_frames": 0,
+      "trace_frames": 48865
+    },
+    "audit/count/history": {
+      "episodes": 50,
+      "successes": 50,
+      "decisions": 232,
+      "checked": 46212,
+      "clipped": 35,
+      "unequal_distance_frames": 0,
+      "trace_frames": 47762
+    },
+    "audit/count/initial_current": {
+      "episodes": 50,
+      "successes": 0,
+      "decisions": 226,
+      "checked": 46373,
+      "clipped": 35,
+      "unequal_distance_frames": 0,
+      "trace_frames": 47923
+    },
+    "audit/count/initial_ground": {
+      "episodes": 50,
+      "successes": 0,
+      "decisions": 231,
+      "checked": 47159,
+      "clipped": 35,
+      "unequal_distance_frames": 0,
+      "trace_frames": 48709
+    },
+    "audit/occluded_ripe/current": {
+      "episodes": 50,
+      "successes": 0,
+      "decisions": 50,
+      "checked": 63500,
+      "clipped": 0,
+      "unequal_distance_frames": 29931,
+      "trace_frames": 65050
+    },
+    "audit/occluded_ripe/history": {
+      "episodes": 50,
+      "successes": 48,
+      "decisions": 127,
+      "checked": 16742,
+      "clipped": 32,
+      "unequal_distance_frames": 8428,
+      "trace_frames": 18292
+    },
+    "audit/occluded_ripe/initial_current": {
+      "episodes": 50,
+      "successes": 46,
+      "decisions": 338,
+      "checked": 20177,
+      "clipped": 28,
+      "unequal_distance_frames": 10693,
+      "trace_frames": 21727
+    },
+    "budget_expert/count/history": {
+      "episodes": 10,
+      "successes": 10,
+      "decisions": 61,
+      "checked": 13863,
+      "clipped": 0,
+      "unequal_distance_frames": 0,
+      "trace_frames": 14173
+    },
+    "budget_nonstop/count/nonstop": {
+      "episodes": 10,
+      "successes": 0,
+      "decisions": 61,
+      "checked": 14096,
+      "clipped": 0,
+      "unequal_distance_frames": 0,
+      "trace_frames": 14406
+    },
+    "calibration/count/history": {
+      "episodes": 10,
+      "successes": 10,
+      "decisions": 49,
+      "checked": 9347,
+      "clipped": 0,
+      "unequal_distance_frames": 0,
+      "trace_frames": 9657
+    }
+  },
+  "scope": "Independent record/geometry/signal/hash cross-check; pixels were measured during simulation. No new rendering, episode, retry, definition change or reinterpretation of outcomes.",
+  "verifier_sha256": "3d3697cc75e09c48afc801c162bace11a2b8167b4b2a68aa12fdbcac38df4102",
+  "cases": [
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 200,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e348c00732f4e5dd5affeac9c1aa635c2a92aee3be4103656864d586cd46a44d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 201,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "fddf6450ac6abd7c6428feb061b7afd4089336a1aba39f9c5c4c3846d7ce5810"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 202,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "0a84e8f935f2cde4f4fdb33b0423d863138faf347e9ea6e5e5139d9ad9b79133"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 203,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "a7bd480c81c42a23ca7e3efcccc653c99d5a83c35382a74d238c73ebfbc141d9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 204,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "748bd15bfab6212f25474d851c575eb8d96c94d7b549c833210f8b21b50e89c4"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 205,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "6564a0bba067d3b959ca1adb1307643beed619842951a9ffa9899ce59a3dd822"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 206,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "a44e2be4b7a2f8164eb56afba2816e980b91bc791e4aaa501532a39b81b1027f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 207,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "26cdfbfd1edcf8bddde0aba3b13618c7c66350f66f6065e75acd85b22cf2b975"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 208,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "357ac4d32aee1f1755864819d365a1976360d733f45709c6264b9d7df55eca4c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 209,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c5ca7ff2b84dbb505de84fc17f8a2d94d805727db0a3dce9a5e4c66428217752"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 210,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "d2579e95955ad610830d39e8a4272fc46add524e04d2d1e5dfbe71c8e82d3fc7"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 211,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e81f01493bf69c5b86ed5b21019323119f904f4098493fdcc3e10bc831e974fe"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 212,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "704fbd08f953bcfa78b19e91de897d0be81a7d8fc1b8232e27ff7fee5f41f7a5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 213,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "d17c423f344c284b0ee135e825e6d97cbb4bf916258198359401701a792799d9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 214,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "46b7d3b2a8859400b941efb34623ba586e88ac2761cb6c2f8148d8ad9d8264da"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 215,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "9962e5afecc1446c8c205b47b69c349e535f8ce87b3cb60f034d18015c427a76"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 216,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "4c400eb87fd004107e73793f0fa2595e34b4ffade6eaec14178aa26c27fad711"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 217,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e1ff468910761c5ee6eaaff535127bcbcc31b8d01ad8c634b5a2c98dc4c0618b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 218,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "7389f3ffe730b734f94f4e3d0a180ebf612ab2929c680aa151b43a2e5924d9f5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 219,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "caf949fe7bd6adbaed9a671b1696ecf68818682036ba90a5bda1ab0f8ca612e0"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 220,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "a37e63fb1db83085f2d5ed088f3feaaa6ae2899e3cc26f6a6ab07ad6542671dc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 221,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "60db639a3188fe922ca0a44373ebf90475650dd98ab5c63887a00bb74349bb32"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 222,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "f184f39a22245795bddbe5311a2ccc8459090c1075e36ada34ceae769448d7f3"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 223,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "df8c859c02c095120bbfedd40bfe364940c5b07c4e46fd32f70e95e4407e9de2"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 224,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "18a6077343211e34512ea053a76c5ee10188bf8cb98c7529f6bc817368031523"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 225,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "036e72654d7a9b9f9e9237f5922eb3f6bf245759f556450b2f21c9a0510bdc75"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 226,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "858a43e2c5d9ce81efb31b7258abe6071e87edd86f3a00ed142613a5b707d5ea"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 227,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "1d0721d8e600aa95cca692914add142e77b6c7f168d85e7d32496f69bd4e7bea"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 228,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "d489a48f6514fe70679a95511aa1be31dcd8f023991c22466c4631cd8fdad8c5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 229,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "da68146b200f6408704a583fe28660a9e42cb2aa37d4acedabf2b35ea84ec75a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 230,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "cb83afe2cd2f9806275ad71d65f6890f7bada64686e03a60bcb8a7ffac36c964"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 231,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "8fccb6692a4c9c2c45dd13c15966ee4ce6dca8dfbc17e4f949aa90bf9137d79b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 232,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "6d46acb44068c3253fe5eecb56d30aa9df69e1f30d8aa1bcf791429d564b88f0"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 233,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "ed4a52c11380bc9dcb7c4cf6d8e33b64d8d535856332d34b5932a43f534e115e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 234,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "962f6900222fe8c5439873df3f6f82b2ca49e0898255a98f4ef132f3d7ad2189"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 235,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "7c35003fa15c580c4ebf751a755fd11a6315cd4b92c1538e295fbe340b5d3a32"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 236,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "e735f57130e2017180c8cb1068fdf57de90b55d66e17837115e3c8bf5ffb536c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 237,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "f58a497e7ea0ba1aa3c0d309da3ab9c6a32334fd425347152140e213a637f2ed"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 238,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "28a020584ee76f3acc89b3baa2f9284a87475b4f86007284c0959b92ed9aa724"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 239,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "745eb61e7eda01ae2ffd68b95b2d860aa7afe61bec979ca79752539367c4daef"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 240,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "91962083c182ad7163489a19ffe2c247e7d29bed7d1fc8903aace984a384899e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 241,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "5b4a8f4c7c5e29c98299c3f10c968e06928ef1a8db13a64ced282651b41d5857"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 242,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "5c579d34d15711ff57f380a6f3f9d5189a10fb1ba9352605c82b704a4315c36f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 243,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "96339ac8015e3557933d0abaa7c8e2afc5166c09da7f0eac81ad59e497262e0e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 244,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "12e11ef42d8761473a74016aee73b07143587cf97e611d3d3ce215bbf5d3f9ac"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 245,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "fd000454d218d2bb16c337c9bfd01b23a6aa542f81d96fd22be51a58abf29572"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 246,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "b80efab9ce2d859a15c818e51935fb632adb9a923fe7fbbec3d111709126af13"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 247,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "ae287ceb8a6a2be81e585e0d6516f87d3177b0897369f0ef313209ee654a2270"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 248,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "26ead07bf9c2623654cb91f180300898ea44e0b8077370b5913bc5504097a102"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock",
+      "episode": 249,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "aebf5883c25626e226150679f7fbdba27623cc66534dc44d24c3a0ed6ea6ad8d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 200,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "bc693c4aa051e0c6f9f6eaa129140bf4c69a7ee02baee212dec1f3098abc0fcd"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 201,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "bef4dfaf78d8a4cb0ba1088c2d3ed64816b166b737b210062dbfc588596edabc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 202,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "400b4580235843e52b8333f564c6f867fbed1e0d6fbdca2a2d659177ebd49377"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 203,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "7ec8a7fe752326de0d2ef2f9a972c558c99d129164d8fee4791d2e31f5a6a5e3"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 204,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5f6fdecba5df0b2a4502e8e947207d27d9de1c046dd4f187b9ed7fdde681410d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 205,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "9662ff17ca450aa13f47a4f0641764974175f542577f400e07dda27e5c296f80"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 206,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5678b5bd94a4cb5a31817bf35d5b7da4884aa56a2ca5a6ffb5343e48bcd71194"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 207,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "c6c01c61c71212430eb899e65dec572f5ee28e83998e2565e643306b3dc0c05d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 208,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5ef56801fe03e875300df23e9ed8bbe58c17433cc00b696732d2d8045ad768dd"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 209,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "b8887c0ac8aac97f406d109a7093385ecbf3e14025133363a655e843765fdeec"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 210,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "d90258569f0a9d4495872a09e1972fd533873b255c8742730d5d25cc11b76288"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 211,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "d40988e47a0e6ccc4248a79a12f5a2e1d9f5c8f9c9b35f51f3dbe6d94328f497"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 212,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "be800defa83d6de3f64a507e90ad5fe830fbcb4d0771b4e2becc6cc120874e1b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 213,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5154dd1660dd8c3c618f46f07261dbcaa209bebb1361813ba09a75cd0c34cc90"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 214,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "27635f661d154234b93759a086958ef32a0a5d9e3484ad80fc2f6f6e0e25c634"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 215,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "7c0e3aedf46ee82f3fcdea3e38800de638d24d7213567a335385c14c9d48561c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 216,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "cea7f5deb113eb54aab757884d63599ab6dc3b3ba43685fa6fee3767af79833a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 217,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "93a56730bc7c7c41dbe1d28a739c8534784d1ecaecc888b162f5b882eb103dac"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 218,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "ee707cc4f49cf7141a5205e8f32c8c4e9006e614a132f46eb023e4f151df6e2a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 219,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "6566e31fef00a7bbbdc8bc93baaa49c224821d60b61ad625640573d4a1ee0dfc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 220,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "fe9fdceb21ed9db5d8935862f02ef291df7aba87946c7710e1c2dc53cf1cf98f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 221,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "81c3da871ce71d144e8c862992ec92f7dc0748a1f750224bd743eea31fd8f485"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 222,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "f5b6c8e803efe2073323d774e71ff846a1ce32d0f97f437945bf7a74b2e62123"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 223,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "c7322c8b171085c12126931be54f5b973a0d2604b3d52d8b2b5fe77d9057e575"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 224,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "c6ce387cfe1d1710b5b6597b6d3356bcc8938d85e45d9e4a3207585a4d738883"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 225,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "146155bd27f97eee25bab72dfae29640e79581d0a58a23f5d1dbf65256b2ad9f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 226,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "f68516abeb628068cb2a77fce1c4c9e6149c9e7cd65f4b7ca85027be3e636f5d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 227,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "6538934afeb412a992cc6b669581dd8a10d2e7be559e56cccd8115e86f2fcf0a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 228,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "050847ddc4462b8aa9c3bb9f936714ef3712e5d09cf8d04e81aa14ff0b0a31c2"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 229,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "d04fc1bf15a83519cdbefffb7d0b8226bd7d99060e48047a3537d18e19a23e2d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 230,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "8601ef5385d806261ded54b4174ce8167b1bfdedb87745a0a4dda6a67587c42b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 231,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "f6eaa57d2ee9f21090e0756267875b92d904d08b04d8076627fb970d2c73eb20"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 232,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "75febe28002f9fa1e5b46d18b2b03907af99ab35383d13b3b9446e9d78532bba"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 233,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "517356c3f928e8c226f4775a15a33ad74cb6d658e2411cf47b21e8b1452ef4ff"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 234,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "b61a1396e9ba349115ac15efcbf24ea6516a72cdc3939765f62a0e031bef5f81"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 235,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "b16cf3d87ac71bcd936cb955ad09613f0effb1f2d4060d3ceed599604f6bd096"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 236,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "30feca3fdf6d993cdff470fb6fe6cc5e8b7beab7deabf2c0c5f0dee55ac0c735"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 237,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "0d17a6316ac96903e5be5af7d4da4fb1652200a0e2053fd1abdde9bd77ca7d2d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 238,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "3b48f794606e3e0b82bab8090a26e2c68e3648a9e45b7649c9784805f785b499"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 239,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "65d2828d2b2f04d091a4df2b62bc637988e63b2105b0f9819b6ecc70fecc243c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 240,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "6eb3e024a3af400dbe8a2f17a521fe8a2ef3e018a5b0ec22c6600987d523767b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 241,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "f1594bebd7c183f56202ae4cfbdeab984b1a8c7de34b389787c1c6a8096ff439"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 242,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "100bb17bc217cd47dac6585b6c51aa22aee348e493eee0b47e448a2368a59947"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 243,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "dfadd9af1e4f29ee6eefc12fa3582a98584d88f305564455d7b399279bb830b7"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 244,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "829bc302f32ddb9bbfca1806de918d25af515d4ad7c8f071a95050a28698bcb2"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 245,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "c6cbb9694ce00a650c731add05390f7210ceb7760fbe241b5ec3f39c4257f865"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 246,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "c8e4b082da00658f853b0f3c84e944eee4092235f5e02ee6d9d42ae70a554d8c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 247,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "4834c26fd0c3a8d4c9a214489d7f2d925a3b3f12b2ba4521166b2d7b2d3587df"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 248,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "80860720b6e4b2e455130cdc57a1a0c529f76fd01268c5445fa2f8fb024a879b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "clock_onset",
+      "episode": 249,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "bab7e82d3c683188ee1d9231f95d170da180ecb9c7209ebad4bb0e53c882e0a5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 200,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "99d38ae69392608999e8fdefb058fd7104c11e72ecf056b2ae13cd090d70588a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 201,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "ff7f20dcdb6bd77da71a09089e8c4ac50529425ce20d19de9642e66073f17e03"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 202,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7e676e534fdcd6cf3a9a4a3c672a87179e333630ec1d393f9662639bd00f3c42"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 203,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d24f7cae7d6b2602766f77b05e6d62478ae332ce85a54183f6a3c06d002522db"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 204,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e6bede92ff842ab0987425a778f7a43b1080404b622310c6bd237451fe4b5e9f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 205,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7d7b57694513de0f00c89676b291550925f0748e1d02509e58d379a971a871e3"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 206,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "75cf62c08c5d152f6e45d44105958fdf4721e178054a4b1fcf40491850e310a9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 207,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "81ced504a0d1a28c4cc23f32ab70b1691183943dc3ef2fe63f2ce4fe5a00ccbb"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 208,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "ba38b68cbcd6c7e66d208a36a216c37e315b07090eccdc01e08f775cdaffa1b6"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 209,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "08a7624320e7a79597262e1127a1c4594df82e2bcbdf35812d4c369be0c2442b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 210,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "ed08794feb58acf29ff5f1652a4d1fac4501ff40ee94e20ae55773e240bf27e8"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 211,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f855d52d6a466651baed0a00d21afd6934a8e78dad111cb6d0631f0204bc9509"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 212,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "2e3c8de012b5a5f28f78d5438fbb028b4246123e85ebc697acf0b5ca0c9b0a00"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 213,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "87566fadee495a34b3a5c78c46fc232b1547becf335ad17a03a21b95a91cb090"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 214,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "2ee851949ac1cb58b8a038b8ea15791328f0848b112968c260b0b9405fa86f34"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 215,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f4d03b4982eba95bb38a16173b51db3e628ab499f070e754df5b26ec814a716e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 216,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "a8eeb81143b78ef9526c1f1986e6cdd36e7ef48463362af241d6f1c1f2d6706d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 217,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "417f4ba292e81b1a09339fc62e3adcb08de995de0022b9b07dd4c5484433c862"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 218,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c186879d140aff91206df80044eede850cc1ce2ae95dc024de4f964791178c8a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 219,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e6364028049f192d9e4fa6067b78a160607be6834d60cd7c4317513c40b7a8d1"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 220,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "4fd1b9667b5a09a8d99741dc7d79b8e26fda2cc004e1223bf29b0166fffa53d7"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 221,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "655213a759592a6c747f3ef23bb8d6a301b6ceed19884926dcfca07998c69036"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 222,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "6c71cdc567abdc62670ead0d74ee568f47f574927ddc0fc27d916453cb3c354a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 223,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7531c0adcd9c66717a590b736a8d388edaa8479c952cd2b423c36c989ebfd1ca"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 224,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "95f8b950e88e4b79a18ea843b749e2adf6af18393787fca81998e16f5b03e1dc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 225,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "08e7f4c8d2a47bd3863d2de915be3b0b5890768856855c2ecc823420d904c6dd"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 226,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "720aad7c78ee1dbdc3ca6b2a6c9b7055718d04b9ba0ab375d0258fe423a1b505"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 227,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "2a7d8fd9b2b0ff887a60aeffaaef980768a9ea070bb1fe7ad18d7b3b7f7692ce"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 228,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "59a8798cf777e79f7c5158d6440cddcdaa182a61b4230fbae183cd9fabaa1303"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 229,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c368b8abb7d1051c65c5fbf339a5b8aca4c62075afd39359141f0a50c778ba5d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 230,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e5c83120a641bee1e4bef1c43eeb2cb39ad305e4da4a70ce63ee8b7553e20b19"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 231,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "4d7ec959743702ef625c0e8624b4cf73be6cf2f6fb74fd2ae786b2db80a76141"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 232,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "48ef27ca82d49cf092af3d82cba59bc66d3e897b941736decf850a3e7d849a06"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 233,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e59636a06ee4d22fbb4be1fafcc1bc076b93332a863c3284dc688421910ca198"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 234,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "16385b30e878f556da4bbdd1a375f923f6288599fa1387e2480a57245dec69b9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 235,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "a926bddeab38cd8166c605beabb3e1758e553ee3ec0a7211759d52d6dca21456"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 236,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "86312a5561fb63dbee1e6b303f198ec26031cd15020014d434e2ef75294432a5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 237,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "5ed6020340bf39a602c4b3cc25868aa94d3d168ec4ad0820d3a87981b53a10c0"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 238,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "69a54eb1b7dcc16d22124ec77c522a2f36a0ab4a1880674efade32aba6800075"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 239,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "6c1019abf494b5df4d69a2fe34bd9a5c26563dd0dfe4d507f54513dbf950410e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 240,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "6faaf36bc235940946827f2da2b80b5a07dd2ddd73063d3a42416efd0c4732c1"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 241,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "fc4c7328b5930fcc0f438e51287380252fd233f7d8e3e38ad0a8514781bf10bf"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 242,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f9fdf14359a04afd987eaf79cc9f33d5c019d5df24495c9ec41d3458a7698d15"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 243,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "a70a40880e4f1de3497d6f323acaa3dcb96703096c34f11827f66b92043fda55"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 244,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "31731ce5cccff10f0e912710d8a34759ffcae16fab43c4c33e87f09a7b4d075f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 245,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "3d06c0ed42c209ce69dc20c5dd165d4b44b9e28d661856047c3069f16fb326f9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 246,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "0136b4442b86b26bcae3db3ff752e5a1c6149bcfff95aa034601256efe5599a7"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 247,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "cb73e0b93f5b0a69c71071316a7c8f0a68023682f3e64260bfdd0b47200d1970"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 248,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "ee22c67bd8deb96c0e160aa9f67ddfed0610cb06ff60bb65dda7cceba4b299a8"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "current",
+      "episode": 249,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "00c71d9a57081f83ad1b1ca59d20da0352c9c63cd84c299bfc39cc50ad3c93f5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 200,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "e000b30cedd5a0f4ff8444a31d265b4a9d81b5b324a54cdc2ba3fff4cb4ba8f0"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 201,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "def9da214e5149f2d7a458ba19808acc9a6ad3e2db037e6276d042f45ed257d5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 202,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "9f603d6f0e83ff02a0f6100c79a0401dcf880c42a964985e90a09f3efda6ddb9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 203,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "aefc9a7aac3ec452d12a95ee5d77e9ed8774c8623084138105cb3f9ec33af59b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 204,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "8f616d805eaee7957c0b6334b13684eb214b57e4d6117f36b86af39f87f40232"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 205,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "1d98f15006c82df7ef7326cf5138489779a4b6281f4c9e1e54a0a8acfc2a71cf"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 206,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "b502e59d61355a93d01604279c9f98db8c92dd731a68cb830c92f75b70c90174"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 207,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "62a53972d648aea1a00d1ad5d1129b629d0a8a69e405327f962ebc1207117108"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 208,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "0ff429f62bf4dc318e6003ba41760b6a7ac52d180a61f33686aa4e89e250b005"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 209,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "4a3f4a0917680c82db767f145d86423e3b6394b86f6aca4f035e85b860a9757c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 210,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "a03519594ca2577ba2417ac5d6056cc662e8aae1c555afcabb457971c183fe66"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 211,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "358c6cd5a4fc4bec34e2ad35c1755eb83efc5fd2fa50a7075c218db95b66e804"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 212,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "37a94de24a38d4ac422ece02b1f0ebf4263f2846b5aa096cc44d69cc7481f624"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 213,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5c11708f2e1d7b0cb10a6af834a388d284421b69cbcad0adf9ccf526cec3514d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 214,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "442132724265a073f60c00ab4937284864c8554b430ecf5a91632c6963edd0a2"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 215,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "2e5f2b89ad09b41008559ed31f811bf4eb28ac9528a1940c46a8910c29d1748a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 216,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "c9136e6cff51ce1742c73a22ece0cd120337fe4174009686f5485e8e8d57b43a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 217,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5283bd4c4eb2875f299b7b5c2a2c974e553449acd8c1b5d28c9b292a8cb74f66"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 218,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "022248b431aa3f53220758d68afbf1473ee068ea890c19f707e60deaab7d55bc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 219,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "ad5e881c5effb8a415951e6e624c0285b3c688a1703bbd64022f6477aed9d0e9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 220,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "b308cfd9a5962a377117ad3433c96f915b2a1949222fa197bfa1cd975a47bda8"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 221,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "4a012676874a7aa8005e4af10084d7023ccca1a03f7c2ce842cde36edf035aa3"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 222,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "6998d47dd1ba52b605c05cfecea65f6cf0a0455cd921f85afc4a5fe2ebc0f1ef"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 223,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "59092eb0b9ff7dc2b77bc0174b8f250071826f0b94f6d522f2d7a31181457247"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 224,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "2f2e158e62b5aeff47b7faa29ab463d92552cada97faa942749aaba96a2d15cc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 225,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "f3db4f9d1b08bc6aae35dc9c9119c2763b02176936bcbc0afb6b506532ea53b8"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 226,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "96836ea2da39acef816006784f1c0930b6b3a5718f2214793d8846c0b9dea28a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 227,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "d35bfb2afb3fb68835f0f311740c07e57a9e099a447eb5171a8be14ba89aeea6"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 228,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "e7cb0ea24f214faf3aaf01a1145903cd9f68703455a2618e852267fd0883e904"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 229,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "ec43745fdd86751333da3a7ac833acbe3b42045bce59ad9675eb1dcdcb587516"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 230,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "c196ad55cae6c554ba77593557541abd056923831a4f92efb1475b7598a81a05"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 231,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "cf7a0a8b55512c27997cd4bd20fe2af87730051784edf41d8d3cacd59b4dfdee"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 232,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "cf3896c42a96389a14ea75ee7df1252411072390d58926542e31abf155334771"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 233,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "7b76978e4c50c1360cec749f819e27e1fb381eaa6187e706d665f4414fc5d626"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 234,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "b8c77584e71c87e7421b433cfe433b5651942178070d62079f41dee9296b0a5f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 235,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "f2660a9fda839d11c0a2f5223416514bb1b7e3bf355bdee977e7c97fc6e5a49a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 236,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "a618bb8887dca12ee50466e3ea452cd47351b8ce826e78d1f4ebdd4337479f3f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 237,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "a51bcef3df7a948ac810b6a3e9a246db13c67d432450dd87c1153a92ae1c4055"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 238,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "2719ed2ec87db46eb6dbbd8e1ba4d048181cadb3d2dc9b536090ce778a32211e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 239,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "c7b2b120aab7257a53feb2729966f840f54127508ab7efc1203c13674dee7e3a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 240,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "2b9b84759ca584d51acd8536f1768d0ced3caec74227f68ed6f6dbe117035394"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 241,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "913cecb57e13f39f36e4a9bcb1d00626942587c1b23bf250c053b2c1050fef79"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 242,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "859e8239b641da5d0dd125e0d9a73bccca26970636e4ccbc119cff26c3fb4fd3"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 243,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "52084a1baf97346a9c3e1d6774d93c12445eb277a65f1d0606dbbb86e65433eb"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 244,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "fbd2c31383b0311d1d1721ae4f181c6a5bcdd2d275ef72c619fef5816dc23313"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 245,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "ca54fcd6254c3b64d7a3f9be2252e48e69af113fb257bd599ccf741629db7a73"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 246,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "cd112e2fcde7521a73a3ed58894fa22266172bbbcfc41b9583bf41125a59277c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 247,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "8deb266c247857593fea332e3ab184aa8173092c9ec2afe4cb7499aeeb15ec4a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 248,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "781e93cbbb2a4a095eaf53e65dd6c1536e9278023f45d383fc78960b707e107a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "history",
+      "episode": 249,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "7eb2486db918508ced6fdac76915d6f3aa538bf5c95b7310b5ef6c78586422be"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 200,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "67ee14a9460005a6125d795ffb046acbe1940a9cfdc7bf2b1d431cfb379c05b0"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 201,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "bec71f307763f7f9830f1354129a27a045ce4aec45ad7ba67067a5b8c075a4ac"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 202,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "84b07d00abc9d4a148dedca9556a02f3b4980a4c26e98a3344f84146edc45659"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 203,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "604030cd1d3551900de7aec554810fd8904cb1ef85ba2b49e0eab08b73826052"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 204,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "eb59c79f2b41aac451bd510f18fc31a26e46a6b16d9e1e61367236ee87eb1153"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 205,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7462568df46cc891d300ca112ead91a5d9f034cfb1b2dfcaf2de476bb2991914"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 206,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "a02ac0130e0d1bf1577079ea71061bb8ced6df77da61c941a075ae069c175702"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 207,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "0bfb2d40e3566384e71f278e991f15a092eeea3d57c4967dd27bf12d51d63dc7"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 208,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d6a4a35ca244e875d0e98a548534f2b69a08c76c6f20418e0e7a6dc3dacb5c77"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 209,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "9ab3fbc2a1e9ba699117f1758d1ba65a853a11a30c017db4a62abc1514ba0e07"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 210,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c65d1c08d57b9e5c7b63233f7bd605aab9f231c2ab9e2dbadd238e5279030380"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 211,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "b32648e9fe7c773804998fde224498f35934b7ee6669a7d666b3bb0419e53c5f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 212,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f1280c802357c40e064c5fc93b7f2674a5ab7d456562b1ec2148c8f05782e433"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 213,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "cba2ec75df30ed609dafccabd371969760c4de20a73e245aa84a4d84da8e94f4"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 214,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "1d239abb6a98ebdb79b5da8ccdb2642409278e31f8b28e86594d4efa8594a599"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 215,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "0a1cc5232fc93ab3a216b757372b1a20a17522a96fb55856a5b7e65c8d6cf3b6"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 216,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e51e2a7bebe5f640d504135eecbe782d81725b8708ed7a472ad381689f3d4495"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 217,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7bc81fee93167769b389ddd044443bec7d44b9c3cbf77b9580d5927194e7aae3"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 218,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "daa50ad1fdecb757c73ff91722c95c98428ac486dc5a88696ca195a613d5fb52"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 219,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c4fd5ad1b3538797260a0014d5d59eedb572177135f7a946d59b7710e7187db4"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 220,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e669da6a3b38f03e390bc9cf18bad305293c1280c5abfa2a14808dc1d7b27d97"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 221,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "b8ea977dba23b0b3aad35c016f3f63c999a489fd7258c29b620a4d6410c65d80"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 222,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "71e8a7df77e36bb70c9ac76c21f2b0a66c23a1a6ae5c1d2fab9c2fd47a6cf67f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 223,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "b955094db59997c20c252f734a55096f9eabef0d5bc29a633977244f251fcc32"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 224,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "226d72839728e92fb46fe864d581618e08ba0c10b57f4538dfcab7ee6d753b3e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 225,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "896214337c3cc940809d608450f24aff0da4b1510d1868e0015f1bc6603ac63c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 226,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c07c44295cfe43d0126db1e55a490562f783023544487ff6211521472acd9025"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 227,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f2c74ceeb9c527159627d448e7f85f36a8d6fb6defbd86034d2b067c170eff54"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 228,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "66e51edd214c16d933e2ece524a5394465b2b9a01c2deb49e5d122af27490d68"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 229,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d804350c122b7dd2ab90134c148baebd4e9a2d4115da38dbf61f7ffa82ac1da4"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 230,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "707305a90fb7acd64bb9e7eeda953b8b332b8cbb29f0fd25e66420e5160ed25e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 231,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e653f7e15eb41dac1a1668949228b50c94c261323221f02cc193942309ec04e5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 232,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "434077643e8cb3f72be6819d30c4bbc4baf80cf9863a1d51f5dd3093d6bd62e1"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 233,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "96996cfd3c67feab7941eb3aae92b835d15add8cc987067bde0e75c3ea894428"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 234,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "207f7958a9a1b49b5bb51a14acbdca970e8b51a782bdf8dfdde85e311294c455"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 235,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "b660f3922221014d1b6276d91ce7898a84cd6f414e2cb7c85ba3bf17f1d39918"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 236,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7c35c27355596495b50192868aaec17f53db391ebbc6ad6ba2bb630b726c3e2e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 237,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d1e577bd80bee1e7fd893eaadefaed3700a5175d22883568095728540b125af6"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 238,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "68a14a0d52a64cd9ce7da07857aac84b50987fe368152deee1574a8f03a49e53"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 239,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e3e5cf0e20609fd39e0df286f0c57235a15de438b486d343cffc0e7f396f8e5e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 240,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "1b96ac43f8dafd5639993c4f22750b9e3bc4d8f37132a4346e1acf3a9d2a7e2e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 241,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "6789905dc5fd76354ada5562492d2af88baa29984b246506bad9f558adc6e354"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 242,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "bd29f65b18cc904713ef7bdce8b1c49dacf231fe3f48805bf0d5500cb48ae90a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 243,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "338d16609b304bcf713156bfb8e7b5c52deedcb08b980828771849f77cd2f365"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 244,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "90071dfeb85be09df03d43b64d8f1116467ca2980c29afc46813aaab5dc2bbcc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 245,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "29df5054223f2de0b7cc5cb539f8e9ce5e7a686141aca148d47466a4899be7e9"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 246,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "07fb933213627c405c73fa2d4beff20a01a0c59a48afdea96d3c5977297a5d5f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 247,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "fe2e70cd2fe91629681bbe5c1b0cf4c8a87c8c1c3c6b5d91dd5f03fad18c9405"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 248,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "529c55e915c87ce434db3a9c3d6bb387518f2d8189d756b6da89c6ce3f614604"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 249,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "618dc58153a7be11921bcbbc635b774749382dd868f7628b6a736144d205b4e8"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 200,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "dbd895858ca5131aa512ba65e94dea8fde2e4e62892a2fbd64ec19facacddba4"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 201,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "ac78e7a86a1531734a653c93be51dd2e07ad47021aa98b816c555b6703311867"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 202,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d8d43e8eda80ba5a21fd700646bc576f5b516722d1477624b1091e8fad6e1bca"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 203,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7f0bffcd5dc8f25926cc67677edf28621f18dbec64a736725be8f34b3bc47d8e"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 204,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "91ca370830babae7516c03afa068cb4ab4792c1c2b910b6728739d3bb0da7efd"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 205,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "5b55c35ede1de85bab795d17d85b8cf3fa53d576eb8d2f0e4e15bc2195307091"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 206,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f8364c1016f8e1c2e5483960a516b8e01c0516b9b19eeaafda9949dd7a55e4ec"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 207,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "382f53ec6a546aeb172dcec301c179b2feda30f700772819b8d03c84f0771997"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 208,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "7c9112115b643aef7ac696593bf9941b9d8697e803ade847bd6df21aea7d2730"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 209,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "fa30c4c4e906a3416ef4678c0cfcb6b3e5cf5abb115839a88c4dfaba6668ab25"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 210,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "4089e7a1bf6e83eacf180cf40414eafc3fed627fa899820bdf2d04b7894f2250"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 211,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "0b5878f7946a6b7b403dfe8d57db3f958af47d1a629e45f28fa25ddff0d15508"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 212,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "722eb8de3ba4dff9955086d7e12e2599a678716225fd3752624d4972f5ed9871"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 213,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c0bcb4f3951357164b8dc18d031ae525f7106e398852cdc5426a16fef0cddddc"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 214,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f54d95623bba6c0246b03116966bd6f676badf84d6381a1eed259b41d335d730"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 215,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "11ae1dadc4cf48c658a0de34d1dc9a68878433493c32796bd3e3930604e9812a"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 216,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "bc173b8a637dcfd192114393f7b338cde22abd181e044695942b2101155d7c97"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 217,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "b4f7a7d19a5e057a03fa5eece2b43e06d689eb466c7bb2ce125528db689d5046"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 218,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d1b1498c4d81966f3d9d93b9a76281d21d39d56a97fe90b1f26651682fff63a5"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 219,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "81e73501752fe5577393a826ef2c8303d4000d375c7261840c12adae7b59357d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 220,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d9a50d170de297b1a3d7bcac5da2fea08f2e10124aa2cea9f50e5805161d53b8"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 221,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "8e5f54b5d896b3513b48ea0a3c38c11616ce36f16f1681ec7b198ecbb04c474f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 222,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "abcede9c03ff05c305c9629e476e5ae3c091b585e25f9b814ba71ef918925d7c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 223,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "aabad0b1f03d2de534242cdaccf66ab1c6614506182b8d04be00ab22a43951cb"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 224,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "5439f1e7af7737e446c3d50803d921a33ee2c8245489a4afbb576a555b8df8c1"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 225,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "5747cc6a05a47ed00a6d4b37a21a77de992a733ee3979b8f2c6b23a4444cc271"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 226,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "bb9e6108c43342a87725eb8a8fbe679e4d98a07f8c670a5a5abda3c76d74828c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 227,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "2157d5e1c5466f30dafed20c738791e13a0e6bfb7589ab8408561ed6b0d3654d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 228,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "1ae95e96c85cd2a8d59172e28e3a175e7117cc441f4cf5b89910d7af84daff0c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 229,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "3d702d26a784cead0bee35bb64be0b1a7fd66ecd81bff8dac630ad08cc23cc7d"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 230,
+      "success": false,
+      "outcome": "finish_signal",
+      "result_sha256": "b36e7501790a32dc5eaf84bccfe30f463c1931c64b10c19dd0155aa54b826e38"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 231,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "d266436baa9fac55ed76027ceed0c921401239dda435181ea4955ca24431fa17"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 232,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "79da9f43ad1b7cd3217ae1ee9549547416cf2213a4301348388bc6e6754c39e1"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 233,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "63dbcf92d94fe18e2de29d3b580959e155757e0f5f9f97a67325cbf9b7ca73a4"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 234,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f25c354faa7ca6829a28f769abf3e70dc808e00fe0645f47dab730d4a669fe29"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 235,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "9693c2986d0111163bcf639fe747a1c9cd7cfaf94c4c46314664390a3e446cb4"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 236,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "3e06bba37d6edfb53b06f359ea24945fe80a062dbe84d726f938bdb8740a4cf2"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 237,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f6576a8b5e521933becfd1781af8334e5119527851154e02834872a41574cf4b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 238,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "16015061c056dc13dbea704720bf9d5fd93c8e2714f35d79a6310deaf9e47b97"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 239,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "9b683b9de827c85bf102afc2ccfecdfcc0d6a4e86c45f0576abd748ab237bbe2"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 240,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "c8547d0c04825579991e51bc50b67088c56080c477a06096a6b85cc33e94ad2c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 241,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "da2bf6fbf447e4a96da74b84b3abc61a509112d147acc85064b40568b92aa070"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 242,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "8261a27c53a978714230283dbfcd93e80cd559e7f2d411c49b5d408cb1730367"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 243,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "8a7e5c4977df4fec071515a71122d52fc5f1f95c9fe48bb54a7dcd24415eddcb"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 244,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "1032a4eeb75028629fed766b000ca4c709bf96bd8ba734fc82370064e5b40f9b"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 245,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "bb7e55661508e925f9dd6995874efb73bdbcc64516d225bf4b2047fa3e3e29d2"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 246,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "e38adcbc7d6f2a95ed59818b9ee96424dd5b2e404b70d2acc1ea5c5499501d2c"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 247,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "705f60cbc3998f3b5f3b396137cd06754a3bef91d9f813bb8992655bf3b7374f"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 248,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "f2ab740fb749d6704558e7cb5b1dea46dbd48ad465d3d08f6493cd0da3f54ce6"
+    },
+    {
+      "purpose": "audit",
+      "task": "count",
+      "level": "initial_ground",
+      "episode": 249,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "467c548ef46020f8fff35393c455608530d30958874e05d2f07cc7b40847a5ca"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 200,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "97e8e4e15d3c5215e0a7ea106ef08f898ac3794793a607f5ba31ffd82db7c8c6"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 201,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "3e9253fa816fbdd63ead7ce7a85d71157f5d2daaf7216cf263b032ea551a1cd6"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 202,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "40cf6242ff2590788b15444a06676fbae16b68a7d8745fee0b8204f2a4910e6b"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 203,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "35a198c3eba511fe927b53bf353999d8e95ccaa73755714e0f1ac54083061ba2"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 204,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "4a8fafe6d6eab9ddede5bf729d3f5d83ce7e98842f4c6a7cef1a96bcbde68c83"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 205,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "942df43402b0c07b4ad25d7030f4bc4346a8fd1c820f5de21f7d140d491e5051"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 206,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "b78dfcabf72925f0b7152e856afe041b81f3b7f186c71b24e7ddd2fed50c0c1f"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 207,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "a804df7251365f4718080131ec0b46d33ce3a8e41f821e7a366903e97fc86173"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 208,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "f537665bfc899e308bfa61c7f16d0a9f2e392a96b4ff5abcee9f807f201ee86d"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 209,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "74fdaad6d35f4fe0fa1b5f9aa5d8f91f2b3b7fbda228d1537669280de9f39e93"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 210,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "b9c771b0954e504b0262d6261280fd76f897bc26eb5991c26b5be7aac7031ac1"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 211,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "0650d0c4d89f9f26a0e0028ba016a35508c9be1777fcb908bcc78716e13e5360"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 212,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "fe07026e6cdb6e8e5998f59e71d017cc4b8b69cec0cd732d9d14312482f859bd"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 213,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "5941f3fa88cc544cbcd1355c35d8a9a620e0dd74a7dba1076a51211f8bfb2967"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 214,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "9251ba4e69dcc2e04a90492c05e222f71addde0079aa46350fd0f3f8a785eb09"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 215,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "74a932ac0be346e57fc9433a1ef784bdb3b3a7aeafb067483dbacfb385e90442"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 216,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "169e12103585b0054144458626707de33489885496d9bb2b901cf51548759835"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 217,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "f232116e09df973b586d984ab2f9dacc8614462524e3601686c605c606578152"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 218,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "ed698071c391bb5ad1d73fb7b5c0ea47dc084682dc5857b104d9e83263865af5"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 219,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "24ce6c61c6dc17b9ce86a142049c6efa34f3a30c3fb4096dc44ce224a00faeaf"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 220,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "08809cdef82fe4f48d3d22731c76a49950a8297b7dc4a0c70039f2931fcd9429"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 221,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "c914c7a507dfcf57b768ba62d9242932e72edd4d6eacd9fe71a7204010c3fee5"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 222,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "418dace74f4ba9b2235a32f92ec6099f6200c637d5ff3bcc4178fc1b26b8678a"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 223,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "cdfdb545c75a2cfed0b9f587c34cf6ce979468bf781111a3528501b97498b553"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 224,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "2a90e5100e975ff0ad13da39d012b36ceea586180ed3543b5d906100e58ab7bb"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 225,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "d62db561b444eb8b241a4364f12b40e9164531a70c307f3ec3a0cccec6d85abf"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 226,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "4d07a44085b016f45f1421ff5f29f79dd9d6708d941451fc08dfbc9ae34addc9"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 227,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "ff935ff0ccf41d75973e442c6aecd828cb8ad8d99851e47ad84a030fb49224a1"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 228,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "8e37df02a3429708a58d704ffb32bcfa9d83537cadbdb0ab43b1f4ac1c3e562d"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 229,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "34c417f450fa2fda400ce6b270b769665731d09dd1337ec77dc065923cf10ea8"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 230,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "753fb551e3d489f04fa29f1ded73c93a193309d3c094cab03999730b0b30565e"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 231,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "4493f15b3930ec725cd7cc41ee7d0fea87e746fd8d5414584db81ad480f8b9bc"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 232,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "cac7e5243204fc56b2af0d6073b39363ed4b06e101bccf654830be7a11bca374"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 233,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "3c49f0bf8d88c13d1bedbb0fd0b1dc84f53191633ae28453dfe443a2048f7f58"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 234,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "01429231aca81c6a2a37753ed3c68c6882bc42d08a66d31e4d6946171492199b"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 235,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "88355df184b48f0b2f3ba67b39ab8d428b88836d4a5023dffe81a42a6ca1c077"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 236,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "e2558c9fdee0b88ffc28710747107892eafa2bc70cf941a62a0aa0a88b3746e3"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 237,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "371b05e80f12df53a2c53b5f7430260b38058792d1236fbafeadbccfa9e3c2e0"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 238,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "727aeed1350b790fd824f790dc41f4b7ce24a205bf81d36fc363c4dff3a6324f"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 239,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "32531055cba4d46270d57bd34a93da4e6c67d792b491b585279699e4f6250084"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 240,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "0fcc090c8d70e00cf184f3d4fe0cc3b9d48d26772e073447e8f86542b7964dcb"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 241,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "5c86bd09b3802cacdf857342b5e8e10ee78ccc851ae59e6abc5e585e627c4219"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 242,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "55bf932fcf2948c7769867da3b3affb4d300d888eb6b844a46b357adb55e792a"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 243,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "81971acecff1bd715f18a10bdfa04e2c933056366299ebcbd59b690880981f2b"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 244,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "9c53ed735d11c963739d0f116ecc8b9f2c3a2cc7afe85a3bf955ab71bc5a7d4f"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 245,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "7906ecedbd2339df32ca0ab57d2c1782e6675b94a0f6d77a9569de183c1bb059"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 246,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "c4fa7381d1256cd314acfa41111a520576912e9b8779ae27c6def27be3723fc7"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 247,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "04a2a0780f96fa981d569825b4c74353aedf84020b82ce6b2971057670caf8c2"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 248,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "401fb7e7deef51c7aa665795d35238a45aff9af19e4f39da6fc3404aae5ace9f"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "current",
+      "episode": 249,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "3b99a12eb13668e365f71d28d7c9afd45833030bd388ae3232b7cb4898d77175"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 200,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "729a4648bc1f4a9b412986f12982c4cbb0c9affc266e42582925d080acece90c"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 201,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "3e01a09228e1bc1c166c4d4631d5009457dbc37226d9da32693b7778c0ca61f9"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 202,
+      "success": false,
+      "outcome": "planning_or_grasp_failure",
+      "result_sha256": "307e05b5605bc091df17b3429253fe3652926a09ef7481537db704cf10329c5c"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 203,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a350e0a4c54ec697e55da84a21cb6335c37ba902143c5d862b08893d3fb8f47a"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 204,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "766c04aeb659539a3123233128e1ffb4fdb108bfd94ba023b1efb40bb5514c06"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 205,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "dbf528f410208ecbb2ef7ba676d43007cb53d78a5c5f40fc25bfd9c0d1c0eb8e"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 206,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "0aa902266167e51220b7d88771a72e5565adbb5f8489d3bc8c0f005e8215f0f2"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 207,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "6d676d09cda9d4f6bb532e83f2c5b4b9ee367ce1c9ff19d54480d2441b1e003e"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 208,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "ba9165872d740a137d51963ae17fde989ac4e52a1b485c52d58565d43ebea8fb"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 209,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "406e1a7c176deff04b3d76836ee59db49f8c002addd5468f217cf5aa67a11684"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 210,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "554ba921a9a85a4c36318637f4dd051a6b1a76e06d787f79605c45de8a4b9e81"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 211,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "8ab727ee3cd10f90895d34184f11085490bf82d9593708c308a15309f5bd4280"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 212,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "008141cf54be42dbdfcac1ff2fe089f1ff8541436890cab924e1860cde0ce357"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 213,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "2bd8d095af30b78b6b50278d28707367baa7c27b5d3b9dc10a1c938cf542e22e"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 214,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "467252631c70c0570fedba07b738fd81702b2f2513a8ed207188bb6f304ef397"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 215,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "b4ef55f7955f55acd97c12b27b7c6c1bc0ae2a58f8d4d00867eb32e976c89186"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 216,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a5d90cb8948483d821a1ddfb006a7e3c802fc5adce67a1d719c554e3c658e2c8"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 217,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "6722df9799f72601224aa6e33a2a979ea8b8e9fe1ab4a5502eec72df00072d71"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 218,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "49337f6685fbd87d4c87a7a5574736908dea8fba06e6990fbff84e5984980fcb"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 219,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "fe92c8e68720c63e84deb74fbf1673e796b067a7e938051a6568148566c266ef"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 220,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "3a866792d55abc4d2932d7eb81e587ae1087c11ee1d2f8ca5ac8f0269268ef91"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 221,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "9df101e13853052eb9c83abb739caf6e6d280bdc444567138e73021b7345e8a4"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 222,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "3cd00467799e4020967ab13c352c8bdc9e67c37f0ae9fb1d69c070f8d06a4bdb"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 223,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "b0e36972e2beb67a2840ee7e32f1eb6a9a1386d25d9755ce4185cd960b0e96c1"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 224,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "65903709f3a703140ddb53ad572190dc4909655fd197f9ce810d1f8139b0cf4e"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 225,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "98a9f0964edc77aca4769e888e5d8d60f096be6e611566dffd0506d710a51634"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 226,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "84b6af901a252e16fed0f8b3feea2e2cfe0df5f6164bd76cd9ee06d96cf0f44b"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 227,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "5a223ed7dd51b1dff465f627bd608646e7ba37fcf5a16b6a407551edeb7aacd9"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 228,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "647f2f6be0b5f0a3eca1e956bfd0baed44b32897dc888db28b97572510681e84"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 229,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "48099c86444d276e3f8bc20f150dc8fd9a28cb75c768245a4bf6b900b332d2b1"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 230,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "8b09bf8bee0ef234f7a85823d6f5694315ffdfaae244ed773f9b226a6559e236"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 231,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "0e436b430edc5e91488f18f4d3e6a17dc446133fad04b1d727b6222b58745781"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 232,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "0b2541a1a3ed37a33b03f8b12ee7e92ef0a9e1ecc568680db16970aaebe12610"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 233,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "45e80583f679da60ff5d7ec22330aaab48d3fa338dac06a95dd226a4566ff0d1"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 234,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "3c49bf4a43738afcf9ba3ef4cada0d88baa2c643ffe9c0bed527de7e87da3dd4"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 235,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "c0e66493af9fd74eb57a051a63e902c3bad18cc6ff25b13f3677fe98187c9559"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 236,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "9eb526c16583989ab74da7874245154b91cd8e29dc523cfa428ce5d7408318ff"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 237,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "84e0d851119d4d0a6420f6e1c24aebfde755b9b1c875c5a883aae6aff1541d1e"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 238,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "c60eb19805fb549e829bc2656490140035251abc6bde533e5f12b2d81e43b9a8"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 239,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "e309b1e62cb231eff86928022c49e748d93b376b7161ea45428af106705b5a28"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 240,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "93f825c86ad2bcdb3731ecdc3f63c5719c78975438132c488256017e592edade"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 241,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "5f50dd864ec5a3d33c724582555d0787c9253ca907bb1b55ddb67b24a701ed56"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 242,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "4b75dd680b3415f9cf7ba766cfb723fcb0a0a2aa633868726e6e710697cb9c32"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 243,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "20078fa9251659d36ba1cc0b71ec0190f47547f0f04cf74c2cbf4ca0a91810ac"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 244,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "8b6ec8320b474144ea8d2ca85193aeafbef9033758fdb8dc72a705b91320aa00"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 245,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "f734af7139ef2035d94b8a70a859e132f0697635aaa8ef17e5178d65d62af3f8"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 246,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a405d0ef3b1971b6d475bfff4a0b7fd6d7907177cca93edce318165e89498d9b"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 247,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "1aae4f45573480809971f8192edc5402b42d0808f9748df383181961b5a399b0"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 248,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "476adb733d0e0bdd23eb392e38d5f7183f52c050162df40400ba11a04edcf1bb"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 249,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "ef44b18f15ae9748f5ac84f1d92987bc02b3212fa4a1d67aed980d0607e561a7"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 200,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "6c9134c0f7b0c8d02b27f4e0d17bac62acf5afaffe86ae1ea7d6c2b1636658ff"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 201,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "fb36dbcefb2ccd2f4e33d000a87930d5b4af5b2acec72c235fcf8a5afb82ea57"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 202,
+      "success": false,
+      "outcome": "planning_or_grasp_failure",
+      "result_sha256": "d4af7a4c1707002fce720f01c14edebcfada489f53fc9639e1c622e7ef05bdc4"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 203,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "5bf0b566c9ffba2d3718108c9f2b33e7bbd9da3d59bfbf5a47053380535fcc23"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 204,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "0dfd942c2de21fd3a938b3b3a3131fd7ded79c3916377af4f67289f8fd2ed922"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 205,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "e7c4d9ad3568112c7e921578b5e4c349c14ca4513119c77198593d72d898a3e1"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 206,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "7f4d52cd75ba54d91ff470d36afa0ae8a77adfbf3937b87fd9b26cf5c291003f"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 207,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a05d11c128ec1e347adc340a40013602e4ecbe4eaa90971db850ec47f0c6a1f2"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 208,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "56514ed075f198be0175a9b0abd0274e6cb152ea74ef0916016f686794ff9b33"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 209,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "6edff62828709b69130e1895e15c28be9ee0827592dfda1210e03433db184e01"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 210,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a2e24b64d46eda0dfa146992ba668fd9f5afa189a05c128ef531b3a8a8db366d"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 211,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "4f0a2c7f967cb3682833924d67a3caab2a512adfacf2336ed74f79add30ad817"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 212,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "d31e2e7fde2e56e0643ce5f598f224e5e20206ded5d04a59079397d9da4c72fa"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 213,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a0dd7a076e01c1de16e7170de2ec09087633f68ec36c104de79962edd7b8b551"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 214,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "b56f46f84fa47201f7075d30a7d09d24bfacf73566df973868b8468a8fdeded5"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 215,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "52f53e90841958b8e5f47167bea20dd30a445845779ce2d2961e8b986e4535e5"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 216,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "02956d3d08f908ac0f6784a950d16b297719f72a90f882f4c9a94e7ee193aedd"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 217,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "b6ecce602097df0b061d09895ef0c23bf0df4926608eb16b8024b6d6735ed3de"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 218,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "435079a0c99c520d5c581f9c4ad04f33e6dcc35ee380600b87518f16a5038b6d"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 219,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "24e6766ca8d05ff1bd86282978134878478948a464229b5fb52a8a8157fe45b2"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 220,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "410f1ad0dbdd1c1a0676c49e955e57beec2e618e48f26c02843a0e6f843719a3"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 221,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "3f6b17afe07aae559efe9ac2da9b511a7655f18774c67281c3e5b95b11d39c36"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 222,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "ae6cd27d0192b19f37aad3782e90bbe3afdbf8f223d4bc1010f15d2f16b04ec2"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 223,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "fde14fff24a4cfd2ffdbcd548abdf824f1054b28c29d1b645e6458c5653d61fc"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 224,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "84cfc61c1d9d106e8b99e15cf01d0769ef262a4518fcba0e6116fea07b4f43c2"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 225,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "f5d2b989f66061ec021ff1bc5378fc1064f1686638272672ff65250574073b93"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 226,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "5be42a15d835ebeb2ea5ce7dd1d43cbdc5a64283b824a5c6148cc1ebee8fe701"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 227,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a7c473af5fb31f3789b63f2b3dca26f4e9af8c3f4c9d19a70ef01302058fda30"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 228,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "46607b7e61512032bfe757e7150fac48c23499f57c483cd11dfe85d42538087d"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 229,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "2dcac067e5968bd92f5312e425d6c55308c657935c64cea2401642014f23b428"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 230,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "d63c160ef6d4a979ccdaa06eef10fbb911260a79f758d58b0e0d3e60ca54178d"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 231,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a25669fc6932970d5d0ba34ead444face5112f0f4bada3f6ebe4eb5b317ffe82"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 232,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "d18c7d4e1f96bcfb81f9c324e79bc34e5fd9abd1a3028b358984fd4adacba27e"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 233,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "36d3075c89cd9631060dc7960d7c21bc3c857df193ff11a60ab8509dcc12392f"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 234,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "536215b709fa393c83cd2b466070a154c9e5466ee32d58979d03a80ac064992c"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 235,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "a20e57340c5e84a5ff725c9f092249c27c387b6d6a7a969cbbb2d814d0aa3f6f"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 236,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "39e99c53554a0ed50154a205bd262e15067854e96b84084d846d2b90c5f2a319"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 237,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "e2f61d944df8efb4e0f34dc3b50979559ce2d1d1b91acd44ce1d5fb3c20b6a5c"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 238,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "9db5854ff06c72548d72acf2aab51b9f8b8982b14265d22cacf7348a357e46b8"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 239,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "1e586e98cc97c5ad3dbb2a622242d761504a836bdac411b8822e050620b9d74b"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 240,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "c11ad412abb1801e7be50a8c87ffc91e1dc7d544052edb630c5525c52199099c"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 241,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "ca5353a57c4f91a4e9ad90ff88b0db6c62d3f03a0bb7f6988d386865c254b00d"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 242,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "1ab368764115b9cc6e70926e43eadef0bf115349d6e225e29b0b9a5d09186b55"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 243,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "9615413e2c8b5aedb550e5eec6d41f262c53a4441f6aa8509de47d1ffa300a4c"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 244,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "59baa7bc065cae849b9fd27a340cf41f7263a7802d9f1c6a56ac57ae9c005473"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 245,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "9762209a55655a78196de6de8bf79ee14498d06f6807841da09c74581d99a98c"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 246,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "19ae16740ac2961932227ac7bd4282ffb8b54af5dfafa132b89f0af694728962"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 247,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "0e17d6e5e6c04254aacd6e37dd3edceb41a0f92f6d3f1775333e3d0d469326d1"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 248,
+      "success": false,
+      "outcome": "original_fail_or_timeout",
+      "result_sha256": "f0e345e979013c43b4fb90a97e5754efe7665ceb1e42f56a712540a9b1fe7719"
+    },
+    {
+      "purpose": "audit",
+      "task": "occluded_ripe",
+      "level": "initial_current",
+      "episode": 249,
+      "success": true,
+      "outcome": "success",
+      "result_sha256": "0e14417a200b899c2bb8029cf88b8045f9ec2d274ea02abc98047df703bbedfd"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 250,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "1a56b763a7906eedbb8ec4fa1c8fb2570b24bfb0f6149af7c010a2116369a1e4"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 251,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "f1ea0b09b739ba6451929cb9a2f82c949c82681c7ad66cc1978bda696b1f1108"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 252,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "05bd6f6b3efa26126b8b1f20f286dd79356ece8cd4bbaf4d92a8633238190923"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 253,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5e5771d5d02197d788eb554ee1b6b0419277cc5fbd382ca568f6a63c54216f37"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 254,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "8a8b7eca4a78c701d884e37ae1745ed641479d46a225d75406295a6f734d0e5b"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 255,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "f4ed46001209d7986350c278d85457844dfb83fe97b8938e62bfb59033829229"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 256,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "6ea2384f8a0e87156bdf656f1ad162c4b928935cebae7b270524ecb89440c32a"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 257,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "e05d5937d5004490128e4fecd1685ac9a3dadc14cd0d0e04ce435a1c9d48c335"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 258,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "659bd87577b2672896148145f0e5ef5eefd7acc509ca8a5e79b9b2d6d09f03a0"
+    },
+    {
+      "purpose": "budget_expert",
+      "task": "count",
+      "level": "history",
+      "episode": 259,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "69f3c5d06645c1298af62d9b8ec009109ea824ff0ce698dd1e0e139eeffc5734"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 250,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "027498e7aad4d2fec32375e1524a737bdd2a90d3e59a3423a666445c439fa9dc"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 251,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "8d3d399dba080642dac92869d5e2d44fa9afa33432c94ad70a9aad37bf9aec73"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 252,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "1ca46997d54bb81e4d26b6ba3152a30f9c72fd10151e25180d677faa9532fb79"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 253,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "68cf6d7bd9fe891c17c106323dc30f1ad8d54b17e39067792d32cc3e98fae7b9"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 254,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "aaa40a1013d3150b086b12acf5a2edcf373effba0d1ba8a8fcb8854629e02621"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 255,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "271054af0b7cd4db96a97ce0a6323678124d2ae51a60e2d3a52ba5a18cab1094"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 256,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "5b2f6334d54bd3bc2383c5e6fdfff056f544a023e44d88c77e6720f4f0792bd7"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 257,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "2df0aff7a9ab32e99163577ce82f787d981bb6b4a8e18e2bc0455790cd2182b8"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 258,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "0b5bcc4a4d9cdba2567ebcf02cd1d383fceb990c5e90fc7bb573df847b259d0b"
+    },
+    {
+      "purpose": "budget_nonstop",
+      "task": "count",
+      "level": "nonstop",
+      "episode": 259,
+      "success": false,
+      "outcome": "overpick",
+      "result_sha256": "06a5a7012ba05d90c3fe8c50e44b2c770d5dfe555f45bd368e1891cc1304b06e"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 250,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "8ba5ca6175dea2e2e5ff6a5f9b2486b8a51a59d622bb7a284334b080c8e60500"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 251,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "a91bab815836d604626f5e65030abdb846fd1a996fb32b3f05e4b8f33e37c793"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 252,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "1c0db244904e7e36a9b62af6f1ff666a757d9343654b0a378bcf0893f73b6313"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 253,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "0875949d243f5b725ef2277b132b5068d19996691d59df9f6b26e84cec24a560"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 254,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "f935ada465d65019e2b9d87188a0bdc9c034b2b9c1f8b9d27899c05c1298930e"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 255,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "5aea28f2cac0c3d49a354f5f169b2d3d2f178e4270920421816d0b66a7c02805"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 256,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "70607a993b2c4a33ca3e888e478eb0735e18700f8944197cff70f1494959b8aa"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 257,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "516a5f95d9d57b0d25633334fd391fd8a542c9904ae47e09472fcbf766fb5b05"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 258,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "9cfbb6bb7fb72a9262db2001805736dabccceb61e5131d21118317af6f58f698"
+    },
+    {
+      "purpose": "calibration",
+      "task": "count",
+      "level": "history",
+      "episode": 259,
+      "success": true,
+      "outcome": "finish_signal",
+      "result_sha256": "be89d7d7d895f262e0772a15e5f32229bdeca4fd7348ce9e89e037bdb301e028"
+    }
+  ]
+}

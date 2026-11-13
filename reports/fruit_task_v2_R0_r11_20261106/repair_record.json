@@ -1,0 +1,30 @@
+{
+  "instruction_revision": 11,
+  "created_utc": "2026-11-09T02:32:04.491620+00:00",
+  "state": "R11_repair_implemented_unverified",
+  "previous_failure_record": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/preparation_failure.json",
+  "previous_failure_sha256": "489349e4ae0fb1c5bf87a3e6779031843e9ecaa0aee8775af5e4c9e21286f080",
+  "repairs": [
+    {
+      "issue": "cached R9 output bindings",
+      "file": "scripts/fruit_r11_common.py",
+      "change": "activate() now rebinds OUT and related paths in already-imported R9 data/generation and R10 timing modules."
+    },
+    {
+      "issue": "native FCL float precision",
+      "file": "tests/fruit_picking/test_task_v2_r11.py",
+      "change": "analytic distance fixture uses 2e-7 m absolute tolerance; production collision and visibility gates are unchanged."
+    },
+    {
+      "issue": "terminal-state resume",
+      "file": "scripts/run_fruit_task_v2_r11.py",
+      "change": "the repaired preparation state can continue after the fresh CPU checks pass; true gate failures remain terminal."
+    }
+  ],
+  "cpu_checks_rerun": false,
+  "cpu_check_result": "pending",
+  "GPU_rollouts_started": 0,
+  "R0_cases_completed": 0,
+  "training_data_generated": false,
+  "next": "After explicit CPU verification passes, continue calibration → 350 R0 cases → information gate → data only."
+}

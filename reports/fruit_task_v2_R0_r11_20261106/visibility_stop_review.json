@@ -1,0 +1,75 @@
+{
+  "instruction_revision": 11,
+  "state": "stopped_at_hard_visibility_gate",
+  "data_generation_started": true,
+  "data_generation_completed": false,
+  "training_started": false,
+  "training": false,
+  "active_r11_replay_processes_at_review": 0,
+  "R0": {
+    "passed": true,
+    "count_main_cases": 350,
+    "target": 350,
+    "information_gate_passed": true
+  },
+  "data_generation": {
+    "accepted_successful_demonstrations": 109,
+    "target_successful_demonstrations": 400,
+    "started_attempts": 173,
+    "completed_attempts": 165,
+    "incomplete_attempts_at_abort": 8,
+    "task_attempts": {
+      "count": 173,
+      "occluded": 0
+    },
+    "purpose_attempts": {
+      "train_clean": 101,
+      "train_dart": 72
+    },
+    "outcomes": {
+      "finish_signal_success": 109,
+      "robot_drop": 37,
+      "planning_or_grasp_failure": 9,
+      "budget": 9,
+      "shield_intersection": 1,
+      "incomplete_at_abort": 8
+    },
+    "clean_successful_manifests": 100,
+    "dart_successful_manifests": 9,
+    "feature_build_completed": false,
+    "shared_normalization_completed": false
+  },
+  "stop_trigger": {
+    "reason": "BASKET_OR_CONTENT_VISIBLE",
+    "episode": 113,
+    "attempt": 3,
+    "step": 1230,
+    "visibility_pixels": {
+      "front_camera": {
+        "basket": 0,
+        "basket_fruit": 0,
+        "inactive_reserve": 0
+      },
+      "hand_camera": {
+        "basket": 0,
+        "basket_fruit": 127,
+        "inactive_reserve": 0
+      }
+    },
+    "rule": "Per §19.2, basket_fruit and inactive_reserve must be zero pixels in both cameras; any nonzero observation stops the full run.",
+    "shield_intersection_cap_triggered": false,
+    "shield_intersections": 1,
+    "shield_intersection_fraction": 0.005780346820809248,
+    "evidence": {
+      "replay_directory": "results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt3",
+      "check_failure": "results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt3/check_failure.json",
+      "pixel_coordinates": "results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt3/check_failure_pixel_coordinates.json",
+      "raw_sensors": "results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt3/check_failure_raw_sensors.npz",
+      "front_screenshot": "results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt3/check_failure_front_camera.png",
+      "hand_screenshot": "results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt3/check_failure_hand_camera.png"
+    }
+  },
+  "decision": "Stopped immediately at the hard visibility gate. No restart, retry, parameter change, data build, normalization, or training was performed after the gate.",
+  "updated_utc": "2026-11-09T04:02:38.991474+00:00",
+  "review_updated_utc": "2026-11-09T04:10:05Z"
+}

@@ -1,0 +1,1724 @@
+{
+  "started_attempts": 173,
+  "shield_intersection_attempts": 1,
+  "fraction": 0.005780346820809248,
+  "stop_threshold_reached": false,
+  "stopped": false,
+  "denominator": "All started data attempts, both tasks, clean and DART",
+  "attempts": [
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 1,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.051425+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep1_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 0,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.052183+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep0_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 3,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.052636+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep3_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 2,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.051369+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep2_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 6,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.054401+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep6_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 5,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.051741+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep5_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 7,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.052216+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep7_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 4,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:33:17.051096+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep4_attempt0",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 4,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:33:48.526511+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep4_attempt1",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 8,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:34:01.344607+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep8_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 10,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:34:22.623691+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep10_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 14,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:34:30.842617+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep14_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 15,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:34:33.721737+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep15_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 11,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:34:52.940683+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep11_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 9,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:35:02.519236+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep9_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 12,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:35:08.132630+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep12_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 13,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:35:21.315777+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep13_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 16,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:35:24.400712+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep16_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 19,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:35:32.105238+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep19_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 24,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:00.636665+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep24_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 23,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:00.948592+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep23_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 17,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:27.360828+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep17_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 22,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:28.377376+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep22_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 32,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:32.908865+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep32_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 27,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:33.087368+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep27_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 20,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:38.429324+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep20_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 21,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:36:49.361969+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep21_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 18,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:37:11.116313+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep18_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 28,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:37:21.819998+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep28_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 40,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:37:36.474814+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep40_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 35,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:37:45.190775+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep35_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 29,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:38:02.875687+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep29_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 36,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:38:32.645078+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep36_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 25,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:38:34.808026+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep25_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 31,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:38:54.537585+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep31_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 26,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:04.240435+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep26_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 30,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:04.937941+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep30_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 48,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:09.918454+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep48_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 37,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:14.097142+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep37_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 33,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:14.734689+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep33_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 43,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:32.725152+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep43_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 39,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:45.913718+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep39_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 45,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:39:54.937679+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep45_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 44,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:40:14.522302+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep44_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 56,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:40:14.606707+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep56_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 51,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:40:27.525005+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep51_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 38,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:40:49.821493+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep38_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 53,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:40:53.395142+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep53_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 52,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:41:01.562516+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep52_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 41,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:41:39.143026+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep41_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 34,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:41:40.119444+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep34_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 47,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:41:52.258684+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep47_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 55,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:42:15.865658+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep55_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 59,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:42:19.196098+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep59_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 64,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:42:27.086496+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep64_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 42,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:42:41.109456+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep42_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 60,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:42:41.445376+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep60_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 61,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:43:06.368997+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep61_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 46,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:43:17.473888+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep46_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 68,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:43:30.966084+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep68_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 49,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:43:41.813720+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep49_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 63,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:43:46.870742+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep63_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 72,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:43:56.835690+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep72_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 67,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:44:14.284086+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep67_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 50,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:44:25.448943+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep50_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 80,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:44:52.386178+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep80_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 69,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:45:06.459199+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep69_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 76,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:45:23.860082+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep76_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 54,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:45:30.334373+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep54_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 75,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:45:35.955221+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep75_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 77,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:45:36.354860+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep77_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 88,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:45:41.394672+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep88_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 71,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:45:48.174547+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep71_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 57,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:46:03.873141+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep57_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 58,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:46:22.182812+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep58_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 96,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:46:31.196793+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep96_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 65,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:46:49.098115+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep65_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 85,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:46:54.262506+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep85_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 62,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:46:57.462112+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep62_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 79,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:46:58.261574+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep79_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 66,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:47:20.164452+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep66_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 83,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:47:30.537745+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep83_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 84,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:47:34.266553+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep84_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 87,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:47:34.494146+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep87_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 93,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:47:58.556469+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep93_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 104,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:48:08.960960+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep104_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 74,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:48:31.213351+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep74_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 73,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:48:40.578463+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep73_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 112,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:48:44.292579+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep112_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 82,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:49:04.367249+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep82_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 95,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:49:09.334892+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep95_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:49:24.900137+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 70,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:49:32.758688+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep70_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 91,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:49:39.002988+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep91_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 112,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:49:43.766482+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep112_attempt1",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 92,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:49:50.910204+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep92_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:50:08.875411+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt1",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 100,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:50:32.564953+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep100_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 90,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:50:33.250891+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep90_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 120,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:50:33.323093+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep120_attempt0",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:50:43.292721+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 103,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:50:55.076336+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep103_attempt0",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 78,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:50:58.816019+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep78_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:51:02.461431+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt3",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 81,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:51:07.556823+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep81_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 99,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:51:08.357050+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep99_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 120,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:51:19.727683+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep120_attempt1",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 98,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:51:30.325857+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep98_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 86,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:51:48.155411+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep86_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 100,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:52:05.298281+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep100_attempt1",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 4,
+      "started_utc": "2026-11-09T03:52:20.015501+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt4",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 100,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:52:28.035806+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep100_attempt2",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 106,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:52:42.616468+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep106_attempt0",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 94,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:52:47.886878+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep94_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 107,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:52:54.453204+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep107_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 89,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:52:54.755814+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep89_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 120,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:53:08.610786+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep120_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:53:39.673648+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 103,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:53:42.940396+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep103_attempt1",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_clean",
+      "episode": 97,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:53:59.981698+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_clean/count/history/ep97_attempt0",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 120,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:54:17.213818+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep120_attempt3",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:54:21.824519+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt1",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 102,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:54:27.607267+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep102_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:54:39.883768+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 120,
+      "attempt": 4,
+      "started_utc": "2026-11-09T03:54:43.741413+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep120_attempt4",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 107,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:54:44.116015+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep107_attempt1",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 106,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:54:56.611989+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep106_attempt1",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 103,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:55:06.251353+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep103_attempt2",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 102,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:55:16.549776+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep102_attempt1",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:55:19.783101+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt3",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 103,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:55:35.173779+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep103_attempt3",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 106,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:55:38.908452+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep106_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 128,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:55:39.215305+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep128_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 102,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:55:52.550662+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep102_attempt2",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 105,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:56:00.492698+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep105_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 5,
+      "started_utc": "2026-11-09T03:56:07.828998+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt5",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 4,
+      "started_utc": "2026-11-09T03:56:16.661009+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt4",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 105,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:56:22.562495+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep105_attempt1",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 128,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:56:34.793272+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep128_attempt1",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 5,
+      "started_utc": "2026-11-09T03:56:43.078019+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt5",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 105,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:56:55.286793+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep105_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 106,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:57:09.977810+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep106_attempt3",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 128,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:57:10.163720+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep128_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 105,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:57:31.261876+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep105_attempt3",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 106,
+      "attempt": 4,
+      "started_utc": "2026-11-09T03:57:35.508956+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep106_attempt4",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 105,
+      "attempt": 4,
+      "started_utc": "2026-11-09T03:57:44.515898+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep105_attempt4",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 6,
+      "started_utc": "2026-11-09T03:57:46.191942+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt6",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 128,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:57:57.141974+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep128_attempt3",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 7,
+      "started_utc": "2026-11-09T03:58:04.752136+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt7",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 107,
+      "attempt": 2,
+      "started_utc": "2026-11-09T03:58:09.456838+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep107_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 106,
+      "attempt": 5,
+      "started_utc": "2026-11-09T03:58:21.661974+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep106_attempt5",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 108,
+      "attempt": 8,
+      "started_utc": "2026-11-09T03:58:24.941218+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep108_attempt8",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 105,
+      "attempt": 5,
+      "started_utc": "2026-11-09T03:58:31.191710+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep105_attempt5",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 107,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:58:36.810667+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep107_attempt3",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 102,
+      "attempt": 3,
+      "started_utc": "2026-11-09T03:58:40.345960+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep102_attempt3",
+      "outcome": "budget",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 103,
+      "attempt": 4,
+      "started_utc": "2026-11-09T03:59:00.195912+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep103_attempt4",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 107,
+      "attempt": 4,
+      "started_utc": "2026-11-09T03:59:24.056045+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep107_attempt4",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 113,
+      "attempt": 0,
+      "started_utc": "2026-11-09T03:59:33.127715+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 113,
+      "attempt": 1,
+      "started_utc": "2026-11-09T03:59:53.403461+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt1",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 6,
+      "started_utc": "2026-11-09T03:59:57.215435+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt6",
+      "outcome": "shield_intersection",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 113,
+      "attempt": 2,
+      "started_utc": "2026-11-09T04:00:15.077383+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt2",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 111,
+      "attempt": 0,
+      "started_utc": "2026-11-09T04:00:15.321701+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep111_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 136,
+      "attempt": 0,
+      "started_utc": "2026-11-09T04:00:22.044005+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep136_attempt0",
+      "outcome": "robot_drop",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 116,
+      "attempt": 0,
+      "started_utc": "2026-11-09T04:00:34.856306+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep116_attempt0",
+      "outcome": "planning_or_grasp_failure",
+      "success": false
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 107,
+      "attempt": 5,
+      "started_utc": "2026-11-09T04:00:50.026722+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep107_attempt5"
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 113,
+      "attempt": 3,
+      "started_utc": "2026-11-09T04:00:55.388495+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep113_attempt3"
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 136,
+      "attempt": 1,
+      "started_utc": "2026-11-09T04:00:59.523849+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep136_attempt1"
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 111,
+      "attempt": 1,
+      "started_utc": "2026-11-09T04:01:03.945453+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep111_attempt1"
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 116,
+      "attempt": 1,
+      "started_utc": "2026-11-09T04:01:12.504987+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep116_attempt1",
+      "outcome": "finish_signal",
+      "success": true
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 101,
+      "attempt": 7,
+      "started_utc": "2026-11-09T04:01:24.523643+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep101_attempt7"
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 102,
+      "attempt": 4,
+      "started_utc": "2026-11-09T04:01:43.965256+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep102_attempt4"
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 124,
+      "attempt": 0,
+      "started_utc": "2026-11-09T04:01:53.999215+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep124_attempt0"
+    },
+    {
+      "task": "count",
+      "purpose": "train_dart",
+      "episode": 106,
+      "attempt": 6,
+      "started_utc": "2026-11-09T04:02:04.612142+00:00",
+      "key": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/replays/train_dart/count/history/ep106_attempt6"
+    }
+  ]
+}

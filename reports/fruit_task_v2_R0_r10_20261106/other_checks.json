@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "cases": 350,
+  "source": "Existing per-episode validity proofs and runtime checks; no extra rollout."
+}

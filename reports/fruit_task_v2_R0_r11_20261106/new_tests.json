@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "scope": "Only new seam geometry/default-off/old-source preservation/output bindings. Optical ray coverage uses existing records and fixed viewpoint grids; no accepted tensor/simulation test repeated.",
+  "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 3.345s\n\nOK\n"
+}

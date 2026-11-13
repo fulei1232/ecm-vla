@@ -1,0 +1,38 @@
+{
+  "source_scope": "dev250–259, new N2–10 distribution; frozen before audit cohorts",
+  "source_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep250/result.json": "dddf2c2032a2ccbbf522030ceb4adca332abc90b827166d2e73441d131754b3e",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep251/result.json": "91bb3c4fb662db3beaa7313d6c808b745511fd6c024d9c8c53c27bdb0def3ec8",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep252/result.json": "05f8b226e1b91a5426942090968cd2371d481b3d3b4be33f58b9d7e4211a0b08",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep253/result.json": "d27f9f4bd5afca7fb6bd295637188dbf062c6328c0848772eb61768a78deb242",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep254/result.json": "227029dfc8da6db06c4e36cd351bf5332d3e4c1b4223b421757cec3875566678",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep255/result.json": "20cabc3ae1fb57f8325617a106a9ee475ae6b09348358dee6c21573c1aef47f3",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep256/result.json": "2620f613dbe71cb0302be91c9d32b34b59f69bbddc312dc45c350deb1afd60ef",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep257/result.json": "a59d357c42df71875c3a2764f113a2fa0858e054fcc3cd82d9b488be0fcd6dee",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep258/result.json": "8518eef6a7ff421c8e1f0656f2ade7569322f310bae37dde20c671fae8010522",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/calibration/count/history/ep259/result.json": "ed91c53228bb150f4caea483be168372bacbe298e7b194791fd4588596961726"
+  },
+  "absolute": {
+    "a": 351.14744004273655,
+    "b": 158.97964405207065,
+    "bias": 0.0,
+    "rounding": "numpy.rint (ties to even)",
+    "calibration_successes": 4,
+    "calibration_episodes": 10,
+    "basket_entry_observations": 72,
+    "time_basis": "absolute t",
+    "bias_search": "all empirical stop-threshold breakpoints, adjacent float values and intervals; max episode success, then min abs bias"
+  },
+  "relative": {
+    "a": 18.78333848792444,
+    "b": 142.9833834734445,
+    "bias": 0.11977252929413139,
+    "rounding": "numpy.rint (ties to even)",
+    "calibration_successes": 8,
+    "calibration_episodes": 10,
+    "basket_entry_observations": 72,
+    "time_basis": "t-green_step",
+    "bias_search": "all empirical stop-threshold breakpoints, adjacent float values and intervals; max episode success, then min abs bias"
+  },
+  "created_utc": "2026-11-06T08:29:18.294943+00:00"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "source": "/media/fulei/fuleivla/acm_vla/scripts/diagnostic_annotations.py",
+    "sha256": "a24adf25c84bfb3db0479a2c90e8608b4f0b15c9aba6ec938c1b734a83f33cc4"
+  },
+  {
+    "source": "/media/fulei/fuleivla/acm_vla/scripts/context_selection.py",
+    "sha256": "9613fac9c1db584149773a067593ecdf2086574471a50614524c60ae28d6fdf2"
+  },
+  {
+    "source": "/media/fulei/fuleivla/acm_vla/scripts/diagnostic_selection.py",
+    "sha256": "2cfee6348320ea84f20e28bfc8a71e2e86687cb92fbdd2599574edefbb3e8d4c"
+  },
+  {
+    "source": "/media/fulei/fuleivla/acm_vla/scripts/diagnostic_logging.py",
+    "sha256": "53ea502a38497f073c9167edb2f427147fc57fd382fdac7240939400ae6b55b4"
+  }
+]

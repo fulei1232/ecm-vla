@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-06T11:27:33.323017+00:00",
+  "ready": true,
+  "condition": "count_fixed_shield_v1",
+  "new_CPU_tests_passed": true,
+  "source_files_frozen": 58,
+  "old_source_files_unchanged": 48,
+  "old_results_reports_and_83_demos_preserved": true,
+  "new_GPU_diagnostics_started": false,
+  "new_R0_cases": 0,
+  "new_data_cases": 0,
+  "GPU_available_in_agent_terminal": false,
+  "first_new_work": "Original ep112 prefix A/B and full original-seed DART diagnostic; any failed check stops",
+  "after_all_gates": "400 fresh successful demos and common dataset; stop before training",
+  "training": false
+}

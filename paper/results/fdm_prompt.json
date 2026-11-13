@@ -1,0 +1,44 @@
+{
+ "grid": {
+  "pad=0,point=True": {
+   "pad": 0,
+   "point": true,
+   "f1": 0.9903588644884841,
+   "iou": 0.9732845921849937
+  },
+  "pad=0,point=False": {
+   "pad": 0,
+   "point": false,
+   "f1": 0.9898232458489555,
+   "iou": 0.9704735096747309
+  },
+  "pad=2,point=True": {
+   "pad": 2,
+   "point": true,
+   "f1": 0.990624162871685,
+   "iou": 0.97023541093478
+  },
+  "pad=2,point=False": {
+   "pad": 2,
+   "point": false,
+   "f1": 0.990624162871685,
+   "iou": 0.9620728760949953
+  },
+  "pad=4,point=True": {
+   "pad": 4,
+   "point": true,
+   "f1": 0.9911456935873356,
+   "iou": 0.952928200800611
+  },
+  "pad=4,point=False": {
+   "pad": 4,
+   "point": false,
+   "f1": 0.9906141056583534,
+   "iou": 0.9453634713831596
+  }
+ },
+ "best": {
+  "pad": 2,
+  "point": true
+ }
+}

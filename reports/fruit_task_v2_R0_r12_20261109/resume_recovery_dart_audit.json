@@ -1,0 +1,1634 @@
+{
+  "instruction_revision": 12,
+  "created_utc": "2026-11-09T07:49:41.763929+00:00",
+  "cause": "DART validity audit found unannotated actions because the recorded action step is post-step while the annotation compared against the pre-step control count.",
+  "original_status_sha256": "a4b20640e7fc1356f00905e69fc71ff508cab4d35e58ebcc881495255c716dbd",
+  "original_status": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/status_failed_before_dart_recovery.json",
+  "gpu_validation_sha256": "a62754bab91cd9203bd1b14c51434bfc516d3e19dd3a23c5a9ca15feecdc1d2d",
+  "gpu_validation_passed": true,
+  "accepted_clean_manifests": 200,
+  "clean_manifest_inventory": [
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep0_manifest.json",
+      "sha256": "b617317e02d4b93b6ccbb910eaf38b271d64d458c9d44966c931931ed8a00eb4",
+      "task": "count",
+      "episode": 0,
+      "N": 2,
+      "layout_seed": 4100000
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep10_manifest.json",
+      "sha256": "6dfca6b4855315603b6b80836e46d17989034c771870c6b5e6fc96f4550d3a47",
+      "task": "count",
+      "episode": 10,
+      "N": 10,
+      "layout_seed": 4100160
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep11_manifest.json",
+      "sha256": "c829edcd74599cdd07d4163c00119efa28b48f4187b9565c5f4e63e4abee83b2",
+      "task": "count",
+      "episode": 11,
+      "N": 2,
+      "layout_seed": 4100176
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep12_manifest.json",
+      "sha256": "d83c537b7120ee0652a7bb5a5e964a01d9a7eb4a8f0b2f4d6a451743e19687f0",
+      "task": "count",
+      "episode": 12,
+      "N": 6,
+      "layout_seed": 4100192
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep13_manifest.json",
+      "sha256": "2bb4404638b40e02b3988b2dcb70a8c37df12637f6eeda28a4d7be2d94592ed2",
+      "task": "count",
+      "episode": 13,
+      "N": 5,
+      "layout_seed": 4100208
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep14_manifest.json",
+      "sha256": "ceb797c926b9b32454a0f5f5720fa1293319e871194aeb194cd325bde4ad6e49",
+      "task": "count",
+      "episode": 14,
+      "N": 9,
+      "layout_seed": 4100224
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep15_manifest.json",
+      "sha256": "5954d72fde7d92d448f7c4ebf52c0171f264b96e3cf53a7f351b96da97c1bfc9",
+      "task": "count",
+      "episode": 15,
+      "N": 5,
+      "layout_seed": 4100240
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep16_manifest.json",
+      "sha256": "b9308ce347dd14db89bebf22e1cdf5854bd867eb1b02b479ad73461c3ae5fb10",
+      "task": "count",
+      "episode": 16,
+      "N": 3,
+      "layout_seed": 4100256
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep17_manifest.json",
+      "sha256": "b69e2c0356100cf1cae155c1b3a8a91a94a523aa0fa6dd95b634266cf2f12b80",
+      "task": "count",
+      "episode": 17,
+      "N": 9,
+      "layout_seed": 4100272
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep18_manifest.json",
+      "sha256": "21a5c32c49d4dcb84bc860457c7901e03cfa8f8b144123cdfe17472c020c55c4",
+      "task": "count",
+      "episode": 18,
+      "N": 10,
+      "layout_seed": 4100288
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep19_manifest.json",
+      "sha256": "4c69b041c81ceb93f63bfbaa97ef1064e6b4f4f174883324f25a5dcc9b00d6cf",
+      "task": "count",
+      "episode": 19,
+      "N": 6,
+      "layout_seed": 4100304
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep1_manifest.json",
+      "sha256": "70b26317622979a44d98ced44913ece6e107582ae542aac4ef79d88d3af3430f",
+      "task": "count",
+      "episode": 1,
+      "N": 7,
+      "layout_seed": 4100016
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep20_manifest.json",
+      "sha256": "7a8c725b0aba22a1d64eb80d58a88ace4f6ee819938955f42a6ade7e9b24480c",
+      "task": "count",
+      "episode": 20,
+      "N": 2,
+      "layout_seed": 4100320
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep21_manifest.json",
+      "sha256": "7cffd39cd748a432de92b56cfc2dbbd10f3178a3754cc09395ebbdadcf2c230e",
+      "task": "count",
+      "episode": 21,
+      "N": 7,
+      "layout_seed": 4100336
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep22_manifest.json",
+      "sha256": "5e9ae4553a87cedd7a1ddeb90986f26cbca3742e26d694046b8bb564134df863",
+      "task": "count",
+      "episode": 22,
+      "N": 10,
+      "layout_seed": 4100352
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep23_manifest.json",
+      "sha256": "d43543a9cd78bad95a1fab7f87b14ddd3acaf4cb055a1ce02cc78b86b4459906",
+      "task": "count",
+      "episode": 23,
+      "N": 10,
+      "layout_seed": 4100368
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep24_manifest.json",
+      "sha256": "87b9768313b576ba2bc7a2c6c1af0203e52cb472881c736fc5b2d01818f3d423",
+      "task": "count",
+      "episode": 24,
+      "N": 2,
+      "layout_seed": 4100384
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep25_manifest.json",
+      "sha256": "4d94060c331a76bd1c89c5293404fa31cc09db6369028b00542ca6f382cc58f2",
+      "task": "count",
+      "episode": 25,
+      "N": 3,
+      "layout_seed": 4100400
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep26_manifest.json",
+      "sha256": "7c7a8e5894327dbb332645477fd76952da66ae2397d34f18e3b0e9f9eabfe3d1",
+      "task": "count",
+      "episode": 26,
+      "N": 10,
+      "layout_seed": 4100416
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep27_manifest.json",
+      "sha256": "8c4ce265ebb13fa892be29f1077250e71624d7f0961323acf43923b9088ac7a4",
+      "task": "count",
+      "episode": 27,
+      "N": 6,
+      "layout_seed": 4100432
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep28_manifest.json",
+      "sha256": "56674b608bc44e53fa1fcc8ffca319e4ad136f6a2b47e47e54662b583feda204",
+      "task": "count",
+      "episode": 28,
+      "N": 7,
+      "layout_seed": 4100448
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep29_manifest.json",
+      "sha256": "f224aeef74d2cc28cb7bb1872f07200c0d19fac6f8741f457177f408bafd25d7",
+      "task": "count",
+      "episode": 29,
+      "N": 5,
+      "layout_seed": 4100464
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep2_manifest.json",
+      "sha256": "05ebd2c32de8dd592182194c7b3f5ba73cf68758489940e3030b08317fb2f8a8",
+      "task": "count",
+      "episode": 2,
+      "N": 4,
+      "layout_seed": 4100032
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep30_manifest.json",
+      "sha256": "934006dc13f583c370530eeeb65d6c2812a17a63aa8945aceafde462431a4910",
+      "task": "count",
+      "episode": 30,
+      "N": 8,
+      "layout_seed": 4100480
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep31_manifest.json",
+      "sha256": "9088ea162ce9b27ab9f6dd1f85d654c25e2b6bd67df22dba16ac1d792b526f75",
+      "task": "count",
+      "episode": 31,
+      "N": 4,
+      "layout_seed": 4100496
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep32_manifest.json",
+      "sha256": "4e0003c4e7b895c07089aaeb0bfcbf685d14dea6a77ce6572cfc205fd1e37ca9",
+      "task": "count",
+      "episode": 32,
+      "N": 5,
+      "layout_seed": 4100512
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep33_manifest.json",
+      "sha256": "96651c4262bcedb77a6237f049dc9841479a6e8b25ca4b1b3cb519e74875afa2",
+      "task": "count",
+      "episode": 33,
+      "N": 10,
+      "layout_seed": 4100528
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep34_manifest.json",
+      "sha256": "750ad661259f76f83e6ef10c9dd6095222d9e86186ac608ad1518a61b1cc95d6",
+      "task": "count",
+      "episode": 34,
+      "N": 5,
+      "layout_seed": 4100544
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep35_manifest.json",
+      "sha256": "e91cad3b235ee74a20b91e3f391ec20d484a2e500071582b3ab4a6dfb19b617c",
+      "task": "count",
+      "episode": 35,
+      "N": 9,
+      "layout_seed": 4100560
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep36_manifest.json",
+      "sha256": "709f4c39f4ed74478d1d0deb8ad2dfe8ae9875e49a3c9c4728b5fd50ff331cc6",
+      "task": "count",
+      "episode": 36,
+      "N": 9,
+      "layout_seed": 4100576
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep37_manifest.json",
+      "sha256": "824941bbdc83bfc284b6d4f8563ad84decf70ad6ccbc39eb4b06651f01676d4d",
+      "task": "count",
+      "episode": 37,
+      "N": 2,
+      "layout_seed": 4100592
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep38_manifest.json",
+      "sha256": "725ea6550278b4b924032f5f2cecd9fbd1210e081f95712ce0a80755d329717e",
+      "task": "count",
+      "episode": 38,
+      "N": 9,
+      "layout_seed": 4100608
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep39_manifest.json",
+      "sha256": "67477377b0fe7054c6f4ff0bb4294a3b14cf30376a6d9afcc2142340d3850845",
+      "task": "count",
+      "episode": 39,
+      "N": 10,
+      "layout_seed": 4100624
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep3_manifest.json",
+      "sha256": "dfde99bf98620371c89065036c426ec35b93d2b381463fdd7735867f1c25815b",
+      "task": "count",
+      "episode": 3,
+      "N": 8,
+      "layout_seed": 4100048
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep40_manifest.json",
+      "sha256": "58b595f58711630b6a620f1ae910193654fdc20c15cd49abdeaaa7a2558278ed",
+      "task": "count",
+      "episode": 40,
+      "N": 6,
+      "layout_seed": 4100640
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep41_manifest.json",
+      "sha256": "4dda81ff14c5a408a1848e883c0ca85d5889a2d30f6fea1f3fcedd26f94f2f81",
+      "task": "count",
+      "episode": 41,
+      "N": 8,
+      "layout_seed": 4100656
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep42_manifest.json",
+      "sha256": "bf2d6e745952bded96f7875edac543842fad0d9ad08e559cb146a9161af33085",
+      "task": "count",
+      "episode": 42,
+      "N": 8,
+      "layout_seed": 4100672
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep43_manifest.json",
+      "sha256": "1f801f67a41743d4f8824b81d8a0a005b9dcf8a58082209c7af127597a8ad8c0",
+      "task": "count",
+      "episode": 43,
+      "N": 4,
+      "layout_seed": 4100688
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep44_manifest.json",
+      "sha256": "99d0ca41e03646666c21ef91869e8c77685e37ec9510a92e7a8209fbe097b17e",
+      "task": "count",
+      "episode": 44,
+      "N": 4,
+      "layout_seed": 4100704
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep45_manifest.json",
+      "sha256": "74dc057893ed329557c70957d65d67b64ebd225f8b0e980a07b510dc77e85214",
+      "task": "count",
+      "episode": 45,
+      "N": 5,
+      "layout_seed": 4100720
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep46_manifest.json",
+      "sha256": "230585ea5ec448c040e1c0ed73b4ade6a5b94287462104aca635987e2c9bd792",
+      "task": "count",
+      "episode": 46,
+      "N": 10,
+      "layout_seed": 4100736
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep47_manifest.json",
+      "sha256": "20e1e243056627ff7a70fe7f9e57b025f9b42af5e6ff46ddb78f9a5016674699",
+      "task": "count",
+      "episode": 47,
+      "N": 2,
+      "layout_seed": 4100752
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep48_manifest.json",
+      "sha256": "beef67830ee2ac427c1113751d6107af29a86a360bf67159b12d0c5f1b0e808a",
+      "task": "count",
+      "episode": 48,
+      "N": 6,
+      "layout_seed": 4100768
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep49_manifest.json",
+      "sha256": "c71c446823dfc250b2a3f7d697d7a1d556b9128dd2ff8532db49bc2cfb3655d4",
+      "task": "count",
+      "episode": 49,
+      "N": 10,
+      "layout_seed": 4100784
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep4_manifest.json",
+      "sha256": "dfd7fb9e2377f85800f8b6a65264ffb5eb833af074643a0ba5704b50d991e297",
+      "task": "count",
+      "episode": 4,
+      "N": 7,
+      "layout_seed": 4100065
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep50_manifest.json",
+      "sha256": "c10f2e8206b3bae2296c2249751f05c932d1cc7da1b8782fdfce2f7a0215114f",
+      "task": "count",
+      "episode": 50,
+      "N": 9,
+      "layout_seed": 4100800
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep51_manifest.json",
+      "sha256": "81974999c3289cd3ea37f7fd562ac0739c87840d917de95b070d73d9d43904d2",
+      "task": "count",
+      "episode": 51,
+      "N": 8,
+      "layout_seed": 4100816
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep52_manifest.json",
+      "sha256": "621860a0785c350fe73ba9fb307d53eb2cd23a4b4d2a108e1350a8019a67f545",
+      "task": "count",
+      "episode": 52,
+      "N": 8,
+      "layout_seed": 4100832
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep53_manifest.json",
+      "sha256": "53da2806198cc41fcdd449b9e0a78db2a00bd55442d2ef33ecd47a95dfef2301",
+      "task": "count",
+      "episode": 53,
+      "N": 10,
+      "layout_seed": 4100848
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep54_manifest.json",
+      "sha256": "8076d1c42cded90555e04e78551115498ee363055bf514a703c74f867baf535a",
+      "task": "count",
+      "episode": 54,
+      "N": 6,
+      "layout_seed": 4100864
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep55_manifest.json",
+      "sha256": "1b87032ca1deca0abc16a0dc1b24d4a6ee39c975b8e59de39b640e812ca9265e",
+      "task": "count",
+      "episode": 55,
+      "N": 8,
+      "layout_seed": 4100880
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep56_manifest.json",
+      "sha256": "e4f17d86ca05e622daa31c862359b5b1f537d7f07da03d47e2fa64a82ccb7ac6",
+      "task": "count",
+      "episode": 56,
+      "N": 10,
+      "layout_seed": 4100896
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep57_manifest.json",
+      "sha256": "17e276eb806e12720ea67495cb9d061e510aecb07fad5e0a71cf65efe35c574d",
+      "task": "count",
+      "episode": 57,
+      "N": 4,
+      "layout_seed": 4100912
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep58_manifest.json",
+      "sha256": "1784cd38808e7ddf0e737556d77a1453a7df610d230018d0887b615330dce8b1",
+      "task": "count",
+      "episode": 58,
+      "N": 5,
+      "layout_seed": 4100928
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep59_manifest.json",
+      "sha256": "b32c9abdba4916284d414ac39642ec434f6e38df18b4212b8556e9b3a8fb87e0",
+      "task": "count",
+      "episode": 59,
+      "N": 9,
+      "layout_seed": 4100944
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep5_manifest.json",
+      "sha256": "3319ac13ffa7c36cf25d2c824b750ae7e28341ebffdce6ccdbf8489917bda805",
+      "task": "count",
+      "episode": 5,
+      "N": 9,
+      "layout_seed": 4100080
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep60_manifest.json",
+      "sha256": "4667e595d43d5ac6a8acb65d44e5b72d3918c886d5e0bb2a2e758274336b00af",
+      "task": "count",
+      "episode": 60,
+      "N": 5,
+      "layout_seed": 4100960
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep61_manifest.json",
+      "sha256": "e3d8e8f61450796858245860e96db2812ef6abec59188a41e28f6729dd11140b",
+      "task": "count",
+      "episode": 61,
+      "N": 10,
+      "layout_seed": 4100976
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep62_manifest.json",
+      "sha256": "533dacd4afcb8caa3bb032eaf4e8af77a2f0622e78848150f8ce58ee02eeca1c",
+      "task": "count",
+      "episode": 62,
+      "N": 6,
+      "layout_seed": 4100993
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep63_manifest.json",
+      "sha256": "7b245accc68d82bd800c5ce8cb2a65802e24446064cd6bb419836f43fdde8788",
+      "task": "count",
+      "episode": 63,
+      "N": 9,
+      "layout_seed": 4101008
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep64_manifest.json",
+      "sha256": "2f4862840b432f5179a4f75c63acb825aea6246fd1c0e7ac895e5142a4de3c8d",
+      "task": "count",
+      "episode": 64,
+      "N": 6,
+      "layout_seed": 4101024
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep65_manifest.json",
+      "sha256": "13b1b85e2b1aeb14cafd02f0e9dd93c64f8cf2d96102031d04df77794bf6d6de",
+      "task": "count",
+      "episode": 65,
+      "N": 3,
+      "layout_seed": 4101041
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep66_manifest.json",
+      "sha256": "6f53defa40faf9a2693f6f6eeef1004a71c398e26182d00b950a5cbaaf737a1c",
+      "task": "count",
+      "episode": 66,
+      "N": 9,
+      "layout_seed": 4101057
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep67_manifest.json",
+      "sha256": "7170070f4b6b1f61ae2cfad0d150e639e2440b7ff93d9808e06b2a09d5702f86",
+      "task": "count",
+      "episode": 67,
+      "N": 6,
+      "layout_seed": 4101072
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep68_manifest.json",
+      "sha256": "6528ae81e9949ed0f1e60d8adc3d8ce2fc22c09684bdfa7ea9fccd82dbe6d993",
+      "task": "count",
+      "episode": 68,
+      "N": 10,
+      "layout_seed": 4101088
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep69_manifest.json",
+      "sha256": "07a2a8db2b960cfdf276c2097d63395cec320cc9413b7394a140f0796d368d42",
+      "task": "count",
+      "episode": 69,
+      "N": 2,
+      "layout_seed": 4101104
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep6_manifest.json",
+      "sha256": "27d31f325c9b420fa8e1590d55aa05fe666e1d25c5a428673cf86aa3ad742e04",
+      "task": "count",
+      "episode": 6,
+      "N": 6,
+      "layout_seed": 4100096
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep70_manifest.json",
+      "sha256": "c16539eff5a5f4049236c9772fe9671996306bfb1503e098ce7fde5b438ec90b",
+      "task": "count",
+      "episode": 70,
+      "N": 5,
+      "layout_seed": 4101120
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep71_manifest.json",
+      "sha256": "57298b04eff9ab04730ddec7e93ef5bbed02ef6a5e1d9faf896e59e958b68e2f",
+      "task": "count",
+      "episode": 71,
+      "N": 6,
+      "layout_seed": 4101136
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep72_manifest.json",
+      "sha256": "e86ceffdc93c9648d62ac1f734c1fcd7e6cacfb55f62be33e237bdeee2695fe2",
+      "task": "count",
+      "episode": 72,
+      "N": 5,
+      "layout_seed": 4101152
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep73_manifest.json",
+      "sha256": "d6fb547c841baf70206dc4ebba6fe0465fb72a4ec48e506637a60297cebd1848",
+      "task": "count",
+      "episode": 73,
+      "N": 10,
+      "layout_seed": 4101168
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep74_manifest.json",
+      "sha256": "05b4504e578fe1d287b67dbea7c2f432f4a4e05bb9a5ff1a2595e91a695a11e4",
+      "task": "count",
+      "episode": 74,
+      "N": 2,
+      "layout_seed": 4101184
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep75_manifest.json",
+      "sha256": "83decba38bcef8b6ffa589a82a5ae0f7ad178f239494ba398ea1c4622067b0ce",
+      "task": "count",
+      "episode": 75,
+      "N": 10,
+      "layout_seed": 4101200
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep76_manifest.json",
+      "sha256": "2326b5b772283b2457b45df334f3516c795a3e8513d4c8b74898d64695098620",
+      "task": "count",
+      "episode": 76,
+      "N": 9,
+      "layout_seed": 4101216
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep77_manifest.json",
+      "sha256": "80c081ce2d825bde9254d649488a27c217ee335d052f51aa6eeb8bb84ea986e6",
+      "task": "count",
+      "episode": 77,
+      "N": 6,
+      "layout_seed": 4101232
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep78_manifest.json",
+      "sha256": "59c9c7601079012bf1d9ee1d88299719ac8843f10c00f1333d8cc0df232792eb",
+      "task": "count",
+      "episode": 78,
+      "N": 5,
+      "layout_seed": 4101248
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep79_manifest.json",
+      "sha256": "f4cd1bf459f472d1e2261866b14a6cb97851b514a738fdca748eb8de769bb42b",
+      "task": "count",
+      "episode": 79,
+      "N": 2,
+      "layout_seed": 4101264
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep7_manifest.json",
+      "sha256": "3dce043ec93401ea2b85cb8199222025ced1fc6c225c7ba33adbd93b5b85ae18",
+      "task": "count",
+      "episode": 7,
+      "N": 5,
+      "layout_seed": 4100112
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep80_manifest.json",
+      "sha256": "bb97f566799777493d7523014fe18053c56c526a07a3d7e213d1c8c82deeac47",
+      "task": "count",
+      "episode": 80,
+      "N": 3,
+      "layout_seed": 4101280
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep81_manifest.json",
+      "sha256": "b020c6e97d2c51fcc1a69cae1d2c93646fec696e5f10d9155fb16238b359e83d",
+      "task": "count",
+      "episode": 81,
+      "N": 8,
+      "layout_seed": 4101296
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep82_manifest.json",
+      "sha256": "8bed4d0557917e27caa2a48eac2a35e65b61ec2a76656434c275777007d68e89",
+      "task": "count",
+      "episode": 82,
+      "N": 6,
+      "layout_seed": 4101312
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep83_manifest.json",
+      "sha256": "e4a5c3da45e36c5b664870129fa64d495c01efe91d6ebcb177a0a74442cc857e",
+      "task": "count",
+      "episode": 83,
+      "N": 8,
+      "layout_seed": 4101329
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep84_manifest.json",
+      "sha256": "c8b2951edf8957c1ccc8b9e4ae4206e0c86aa69746514727bb96c8cf0a7ea602",
+      "task": "count",
+      "episode": 84,
+      "N": 10,
+      "layout_seed": 4101345
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep85_manifest.json",
+      "sha256": "70938ba27501e77488e7399b7a55dda309634738d90391eff4e6be52521be3bc",
+      "task": "count",
+      "episode": 85,
+      "N": 3,
+      "layout_seed": 4101360
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep86_manifest.json",
+      "sha256": "a0423e6c51bf98f8944ff48bafbbb6a6573111cdbcdd3bcc8f9db3323cf8144b",
+      "task": "count",
+      "episode": 86,
+      "N": 3,
+      "layout_seed": 4101376
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep87_manifest.json",
+      "sha256": "daae8fae8ed971cb742bbc1dfb9c8560998adb5bc5eb77d10b057bb684c35b17",
+      "task": "count",
+      "episode": 87,
+      "N": 9,
+      "layout_seed": 4101393
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep88_manifest.json",
+      "sha256": "ec16c3a8d9e94d93307d710ee90effec122336edfe925f21891f3fff6f103f21",
+      "task": "count",
+      "episode": 88,
+      "N": 3,
+      "layout_seed": 4101408
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep89_manifest.json",
+      "sha256": "4e4073de664490bafeeb675d536ced42514aab8017d6d0965f1c3032f7f48035",
+      "task": "count",
+      "episode": 89,
+      "N": 4,
+      "layout_seed": 4101424
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep8_manifest.json",
+      "sha256": "4e549de94f958d2a2280539c568c2b09ca2b7472f4adc4e24714c011e171bc14",
+      "task": "count",
+      "episode": 8,
+      "N": 5,
+      "layout_seed": 4100128
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep90_manifest.json",
+      "sha256": "efc42cfded526623baaae23862c3ec813b2fb4c75203920f8a802526aa860a19",
+      "task": "count",
+      "episode": 90,
+      "N": 3,
+      "layout_seed": 4101440
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep91_manifest.json",
+      "sha256": "292a9c028db557bdeca58001744309f6bf3ee97a8494ed01ebfa311c89d0b283",
+      "task": "count",
+      "episode": 91,
+      "N": 6,
+      "layout_seed": 4101456
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep92_manifest.json",
+      "sha256": "2eca344b7166c515f079411bc9ed337e720dcaa72ab6f6d67147aa947656f334",
+      "task": "count",
+      "episode": 92,
+      "N": 4,
+      "layout_seed": 4101472
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep93_manifest.json",
+      "sha256": "7aeab470092b1e5e2d38bdf8e616b44ce2979480be77cd74b4e5ef4d638683ef",
+      "task": "count",
+      "episode": 93,
+      "N": 10,
+      "layout_seed": 4101489
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep94_manifest.json",
+      "sha256": "1194bf6e1ad832380f8b73d71e156b796a8dab42cfbdc341cd55059bedaaf8cd",
+      "task": "count",
+      "episode": 94,
+      "N": 7,
+      "layout_seed": 4101504
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep95_manifest.json",
+      "sha256": "0a876f6e5779ad0693279f500c22c78ab9d2e2365e2a15d4205b8f9179a6d97d",
+      "task": "count",
+      "episode": 95,
+      "N": 8,
+      "layout_seed": 4101520
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep96_manifest.json",
+      "sha256": "5c1c0c8eb109d94795a82751acda76f2b23014b4da1b7923dddba083fc66a5ab",
+      "task": "count",
+      "episode": 96,
+      "N": 5,
+      "layout_seed": 4101536
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep97_manifest.json",
+      "sha256": "fcebc72b64944d60f41b456f94e4888ee4fbf87e719f7b480e9d5bb622ae9e5b",
+      "task": "count",
+      "episode": 97,
+      "N": 8,
+      "layout_seed": 4101552
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep98_manifest.json",
+      "sha256": "6f00a6f3cfb4c2493e286b399523bb5729a532e1d87a19cb0d2b13efe4dda048",
+      "task": "count",
+      "episode": 98,
+      "N": 5,
+      "layout_seed": 4101568
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep99_manifest.json",
+      "sha256": "06e38f7da5e16126d7749f1babb082f013d85e3fbdae2c33c36f92f30b27b23d",
+      "task": "count",
+      "episode": 99,
+      "N": 8,
+      "layout_seed": 4101584
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/count/ep9_manifest.json",
+      "sha256": "4ec7645d31776fde33348f428d2ccfec53ecb2318cc477736ed97f64af868705",
+      "task": "count",
+      "episode": 9,
+      "N": 5,
+      "layout_seed": 4100144
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep0_manifest.json",
+      "sha256": "081e526c3b84d4a68fb00f12164c4c781e3a2c973724a0320212362e982b9df5",
+      "task": "occluded_ripe",
+      "episode": 0,
+      "N": 3,
+      "layout_seed": 4100000
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep10_manifest.json",
+      "sha256": "1619700da4e5c1bd800d7648bd5e8fcd894b3ba45205fcd2494841cc054905a0",
+      "task": "occluded_ripe",
+      "episode": 10,
+      "N": 2,
+      "layout_seed": 4100160
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep11_manifest.json",
+      "sha256": "60f762ebebd7c01317bc48c68716b22d71c29bc986d2ff07fd3a4be014cfea52",
+      "task": "occluded_ripe",
+      "episode": 11,
+      "N": 2,
+      "layout_seed": 4100176
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep12_manifest.json",
+      "sha256": "d9b999b6e485691204c5be39480a18ea7645267872e6317e5296184e2adb9e2f",
+      "task": "occluded_ripe",
+      "episode": 12,
+      "N": 2,
+      "layout_seed": 4100192
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep13_manifest.json",
+      "sha256": "2152c46ed42e43f6f9fbfeeb155d7e7cf6544b5d4ee444260cc61034a400554a",
+      "task": "occluded_ripe",
+      "episode": 13,
+      "N": 2,
+      "layout_seed": 4100208
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep14_manifest.json",
+      "sha256": "4f53f6e3ba9c21528f9008068d9da103e8502e1f6b096978936a06ce132e3279",
+      "task": "occluded_ripe",
+      "episode": 14,
+      "N": 3,
+      "layout_seed": 4100224
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep15_manifest.json",
+      "sha256": "9cb11d90870fa878de49a88c6b2796e8323ea84416b2152e4ee968a8fec97194",
+      "task": "occluded_ripe",
+      "episode": 15,
+      "N": 3,
+      "layout_seed": 4100240
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep16_manifest.json",
+      "sha256": "5ef930ea02c6ac4b9e71fe54c85d8b3dc8d10754eb5afbd0c098e8d22835f2a5",
+      "task": "occluded_ripe",
+      "episode": 16,
+      "N": 2,
+      "layout_seed": 4100256
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep17_manifest.json",
+      "sha256": "9413dd32bf71d42cd2f279452def1855dcc4665f2437583041c27d636a75e118",
+      "task": "occluded_ripe",
+      "episode": 17,
+      "N": 3,
+      "layout_seed": 4100272
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep18_manifest.json",
+      "sha256": "e2179cab57e3c1dafc09ebf24badd87ee38d468f506b86dbfbcdff543f06f610",
+      "task": "occluded_ripe",
+      "episode": 18,
+      "N": 3,
+      "layout_seed": 4100288
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep19_manifest.json",
+      "sha256": "3f5bd65d13841543c2967d780dfff320b05cb76e276f8625ea13b15cb049cc2a",
+      "task": "occluded_ripe",
+      "episode": 19,
+      "N": 2,
+      "layout_seed": 4100304
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep1_manifest.json",
+      "sha256": "d58df9e59279104d4fd3a582152bf039d1ebb0b0543227d3e7d0a1acfa7d9648",
+      "task": "occluded_ripe",
+      "episode": 1,
+      "N": 2,
+      "layout_seed": 4100016
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep20_manifest.json",
+      "sha256": "ce6666746e5d95543e1a0fc7edadc479c7efea533cea944476660114aacedd9e",
+      "task": "occluded_ripe",
+      "episode": 20,
+      "N": 3,
+      "layout_seed": 4100320
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep21_manifest.json",
+      "sha256": "bf2cd5383c1c0a12b57ec000812dd71d15ffcf6d5bc6316530f8d8f4b139b553",
+      "task": "occluded_ripe",
+      "episode": 21,
+      "N": 3,
+      "layout_seed": 4100336
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep22_manifest.json",
+      "sha256": "739ac3a8ed4d622bc492e6f858003227dc17fc8f10ae820116c70122cbea9b2f",
+      "task": "occluded_ripe",
+      "episode": 22,
+      "N": 3,
+      "layout_seed": 4100352
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep23_manifest.json",
+      "sha256": "7eb74edc3a1b025601081a16aa3a0a0c49e0e3754501314768217e0df516a7ee",
+      "task": "occluded_ripe",
+      "episode": 23,
+      "N": 3,
+      "layout_seed": 4100368
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep24_manifest.json",
+      "sha256": "8b5c333fab277cc81ac08bf2bdf82a83b1f6cc5197d6bc2f860a80154406fb99",
+      "task": "occluded_ripe",
+      "episode": 24,
+      "N": 2,
+      "layout_seed": 4100384
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep25_manifest.json",
+      "sha256": "9cea0df45c330bec83ff2605ae12cb0afb460e185b7dcbea1e488b57974eb3ea",
+      "task": "occluded_ripe",
+      "episode": 25,
+      "N": 2,
+      "layout_seed": 4100400
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep26_manifest.json",
+      "sha256": "72c517197161504108ea77289ec1d889ad1e7ea7aad9bf270cd0fe43bb01fe1c",
+      "task": "occluded_ripe",
+      "episode": 26,
+      "N": 3,
+      "layout_seed": 4100416
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep27_manifest.json",
+      "sha256": "f8dbadf87fb1d3d2a84bff4aac883bf43b77d7cf581f108296cc98ba121ba04d",
+      "task": "occluded_ripe",
+      "episode": 27,
+      "N": 3,
+      "layout_seed": 4100432
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep28_manifest.json",
+      "sha256": "b28e57b31802717680d7f06c8eb0abba7917d89579bcc8a6386d7315bfd81d0f",
+      "task": "occluded_ripe",
+      "episode": 28,
+      "N": 3,
+      "layout_seed": 4100448
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep29_manifest.json",
+      "sha256": "38e900beacb51e9869d5d60f4743837acb3d5e1695752ce30cb50d2c64282fd7",
+      "task": "occluded_ripe",
+      "episode": 29,
+      "N": 3,
+      "layout_seed": 4100464
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep2_manifest.json",
+      "sha256": "3d61071d945d207536b8478f2678f34da5c195bd6bd6b244e6c628c908355348",
+      "task": "occluded_ripe",
+      "episode": 2,
+      "N": 2,
+      "layout_seed": 4100032
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep30_manifest.json",
+      "sha256": "37ca4dd3300d23ae87bd23e67430a09d121fe4c7f524100b2dd3f10e4e672243",
+      "task": "occluded_ripe",
+      "episode": 30,
+      "N": 2,
+      "layout_seed": 4100480
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep31_manifest.json",
+      "sha256": "9b8ca149faff460ef7ff56c1c6456b985d435344736287b8a1f0a1e48b25da8d",
+      "task": "occluded_ripe",
+      "episode": 31,
+      "N": 2,
+      "layout_seed": 4100496
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep32_manifest.json",
+      "sha256": "7e30da64b3375512875b5d64dd1791c266e29a3b48f8d9fc39c78592eeb66285",
+      "task": "occluded_ripe",
+      "episode": 32,
+      "N": 3,
+      "layout_seed": 4100512
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep33_manifest.json",
+      "sha256": "eec952710b0d52feb1eaef1a68bd232afcb3fcc67983a1ee40c1712955fe63ed",
+      "task": "occluded_ripe",
+      "episode": 33,
+      "N": 3,
+      "layout_seed": 4100528
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep34_manifest.json",
+      "sha256": "0d763a5665a1dec045c1576f40ca4e0b6a7d49bc04e2d612aa805f4f96748eb9",
+      "task": "occluded_ripe",
+      "episode": 34,
+      "N": 2,
+      "layout_seed": 4100544
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep35_manifest.json",
+      "sha256": "80c95ae23d482448dd1615290ddbc9b04ec851f2c854abbfac43a8d6b586d76c",
+      "task": "occluded_ripe",
+      "episode": 35,
+      "N": 3,
+      "layout_seed": 4100560
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep36_manifest.json",
+      "sha256": "20b8c7b49bae27f91ede429c4c992dec54bd7b29fdee848c8f17d05c74f5b81d",
+      "task": "occluded_ripe",
+      "episode": 36,
+      "N": 2,
+      "layout_seed": 4100576
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep37_manifest.json",
+      "sha256": "f90a05b047b563e7e90153db91e8816c892b2175926262edcf9d910dcce794f2",
+      "task": "occluded_ripe",
+      "episode": 37,
+      "N": 3,
+      "layout_seed": 4100592
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep38_manifest.json",
+      "sha256": "432423c3603abf2d36119f195bc143d4e25beae71da64892adf23da2f14deae7",
+      "task": "occluded_ripe",
+      "episode": 38,
+      "N": 3,
+      "layout_seed": 4100608
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep39_manifest.json",
+      "sha256": "a1d99eea3b8ab9e48b13ef839d3422fe48634ef0d2a8efef45f5b003d35a9c4a",
+      "task": "occluded_ripe",
+      "episode": 39,
+      "N": 2,
+      "layout_seed": 4100624
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep3_manifest.json",
+      "sha256": "b106860e45d6a19431f7c3e33f532d116b18ae9e7199d1acc42e88a98d3d3d28",
+      "task": "occluded_ripe",
+      "episode": 3,
+      "N": 2,
+      "layout_seed": 4100048
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep40_manifest.json",
+      "sha256": "66c29ee63b16275c944b857f9cdc8a47b86b17ab66004fb2fd17825a7b0844ff",
+      "task": "occluded_ripe",
+      "episode": 40,
+      "N": 3,
+      "layout_seed": 4100640
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep41_manifest.json",
+      "sha256": "aa052ec23a104bd9745179298d96312f0ddde8d6471ecd8cb3ec78d674f043e1",
+      "task": "occluded_ripe",
+      "episode": 41,
+      "N": 3,
+      "layout_seed": 4100656
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep42_manifest.json",
+      "sha256": "6655273ca1a13a62c3ef4bb0ee1ca2698a0207c6779e4d744cdc1ddbc0bc00fe",
+      "task": "occluded_ripe",
+      "episode": 42,
+      "N": 3,
+      "layout_seed": 4100672
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep43_manifest.json",
+      "sha256": "b514db3fc8d7f4a5bd13368125e08d820a1914a9130cbdc189c9e3b880fe33ec",
+      "task": "occluded_ripe",
+      "episode": 43,
+      "N": 3,
+      "layout_seed": 4100688
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep44_manifest.json",
+      "sha256": "a601db8544a31518f89a5b8ecb1e739517329715e66c44f267a9f4a083b12f32",
+      "task": "occluded_ripe",
+      "episode": 44,
+      "N": 3,
+      "layout_seed": 4100705
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep45_manifest.json",
+      "sha256": "3955e35a18897dd1602583440a2cc4289c31b3094ac7be1f790a7b21240d81f6",
+      "task": "occluded_ripe",
+      "episode": 45,
+      "N": 2,
+      "layout_seed": 4100720
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep46_manifest.json",
+      "sha256": "b77b081965bbbbdc34330c39cd5a9508dc48b4c95736834b270673f6fb3efbe5",
+      "task": "occluded_ripe",
+      "episode": 46,
+      "N": 2,
+      "layout_seed": 4100736
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep47_manifest.json",
+      "sha256": "522d6fa4ad45c525529f43630be6e7f23af77fa794d9ec48d7ce401327906fef",
+      "task": "occluded_ripe",
+      "episode": 47,
+      "N": 2,
+      "layout_seed": 4100752
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep48_manifest.json",
+      "sha256": "4362cd0acaa54359c3e172da308f3e7c76d3fbec1279a7798eed6a4542cedbdb",
+      "task": "occluded_ripe",
+      "episode": 48,
+      "N": 3,
+      "layout_seed": 4100768
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep49_manifest.json",
+      "sha256": "a20365e29f087f1d0888190861dce304eb90726d92c472e9ef7a036f552db295",
+      "task": "occluded_ripe",
+      "episode": 49,
+      "N": 2,
+      "layout_seed": 4100784
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep4_manifest.json",
+      "sha256": "bb2fc9b11c0e567a1bb57da90d9464d461e15032a86c20654e35c3b157d0ad63",
+      "task": "occluded_ripe",
+      "episode": 4,
+      "N": 2,
+      "layout_seed": 4100065
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep50_manifest.json",
+      "sha256": "9778686dc280cd3c00159e184c1fe9ec64110ebd706548914e85e1228b6fac9d",
+      "task": "occluded_ripe",
+      "episode": 50,
+      "N": 3,
+      "layout_seed": 4100800
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep51_manifest.json",
+      "sha256": "d1b17e3f176d3b94a065d79786301c19830e549d3d4064cd317b76c968ee718a",
+      "task": "occluded_ripe",
+      "episode": 51,
+      "N": 2,
+      "layout_seed": 4100816
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep52_manifest.json",
+      "sha256": "0e7657de6af3b8d0a630ed4586b0c54fd3a61ea4af0692a933f44587fefae73d",
+      "task": "occluded_ripe",
+      "episode": 52,
+      "N": 2,
+      "layout_seed": 4100832
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep53_manifest.json",
+      "sha256": "e9acd146d5a222986e4cdf62d6504fae1f479eb2b01b22c98d658c43660fc46d",
+      "task": "occluded_ripe",
+      "episode": 53,
+      "N": 3,
+      "layout_seed": 4100848
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep54_manifest.json",
+      "sha256": "89145cf9e347bff0fa054966ddcedb32bb6063813fd17379919717b5b5dc9fc4",
+      "task": "occluded_ripe",
+      "episode": 54,
+      "N": 2,
+      "layout_seed": 4100864
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep55_manifest.json",
+      "sha256": "c79c08454cbe57015e5692498b67d967be068b4701953391c0fe4280ae7bc20e",
+      "task": "occluded_ripe",
+      "episode": 55,
+      "N": 3,
+      "layout_seed": 4100880
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep56_manifest.json",
+      "sha256": "e38506a2ab50ba7f2763767b008012c3bc77d7299e69637f4912b01e92cfab43",
+      "task": "occluded_ripe",
+      "episode": 56,
+      "N": 3,
+      "layout_seed": 4100896
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep57_manifest.json",
+      "sha256": "4870f51f1b4aabb89fde20fcf4911100b2265459624061be72e1f910217331e7",
+      "task": "occluded_ripe",
+      "episode": 57,
+      "N": 3,
+      "layout_seed": 4100912
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep58_manifest.json",
+      "sha256": "707a58fba75d9df661c682198246ec1f33eece52163f864854a44c0e611f524a",
+      "task": "occluded_ripe",
+      "episode": 58,
+      "N": 2,
+      "layout_seed": 4100928
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep59_manifest.json",
+      "sha256": "32ad55401471d354d22046f82994683377ae208fa722439e9a4d47f27beaaa83",
+      "task": "occluded_ripe",
+      "episode": 59,
+      "N": 3,
+      "layout_seed": 4100944
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep5_manifest.json",
+      "sha256": "df17629dae952f44b8fffc9c911b2e062a6d46aa114fd5ee59ce895bdfddea72",
+      "task": "occluded_ripe",
+      "episode": 5,
+      "N": 2,
+      "layout_seed": 4100080
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep60_manifest.json",
+      "sha256": "31bae390f1d1191ad37946e234e1182fae1ecde90f7ce1b9754501eceb69c160",
+      "task": "occluded_ripe",
+      "episode": 60,
+      "N": 2,
+      "layout_seed": 4100960
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep61_manifest.json",
+      "sha256": "1c173f376f7bf9b0d5b9531b78a5a4b2dc5acb51798313ea437a9825203074e0",
+      "task": "occluded_ripe",
+      "episode": 61,
+      "N": 3,
+      "layout_seed": 4100976
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep62_manifest.json",
+      "sha256": "25e8e6fc64077fdc24707cbf699f74d1a5bd024462efea9b4a4fabe1edbe199f",
+      "task": "occluded_ripe",
+      "episode": 62,
+      "N": 2,
+      "layout_seed": 4100992
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep63_manifest.json",
+      "sha256": "2ea689ae3be1a41d622b89ce3f9d271b4fa6c879dc2973ce1f9bf69fff558b7a",
+      "task": "occluded_ripe",
+      "episode": 63,
+      "N": 3,
+      "layout_seed": 4101008
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep64_manifest.json",
+      "sha256": "857f9d432966a55884e3149f7c78b50c9afade514b9c53657fec73c47cde76ca",
+      "task": "occluded_ripe",
+      "episode": 64,
+      "N": 3,
+      "layout_seed": 4101024
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep65_manifest.json",
+      "sha256": "956114a16bd6a441c26e7e98ed06c03d44c7867ef517f688e10c9d9a0948c25f",
+      "task": "occluded_ripe",
+      "episode": 65,
+      "N": 2,
+      "layout_seed": 4101040
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep66_manifest.json",
+      "sha256": "024096a366fa484923bc78bba33f1ad309ca0cb7549432e944596cafd2a13938",
+      "task": "occluded_ripe",
+      "episode": 66,
+      "N": 3,
+      "layout_seed": 4101056
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep67_manifest.json",
+      "sha256": "7298042139cb060d3d61c24322d004d083d25a5e293f8bd1abcc00e93f91606a",
+      "task": "occluded_ripe",
+      "episode": 67,
+      "N": 2,
+      "layout_seed": 4101072
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep68_manifest.json",
+      "sha256": "2e875e9d758e00a6906dc2cb1be05c7cab43ec2c424cb6b461a9187379d57d7c",
+      "task": "occluded_ripe",
+      "episode": 68,
+      "N": 3,
+      "layout_seed": 4101088
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep69_manifest.json",
+      "sha256": "ba36433848bc281eec7922f680cb96f27f6896b88771d3d0eddcc5287b587420",
+      "task": "occluded_ripe",
+      "episode": 69,
+      "N": 3,
+      "layout_seed": 4101104
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep6_manifest.json",
+      "sha256": "ef92f8305cb6d71b9691e32aa233e4962f00ee4bd5bf941022b117f52f505b6f",
+      "task": "occluded_ripe",
+      "episode": 6,
+      "N": 3,
+      "layout_seed": 4100096
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep70_manifest.json",
+      "sha256": "d73406534fbd4aaea169f71f1928985735fa28be479c9503828fdce82a5b1121",
+      "task": "occluded_ripe",
+      "episode": 70,
+      "N": 2,
+      "layout_seed": 4101120
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep71_manifest.json",
+      "sha256": "b1c42a643332a8ebdaf1306ff94e9cc5184617ff01643b5c148c3cfd124ea70a",
+      "task": "occluded_ripe",
+      "episode": 71,
+      "N": 2,
+      "layout_seed": 4101136
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep72_manifest.json",
+      "sha256": "2e469480bf4a28be77d95f6ef7305d7747183ec9bef25e845030505f4d9ed79b",
+      "task": "occluded_ripe",
+      "episode": 72,
+      "N": 2,
+      "layout_seed": 4101152
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep73_manifest.json",
+      "sha256": "41d9ed3d1126c678613e20e5943bcc75d3af5876a735fe09efd0cfab761d41c0",
+      "task": "occluded_ripe",
+      "episode": 73,
+      "N": 3,
+      "layout_seed": 4101168
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep74_manifest.json",
+      "sha256": "a066c22de090a807536dfe9bd9ffc175f194049b754654a331ceb3c21241745c",
+      "task": "occluded_ripe",
+      "episode": 74,
+      "N": 2,
+      "layout_seed": 4101184
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep75_manifest.json",
+      "sha256": "cd5a10a7489f689d0e50b87892bae1ea0e92454e517412d8c40d22c1a720517b",
+      "task": "occluded_ripe",
+      "episode": 75,
+      "N": 3,
+      "layout_seed": 4101200
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep76_manifest.json",
+      "sha256": "917fc712ff5c8f35aa907bb509f0de6811cb7e678812fe7cf9c258c7a85bc3af",
+      "task": "occluded_ripe",
+      "episode": 76,
+      "N": 2,
+      "layout_seed": 4101216
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep77_manifest.json",
+      "sha256": "ceeb692918990a35e172eb14f499ed110f0238a059a9101930d3c7410522e32c",
+      "task": "occluded_ripe",
+      "episode": 77,
+      "N": 3,
+      "layout_seed": 4101232
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep78_manifest.json",
+      "sha256": "1f62034ab62fa953a1b3de1195b68ecadcbff58e6c1b041ac016b2530f16d11b",
+      "task": "occluded_ripe",
+      "episode": 78,
+      "N": 2,
+      "layout_seed": 4101248
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep79_manifest.json",
+      "sha256": "9de742d4a8991ad7dfcea425b8d148da5d28f01be0e2a677b8cd8b3ebc746b1f",
+      "task": "occluded_ripe",
+      "episode": 79,
+      "N": 2,
+      "layout_seed": 4101264
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep7_manifest.json",
+      "sha256": "bbbebcae60af40ddf6491ec993b6116ad96db7ae76ce32cf667dbb70df1c16b9",
+      "task": "occluded_ripe",
+      "episode": 7,
+      "N": 2,
+      "layout_seed": 4100112
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep80_manifest.json",
+      "sha256": "e3d04dfd91cd778ef6f6bcf6d1111e4f28a0e2e063f9311beee23583f671ed25",
+      "task": "occluded_ripe",
+      "episode": 80,
+      "N": 3,
+      "layout_seed": 4101280
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep81_manifest.json",
+      "sha256": "f41bf5519537f8c9c986e6411a8005b462954bb699aa28e0c4d1cc6a5bed1e4c",
+      "task": "occluded_ripe",
+      "episode": 81,
+      "N": 2,
+      "layout_seed": 4101296
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep82_manifest.json",
+      "sha256": "01da26203706898aed9dbad93f79220d3ed59d0fcea70479f8bb9416031b9cde",
+      "task": "occluded_ripe",
+      "episode": 82,
+      "N": 2,
+      "layout_seed": 4101312
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep83_manifest.json",
+      "sha256": "fe3c84009b08a3901f6b71a8bf62e5dfa7b4283e2ed635d4b4fbdcbc72842a57",
+      "task": "occluded_ripe",
+      "episode": 83,
+      "N": 2,
+      "layout_seed": 4101328
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep84_manifest.json",
+      "sha256": "e0b570b0469c6464113aa23771723cb09e358240710a21ffc9f40ff4948bc9b0",
+      "task": "occluded_ripe",
+      "episode": 84,
+      "N": 2,
+      "layout_seed": 4101344
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep85_manifest.json",
+      "sha256": "e797f632d677ecb44c570e62bb8cea9f0130bc120d172b2a428444d912e4caac",
+      "task": "occluded_ripe",
+      "episode": 85,
+      "N": 3,
+      "layout_seed": 4101360
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep86_manifest.json",
+      "sha256": "0da9aa2acf66764b84406c8bf0c5e8c98eb87b2f7e3b409a56db24634ebbde35",
+      "task": "occluded_ripe",
+      "episode": 86,
+      "N": 2,
+      "layout_seed": 4101376
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep87_manifest.json",
+      "sha256": "a6efd569eecf296679417673e5d1b5e2fb89eecc2d5d19e6a8d3173efac679e5",
+      "task": "occluded_ripe",
+      "episode": 87,
+      "N": 2,
+      "layout_seed": 4101393
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep88_manifest.json",
+      "sha256": "407cfecba3834a6a52864e14b2d0b1db9c6d895e214d50b4a8365b0616e12921",
+      "task": "occluded_ripe",
+      "episode": 88,
+      "N": 3,
+      "layout_seed": 4101408
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep89_manifest.json",
+      "sha256": "454a1dba5c74c9a586385d61995971d9277f78c74aee9b990ad2549cadd66136",
+      "task": "occluded_ripe",
+      "episode": 89,
+      "N": 3,
+      "layout_seed": 4101424
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep8_manifest.json",
+      "sha256": "857e309135b7deff9bd82c711f22e0da7d9bc30129cd7aba5df46fdf1c563a3d",
+      "task": "occluded_ripe",
+      "episode": 8,
+      "N": 2,
+      "layout_seed": 4100128
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep90_manifest.json",
+      "sha256": "f4a4c404ae40b7a2c664373168c7846b37ccaa651015cfa8a0d99948a71f0fce",
+      "task": "occluded_ripe",
+      "episode": 90,
+      "N": 3,
+      "layout_seed": 4101440
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep91_manifest.json",
+      "sha256": "0d6fe19d22fe52e259686c43773bd9d9f2f5c9412b2cb9ba7bb74aacb0970e1f",
+      "task": "occluded_ripe",
+      "episode": 91,
+      "N": 2,
+      "layout_seed": 4101456
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep92_manifest.json",
+      "sha256": "ae5e002a993473f3d1743a24121a3e27529da7472dd54fbcf74442960f30a00d",
+      "task": "occluded_ripe",
+      "episode": 92,
+      "N": 2,
+      "layout_seed": 4101472
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep93_manifest.json",
+      "sha256": "2c3b427a9129966bf435c71646481d71177dd52cf69a46482c59bf2d7ef64735",
+      "task": "occluded_ripe",
+      "episode": 93,
+      "N": 2,
+      "layout_seed": 4101488
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep94_manifest.json",
+      "sha256": "62414e228e670cd8c840f960316648267926d2dac949e6994e967c9ff8b1114a",
+      "task": "occluded_ripe",
+      "episode": 94,
+      "N": 3,
+      "layout_seed": 4101504
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep95_manifest.json",
+      "sha256": "a253c7cb79f682a84f771025383c4b9ccde23ebbbfbb04763f40db637c28c699",
+      "task": "occluded_ripe",
+      "episode": 95,
+      "N": 3,
+      "layout_seed": 4101520
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep96_manifest.json",
+      "sha256": "0a746eeba78870d8d2cc55406563fa39cbe164859475f9a6988f6c5e02c6deeb",
+      "task": "occluded_ripe",
+      "episode": 96,
+      "N": 2,
+      "layout_seed": 4101536
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep97_manifest.json",
+      "sha256": "c431c2b3fa9b9cc2ff1d5a3aaed476d5ecc01c175a221901713db62600197d1f",
+      "task": "occluded_ripe",
+      "episode": 97,
+      "N": 3,
+      "layout_seed": 4101552
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep98_manifest.json",
+      "sha256": "99fc0f7fa3a72ae93cc3783353efecfe5115cfc324891994b3a0a548216861c0",
+      "task": "occluded_ripe",
+      "episode": 98,
+      "N": 3,
+      "layout_seed": 4101568
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep99_manifest.json",
+      "sha256": "7b5b40b003fd97e57ef3cf1464e6b3e163a34ba75459fd73ee3b053f5aec0b1e",
+      "task": "occluded_ripe",
+      "episode": 99,
+      "N": 2,
+      "layout_seed": 4101584
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r12_clean_20261109/rm75b_eg2/train/occluded_ripe/ep9_manifest.json",
+      "sha256": "d9c5a4c52223df9c61f7d7e335cc928810e09391333fab0b0322034ab577b50f",
+      "task": "occluded_ripe",
+      "episode": 9,
+      "N": 2,
+      "layout_seed": 4100144
+    }
+  ],
+  "incomplete_dart_attempts": 8,
+  "incomplete_dart_attempt_keys": [
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep103_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep105_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep104_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep107_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep101_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep106_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep100_attempt0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep102_attempt0"
+  ],
+  "audit_failure_attempt": {
+    "attempt": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/train_dart/count/history/ep104_attempt0",
+    "result_sha256": "960f2c3401de04a47ee4345352e8d64a801dfd56a58c421643d6c687ea460865",
+    "actions_sha256": "60f2d642cdc4f22da03535347bf26950b16b2457a30406e6def9c9c1e89b8b7e",
+    "result_success": false,
+    "result_outcome": "planning_or_grasp_failure",
+    "actions": 310,
+    "actions_missing_cycle_annotation": 310,
+    "retained_without_manifest": true
+  },
+  "resume_policy": "Keep all 200 clean manifests and every DART attempt; retry the eight unfinished DART episodes with the same paired clean N/layout and the next unused attempt seed; do not repeat GPU validation."
+}

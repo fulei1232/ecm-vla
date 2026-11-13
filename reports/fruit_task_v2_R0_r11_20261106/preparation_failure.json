@@ -1,0 +1,37 @@
+{
+  "instruction_revision": 11,
+  "created_utc": "2026-11-06T13:49:32.503872+00:00",
+  "state": "R11_cpu_check_failed",
+  "tests_run": 7,
+  "passed_tests": 5,
+  "failures": 2,
+  "errors": 0,
+  "failures_detail": [
+    {
+      "test": "test_data_and_R0_intersection_branch_and_formal_env_bindings",
+      "assertion": "fruit_r9_data.OUT == fruit_r11_common.OUT",
+      "expected": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106",
+      "actual": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106",
+      "cause": "The new runtime imported fruit_r9_data before activate() in the test process. Its from-import OUT binding remains cached. Existing-module rebinding is incomplete; no replay was started.",
+      "proposed_repair": "Explicitly rebind already-imported helper modules to the R11 namespace; preserve the failed check and rerun only new R11 CPU checks."
+    },
+    {
+      "test": "test_exact_finger_and_tcp_distances_and_no_shield",
+      "expected_distance_m": 0.992,
+      "actual_distance_m": 0.9920001029968262,
+      "absolute_difference_m": 1.0299682617898043e-07,
+      "failed_precision_decimal_places": 9,
+      "cause": "Native FCL separation differed from the analytic box value by about 1.03e-7 m; the new nine-decimal test assertion did not pass. This was a CPU geometry fixture, not a simulated episode or visibility failure.",
+      "proposed_repair": "Check native numerical precision and use a justified analytic-fixture tolerance; keep production task, fruit-intersection and visibility thresholds unchanged."
+    }
+  ],
+  "GPU_rollouts_started": 0,
+  "calibration_cases": 0,
+  "main_cases": 0,
+  "training_data_generated": false,
+  "ep112_not_repeated": true,
+  "old_76_sources_unchanged": true,
+  "stopped_per": "HANDOFF §17.7, §18.3, §19.3: any unit/consistency check failure stops for review",
+  "new_R11_plan_frozen": false,
+  "old_failed_checks_preserved": true
+}

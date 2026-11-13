@@ -1,0 +1,347 @@
+{
+  "phase": 5,
+  "revision": 5,
+  "state": "sealed_ready_for_gpu_eval",
+  "generated_utc": "2026-11-04T08:28:41.326874+00:00",
+  "payload_commit": "0f69e6235e06f606d3e2d4be64d594c1e6422f8c",
+  "protocol_file_sha256": "35b0b35d683b6df78f9bb59f1579015f8fc2146bd784d1bfcb3d6cf2b08bd331",
+  "seal_sha256": "905473428df63fef786f3675eca8aa274dfe8bfb9a501ec453c4c2b9901e732d",
+  "analysis_manifest_sha256": "b8f23e8386f16253ae2ad191273ebc381a2eca6c042418adf3de8db4acc00629",
+  "platform_manifest_sha256": "26818831ff72a104cbb1433b789d0f477854503aee1091443c0cd41df4997f1d",
+  "dev_trial_passed": true,
+  "dev_trial_episodes": 120,
+  "dev_trial_conditions": {
+    "K0": {
+      "episodes": 40,
+      "classes": {
+        "success": 15,
+        "memory": 5,
+        "operation": 20,
+        "invalid": 0
+      },
+      "subtags_episode_counts": {
+        "timeout_operating_or_stalled": 13,
+        "dropped_fruit_outcome_fail": 12,
+        "occluded_unripe_detached": 5,
+        "occluded_wrong_in_basket": 2,
+        "never_detached": 1,
+        "near_miss": 1,
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0,
+        "count_premature_stop_proxy": 0,
+        "adjacent_misgrasp_possible": 0,
+        "timeout_stopped": 0
+      },
+      "structural_anomalies": {
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0
+      },
+      "unripe_grasp_events": 5,
+      "adjacent_misgrasp_possible_fruit_events": 0,
+      "outcomes": {
+        "success": 15,
+        "timeout": 13,
+        "fail": 12
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "classes": {
+            "success": 13,
+            "memory": 0,
+            "operation": 7,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "timeout_operating_or_stalled": 3,
+            "dropped_fruit_outcome_fail": 4,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "occluded_unripe_detached": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 0,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 49,
+            "denominator": 52,
+            "fraction": 0.9423076923076923
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "classes": {
+            "success": 2,
+            "memory": 5,
+            "operation": 13,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "dropped_fruit_outcome_fail": 8,
+            "occluded_unripe_detached": 5,
+            "occluded_wrong_in_basket": 2,
+            "timeout_operating_or_stalled": 10,
+            "never_detached": 1,
+            "near_miss": 1,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "adjacent_misgrasp_possible": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 5,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 25,
+            "denominator": 32,
+            "fraction": 0.78125
+          }
+        }
+      },
+      "event_recall_proxy": {
+        "numerator": 74,
+        "denominator": 84,
+        "fraction": 0.8809523809523809
+      }
+    },
+    "K4": {
+      "episodes": 40,
+      "classes": {
+        "success": 18,
+        "memory": 3,
+        "operation": 19,
+        "invalid": 0
+      },
+      "subtags_episode_counts": {
+        "dropped_fruit_outcome_fail": 15,
+        "timeout_operating_or_stalled": 7,
+        "occluded_unripe_detached": 3,
+        "never_detached": 1,
+        "near_miss": 1,
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0,
+        "count_premature_stop_proxy": 0,
+        "occluded_wrong_in_basket": 0,
+        "adjacent_misgrasp_possible": 0,
+        "timeout_stopped": 0
+      },
+      "structural_anomalies": {
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0
+      },
+      "unripe_grasp_events": 3,
+      "adjacent_misgrasp_possible_fruit_events": 0,
+      "outcomes": {
+        "success": 18,
+        "fail": 15,
+        "timeout": 7
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "classes": {
+            "success": 13,
+            "memory": 0,
+            "operation": 7,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "dropped_fruit_outcome_fail": 7,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "occluded_unripe_detached": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0,
+            "timeout_operating_or_stalled": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 0,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 54,
+            "denominator": 58,
+            "fraction": 0.9310344827586207
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "classes": {
+            "success": 5,
+            "memory": 3,
+            "operation": 12,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "timeout_operating_or_stalled": 7,
+            "dropped_fruit_outcome_fail": 8,
+            "occluded_unripe_detached": 3,
+            "never_detached": 1,
+            "near_miss": 1,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "adjacent_misgrasp_possible": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 3,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 26,
+            "denominator": 33,
+            "fraction": 0.7878787878787878
+          }
+        }
+      },
+      "event_recall_proxy": {
+        "numerator": 80,
+        "denominator": 91,
+        "fraction": 0.8791208791208791
+      }
+    },
+    "K8": {
+      "episodes": 40,
+      "classes": {
+        "success": 18,
+        "memory": 4,
+        "operation": 18,
+        "invalid": 0
+      },
+      "subtags_episode_counts": {
+        "timeout_operating_or_stalled": 7,
+        "dropped_fruit_outcome_fail": 15,
+        "occluded_unripe_detached": 4,
+        "occluded_wrong_in_basket": 2,
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0,
+        "count_premature_stop_proxy": 0,
+        "adjacent_misgrasp_possible": 0,
+        "never_detached": 0,
+        "near_miss": 0,
+        "timeout_stopped": 0
+      },
+      "structural_anomalies": {
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0
+      },
+      "unripe_grasp_events": 4,
+      "adjacent_misgrasp_possible_fruit_events": 0,
+      "outcomes": {
+        "success": 18,
+        "timeout": 7,
+        "fail": 15
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "classes": {
+            "success": 14,
+            "memory": 0,
+            "operation": 6,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "timeout_operating_or_stalled": 3,
+            "dropped_fruit_outcome_fail": 3,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "occluded_unripe_detached": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 0,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 57,
+            "denominator": 58,
+            "fraction": 0.9827586206896551
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "classes": {
+            "success": 4,
+            "memory": 4,
+            "operation": 12,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "dropped_fruit_outcome_fail": 12,
+            "timeout_operating_or_stalled": 4,
+            "occluded_unripe_detached": 4,
+            "occluded_wrong_in_basket": 2,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 4,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 29,
+            "denominator": 37,
+            "fraction": 0.7837837837837838
+          }
+        }
+      },
+      "event_recall_proxy": {
+        "numerator": 86,
+        "denominator": 95,
+        "fraction": 0.9052631578947369
+      }
+    }
+  },
+  "definitions_adjusted_using_trial": false,
+  "unit_tests": {
+    "passed": 10,
+    "total": 10,
+    "includes_synthetic_report_and_ready_CLI": true
+  },
+  "ready_CLI_real_seal_verification_passed": true,
+  "stage5_original_training_sources_preserved": true,
+  "dev_trial_input_files_reverified_unchanged": 480,
+  "main_evaluation_episodes_completed": 0,
+  "sensitivity_episodes_completed": 0,
+  "prelaunch_correction": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/prelaunch_seal_superseded/0/diagnostic.json",
+  "gpu_devices_visible_in_this_session": [],
+  "next": "Launch sealed main900 and sensitivity300 in the GPU-enabled terminal; stop B or on validity failure."
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "scope": "Six new fixed-enclosure tests including oblique-ray baffle, original-prefix port clearance, default flag, output isolation and 48 old source hashes. No accepted simulation/tensor tests repeated.",
+  "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.108s\n\nOK\n"
+}

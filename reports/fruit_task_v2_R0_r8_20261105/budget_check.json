@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "budget": 1800,
+  "D": 600,
+  "N": 5,
+  "dev_episodes": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259
+  ],
+  "expert_complete": 10,
+  "expert_attempts": 10,
+  "max_finish_step_including_hold": 1636,
+  "minimum_remaining_steps": 164,
+  "nonstop_overpick": 10,
+  "nonstop_attempts": 10,
+  "max_Nplus1_detach_step": 1683,
+  "proposed_budget_if_timing_failed": null,
+  "unresolved_motion_failures": [],
+  "note": "Fixed worst-parameter diagnostic overrides only; geometry seeds unchanged; no automatic budget update."
+}

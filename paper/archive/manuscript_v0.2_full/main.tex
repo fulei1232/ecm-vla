@@ -1,0 +1,100 @@
+%% Manuscript draft v0.1 (2026-10-28) -- Elsevier elsarticle, author-year (Biosystems Engineering style).
+%% Red [TBD: ...] marks results that are still running (SAM segmentation, closed-loop evaluation) or text to verify.
+%% Numbers outside [TBD] come from paper/results/*.json (scripts in paper/experiments/).
+\documentclass[preprint,review,12pt,authoryear]{elsarticle}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{lineno}
+\usepackage{adjustbox}
+\linenumbers
+
+\graphicspath{{../../figures/}}
+\newcommand{\tbd}[1]{\textcolor{red}{[TBD: #1]}}
+\newcommand{\pekm}{PEKM}
+\newcommand{\fdm}{SAM-FDM}
+\newcommand{\bench}{HarvestMem-Sim}
+\sisetup{detect-all}
+
+\journal{Biosystems Engineering}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{HarvestMem: event-centric memory for vision--\hspace{0pt}language--\hspace{0pt}action harvesting robots under foliage occlusion}
+
+\author[a]{\tbd{Author 1}}
+\author[a]{\tbd{Author 2}}
+\author[a]{\tbd{Corresponding author}\corref{cor1}}
+\cortext[cor1]{Corresponding author. E-mail: \tbd{email}}
+\address[a]{\tbd{Affiliation, city, postcode, country}}
+
+\begin{abstract}
+Selective harvesting robots must act on information they can no longer see: wind-blown foliage hides ripe fruits, and harvesting quotas depend on picks whose results lie outside the camera view. Vision--language--action (VLA) policies promise a single instruction-driven controller for such tasks, yet their memory is a fixed number of past frames sampled uniformly in time. We show that this time-indexed memory loses picks at a rate that grows with operating time: its coverage of completed picks decays inversely with elapsed time, and at a 16-frame budget it misses 43\% of them. We propose HarvestMem, an event-centric memory framework that indexes memory by physical interaction events rather than by time. Its spatial memory, built by a SAM-based fruit distance module (SAM-FDM), anchors every fruit in 3D while it is visible. Its episodic memory, Picking-Event Keyframe Memory (PEKM), detects picks from the end-effector-to-fruit distance and reserves memory slots for their contact and detachment keyframes, without extra parameters, tokens or inference cost. On HarvestMem-Sim, a new benchmark with a 7-DoF arm, foliage occlusion and quota counting, PEKM retained 99.6\% of completed picks versus 57.0\% for uniform memory, and with 8 frames outperformed uniform memory with 16. Using only RGB-D images and proprioception, SAM-FDM localized fruits within 0.48~cm, recovered every leaf-hidden ripe fruit and reproduced the ground-truth picking events exactly, whereas anchors built after occlusion left no occluded episode correctly counted. \tbd{one sentence on closed-loop success}
+\end{abstract}
+
+\begin{highlights}
+\item Fruit harvesting is cast as a fixed-budget memory problem for VLA robots.
+\item Uniform memory loses picks at a rate that grows with operating time.
+\item Event-indexed memory keeps 99.6\% of picks vs 57.0\%, at zero extra cost.
+\item SAM-based 3D fruit anchors recover every leaf-hidden ripe fruit.
+\item Spatial memory before occlusion is a precondition for event memory.
+\end{highlights}
+
+\begin{keyword}
+Selective harvesting \sep Vision--language--action model \sep Temporal memory \sep Keyframe selection \sep Foliage occlusion \sep Segment Anything Model \sep Imitation learning
+\end{keyword}
+
+\end{frontmatter}
+
+%% Nomenclature (optional box; Biosystems Engineering encourages it)
+\section*{Nomenclature}
+\begin{tabular}{lp{11.2cm}}
+$B$ & memory budget (number of past frames kept), here $B=16$\\
+$c_U(t)$ & coverage of a completed pick by uniform memory at decision time $t$\\
+$S_e$, $W$ & key set of event $e$ (frames within $\pm W$ of its contact and release keyframes), $W=3$\\
+$d_t$ & distance from the tool centre point (TCP) to the nearest pickable fruit at frame $t$ (m)\\
+$k$ & maximum number of event keyframes reserved in the memory\\
+$r$, $\mathrm{tol}$ & event radius and contact tolerance (m)\\
+$\mathcal{M}_t$ & set of past frames in the memory at decision time $t$\\
+$\sigma$, $\tau$ & stationary standard deviation (rad) and correlation time (steps) of the DART-H noise\\
+DART & disturbances for augmenting robot trajectories \citep{laskey2017dart}\\
+FDM & fruit distance module\\
+PEKM & picking-event keyframe memory\\
+TCP & tool centre point\\
+VLA & vision--language--action (policy)\\
+\end{tabular}
+
+\input{sections/1_introduction}
+\input{sections/2_related_work}
+\input{sections/3_benchmark}
+\input{sections/4_method}
+\input{sections/5_experimental_design}
+\input{sections/6_results}
+\input{sections/7_discussion}
+\input{sections/8_conclusions}
+
+\section*{CRediT authorship contribution statement}
+\tbd{Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Writing -- original draft, Writing -- review \& editing, Visualization, Supervision, Funding acquisition.}
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Data availability}
+The HarvestMem-Sim generator, the demonstration datasets, the evaluation protocols (sealed before the formal runs, with their SHA-256 digests), the analysis scripts and the raw per-episode results will be released at \tbd{repository URL} upon publication.
+
+\section*{Acknowledgements}
+\tbd{Funding sources and grant numbers.}
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+\end{document}

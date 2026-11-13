@@ -1,0 +1,51 @@
+v_a:
+  split: val
+  tasks: [BinFill, VideoUnmaskSwap, PatternLock]
+  optional_tasks: [PickHighlight]
+  episode_ids: {start: 0, stop: 20}
+  model_seeds: [7, 8, 9]
+  extension_seeds: [10, 11]          # pre-registered extension only
+  conditions: [D0a, D0b, D4L, D4B, RNDB, RNDC, JITB]
+  checkpoint: perceptual-framesamp-modul/79999
+  policy_config: mme_vla_suite
+  memory: {budget_tokens: 512, slots: 32, tokens_per_frame: 16, views: [front]}
+  protection: {anchor_slots: 1, recent_d0_slots: 4}
+  pins:
+    source: oracle_v2_representative
+    kinds: [event, retention]
+    max_pins_per_decision: null
+    persistent_per_group: true
+    on_overflow: fallback_d0_for_decision
+  phase_balance: {enabled: true, allow_borrow: true}
+  rndb:
+    deleted_set: copy_from_D4B
+    new_frame: same_phase_nearest_legal   # uniform within closest legal distance + max(2, s/2)
+    exclude_evidence_window_frames: 4
+    fallback_exclude_pin_frames: 2
+    persistent_per_pin: true
+  rndc:
+    random_frames: same_as_RNDB
+    deleted_set: phase_balanced_fill      # coverage matched to D4B; deleted count equal, positions differ
+  jitb: {max_offset: half_stride, same_phase: true}
+  execution_horizon: 16
+  max_steps: 1300
+  schedule: {interleave: by_id_seed_block, shuffle_seed: 20261022}
+  runtime:
+    servers_per_seed: 2
+    gpus: [0, 1, 2, 3]
+    base_port: 28411
+    episode_wall_timeout_s: 2400
+    max_consecutive_errors: 3
+    server_load_timeout_s: 900
+  stats:
+    bootstrap_draws: 20000
+    contrasts: {C1: [D4B, D4L], C2: [D4B, RNDC], C3: [JITB, D0a], C4: [D4B, D0a]}
+    secondary_contrasts: {C2e: [D4B, RNDB], COV: [RNDC, RNDB]}
+    c2_pooled_tasks: [BinFill, VideoUnmaskSwap]   # PatternLock random frames always overlap evidence
+    aa_contrast: [D0b, D0a]
+    multiplicity: holm
+    margin_pp: 12
+    noninferiority_ci: 0.90
+    equivalence: tost_90ci
+    degradation_ci: 0.95
+    validity: {max_error_rate: 0.02, max_abs_aa_pp: 6}

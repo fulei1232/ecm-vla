@@ -1,0 +1,13 @@
+\section{Conclusions}
+\label{sec:conclusions}
+
+Selective harvesting robots must act on what they can no longer see: fruits hidden by foliage and picks whose results are out of view. This paper showed that the time-indexed memory of current vision--language--action policies is structurally unsuited to this requirement, because its coverage of interaction events decays with operating time. We proposed HarvestMem, an event-centric alternative. It couples a spatial memory of 3D fruit anchors, acquired by promptable segmentation while fruits are visible, with an episodic memory that reserves the contact and detachment keyframes of picks in the policy's fixed memory budget. The main findings are:
+\begin{enumerate}
+\item The coverage of completed picks by uniform memory follows a simple sampling law, $c_U(t) \approx \min(1, (B-1)|S|/t)$, which predicts the measured coverage to within 0.012. At a 16-frame budget, coverage of the most recent pick falls from 97.8\% early in an episode to 21.7\% after 600 frames.
+\item Picking events can be detected exactly from the end-effector-to-fruit distance over a 1--4~cm range of the radius, on clean and perturbed demonstrations alike.
+\item Picking-Event Keyframe Memory retains 99.6\% of completed picks against 57.0\% for uniform memory at the same budget, and keeps the most recent pick at every decision time. With 8 frames it outperforms uniform memory with 16, without additional parameters, tokens or inference cost.
+\item Using only RGB-D images and proprioception, the SAM-based fruit distance module localizes fruits to 0.48~cm, recovers every leaf-hidden ripe fruit and reproduces the ground-truth picking events exactly. Without spatial memory acquired before occlusion, no occluded-task episode is counted correctly. Spatial memory is thus a precondition for episodic memory in occluded canopies.
+\item Event memory tolerates distance errors of up to 1.5--2~cm, dropouts and bias, which gives perception modules an explicit accuracy specification. Promptable SAM gives the most accurate fruit masks (instance F1 0.991, IoU 0.974 with ViT-B at 94~ms per image), and the prompt generator is the component to adapt to field illumination.
+\item \tbd{One sentence on closed-loop success with PEKM and DART-H (E7--E9).}
+\end{enumerate}
+By moving agricultural knowledge into the definition of events rather than into network parameters, HarvestMem offers a principled, auditable way to adapt general-purpose robot foundation models to the long, partially observable operations of agriculture. Validation on a real harvesting robot and extension to pruning, thinning and pollination are the next steps.

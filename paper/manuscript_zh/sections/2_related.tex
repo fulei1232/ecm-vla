@@ -1,0 +1,40 @@
+\section{相关工作}
+\label{sec:related}
+
+\subsection{采摘机器人：从模块化流水线到端到端学习}
+选择性采摘机器人的研究已有三十余年积累\cite{bac2014harvesting,kootstra2021selective,zhou2022intelligent}。主流系统沿“检测—定位—规划—执行”的流水线构建：果实检测从颜色阈值发展到深度网络\cite{sa2016deepfruits,koirala2019review,kamilaris2018survey}，实例分割常用 Mask R-CNN\cite{he2017maskrcnn}、YOLO 系列\cite{redmon2016yolo}以及可提示分割模型 SAM\cite{kirillov2023sam,ravi2024sam2}，三维定位依赖 RGB-D 或多视角融合\cite{gene2020fruit,kang2020apple}，已在甜椒、猕猴桃、苹果等作物上得到验证\cite{arad2020sweetpepper,williams2019kiwifruit,silwal2017apple}。遮挡是公认的主要难点\cite{hemming2014detectability,bac2014harvesting}，已有工作主要通过多视角观测或主动拨叶来\emph{重新看见}果实。这类系统的决策逻辑由人工编写、针对特定作物和作业规则定制，难以随作业要求灵活变化；同时，它们极少讨论如何\emph{记住}此刻被遮住的果实，或记住机器人自己已经完成了什么。端到端学习为前一个问题提供了出路，而后一个问题正是本文关注的重点。
+
+\subsection{视觉-语言-动作模型及其记忆机制}
+RT-1\cite{brohan2023rt1}与 RT-2\cite{brohan2023rt2}证明了大规模预训练 Transformer 在机器人控制上的泛化能力，Octo\cite{octo2024}、OpenVLA\cite{kim2024openvla}以及 $\pi_0$/$\pi_{0.5}$\cite{black2024pi0,pi05_2025}进一步引入开放数据、动作分块和流匹配动作专家\cite{lipman2023flow,zhao2023act,chi2023diffusion}。这些模型大多只以当前帧或极短历史为条件。为处理长时依赖，近期工作为策略引入历史帧记忆库、独立的记忆专家或与分割模型结合的记忆模块\cite{shi2025memoryvla,fang2025sam2act}，视频理解领域也提出了长视频记忆库压缩方法\cite{he2024malmm}。这些方法关注记忆\emph{如何编码}，而进入记忆的历史帧通常按时间均匀或按最近窗口选取，与任务中发生了什么无关。它们都在桌面操作或通用视频任务上评测，尚无面向农业长时作业的记忆研究。本文沿用这一类“视觉编码器 + 记忆分支 + 动作专家”的通用结构，把创新集中在\emph{记什么}和\emph{怎么组织}上。
+
+\subsection{事件分割、关键帧与层次化记忆}
+认知科学中的事件分割理论\cite{zacks2007event}指出，人会在预测误差增大的边界处切分经验并优先编码边界；情景记忆把事件与时间、地点绑定\cite{tulving1972episodic,clayton1998episodic}。机器人学习中的关键帧思想多用于\emph{动作}而非\emph{记忆}：PerAct\cite{shridhar2022peract}和 Q-attention\cite{james2022qattention}在夹爪状态变化处提取关键位姿作为预测目标，AWE\cite{shi2023awe}从示范中自动提取路点。视频理解中的时序动作分割\cite{lea2017tcn,bai2018tcn}用时序卷积定位动作边界，而把多帧拼接为网格图像输入视觉-语言模型已被证明能在不增加 token 的情况下保留多帧信息\cite{kim2024imagegrid}。本文把这些思想统一到一个面向 VLA 的记忆框架中：用物理事件定义记忆的“边界”，用层次结构区分近期细节与远期摘要，用事件拼图帧实现摘要压缩。
+
+\subsection{自训练、仿真到真实迁移与基准有效性}
+域随机化\cite{tobin2017domain}和仿真-真实联合训练\cite{zhao2020sim2real}是缩小视觉差距的常用手段，伪标签与自训练\cite{lee2013pseudo,xie2020noisy}则能利用无标注数据持续提升模型；后见经验回放\cite{andrychowicz2017her}表明，任务结果可以在事后为过程提供监督。本文的事后确认自训练把这一思想用于事件检测：采摘是否成功在果实入篮时才可确认，确认后再回溯标注事件发生的时刻。另一方面，深度学习中普遍存在“捷径学习”\cite{geirhos2020shortcut}，记忆基准可能在不需要记忆的情况下被解决。本文提出用信息受限的脚本策略对任务做捷径审计，与预登记评测\cite{holm1979simple,schuirmann1987tost}一起，作为评估记忆方法的前提。
+
+表~\ref{tab:compare} 从农业部署的角度比较了各类记忆方式。
+
+\begin{table}[t]
+\centering
+\caption{VLA 策略中各类历史记忆方式的比较（记忆预算 $B=16$ 帧）}
+\label{tab:compare}
+\small
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{lcccccc}
+\toprule
+记忆方式 & \shortstack{推理开销\\固定} & \shortstack{可保留的\\采摘次数} & \shortstack{覆盖不随\\时长衰减} & \shortstack{区分成功与\\失败尝试} & \shortstack{真机免传感器\\免人工标注} & \shortstack{对检测误差\\鲁棒}\\
+\midrule
+均匀采样 & \cmark & $\approx$\V{cap_u} & \xmark & -- & \cmark & --\\
+最近帧窗口 & \cmark & $\le 1$ & \xmark & -- & \cmark & --\\
+学习型检索/压缩 & \cmark & 视实现 & 视实现 & \xmark & \cmark & --\\
+关键位姿（用于动作） & -- & -- & -- & \xmark & \cmark & --\\
+平坦事件关键帧 + 几何真值 & \cmark & $\le$\V{cap_flat_max} & 部分 & \xmark & \xmark & \xmark\\
+平坦事件关键帧 + 手工感知 & \cmark & $\le$\V{cap_flat_max} & 部分 & 部分 & 光照敏感 & \xmark\\
+\textbf{HarvestMem（本文）} & \cmark & \textbf{\V{cap_hem}} & \cmark & \cmark & \cmark & \cmark\\
+\bottomrule
+\end{tabular}
+
+\vspace{2pt}
+{\footnotesize 注：可保留的采摘次数指一回合内已完成采摘在记忆中仍可辨认的最大数量，由第~\ref{sec:hem} 节的分析和图~\ref{fig:capacity} 的仿真给出。平坦事件关键帧每次采摘占 2 帧，并须为场景锚和时间上下文留出位置。}
+\end{table}

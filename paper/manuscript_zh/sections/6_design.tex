@@ -1,0 +1,135 @@
+\section{实验设计}
+\label{sec:design}
+
+\subsection{研究问题}
+实验围绕六个问题展开：
+\begin{itemize}
+\item \textbf{RQ1}：固定预算的记忆实际保留了哪些信息？均匀记忆的事件覆盖率是否符合命题~\ref{prop:uniform}？
+\item \textbf{RQ2}：\pedet{} 能否在不使用特权信息的条件下准确检测采摘事件、区分成功与失败尝试，并对光照变化鲁棒？
+\item \textbf{RQ3}：\hem{} 能否提高依赖事件记忆的任务成功率，同时不损害依赖场景记忆的任务？
+\item \textbf{RQ4}：当采摘次数超出平坦关键帧的容量时，分层记忆是否仍然有效？
+\item \textbf{RQ5}：增益是否来自事件内容本身？各组件是否必要？
+\item \textbf{RQ6}：上述结论能否迁移到真实番茄采摘？检测器能否不用人工标注完成真机适配？
+\end{itemize}
+
+\subsection{对比条件与训练设置}
+主实验比较四种记忆条件：\textbf{K0}（均匀记忆，即基础模型）；\textbf{K4}、\textbf{K8}（平坦事件关键帧，预留 4 或 8 帧）；\textbf{HEM}（完整的 HarvestMem）。为使比较只反映记忆组织方式的差异，K4、K8 与 HEM 使用相同的 \pedet{} 事件和相同的事件扰动训练，HEM 额外包含分层结构、拼图帧和类型-时间嵌入。每个 v2 任务生成干净专家示范 100 个（train 0--99）和 DART-H 恢复示范 100 个（train 100--199），dev 200--259 用于调试，正式评测使用从未用过的 val 150--199。四种条件的其余设置完全相同（表~\ref{tab:train}）。
+
+\begin{table}[t]
+\centering
+\caption{训练设置（各记忆条件相同）}
+\label{tab:train}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{ll|ll}
+\toprule
+\multicolumn{2}{c|}{VLA 策略} & \multicolumn{2}{c}{\pedet}\\
+\midrule
+初始化 & 通用操作数据检查点 & 视觉骨干 & ResNet-18（ImageNet）\\
+训练步数 & \V{train_steps} & 时序模块 & 4 层因果 TCN\\
+全局批大小 & 64 & 序列长度 & 64 帧\\
+优化器 & AdamW，梯度裁剪 1.0 & 优化器 & AdamW，$3\times10^{-4}$\\
+学习率 & 预热 500 步至 $2.5\times10^{-5}$，余弦衰减 & 训练轮数 & 30\\
+EMA / 视觉编码器 & 0.999 / 冻结 & 批大小 & 128 段\\
+事件扰动 EPT & $\rho=0.5$，$p_{\mathrm{miss}}=p_{\mathrm{fp}}=0.05$，$\pm2$ 帧 & 数据 & 示范 + 闭环回放\\
+\hem{} 参数 & $m_w=\V{hem_mw}$，$c=\V{hem_c}$，$s_{\max}=\V{hem_smax}$ & 增广 & 域随机化（第~\ref{sec:pedet} 节）\\
+新增参数 & 类型-时间嵌入约 \V{hem_params}~M，零初始化 & 真机适配 & HSL，\V{rb_hsl_ep} 个无标注回合\\
+硬件 & 8 $\times$ NVIDIA L20（FSDP） & 硬件 & 1 $\times$ NVIDIA L20\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{评测协议与统计方法}
+\label{sec:protocol}
+\textbf{预登记与封存。}评测协议（假设、指标、失败分类、统计方法和有效性门槛）在第一条正式回合运行前封存，记录文件哈希与代码提交号；协议封存后不再修改任何定义或阈值。
+
+\textbf{试验安排。}val 150--199 的 50 个布局各运行种子 7、8、9，每个任务每个条件 \V{n_val} 次；同一布局与种子下各条件构成配对。计数 v2 与遮挡 v2 每回合步数预算 1300，FruitRow 为 3000，执行步长 16。
+
+\textbf{主假设与检验。}主假设族包含三项单侧假设：H1，计数 v2 上 HEM$-$K0 $>0$；H2，FruitRow 上 HEM$-$K0 $>0$；H3，FruitRow 上 HEM$-$K8 $>0$。H3 直接检验分层记忆相对平坦关键帧的容量优势。K4$-$K0、K8$-$K0 以及计数 v2 上的 HEM$-$K8 作为次要比较报告；由于计数 v2 的配额 $N\le5$ 基本在 K8 的容量之内，我们事先预测后者差异较小。差异的 95\% 置信区间由布局聚类 bootstrap（10000 次重采样）\cite{efron1993bootstrap}给出，$p$ 值由布局内符号翻转随机化检验（100000 次）给出，并在 H1--H3 上做 Holm 校正\cite{holm1979simple}。遮挡 v2 预测无差异，用双单侧检验（TOST，等效界 $\pm10$~\pp）\cite{schuirmann1987tost}检验 HEM 与 K0 的等效性。
+
+\textbf{正对照。}为确认任务确实在检验记忆，事先规定：K0 在推理时只保留最近 16 帧（recent16），每个任务的记忆类失败率必须上升至少 15~\pp{} 且置信区间不含 0，否则判定该任务未能检验记忆，只报告、不做比较。
+
+\textbf{失败分类。}失败在揭盲前按规则自动分为两类。\emph{记忆类}：计数 v2 与 FruitRow 中的多摘、少摘后发出完成信号；遮挡 v2 中的错果（青果入篮）和遗漏（成熟果未摘即结束）。\emph{操作类}：掉果、抓取失败、超时和工程错误。
+
+\textbf{有效性门槛。}工程错误为 0；每次决策核验送入模型的记忆帧与声明的选帧规则一致；按条件报告安全包络的裁剪率，并做一次关闭包络的敏感性分析。
+
+\subsection{真机实验设计}
+\label{sec:real_design}
+
+真机实验的设计遵循一条原则：\textbf{所有事件信息只能来自机器人自身的传感器}，不在果实、果柄或植株上加装任何传感器，使实验条件与田间部署一致。
+
+\textbf{平台。}真机平台与仿真保持同构（图~\ref{fig:realsetup}，表~\ref{tab:hardware}）：\V{rb_arm}，末端安装 \V{rb_grip}；前置相机 \V{rb_cam_f} 的安装位姿按仿真前置相机标定，腕部相机 \V{rb_cam_w} 固定在夹爪上方；策略在 \V{rb_gpu} 上推理，控制频率 \V{rb_hz}~Hz，动作为关节增量，经与仿真相同的安全包络后下发。
+
+\textbf{可复位番茄实验架。}为在真实果实上进行严格的配对比较，主实验采用“真实果实 + 可复位植株骨架”的设计。植株骨架由可弯折金属枝干和仿真叶片组成，高 0.4--0.7~m；果实为真实番茄（\V{rb_fruit}），保留 2--3~cm 果梗，果梗插入 3D 打印的弹簧果梗夹固定在枝条上。果梗夹的夹持力用推拉力计标定，使采摘所需的拉脱力为 \V{rb_force}~N，与番茄果梗离层的分离力量级相当\todo{补充番茄果梗分离力文献}。果梗夹只起固定作用，不含任何传感器；每个布局的果梗夹位置由打印模板复位，损伤的果实随时更换。红熟果与绿熟果混挂，真实果实的颜色、形状与表面反光差异为感知带来了与田间一致的挑战。
+
+\textbf{真机计数任务（R-Count）。}架上挂 $M=4$--5 颗红熟果，指令要求摘 $N=2$--3 颗，集果篮位于前置相机视野之外。枝条后方隐藏的舵机拨杆在回合开始前随机生成的时刻，把 1--2 颗未被摘取的果实拨落到树下的集果布上，模拟风落果，时刻与对象写入日志（仅用于分析）。完成信号的判定与仿真相同。
+
+\textbf{真机遮挡任务（R-Occluded）。}红熟果与绿熟果混挂。观察阶段结束时，两个舵机驱动的叶帘转到两颗果实前方；同时环境照明由白光切换为 590~nm 琥珀色窄带 LED，使红、绿果实在两台相机中的色差基本消失，作为仿真“颜色褪变”的物理对应。实验前用标定图像验证切换后红/绿果实色调的可分性（AUC 不高于 0.6），未通过则调整灯光后重新验证。
+
+\textbf{事件真值：只用于评测。}一台 \V{rb_cam_3} 从侧方记录全部回合，两名标注者独立标注每次接触与脱离的帧号，分歧超过 2 帧的由第三人裁定。人工标注\emph{只用于评测检测精度}，不参与任何训练。两名标注者脱离帧差异的中位数为 \V{rb_annot} 帧，\pct{rb_annot2} 的事件差异不超过 2 帧。
+
+\textbf{免标注检测器适配。}\pedet{} 从仿真模型出发，用事后确认自训练在 \V{rb_hsl_ep} 个无标注真机回合（遥操作示范与早期策略回放，不与测试回合重叠）上适配。作为参照，另用 \V{rb_sup_ep} 个人工标注回合做有监督微调。检测精度在 \V{rb_det_ep} 个独立回合（\V{rb_det_ev} 次真实采摘）上评测，比较仅仿真训练、事后确认自训练、人工标注参照、夹爪启发式与 \fdm{} 五种检测方式。
+
+\textbf{示范与策略训练。}每个任务通过遥操作采集 \V{rb_demo} 个示范回合，数据格式与仿真一致；示范中的事件同样由事后确认自动给出，整个真机流程不需要人工逐帧标注。VLA 策略从对应的仿真 v2 检查点出发，用仿真与真机数据 1:1 混合微调；K0、K8 与 HEM 使用相同配方。
+
+\textbf{测试协议。}每个任务准备 \V{rb_layouts} 个布局，每个布局每个条件重复 \V{rb_reps} 次，即每条件 \V{rb_trials} 次。R-Count 比较 K0、K8 与 HEM 三个条件，R-Occluded 比较 K0 与 HEM；另在暖色光照扰动下比较 HEM+\pedet{} 与 HEM+\fdm{}，检验事件检测的光照鲁棒性。同一布局内条件顺序按拉丁方随机化，复位操作员不知道当前条件，每回合限时 180~s。失败分类与仿真相同。条件间比较按布局配对，用精确符号翻转检验，成功率给出 Wilson 95\% 区间\cite{wilson1927probable}。
+
+\textbf{温室验证。}为检验在真实植株上的可行性，在日光温室中对盆栽番茄进行小规模验证：每株保留 4--6 颗红熟果，指令要求摘 $N=3$ 颗，K0 与 HEM 各 15 次。由于真实植株无法复位，该实验不做配对检验，只作为外部效度的补充证据。
+
+\textbf{安全措施。}关节限位与笛卡尔工作空间限位、速度限幅、急停按钮和力矩阈值保护全程开启；人员不进入工作空间。
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\footnotesize, scale=0.95]
+\fill[gray!8] (-0.5,-0.4) rectangle (11.5,4.6);
+\fill[gray!50] (1.0,1.6) circle (0.42); \node[white] at (1.0,1.6) {\textbf{基座}};
+\draw[line width=3pt, gray!60] (1.0,1.6) -- (2.4,2.5) -- (3.5,2.2);
+\fill[blue!50] (3.5,2.2) circle (0.12);
+\node[above, align=center] at (2.4,2.6) {七自由度机械臂};
+\node[align=center, text=blue!50!black] at (3.6,1.75) {腕部相机};
+\fill[brown!60] (6.3,2.2) circle (0.18);
+\foreach \a/\r in {20/1.1,100/0.9,160/1.2,230/1.0,300/1.1}{\draw[brown!60, line width=1.2pt] (6.3,2.2) -- ++(\a:\r);}
+\foreach \p/\c in {{(7.3,2.6)}/red!70,{(6.15,3.1)}/green!50!black,{(5.2,2.6)}/red!70,{(5.75,1.4)}/red!70,{(6.8,1.25)}/green!50!black}{\fill[\c] \p circle (0.17);}
+\node[align=center] at (6.3,4.15) {番茄实验架\\（真实番茄 + 弹簧果梗夹）};
+\fill[green!40!black!40, rounded corners] (6.55,2.35) rectangle (7.05,2.95);
+\node[right, align=left, text=green!30!black] at (7.4,3.2) {舵机叶帘};
+\draw[red!60!black, line width=1.5pt] (6.9,0.75) -- (7.3,1.05);
+\node[right, align=left, text=red!60!black] at (7.4,0.9) {舵机拨杆\\（风落果）};
+\fill[black] (10.2,2.1) rectangle (10.6,2.5);
+\node[right, align=left] at (9.6,3.0) {前置相机};
+\draw[dashed, gray] (10.2,2.3) -- (4.6,4.1); \draw[dashed, gray] (10.2,2.3) -- (4.6,0.4);
+\fill[violet!60] (5.0,-0.2) rectangle (5.4,0.1);
+\node[right, text=violet!60!black] at (5.45,-0.05) {第三视角相机（仅评测）};
+\draw[thick, orange!80!black, fill=orange!15] (0.0,-0.25) rectangle (1.4,0.55);
+\node[align=center] at (0.7,0.15) {集果篮};
+\node[align=left, anchor=west, text=orange!60!black] at (1.5,0.1) {（视野之外）};
+\fill[yellow!80!orange] (8.8,4.2) rectangle (9.6,4.45);
+\node[right] at (9.65,4.33) {590~nm 琥珀色 LED};
+\draw[rounded corners, fill=white] (9.0,-0.3) rectangle (11.3,0.7);
+\node[align=center] at (10.15,0.2) {GPU 工作站\\VLA + \pedet{}};
+\end{tikzpicture}
+\caption{真机实验平台示意（俯视，非比例）。果实、果梗与植株上不安装任何传感器，事件只来自机器人自身的夹爪与相机；第三视角相机只用于评测标注。\todo{搭建完成后替换为实物照片，并补充前置与腕部相机的样例画面}}
+\label{fig:realsetup}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{真机实验配置}
+\label{tab:hardware}
+\small
+\begin{tabular}{ll}
+\toprule
+项目 & 配置\\
+\midrule
+机械臂 / 夹爪 & \V{rb_arm} / \V{rb_grip}\\
+相机 & 前置 \V{rb_cam_f}；腕部 \V{rb_cam_w}；\V{rb_cam_3}（仅评测）\\
+计算平台 & \V{rb_gpu}\\
+控制 & \V{rb_hz}~Hz 关节增量控制，执行步长 16，安全包络与仿真相同\\
+果实 & \V{rb_fruit}，红熟/绿熟混挂；弹簧果梗夹固定，拉脱力 \V{rb_force}~N\\
+事件来源 & 训练与部署：夹爪 + 腕部相机（事后确认自训练）；评测：第三视角双人标注\\
+扰动装置 & 舵机拨杆（风落果）；舵机叶帘；590~nm 窄带照明；暖色照明\\
+示范数据 & 每任务 \V{rb_demo} 个遥操作回合\\
+测试规模 & 每任务 \V{rb_layouts} 布局 $\times$ \V{rb_reps} 次 $\times$ 每条件；温室盆栽番茄每条件 15 次\\
+\bottomrule
+\end{tabular}
+\end{table}

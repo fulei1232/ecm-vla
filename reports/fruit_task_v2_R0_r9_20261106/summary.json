@@ -1,0 +1,2793 @@
+{
+  "revision": 9,
+  "phase": "R0/data_only",
+  "created_utc": "2026-11-06T06:25:25.512266+00:00",
+  "state": {
+    "revision": 9,
+    "stage": "R0",
+    "state": "R9_check_failed",
+    "training": false,
+    "train_data_generated": false,
+    "memory_check_attempt": 1,
+    "retry_authorization": "User: 修正; only checker working directory correction and preserved new check attempt.",
+    "previous_failure_archive": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0",
+    "updated_utc": "2026-11-06T06:25:18.405264+00:00",
+    "purpose": "budget_nonstop",
+    "reason": "R9 simulation cost >2x R8: /media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep258/cost_comparison.json",
+    "traceback": "Traceback (most recent call last):\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py\", line 169, in main\n    cohort(level,plan['dev_diagnostic'],purpose)\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py\", line 147, in cohort\n    for future in as_completed([pool.submit(lane,gpu) for gpu in range(8)]):future.result()\n                                                                            ^^^^^^^^^^^^^^^\n  File \"/media/fulei/fuleivla/.runtime/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/media/fulei/fuleivla/.runtime/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/media/fulei/fuleivla/.runtime/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py\", line 145, in lane\n    for episode in episodes[gpu::8]:execute('count',level,episode,gpu,purpose)\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py\", line 139, in execute\n    if not cost['passed']:raise RuntimeError(f'R9 simulation cost >2x R8: {d}/cost_comparison.json')\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: R9 simulation cost >2x R8: /media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep258/cost_comparison.json\n"
+  },
+  "count_R0_replays": 0,
+  "count_R0_target": 350,
+  "cohorts": {
+    "history": {
+      "episodes": 0,
+      "successes": 0,
+      "passed": null,
+      "report_only": false,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "failure_modes": {},
+      "appearance_checks": 0,
+      "minimum_mask_iou": null,
+      "maximum_mean_color_diff_255": null,
+      "maximum_pixel_diff_255": null,
+      "replenishment_delays": [],
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      }
+    },
+    "current": {
+      "episodes": 0,
+      "successes": 0,
+      "passed": null,
+      "report_only": false,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "failure_modes": {},
+      "appearance_checks": 0,
+      "minimum_mask_iou": null,
+      "maximum_mean_color_diff_255": null,
+      "maximum_pixel_diff_255": null,
+      "replenishment_delays": [],
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      }
+    },
+    "initial_current": {
+      "episodes": 0,
+      "successes": 0,
+      "passed": null,
+      "report_only": false,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "failure_modes": {},
+      "appearance_checks": 0,
+      "minimum_mask_iou": null,
+      "maximum_mean_color_diff_255": null,
+      "maximum_pixel_diff_255": null,
+      "replenishment_delays": [],
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      }
+    },
+    "initial_ground": {
+      "episodes": 0,
+      "successes": 0,
+      "passed": null,
+      "report_only": false,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "failure_modes": {},
+      "appearance_checks": 0,
+      "minimum_mask_iou": null,
+      "maximum_mean_color_diff_255": null,
+      "maximum_pixel_diff_255": null,
+      "replenishment_delays": [],
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      }
+    },
+    "clock_onset": {
+      "episodes": 0,
+      "successes": 0,
+      "passed": null,
+      "report_only": true,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "failure_modes": {},
+      "appearance_checks": 0,
+      "minimum_mask_iou": null,
+      "maximum_mean_color_diff_255": null,
+      "maximum_pixel_diff_255": null,
+      "replenishment_delays": [],
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      }
+    },
+    "clock_onset_k0": {
+      "episodes": 0,
+      "successes": 0,
+      "passed": null,
+      "report_only": true,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "failure_modes": {},
+      "appearance_checks": 0,
+      "minimum_mask_iou": null,
+      "maximum_mean_color_diff_255": null,
+      "maximum_pixel_diff_255": null,
+      "replenishment_delays": [],
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      }
+    },
+    "clock": {
+      "episodes": 0,
+      "successes": 0,
+      "passed": null,
+      "report_only": false,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "failure_modes": {},
+      "appearance_checks": 0,
+      "minimum_mask_iou": null,
+      "maximum_mean_color_diff_255": null,
+      "maximum_pixel_diff_255": null,
+      "replenishment_delays": [],
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      }
+    }
+  },
+  "expert_timing_by_N": {
+    "all": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "2": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "3": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "4": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "5": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "6": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "7": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "8": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "9": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    },
+    "10": {
+      "episodes": 0,
+      "first_basket_after_green": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      },
+      "inter_basket_intervals": {
+        "n": 0,
+        "mean": null,
+        "std": null,
+        "range": null
+      }
+    }
+  },
+  "checks": {
+    "cpu_preflight.json": {
+      "revision": 9,
+      "created_utc": "2026-11-06T03:47:05.219610+00:00",
+      "passed": true,
+      "checks": {
+        "D5_default_selection": {
+          "passed": true,
+          "episodes": 20,
+          "times_per_episode": 10,
+          "conditions": [
+            "K0",
+            "K4",
+            "K8"
+          ],
+          "comparisons": 600,
+          "sources": [
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep100_seed7",
+              "times": [
+                0,
+                67,
+                134,
+                202,
+                269,
+                336,
+                404,
+                471,
+                538,
+                606
+              ],
+              "event_signal_sha256": "6f1975698d5cddc7e425d07bd23dd7c8182f4ae64f5cf39b41ff5b19568dfc6e"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep101_seed7",
+              "times": [
+                0,
+                49,
+                99,
+                148,
+                198,
+                247,
+                297,
+                346,
+                396,
+                446
+              ],
+              "event_signal_sha256": "f82e4066dbb71274b77e6bf3c601b83f534a7f9fda453c6bc5c53c0bb428fb58"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep102_seed7",
+              "times": [
+                0,
+                42,
+                84,
+                127,
+                169,
+                212,
+                254,
+                297,
+                339,
+                382
+              ],
+              "event_signal_sha256": "b5ca0d924a629165a3acee23a2b5393f0bf4272553115f3ad57f4e46f3a7ffb8"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep103_seed7",
+              "times": [
+                0,
+                44,
+                88,
+                132,
+                176,
+                221,
+                265,
+                309,
+                353,
+                398
+              ],
+              "event_signal_sha256": "f3656d231b75ead5045cecdb10a03175d7ced8fee634c604fc8f80f945da939a"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep104_seed7",
+              "times": [
+                0,
+                47,
+                95,
+                143,
+                191,
+                238,
+                286,
+                334,
+                382,
+                430
+              ],
+              "event_signal_sha256": "ceb641e28bb7d2e8b6a3fad4f54a0cf1c9aa231d3c8642fc084fe515d6c95fc7"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep105_seed7",
+              "times": [
+                0,
+                47,
+                95,
+                143,
+                191,
+                238,
+                286,
+                334,
+                382,
+                430
+              ],
+              "event_signal_sha256": "a62483f3c658d644ce91042efb8f4e9cb8fcb1b7301df4b2d3642d306fd2518d"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep106_seed7",
+              "times": [
+                0,
+                33,
+                67,
+                100,
+                134,
+                167,
+                201,
+                234,
+                268,
+                302
+              ],
+              "event_signal_sha256": "ffad0bf7a95b358072e35a5fceba3ff76c6c0440a1bd3fda6985cebc2512d6d5"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep107_seed7",
+              "times": [
+                0,
+                33,
+                67,
+                100,
+                134,
+                167,
+                201,
+                234,
+                268,
+                302
+              ],
+              "event_signal_sha256": "51352f220453a6f33aa20f4993e7b910ef5e80b4c0f7a95390222e49b5f77725"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep108_seed7",
+              "times": [
+                0,
+                49,
+                99,
+                148,
+                198,
+                247,
+                297,
+                346,
+                396,
+                446
+              ],
+              "event_signal_sha256": "5a762aacbbc112c7fbbba129076f7b4f2696bae5723bf65338017014d79d2794"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep109_seed7",
+              "times": [
+                0,
+                46,
+                92,
+                138,
+                184,
+                230,
+                276,
+                322,
+                368,
+                414
+              ],
+              "event_signal_sha256": "73f23ef1a4a9d14b0b7fbe4b16fed4ddf493add07f36d7d9b79966a8ea1e57d5"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep100_seed7",
+              "times": [
+                0,
+                51,
+                102,
+                154,
+                205,
+                256,
+                308,
+                359,
+                410,
+                462
+              ],
+              "event_signal_sha256": "ba05e44faa76369ed0b82a00199a436dcce1736eeed43d74bb920e141bf3bf06"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep101_seed7",
+              "times": [
+                0,
+                26,
+                52,
+                79,
+                105,
+                132,
+                158,
+                185,
+                211,
+                238
+              ],
+              "event_signal_sha256": "459cbd72a3c1ef7ea154bbcff890af1c9c309a1d71666b220f8a24514b2f7112"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep102_seed7",
+              "times": [
+                0,
+                79,
+                159,
+                239,
+                319,
+                398,
+                478,
+                558,
+                638,
+                718
+              ],
+              "event_signal_sha256": "4e31f9ee1702c7dda954895f86cbcd589b4103300747dd4e9944831fbe041780"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep103_seed7",
+              "times": [
+                0,
+                143,
+                287,
+                431,
+                575,
+                718,
+                862,
+                1006,
+                1150,
+                1294
+              ],
+              "event_signal_sha256": "61e539728d806c1594923cf87b4c2abc4ae27ee88dae37be16dc565b22b8b59c"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep104_seed7",
+              "times": [
+                0,
+                53,
+                106,
+                159,
+                212,
+                265,
+                318,
+                371,
+                424,
+                478
+              ],
+              "event_signal_sha256": "a78ba7b15a1c66d8d376c8e43b77b718d653310c8c81a6a09b7a3ec8da0429b9"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep105_seed7",
+              "times": [
+                0,
+                65,
+                131,
+                196,
+                262,
+                327,
+                393,
+                458,
+                524,
+                590
+              ],
+              "event_signal_sha256": "7dab0a6bb2182d25171d15791c72e4fcc5d86b7e0d1e1c467952746e483ba815"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep106_seed7",
+              "times": [
+                0,
+                10,
+                20,
+                31,
+                41,
+                52,
+                62,
+                73,
+                83,
+                94
+              ],
+              "event_signal_sha256": "630408272b735c5c4453217792803cb80bd0e3760c59b5e9f644c3b7e3f542a3"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep107_seed7",
+              "times": [
+                0,
+                44,
+                88,
+                132,
+                176,
+                221,
+                265,
+                309,
+                353,
+                398
+              ],
+              "event_signal_sha256": "812fa82f09f03c91a593dda4c27edeb67e7d8e4e1f2cef551e19d60c5ffc558f"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep108_seed7",
+              "times": [
+                0,
+                44,
+                88,
+                132,
+                176,
+                221,
+                265,
+                309,
+                353,
+                398
+              ],
+              "event_signal_sha256": "ce858260d0f691441e36fd1cd907a9c0901b6101a5987eac968cac3dc1acd0c5"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep109_seed7",
+              "times": [
+                0,
+                37,
+                74,
+                111,
+                148,
+                185,
+                222,
+                259,
+                296,
+                334
+              ],
+              "event_signal_sha256": "a614ffcd474c0bb7505a8521d564afe0e692a2c480405ddc853aa43dd1151a6f"
+            }
+          ]
+        },
+        "KA_completed_releases_latest12": {
+          "passed": true,
+          "keyframes": [
+            8,
+            11,
+            14,
+            17,
+            20,
+            23,
+            26,
+            29,
+            32,
+            35,
+            38,
+            41
+          ]
+        },
+        "absolute_adapter_is_noop": {
+          "passed": true
+        },
+        "early_start_thresholds_and_default": {
+          "passed": true,
+          "arm_rad": 0.1,
+          "TCP_m": 0.03
+        },
+        "v1_and_R8_defaults_retained_R9_N2to10": {
+          "passed": true,
+          "samples": [
+            8,
+            10,
+            6,
+            6,
+            8,
+            10,
+            5,
+            3,
+            9,
+            6,
+            10,
+            7,
+            7,
+            7,
+            2,
+            6,
+            10,
+            4,
+            3,
+            5,
+            5,
+            2,
+            3,
+            10,
+            9,
+            7,
+            9,
+            6,
+            8,
+            10,
+            4,
+            9,
+            4,
+            6,
+            10,
+            6,
+            6,
+            3,
+            7,
+            3,
+            4,
+            7,
+            4,
+            7,
+            6,
+            10,
+            6,
+            5,
+            3,
+            3,
+            10,
+            6,
+            6,
+            10,
+            6,
+            3,
+            4,
+            9,
+            8,
+            10
+          ]
+        },
+        "K0_onset_uses_selected_visible_lamps": {
+          "passed": true
+        },
+        "occluded_frame0_readonly": {
+          "passed": true,
+          "episodes": 50,
+          "all_decisions_retain_frame0": {
+            "K0": 127,
+            "K8": 127,
+            "KA": 127
+          },
+          "sources": [
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200",
+              "decisions": 2,
+              "trace_sha256": "b305bbfda5d17ffe327a308408bba2a0ab139f71876fc80cf639028270a124f9"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep201",
+              "decisions": 3,
+              "trace_sha256": "4e635b4787f84b8ad2cdf1e48bfa42edf2663636d9e8807d380bf31fedf12fe1"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep202",
+              "decisions": 1,
+              "trace_sha256": "17d564c1bb5846bedf20bdd66769a41521ae091b90b5dc07b765a7b952305bda"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep203",
+              "decisions": 3,
+              "trace_sha256": "b166c9b1b8bd4a6750eb98fb394d638a4caeb1df705f5367b3d373c05adc1490"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep204",
+              "decisions": 3,
+              "trace_sha256": "4f2685fc57f2bf9a246bf6377765f6f03b2efa756b8d7eca7398286c74621a83"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep205",
+              "decisions": 2,
+              "trace_sha256": "67ccafc9ecb6a6f9e4382fd2d2855e39aa83d175dbd0bbe01298ebc421041712"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep206",
+              "decisions": 3,
+              "trace_sha256": "66a84f96eb0549a7b63e1cf159543a1bc912896cdc5f076336306f5a0380e727"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep207",
+              "decisions": 3,
+              "trace_sha256": "295e8b33f07227a62b8a6f1346fba9a9ebdc7e334178c6cfd7f0fdff2a924425"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep208",
+              "decisions": 2,
+              "trace_sha256": "71bfc2c25a710c497a302ada099db3118d96307ee59a4445b73c5296ff257605"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep209",
+              "decisions": 2,
+              "trace_sha256": "da75ee1cc69078095e292f0d67e079b3a127293d74e6d55929e65eb755583c30"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep210",
+              "decisions": 3,
+              "trace_sha256": "82c105d04415f2110562e121904ad8a5a8b19fb1fae0beb409db4954f64c132e"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep211",
+              "decisions": 2,
+              "trace_sha256": "cf6df6c02ea5c4886a4f9514caffca94032306cfee6efa6ef204c8c6669357e1"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep212",
+              "decisions": 2,
+              "trace_sha256": "d24cfdb708ab7325cd2541fea99549e506f6608c668c1492f9dbc255166584b2"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep213",
+              "decisions": 3,
+              "trace_sha256": "4d2cdbf34c7160c03ff236df286fb13ae4d6f8e6cfd11b16c65b242313a6ef74"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep214",
+              "decisions": 2,
+              "trace_sha256": "20cef91dfd9109cecd18b5fba0a0ad087b52d1f02c0f0de84a4fa0ffbea0ee05"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep215",
+              "decisions": 3,
+              "trace_sha256": "618c579083e8b6f706acc45e3f0b894e15324120e234297d83c8de5e9ef5b7bd"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep216",
+              "decisions": 2,
+              "trace_sha256": "bfa8596e1ad887d91a954df0167aa33e9d433708d30922c8eb2a9e827609716e"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep217",
+              "decisions": 2,
+              "trace_sha256": "cabfc6ea2c72a312d3c6f1c90fb6281369daba46472dae025b32c26d4a78b8d7"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep218",
+              "decisions": 2,
+              "trace_sha256": "fd09ea7bbc55e80c25d9aee485f5fbd4aa1fe6f8752919601e1891ac5fed0867"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep219",
+              "decisions": 2,
+              "trace_sha256": "26f06206d9de43399e138256f29e73ec12745bc2b9279910a5b837cad5884c75"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep220",
+              "decisions": 2,
+              "trace_sha256": "a58097114cc89fe9401117f84f58db13326f72b6e0f617a5090d6afbe8e7e3bc"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep221",
+              "decisions": 2,
+              "trace_sha256": "d3c183b84572e245a7a75114d2c9266d17317c483ba18643c013a7570e7596c2"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep222",
+              "decisions": 3,
+              "trace_sha256": "4307b6cf6e282e50d693f8d35472b000bcc6d3aea3bf9ea3d5d8861f49b0994a"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep223",
+              "decisions": 2,
+              "trace_sha256": "cf3d8b4db52cacb04aa300dbbfbb59f1ec6b5faad050cdf978eac8ccec190069"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep224",
+              "decisions": 3,
+              "trace_sha256": "595e67cb00fea144ae3b8eb301b64f0cdea57e8a1a0ef3c66e2fe5b2b4dd29b4"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep225",
+              "decisions": 3,
+              "trace_sha256": "7c7b4997c45cf5ac71ac2485ba2e0acd161276dad7ab98ba6849f0350ee3f25e"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep226",
+              "decisions": 2,
+              "trace_sha256": "01049e11d4aaefc13a63c11e5f6f61a3955c549b5fd5ca9dc1b5e6174c295406"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep227",
+              "decisions": 3,
+              "trace_sha256": "d4c47054ea5a5e5426b4831c28688f73eae5d886b4242fb98c3430c2ceeb3c4c"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep228",
+              "decisions": 3,
+              "trace_sha256": "214fa81bd63bc2df0365ed3581daa7e507a6e0495cef495ab90e67175af5d4de"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep229",
+              "decisions": 2,
+              "trace_sha256": "b8deee514d28d4f1363e4f0337cc88f4795747e5d605a4caa36e2d598e880418"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep230",
+              "decisions": 3,
+              "trace_sha256": "3d5b10e7a07b2c84c9d494fe8784af4f1b0ffec8b895e23dfcd082e39263b769"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep231",
+              "decisions": 3,
+              "trace_sha256": "7a4cc843bddcd84308fd414800a78b1ac9a85310c49b20d48abe6b33e6cdae66"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep232",
+              "decisions": 3,
+              "trace_sha256": "b9e21dd082af2d54e381b2b026d9f0ac962d1089685107440ab380e842f4b5ee"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep233",
+              "decisions": 3,
+              "trace_sha256": "4374cb884656ffc966543ba6ffd967d4e75b286941bd765b940f0169586e16a4"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep234",
+              "decisions": 3,
+              "trace_sha256": "2f92a371de0db33e9413d293d01f427c93e9f17d38170ad73c1122deadc7007b"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep235",
+              "decisions": 3,
+              "trace_sha256": "48b8e7eb86fb41db115b25d4f8a72b446560eb9775b3dbfa6ec02a5c221b81f0"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep236",
+              "decisions": 2,
+              "trace_sha256": "eb7d2c7cfd1c5b19d9a3e4f99ee6231e6bfac5f5d97d95fd0b2e6641568992b4"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep237",
+              "decisions": 3,
+              "trace_sha256": "dad1475b8b88c54abf1f6f18b3f6dbab1eeeeae7eb19e1d87b11c4d80645d4e2"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep238",
+              "decisions": 2,
+              "trace_sha256": "b0fd3a76961ea9604143e4f7a0c640d99d26b486ec0ce3666305bacc13bf6db5"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep239",
+              "decisions": 3,
+              "trace_sha256": "6ddc6d085a5c12dd2370e535c609f941506d84d3bfb5514d2f4d9bba7e4a29c6"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep240",
+              "decisions": 2,
+              "trace_sha256": "dbe337b99a7d3b5dd87ff98d552c3aa3b293f4f0ae72986eeee7fb160af45927"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep241",
+              "decisions": 2,
+              "trace_sha256": "0f5fa13116ceb3317cdd9f6621978cece09205a172917d496c5023b5994771ab"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep242",
+              "decisions": 3,
+              "trace_sha256": "f787e414a0a05faaa127f4a69e46e3e8505933722b4a880b3bc95ba302ad1cb2"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep243",
+              "decisions": 3,
+              "trace_sha256": "e000b9b99a752fabe0f366d7112590cfb4d86c076a1aad7f025e73caf22f7972"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep244",
+              "decisions": 3,
+              "trace_sha256": "b6a8b04a8f2b749e694feacc323ef04a2e2fe93961d3318907b7abb6e033549e"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep245",
+              "decisions": 3,
+              "trace_sha256": "993f222fdb9be219064d47cd862c91a2c6b898b19f1ef97149b8fa9bfb775f21"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep246",
+              "decisions": 3,
+              "trace_sha256": "bb95e8bfc81be22204aabf1b2c8f7063e8f9d0509bc3d1a53bd1ad50a98f4731"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep247",
+              "decisions": 3,
+              "trace_sha256": "82d8f1d7eb9aeef86921a903831cb7accf6bf58ec7d27a9a8245326ae3dcc4c9"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep248",
+              "decisions": 3,
+              "trace_sha256": "f1f3dbeeef898443c2ddee8cfb10754ae02212c9644ed8bc958eba76f8e4fcc1"
+            },
+            {
+              "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep249",
+              "decisions": 2,
+              "trace_sha256": "5f2ac029ab27468b36a431b801dbf066aaf7a7a9534b236121a45484bd5671d2"
+            }
+          ]
+        }
+      },
+      "GPU_tensor_checks": "pending; must pass before new R0 simulations"
+    },
+    "R8_information_definition_crosscheck.json": {
+      "passed": true,
+      "episodes": 50,
+      "all_broad": {
+        "K0": 49,
+        "K8": 44,
+        "KA": 50,
+        "recent16": 0
+      },
+      "source": "accepted R8 expert records, read-only; not reused as new R9 performance",
+      "definition": "near interval start through replenishment, inclusive; detach may equal event release"
+    },
+    "memory_tensor_checks.json": {
+      "revision": 9,
+      "passed": true,
+      "created_utc": "2026-11-06T06:17:02.631517+00:00",
+      "any_hanging_inference_factory": {
+        "passed": true,
+        "maturity_and_legacy_distance_ignored": true,
+        "inactive_reserve_excluded": true,
+        "recorded_frame_hash_checked": true
+      },
+      "absolute_default": {
+        "passed": true,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep100_seed7",
+        "checks": [
+          {
+            "step": 0,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 0,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 0,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 67,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 67,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 67,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 134,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 134,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 134,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 202,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 202,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 202,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 269,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 269,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 269,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 336,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 336,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 336,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 404,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 404,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 404,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 471,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 471,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 471,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 538,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 538,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 538,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 606,
+            "events": 0,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 606,
+            "events": 4,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          },
+          {
+            "step": 606,
+            "events": 8,
+            "elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            }
+          }
+        ],
+        "scope": "Before/after packing on identical frozen-encoder features of recorded D5 input; historical files unchanged."
+      },
+      "order_train_inference": {
+        "passed": true,
+        "times": [
+          0,
+          67,
+          134,
+          202,
+          269,
+          336,
+          404,
+          471,
+          538,
+          606
+        ],
+        "checks": [
+          {
+            "condition": "K0",
+            "step": 0,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 67,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 134,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 202,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 269,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 336,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 404,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 471,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 538,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K0",
+            "step": 606,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 0,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 67,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 134,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 202,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 269,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 336,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 404,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 471,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 538,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "K8",
+            "step": 606,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 0,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 67,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 134,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 202,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 269,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 336,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 404,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 471,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 538,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          },
+          {
+            "condition": "KA",
+            "step": 606,
+            "train_inference_elementwise_equal": {
+              "image": true,
+              "position": true,
+              "state": true,
+              "mask": true
+            },
+            "temporal_rank_equal": true,
+            "spatial_unchanged": true
+          }
+        ]
+      },
+      "feature_length_boundary": {
+        "passed": true,
+        "initial_temporal_cache": 2048,
+        "PosEmb3D_automatically_expands": true,
+        "buffer_max_steps_default": 4096,
+        "R9_budget": 2800,
+        "R9_safe_under_default_table": true,
+        "beyond_max_steps": "Empty position slice; explicitly allocate max_steps above the largest frame index for longer future data. Default unchanged."
+      },
+      "selected_raw_frames": 227,
+      "checkpoint": "/media/fulei/fuleivla/ecm_vla/runs/fruit_k0v2_lowlevel_rescue_20261102/ckpt/mme_vla_suite/k0/11999",
+      "default_selection_source_sha256": "6f1975698d5cddc7e425d07bd23dd7c8182f4ae64f5cf39b41ff5b19568dfc6e",
+      "shared_packer_sha256": "d6181fe0d502ef1d79557f8eb7c6de1bba75b6e39f5b63e7c49810ba28b204f9",
+      "train_sampler_sha256": "6bf60694f3221442c0923e38925b201c8bd9dd4f04e1c1a3aefa2cdb295df6e1"
+    },
+    "budget_check.json": null,
+    "early_start_check.json": {
+      "passed": true,
+      "eligible_episodes": [
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        257,
+        258,
+        259
+      ],
+      "attempts": [
+        {
+          "episode": 250,
+          "green_step": 507,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 251,
+          "green_step": 411,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 252,
+          "green_step": 280,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 253,
+          "green_step": 202,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 254,
+          "green_step": 382,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 255,
+          "green_step": 55,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 257,
+          "green_step": 602,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 258,
+          "green_step": 524,
+          "failed_step": 31,
+          "outcome": "early_start"
+        },
+        {
+          "episode": 259,
+          "green_step": 567,
+          "failed_step": 31,
+          "outcome": "early_start"
+        }
+      ]
+    },
+    "information_audit.json": null,
+    "R0_gate.json": null,
+    "data_delivery.json": null
+  },
+  "accepted_occluded_R0_not_rerun": true,
+  "simulation_cost_comparisons": [
+    {
+      "episode": 250,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 38.479445,
+      "R9_wall_seconds": 76.173431,
+      "ratio": 1.9795875694153073,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 251,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 51.125413,
+      "R9_wall_seconds": 91.609604,
+      "ratio": 1.791860419787709,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 252,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 45.868896,
+      "R9_wall_seconds": 76.940854,
+      "ratio": 1.677408019586955,
+      "passed": true,
+      "R8_fruit_actors": 24,
+      "R9_fruit_actors": 44,
+      "R9_scene_entities": 49,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 253,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 47.458882,
+      "R9_wall_seconds": 84.719196,
+      "ratio": 1.7851072850810095,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 254,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 44.933497,
+      "R9_wall_seconds": 79.244048,
+      "ratio": 1.7635851489591385,
+      "passed": true,
+      "R8_fruit_actors": 24,
+      "R9_fruit_actors": 44,
+      "R9_scene_entities": 49,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 255,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 45.131383,
+      "R9_wall_seconds": 76.597898,
+      "ratio": 1.6972202690974483,
+      "passed": true,
+      "R8_fruit_actors": 24,
+      "R9_fruit_actors": 44,
+      "R9_scene_entities": 49,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 256,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 55.693735,
+      "R9_wall_seconds": 99.815642,
+      "ratio": 1.7922238829915071,
+      "passed": true,
+      "R8_fruit_actors": 36,
+      "R9_fruit_actors": 66,
+      "R9_scene_entities": 71,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 257,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 49.774227,
+      "R9_wall_seconds": 89.553065,
+      "ratio": 1.7991854499317488,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 258,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 64.057619,
+      "R9_wall_seconds": 116.400481,
+      "ratio": 1.8171215667569536,
+      "passed": true,
+      "R8_fruit_actors": 36,
+      "R9_fruit_actors": 66,
+      "R9_scene_entities": 71,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 259,
+      "purpose": "budget_expert",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 39.063238,
+      "R9_wall_seconds": 78.019782,
+      "ratio": 1.9972686852021844,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 250,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 48.831693,
+      "R9_wall_seconds": 86.660707,
+      "ratio": 1.7746815986904243,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 251,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 55.336013,
+      "R9_wall_seconds": 96.885959,
+      "ratio": 1.7508662758193294,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 252,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 44.639123,
+      "R9_wall_seconds": 77.935977,
+      "ratio": 1.7459119212534708,
+      "passed": true,
+      "R8_fruit_actors": 24,
+      "R9_fruit_actors": 44,
+      "R9_scene_entities": 49,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 253,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 48.627052,
+      "R9_wall_seconds": 85.667995,
+      "ratio": 1.761735319673502,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 254,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 46.195674,
+      "R9_wall_seconds": 80.699177,
+      "ratio": 1.746899006171011,
+      "passed": true,
+      "R8_fruit_actors": 24,
+      "R9_fruit_actors": 44,
+      "R9_scene_entities": 49,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 255,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 44.465202,
+      "R9_wall_seconds": 77.382391,
+      "ratio": 1.7402910032883692,
+      "passed": true,
+      "R8_fruit_actors": 24,
+      "R9_fruit_actors": 44,
+      "R9_scene_entities": 49,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 256,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 58.299307,
+      "R9_wall_seconds": 100.66096,
+      "ratio": 1.7266236114950733,
+      "passed": true,
+      "R8_fruit_actors": 36,
+      "R9_fruit_actors": 66,
+      "R9_scene_entities": 71,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 257,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 52.178184,
+      "R9_wall_seconds": 93.640007,
+      "ratio": 1.794619893248872,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 258,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 54.965914,
+      "R9_wall_seconds": 112.342341,
+      "ratio": 2.0438546878343553,
+      "passed": false,
+      "R8_fruit_actors": 36,
+      "R9_fruit_actors": 66,
+      "R9_scene_entities": 71,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    },
+    {
+      "episode": 259,
+      "purpose": "budget_nonstop",
+      "R8_N": 5,
+      "R9_N": 10,
+      "R8_wall_seconds": 40.441277,
+      "R9_wall_seconds": 78.35187,
+      "ratio": 1.9374232420998974,
+      "passed": true,
+      "R8_fruit_actors": 30,
+      "R9_fruit_actors": 55,
+      "R9_scene_entities": 60,
+      "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+    }
+  ],
+  "distance_signal": "any_hanging",
+  "arms": [
+    "K0",
+    "K8",
+    "KA"
+  ],
+  "temporal_index": "order",
+  "D5_D6_R7_R8_artifacts_unchanged": true,
+  "preservation_scope": "Frozen result trees, reports, checkpoints and seal documents; authorized live source changes have 15401b6 snapshots and default-behavior checks.",
+  "training": false,
+  "val150_199_used": false,
+  "cases": [],
+  "post_stop_review": {
+    "revision": 9,
+    "created_utc": "2026-11-06T06:31:10.951953+00:00",
+    "decision": "Stopped: performance gate failed; overall R0 not passed.",
+    "classification": "performance_gate_failure",
+    "source_pins_unchanged": 41,
+    "valid_diagnostic_records": 29,
+    "pressure_cases": 20,
+    "early_start_negative_checks": 9,
+    "current_attempt_engineering_errors": 0,
+    "historical_setup_errors": 1,
+    "failed_performance_cases": [
+      {
+        "purpose": "budget_nonstop",
+        "episode": 258,
+        "M": 6,
+        "N": 10,
+        "steps": 2644,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 66,
+        "reserve_actors": 60,
+        "scene_actors": 70,
+        "scene_articulations": 1,
+        "scene_entities": 71,
+        "R8_steps": 1683,
+        "R8_wall_seconds": 54.965914,
+        "R9_wall_seconds": 112.342341,
+        "ratio": 2.0438546878343553,
+        "performance_passed": false,
+        "steps_ratio_report_only": 1.5710041592394532,
+        "wall_per_step_ratio_report_only": 1.3009861723242133,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep258",
+        "result_sha256": "2fd55fa81bf9cfe8b5dc708f5504711e6c7192b8dd187443b5f734311151acf5",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep258"
+      }
+    ],
+    "budget_readonly_recalculation": {
+      "scope": "Read-only recalculation of completed pressure records after the performance stop; the runner did not execute its budget_check function.",
+      "official_budget_check_executed": false,
+      "timing_conditions_met": true,
+      "budget": 2800,
+      "expert_complete": 10,
+      "expert_attempts": 10,
+      "max_finish_including_40_hold": 2598,
+      "minimum_remaining_steps": 202,
+      "nonstop_overpick": 10,
+      "nonstop_attempts": 10,
+      "max_11th_detach_step": 2644,
+      "budget_change_proposed": null
+    },
+    "appearance_comparisons": 210,
+    "appearance_min_iou": 1.0,
+    "appearance_max_mean_diff_255": 0.0,
+    "appearance_max_pixel_diff_255": 0,
+    "max_visibility": {
+      "front_camera": {
+        "basket": 0,
+        "basket_fruit": 0,
+        "inactive_reserve": 0,
+        "lamp": 169
+      },
+      "hand_camera": {
+        "basket": 0,
+        "basket_fruit": 0,
+        "inactive_reserve": 0,
+        "lamp": 842
+      }
+    },
+    "replenishment_delays": 0,
+    "pressure_expert_early_start": 0,
+    "guard_clipped_pressure_expert": 0,
+    "guard_checked_pressure_expert": 21254,
+    "count_R0_audit_cases": 0,
+    "clock_calibration_cases": 0,
+    "information_audit_executed": false,
+    "R0_gate_issued": false,
+    "new_raw_data_exists": false,
+    "new_built_dataset_exists": false,
+    "training": false,
+    "occluded_R0_rerun": false,
+    "old_artifacts_and_initial_failure_preserved": true,
+    "new_replay_or_source_change_for_this_review": false,
+    "pressure_results": [
+      {
+        "purpose": "budget_expert",
+        "episode": 250,
+        "M": 5,
+        "N": 10,
+        "steps": 2040,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1355,
+        "R8_wall_seconds": 38.479445,
+        "R9_wall_seconds": 76.173431,
+        "ratio": 1.9795875694153073,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5055350553505535,
+        "wall_per_step_ratio_report_only": 1.3148731159596772,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep250",
+        "result_sha256": "6dbcbe223358323c562ccc5255df0f108fd435ad1a1d9534aff043d23a6dec6e",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 251,
+        "M": 5,
+        "N": 10,
+        "steps": 2270,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1471,
+        "R8_wall_seconds": 51.125413,
+        "R9_wall_seconds": 91.609604,
+        "ratio": 1.791860419787709,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5431679129843643,
+        "wall_per_step_ratio_report_only": 1.1611571266553833,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep251",
+        "result_sha256": "b0aafafd61b81a2d27bd3e0cd68c30544d53cd26f9ef0d033acce0048c7a56cf",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep251"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 252,
+        "M": 4,
+        "N": 10,
+        "steps": 2071,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 44,
+        "reserve_actors": 40,
+        "scene_actors": 48,
+        "scene_articulations": 1,
+        "scene_entities": 49,
+        "R8_steps": 1382,
+        "R8_wall_seconds": 45.868896,
+        "R9_wall_seconds": 76.940854,
+        "ratio": 1.677408019586955,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.4985528219971056,
+        "wall_per_step_ratio_report_only": 1.1193519474018212,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep252",
+        "result_sha256": "3eb397df21291d4e1c3f8de0ef6eea2fa4ce766c5c9625fdf858fc1419bcc25b",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep252"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 253,
+        "M": 5,
+        "N": 10,
+        "steps": 2032,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1352,
+        "R8_wall_seconds": 47.458882,
+        "R9_wall_seconds": 84.719196,
+        "ratio": 1.7851072850810095,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5029585798816567,
+        "wall_per_step_ratio_report_only": 1.1877288629082308,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep253",
+        "result_sha256": "525ec629b01e7803724eacc69de912715e0b4830f3e7332e72784a3e31a94612",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep253"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 254,
+        "M": 4,
+        "N": 10,
+        "steps": 2141,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 44,
+        "reserve_actors": 40,
+        "scene_actors": 48,
+        "scene_articulations": 1,
+        "scene_entities": 49,
+        "R8_steps": 1422,
+        "R8_wall_seconds": 44.933497,
+        "R9_wall_seconds": 79.244048,
+        "ratio": 1.7635851489591385,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5056258790436006,
+        "wall_per_step_ratio_report_only": 1.171330257739325,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep254",
+        "result_sha256": "9d80df9822c7f3f65e5193ed148047c043449430763b1e30afb4f7fc08fd56ed",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep254"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 255,
+        "M": 4,
+        "N": 10,
+        "steps": 2057,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 44,
+        "reserve_actors": 40,
+        "scene_actors": 48,
+        "scene_articulations": 1,
+        "scene_entities": 49,
+        "R8_steps": 1365,
+        "R8_wall_seconds": 45.131383,
+        "R9_wall_seconds": 76.597898,
+        "ratio": 1.6972202690974483,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.506959706959707,
+        "wall_per_step_ratio_report_only": 1.1262545781808542,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep255",
+        "result_sha256": "2d1990ba52ee33c853fbd41455524ff264a0185d50760c3e452bf25b88a4e989",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep255"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 256,
+        "M": 6,
+        "N": 10,
+        "steps": 2109,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 66,
+        "reserve_actors": 60,
+        "scene_actors": 70,
+        "scene_articulations": 1,
+        "scene_entities": 71,
+        "R8_steps": 1391,
+        "R8_wall_seconds": 55.693735,
+        "R9_wall_seconds": 99.815642,
+        "ratio": 1.7922238829915071,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5161754133716752,
+        "wall_per_step_ratio_report_only": 1.1820689526985235,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep256",
+        "result_sha256": "9a8dd95bfff9e4db52581c0a2ae1233f74a09d46a1888d7bfdcf8d8195b020c4",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep256"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 257,
+        "M": 5,
+        "N": 10,
+        "steps": 2168,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1419,
+        "R8_wall_seconds": 49.774227,
+        "R9_wall_seconds": 89.553065,
+        "ratio": 1.7991854499317488,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5278365045806905,
+        "wall_per_step_ratio_report_only": 1.1776033918141844,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep257",
+        "result_sha256": "d10a9d660efa1b068c09571d04189edcc8c46cc26e3d0d6dcde7f9b248c0ce79",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep257"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 258,
+        "M": 6,
+        "N": 10,
+        "steps": 2598,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 66,
+        "reserve_actors": 60,
+        "scene_actors": 70,
+        "scene_articulations": 1,
+        "scene_entities": 71,
+        "R8_steps": 1636,
+        "R8_wall_seconds": 64.057619,
+        "R9_wall_seconds": 116.400481,
+        "ratio": 1.8171215667569536,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5880195599022005,
+        "wall_per_step_ratio_report_only": 1.1442690081656568,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep258",
+        "result_sha256": "95767b258ec682b4f60df868a35eb8cd875dd93db0d9a082600e5bb74e063f86",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep258"
+      },
+      {
+        "purpose": "budget_expert",
+        "episode": 259,
+        "M": 5,
+        "N": 10,
+        "steps": 2068,
+        "outcome": "finish_signal",
+        "success": true,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1370,
+        "R8_wall_seconds": 39.063238,
+        "R9_wall_seconds": 78.019782,
+        "ratio": 1.9972686852021844,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5094890510948906,
+        "wall_per_step_ratio_report_only": 1.3231422140846192,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_expert/count/history/ep259",
+        "result_sha256": "302db5bd02fcb885ba4e8ade48c070404029dc44525a03bdb978f75fd8d75313",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep259"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 250,
+        "M": 5,
+        "N": 10,
+        "steps": 2059,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1374,
+        "R8_wall_seconds": 48.831693,
+        "R9_wall_seconds": 86.660707,
+        "ratio": 1.7746815986904243,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.4985443959243085,
+        "wall_per_step_ratio_report_only": 1.1842702848958926,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep250",
+        "result_sha256": "471bee5510a566403ff95db20cd637231204ca6ef82fb23d05b64687c896c750",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep250"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 251,
+        "M": 5,
+        "N": 10,
+        "steps": 2291,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1492,
+        "R8_wall_seconds": 55.336013,
+        "R9_wall_seconds": 96.885959,
+        "ratio": 1.7508662758193294,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5355227882037534,
+        "wall_per_step_ratio_report_only": 1.1402411538727366,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep251",
+        "result_sha256": "f7ea9d8d29ec690e0a6cf339650f852edef3602065f039e6efbe44a1587a6b28",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep251"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 252,
+        "M": 4,
+        "N": 10,
+        "steps": 2090,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 44,
+        "reserve_actors": 40,
+        "scene_actors": 48,
+        "scene_articulations": 1,
+        "scene_entities": 49,
+        "R8_steps": 1402,
+        "R8_wall_seconds": 44.639123,
+        "R9_wall_seconds": 77.935977,
+        "ratio": 1.7459119212534708,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.4907275320970044,
+        "wall_per_step_ratio_report_only": 1.1711811069843856,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep252",
+        "result_sha256": "eec76cd455c55c3412c18b9993dc89e3d295edcbad81ee1efd4325eba566a96d",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep252"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 253,
+        "M": 5,
+        "N": 10,
+        "steps": 2049,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1369,
+        "R8_wall_seconds": 48.627052,
+        "R9_wall_seconds": 85.667995,
+        "ratio": 1.761735319673502,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.4967129291453616,
+        "wall_per_step_ratio_report_only": 1.1770696206115296,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep253",
+        "result_sha256": "2ee50520471c8a4322c8bdddf40806ba8a6cf7e72722e97a42cb0bfc270a4d84",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep253"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 254,
+        "M": 4,
+        "N": 10,
+        "steps": 2162,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 44,
+        "reserve_actors": 40,
+        "scene_actors": 48,
+        "scene_articulations": 1,
+        "scene_entities": 49,
+        "R8_steps": 1444,
+        "R8_wall_seconds": 46.195674,
+        "R9_wall_seconds": 80.699177,
+        "ratio": 1.746899006171011,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.497229916897507,
+        "wall_per_step_ratio_report_only": 1.1667540078218963,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep254",
+        "result_sha256": "9971fb7b6631f1849e6a6133f645bfa28bc8398da9bd6534f864d41887fa3119",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep254"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 255,
+        "M": 4,
+        "N": 10,
+        "steps": 2076,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 44,
+        "reserve_actors": 40,
+        "scene_actors": 48,
+        "scene_articulations": 1,
+        "scene_entities": 49,
+        "R8_steps": 1383,
+        "R8_wall_seconds": 44.465202,
+        "R9_wall_seconds": 77.382391,
+        "ratio": 1.7402910032883692,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5010845986984815,
+        "wall_per_step_ratio_report_only": 1.1593557117282345,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep255",
+        "result_sha256": "d095320039d8a45e77d5d4f3dc90123c8434ba40e055c6c3736e1bee108e5659",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep255"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 256,
+        "M": 6,
+        "N": 10,
+        "steps": 2131,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 66,
+        "reserve_actors": 60,
+        "scene_actors": 70,
+        "scene_articulations": 1,
+        "scene_entities": 71,
+        "R8_steps": 1413,
+        "R8_wall_seconds": 58.299307,
+        "R9_wall_seconds": 100.66096,
+        "ratio": 1.7266236114950733,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.508138711960368,
+        "wall_per_step_ratio_report_only": 1.144870559851027,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep256",
+        "result_sha256": "707841750fbcc5d09b1b9c1693f7d21a9cea593f5ba352d8b2f0402f1929d16a",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep256"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 257,
+        "M": 5,
+        "N": 10,
+        "steps": 2193,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1444,
+        "R8_wall_seconds": 52.178184,
+        "R9_wall_seconds": 93.640007,
+        "ratio": 1.794619893248872,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.5186980609418284,
+        "wall_per_step_ratio_report_only": 1.1816831399231058,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep257",
+        "result_sha256": "8249b05ec0a227fe52ba99ed3904b380b556c5d7b36f511f1f3f01a80403ec28",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep257"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 258,
+        "M": 6,
+        "N": 10,
+        "steps": 2644,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 66,
+        "reserve_actors": 60,
+        "scene_actors": 70,
+        "scene_articulations": 1,
+        "scene_entities": 71,
+        "R8_steps": 1683,
+        "R8_wall_seconds": 54.965914,
+        "R9_wall_seconds": 112.342341,
+        "ratio": 2.0438546878343553,
+        "performance_passed": false,
+        "steps_ratio_report_only": 1.5710041592394532,
+        "wall_per_step_ratio_report_only": 1.3009861723242133,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep258",
+        "result_sha256": "2fd55fa81bf9cfe8b5dc708f5504711e6c7192b8dd187443b5f734311151acf5",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep258"
+      },
+      {
+        "purpose": "budget_nonstop",
+        "episode": 259,
+        "M": 5,
+        "N": 10,
+        "steps": 2087,
+        "outcome": "overpick",
+        "success": false,
+        "fruit_actors": 55,
+        "reserve_actors": 50,
+        "scene_actors": 59,
+        "scene_articulations": 1,
+        "scene_entities": 60,
+        "R8_steps": 1392,
+        "R8_wall_seconds": 40.441277,
+        "R9_wall_seconds": 78.35187,
+        "ratio": 1.9374232420998974,
+        "performance_passed": true,
+        "steps_ratio_report_only": 1.4992816091954022,
+        "wall_per_step_ratio_report_only": 1.2922343809310288,
+        "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep259",
+        "result_sha256": "87d852b0502e098a13d6754bf354043a89a3c4898c02fc57dba1e6baf4930985",
+        "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep259"
+      }
+    ]
+  },
+  "failure_diagnosis": {
+    "revision": 9,
+    "created_utc": "2026-11-06T06:34:24.709173+00:00",
+    "classification": "performance_gate_failure",
+    "overall_R0_passed": false,
+    "failed_case": {
+      "purpose": "budget_nonstop",
+      "episode": 258,
+      "M": 6,
+      "N": 10,
+      "steps": 2644,
+      "outcome": "overpick",
+      "success": false,
+      "fruit_actors": 66,
+      "reserve_actors": 60,
+      "scene_actors": 70,
+      "scene_articulations": 1,
+      "scene_entities": 71,
+      "R8_steps": 1683,
+      "R8_wall_seconds": 54.965914,
+      "R9_wall_seconds": 112.342341,
+      "ratio": 2.0438546878343553,
+      "performance_passed": false,
+      "steps_ratio_report_only": 1.5710041592394532,
+      "wall_per_step_ratio_report_only": 1.3009861723242133,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/replays/budget_nonstop/count/nonstop/ep258",
+      "result_sha256": "2fd55fa81bf9cfe8b5dc708f5504711e6c7192b8dd187443b5f734311151acf5",
+      "R8_source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/budget_nonstop/count/nonstop/ep258"
+    },
+    "criterion": "R9 complete stress-episode wall time <= 2 * matched R8 complete stress-episode wall time",
+    "limit_seconds": 109.931828,
+    "excess_seconds": 2.410513000000009,
+    "source_commit": "492d18e",
+    "source_changes_after_launch": false,
+    "replay_or_parameter_retry_after_failure": false,
+    "budget_values_meet_requirements": true,
+    "budget_check_scope": "Read-only recalculation of completed pressure records after the performance stop; the runner did not execute its budget_check function.",
+    "new_count_R0_cases": 0,
+    "training_data_generated": false,
+    "training": false,
+    "previous_setup_failure": "/media/fulei/fuleivla/ecm_vla/reports/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/failure_diagnosis.json",
+    "decision": "Stopped under §17.3(4) and §17.7; await user review; do not optimize, change thresholds/seeds, or rerun automatically.",
+    "bottleneck_attribution": "Not established: no initialization/physics/rendering/recording breakdown or system-load trace was measured."
+  },
+  "decision": "Performance gate failed: stop and await user review. Timing-budget values meet their limits, but overall R0 has not passed.",
+  "current_attempt_engineering_errors": 0,
+  "historical_setup_errors": 1,
+  "performance_gate_failures": 1
+}

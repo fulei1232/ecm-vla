@@ -1,0 +1,40 @@
+\section{Related work}
+\label{sec:related}
+
+\subsection{Harvesting robots and fruit perception}
+Reviews of harvesting robotics identify fruit detection under occlusion, localization accuracy and cycle time as the main bottlenecks \citep{bac2014harvesting,kootstra2021selective,zhou2022intelligent}. Field systems for sweet pepper \citep{arad2020sweetpepper}, kiwifruit \citep{williams2019kiwifruit} and apple \citep{silwal2017apple} follow a detect--localize--plan--grasp pipeline. Deep learning has replaced hand-crafted colour and shape features for fruit detection and segmentation \citep{sa2016deepfruits,kamilaris2018survey,koirala2019review}. Typical models are instance segmentation networks such as Mask R-CNN \citep{he2017maskrcnn} and single-stage detectors of the YOLO family \citep{redmon2016yolo}, often combined with depth or multi-view geometry for 3D localization \citep{gene2020fruit,kang2020apple}. Promptable foundation models for segmentation, Segment Anything (SAM) and SAM~2 \citep{kirillov2023sam,ravi2024sam2}, enable zero-shot masks from point or box prompts, and their use in agriculture is growing \tbd{cite 2--3 verified agricultural SAM applications}. Our \fdm\ uses SAM in this promptable mode, but its output is not a detection map for a planner. It is a scalar distance signal that organizes the memory of a learned policy.
+
+\subsection{Occlusion and active perception in harvesting}
+Occlusion by leaves and branches is a primary cause of missed fruits; detectability depends strongly on viewpoint \citep{hemming2014detectability}. Proposed remedies include multiple or moving cameras, next-best-view planning and active manipulation of foliage \tbd{cite verified works on multi-view / next-best-view / leaf pushing for harvesting}. These methods address what is not visible in the \emph{current} view. They rarely address fruits that were seen earlier and are hidden now, which calls for temporal or spatial memory rather than a better viewpoint. \bench\ isolates exactly this case: every leaf-hidden ripe fruit is fully visible before the gust.
+
+\subsection{Vision--language--action policies and imitation learning}
+VLA models extend vision--language models with action outputs: RT-2 \citep{brohan2023rt2}, OpenVLA \citep{kim2024openvla}, Octo \citep{octo2024}, and the flow-matching policies $\pi_0$ and $\pi_{0.5}$ \citep{black2024pi0,pi05_2025}, which build on PaliGemma \citep{beyer2024paligemma}, SigLIP \citep{zhai2023siglip} and flow matching \citep{lipman2023flow}. Policies trained from demonstrations, including Diffusion Policy \citep{chi2023diffusion} and ACT \citep{zhao2023act}, suffer from covariate shift. Small errors drive the robot into states absent from the demonstrations, where errors compound \citep{ross2011dagger}. Interactive corrections (DAgger) or noise injection during demonstration (DART, \citealp{laskey2017dart}) are the standard remedies. DART-H follows the latter, which needs no expert in the loop, and adapts it to the phase structure of harvesting. Applications of VLA policies to agricultural manipulation are still rare \tbd{cite verified early agricultural VLA / foundation-model robotics works, if any}.
+
+\subsection{Memory and keyframes in robot policies}
+Long-horizon manipulation benchmarks show that policies without history fail on tasks that require recalling past observations \tbd{cite RoboMME / memory benchmarks (verify)}. Memory-augmented VLAs keep a bounded history of visual tokens \tbd{cite MME-VLA / memory-as-modulator base model (verify)}. Keyframes are widely used in manipulation for other purposes: as action targets in keyframe-based policies \citep{shridhar2022peract} and as waypoints that compress demonstrations \citep{shi2023awe}. In video understanding, memory banks and keyframe selection compress long videos for multimodal models \citep{he2024malmm}. Cognitive science suggests that people segment continuous activity into discrete events and remember event boundaries preferentially \citep{zacks2007event}. To our knowledge, no prior work selects the memory frames of a VLA policy from task-defined physical events, nor studies memory selection for agricultural manipulation.
+
+\subsection{Positioning of this work}
+Table~\ref{tab:positioning} contrasts the memory designs available to a VLA policy under a fixed budget. Time-indexed designs keep either the recent past (a sliding window) or the whole past at a resolution that falls with elapsed time (uniform sampling), so short interaction events are kept only by chance. Learned memory banks and token compression can in principle discover what matters. They do so, however, implicitly, with additional parameters and training signals, and their selections are hard to audit. HarvestMem differs in three ways:
+\begin{enumerate}
+\item The unit of memory is a \emph{physical interaction event} defined by task geometry, not a time slot or a learned feature.
+\item Selection is a parameter-free deterministic function that is identical in training and deployment and contains uniform memory as a special case.
+\item Episodic memory of events is coupled to an explicit \emph{spatial} memory of objects acquired before occlusion. The ablations of Section~\ref{sec:res_chain} show that this coupling is necessary rather than optional.
+\end{enumerate}
+
+\begin{table}[t]
+\centering
+\caption{Memory designs for a VLA policy under a fixed budget. $\checkmark$: yes; $\times$: no; $\circ$: only by chance or implicitly.}
+\label{tab:positioning}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{lcccccc}
+\toprule
+Memory design & Distant past & Pick events kept & Fixed cost & No extra params & Train = deploy & Physically grounded\\
+\midrule
+No memory (current frame) & $\times$ & $\times$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\times$\\
+Recent window & $\times$ & $\circ$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\times$\\
+Uniform sampling (base model) & $\checkmark$ & $\circ$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\times$\\
+Learned memory bank / compression & $\checkmark$ & $\circ$ & $\checkmark$ & $\times$ & $\checkmark$ & $\times$\\
+\textbf{PEKM (HarvestMem)} & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$\\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\end{table}

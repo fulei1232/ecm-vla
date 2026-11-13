@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "scope": "New process-local continuation bindings and timing statistics only; no accepted R9 test or simulation repeated.",
+  "exit_code": 0,
+  "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.015s\n\nOK\n"
+}

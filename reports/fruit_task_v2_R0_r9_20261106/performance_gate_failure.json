@@ -1,0 +1,14 @@
+{
+  "episode": 258,
+  "purpose": "budget_nonstop",
+  "R8_N": 5,
+  "R9_N": 10,
+  "R8_wall_seconds": 54.965914,
+  "R9_wall_seconds": 112.342341,
+  "ratio": 2.0438546878343553,
+  "passed": false,
+  "R8_fruit_actors": 36,
+  "R9_fruit_actors": 66,
+  "R9_scene_entities": 71,
+  "scope": "Matched geometry/role, D600; process launch through result, includes initialization and recording; no duration normalization."
+}

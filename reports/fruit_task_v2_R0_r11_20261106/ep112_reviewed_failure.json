@@ -1,0 +1,13 @@
+{
+  "instruction_revision": 11,
+  "accepted_diagnostic": true,
+  "result_path": "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/result.json",
+  "result_sha256": "f0782caceb05a2a8f8205817f35fc66e88860d1aee9f83a7a262e6f1ae11a1fb",
+  "review_path": "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostic_outcome_review.json",
+  "review_sha256": "6f8cace7dd83a74dcd042372ad00369046ce8dddd27cf82057174e1727cc35d8",
+  "outcome": "robot_drop",
+  "success": false,
+  "repeated": false,
+  "included_in_training_data": false,
+  "whole_episode_success_requirement_cancelled_by_revision11": true
+}

@@ -1,0 +1,23 @@
+{
+  "ready": true,
+  "created_utc": "2026-11-06T12:27:22.133666+00:00",
+  "mode": "fixed_v2",
+  "source_files_frozen": 68,
+  "old_58_source_files_unchanged": true,
+  "all_previous_results_and_failed_shield_v1_preserved": true,
+  "new_CPU_tests_passed": true,
+  "optical_geometry_check": {
+    "viewpoints": 608,
+    "trajectory_viewpoints": 581,
+    "release_grid_viewpoints": 27,
+    "rays": 893760,
+    "minimum_positive_occluder_separation_mm": 2.0001752743349264,
+    "scope": "All sight directions to sampled basket-decoration surfaces; entire recorded trajectory and +/-3cm xyz release neighborhood. No FOV restriction or new replay."
+  },
+  "new_GPU_diagnostics_started": false,
+  "GPU_device_available_in_agent_terminal": false,
+  "new_R0_replays": 0,
+  "new_training_data": 0,
+  "training": false,
+  "stop_after_data": true
+}

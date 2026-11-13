@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "episodes": 50,
+  "all_broad": {
+    "K0": 49,
+    "K8": 44,
+    "KA": 50,
+    "recent16": 0
+  },
+  "source": "accepted R8 expert records, read-only; not reused as new R9 performance",
+  "definition": "near interval start through replenishment, inclusive; detach may equal event release"
+}

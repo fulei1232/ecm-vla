@@ -1,0 +1,107 @@
+\section{HarvestMem: event-centric memory for harvesting}
+\label{sec:method}
+
+\subsection{Design principles}
+\label{sec:principles}
+HarvestMem rests on four design principles.
+\textbf{P1, index memory by events, not by time:} memory slots go to the contact and detachment of each pick, which time-indexed memory provably loses as operation lengthens (Section~\ref{sec:coverage}).
+\textbf{P2, ground events in physics:} events are defined by the tool-to-fruit distance, which is measurable on a real robot, interpretable, and transferable across crops through one parameter commensurate with fruit size.
+\textbf{P3, change what is remembered, not how much or how:} budget, tokens, architecture and inference cost of the base VLA are unchanged, and the same selection is used in training and deployment.
+\textbf{P4, remember where before remembering what:} an event on a hidden fruit can be recognized only if the fruit was anchored while visible, so spatial memory is built first and drives episodic memory.
+In the resulting system (Fig.~\ref{fig:overview}), \fdm\ (Section~\ref{sec:fdm}) builds the spatial memory and the distance $d_t$, a causal detector (Section~\ref{sec:events}) finds picking events, and \pekm\ (Section~\ref{sec:pekm}) chooses which $B$ past frames the VLA sees.
+
+\subsection{Problem formulation and base policy}
+\label{sec:formulation}
+At decision time $t$, the policy $\pi_\theta$ receives the current front and wrist images $o_t$, the proprioceptive state $s_t$, the instruction $l$ and a memory $\mathcal{M}_t$ of past frames, and outputs an action chunk $A_t = (a_t,\dots,a_{t+H-1}) = \pi_\theta(o_t, s_t, l, \mathcal{M}_t)$ with $H=20$, of which the first 16 actions are executed before the next decision. The memory is the output of a selection function
+\begin{equation}
+\mathcal{M}_t = S\big(\{0,\dots,t\};\, d_{0:t}\big),\qquad |\mathcal{M}_t| = \min(B, t+1),
+\label{eq:selection}
+\end{equation}
+that is \emph{causal} and \emph{budget-preserving} (exactly $B$ frames, as with uniform sampling), so any difference in behaviour is due to memory content rather than memory size.
+
+The base policy is a memory-augmented VLA (MME-VLA, \tbd{cite base model}) in the $\pi_{0.5}$ family \citep{pi05_2025}: a PaliGemma backbone (Gemma-2B, \citealp{beyer2024paligemma}), a 300M-parameter action expert that generates action chunks by flow matching \citep{lipman2023flow}, and a 150M-parameter memory expert that attends over the $B=16$ selected frames, each encoded by the frozen SigLIP encoder \citep{zhai2023siglip} into 16 tokens. We initialize from a checkpoint trained on a general manipulation-memory benchmark (\tbd{cite RoboMME}) and fine-tune all non-vision parameters on \bench.
+
+\subsection{Event signal and causal event detection}
+\label{sec:signal}
+\label{sec:events}
+The event signal is
+\begin{equation}
+d_t = \min_{j \in \mathcal{P}_t} \lVert p^{\mathrm{TCP}}_t - c_j \rVert_2,
+\label{eq:signal}
+\end{equation}
+where $p^{\mathrm{TCP}}_t$ is the TCP position from forward kinematics, $c_j$ the centre of fruit $j$, and $\mathcal{P}_t$ the set of fruits that are \emph{pickable and still attached} (all fruits in FruitCount, ripe fruits in FruitOccludedRipe). If $\mathcal{P}_t$ is empty, $d_t = 10$~m; a frame without a measurement is unknown. The signal falls below the fruit radius when the gripper encloses a fruit and jumps at detachment, because a detached fruit leaves $\mathcal{P}_t$. In training, $d_t$ comes from the simulator state; at deployment, from \fdm\ with the same definition.
+
+A frame is \emph{near} if $d_t \le r$ and \emph{far} otherwise; an unknown frame inherits the last known state, so a dropped measurement neither starts nor ends an event. An \emph{event} is a maximal run of near frames $[t_s, t_e]$ and contributes two keyframes:
+\begin{align}
+t^{\mathrm{c}} &= \min\Big\{ f \in [t_s, \min(t_e, t)] : d_f \le \min_{t_s \le g \le \min(t_e,t)} d_g + \mathrm{tol} \Big\}, \label{eq:contact}\\
+t^{\mathrm{r}} &= t_e + 1 \quad \text{(only if } t_e < t\text{)}. \label{eq:release}
+\end{align}
+The contact keyframe is the first frame within $\mathrm{tol}$ of the minimum distance of the run observed so far (the gripper settling around the fruit), and the release keyframe is the first far frame after the run (the detachment). We use $r=3$~cm, commensurate with the fruit radius and below half the inter-fruit spacing, and $\mathrm{tol}=5$~mm, both chosen on the training set. For noisy deployment signals, a \emph{hysteresis} variant enters an event at $d_t \le r$, leaves it only at $d_t > 1.5r$ and discards runs shorter than 3 frames, which suppresses chatter around the threshold without the delay of a median filter.
+
+\subsection{Why time-indexed memory loses events: a coverage analysis}
+\label{sec:coverage}
+Let the key set $S_e$ of a completed pick $e$ be the frames within $\pm W$ of its contact and release keyframes, $|S_e| \le 2(2W+1)$; the pick is \emph{covered} at decision time $t$ if the memory holds a frame of $S_e$. Uniform memory keeps one frame every $\Delta_t = t/(B-1)$ frames. If the phase of this grid is independent of the timing of the pick, the expected number of memory frames in $S_e$ is $|S_e|/\Delta_t$, and when $\Delta_t$ exceeds each keyframe window, at most one memory frame falls in each window, so that
+\begin{equation}
+c_U(t) \approx \min\!\Big(1,\; \frac{(B-1)\,|S_e|}{t}\Big).
+\label{eq:coverage}
+\end{equation}
+Two consequences are central to harvesting. First, \textbf{forgetting grows with operating time}: for a fixed budget, coverage decays as $1/t$, and the most recent pick enjoys no protection. Second, \textbf{budgets must grow linearly with time}: to keep coverage $c$, uniform memory needs $B \ge 1 + c\,t/|S_e|$; with $W=3$ ($|S_e|=14$) and $t=600$, full coverage would require about 44 frames, nearly three times the base model's budget, at a quadratically growing attention cost. Event indexing removes the dependence on $t$: with keyframe cap $k$, \pekm\ covers the $\lfloor k/2\rfloor$ most recent picks with probability one at every decision time, using a constant two slots per remembered pick. Section~\ref{sec:res_memory} shows that Eq.~(\ref{eq:coverage}) predicts the measured coverage of uniform memory to within 0.012 at every budget, and that \pekm\ keeps the most recent pick at all decision times.
+
+\subsection{Picking-Event Keyframe Memory}
+\label{sec:pekm}
+Algorithm~\ref{alg:pekm} gives the selection rule: keyframes are taken from the most recent event backwards, contact before release, until at most $k$ are reserved, and the remaining $B-|\mathcal{K}|$ slots are filled at evenly spaced positions among the non-key frames, including the first and the last.
+
+\begin{algorithm}[t]
+\caption{PEKM selection at decision time $t$}
+\label{alg:pekm}
+\begin{algorithmic}[1]
+\Require distances $d_{0:t}$, budget $B$, keyframe cap $k<B$, radius $r$, tolerance $\mathrm{tol}$
+\If{$t+1 \le B$} \Return $\{0,\dots,t\}$ \EndIf
+\State $\mathcal{E} \gets \textsc{DetectEvents}(d_{0:t}, r, \mathrm{tol})$ \Comment{Eqs.~(\ref{eq:contact})--(\ref{eq:release})}
+\State $\mathcal{K} \gets \emptyset$
+\For{$e \in \mathcal{E}$ from newest to oldest}
+  \For{$f \in (t^{\mathrm{c}}_e, t^{\mathrm{r}}_e)$ if defined}
+    \If{$|\mathcal{K}| < k$ and $f \notin \mathcal{K}$} $\mathcal{K} \gets \mathcal{K} \cup \{f\}$ \EndIf
+  \EndFor
+\EndFor
+\State $R \gets \{0,\dots,t\} \setminus \mathcal{K}$ \Comment{sorted}
+\State $U \gets \{R[\lfloor i\,(|R|-1)/(B-|\mathcal{K}|-1) \rfloor] : i = 0,\dots,B-|\mathcal{K}|-1\}$ \Comment{evenly spaced}
+\State \Return $\mathrm{sort}(\mathcal{K} \cup U)$
+\end{algorithmic}
+\end{algorithm}
+
+\paragraph{Properties} \pekm\ is a drop-in memory for a pretrained VLA. It is \emph{budget-preserving} ($|\mathcal{M}_t| = B$), so compute and latency are unchanged. It \emph{strictly nests the baseline}: with $k=0$ it is exactly the uniform sampling of the base model. It is \emph{causal}: an ongoing event contributes a provisional contact frame. It is \emph{train--deploy consistent}: every training memory is computed with the same function and signal definition as at deployment. It provides \emph{signal isolation}: $d_t$ selects frame indices but never enters the network, so a perception error can change \emph{which} frames are seen but cannot inject a wrong value into the policy. With $k=4$ the memory holds the keyframes of the two most recent picks, which show which fruit is gone and that a basket drop has occurred; $k=8$ covers four picks, enough for every FruitOccludedRipe episode and nearly every FruitCount episode.
+
+\paragraph{Soft variant (PEKM-S)} As an alternative to hard reservation, PEKM-S samples frames from a density that mixes a uniform term with a proximity term over the $N$ history frames:
+\begin{equation}
+\rho_f = \frac{1-\alpha}{N} + \alpha \frac{w_f}{\sum_g w_g},\qquad w_f = \exp\!\Big(-\frac{d_f}{\tau_d}\Big),
+\label{eq:soft}
+\end{equation}
+with $\tau_d=5$~cm. The per-frame density is capped at one slot by water-filling, and frames are drawn by systematic sampling of the cumulative density, so the selection is deterministic given $d_{0:t}$. The first frame and the 4 most recent uniform slots are always kept. The mixing weight $\alpha \in [0,1]$ interpolates between uniform memory ($\alpha=0$) and pure proximity memory ($\alpha=1$).
+
+\subsection{SAM-based fruit distance module}
+\label{sec:fdm}
+On a real robot, $d_t$ must come from perception. \fdm\ produces it from the front RGB-D camera, forward kinematics and the gripper state in four steps.
+
+\paragraph{(i) Colour-prompted segmentation} Ripe (red) and unripe (green) candidate regions are found by HSV thresholds and connected components (calibrated on training renders; pixel F1 0.986 and 0.976). Each component prompts SAM \citep{kirillov2023sam} with its bounding box padded by 2 pixels and its centroid as a positive point, keeping the mask with the highest predicted IoU. Masks much larger than their prompt region (e.g.\ a whole branch) or of mixed colour (purity $<0.3$) are rejected, duplicates are removed by mask non-maximum suppression, and ripeness is the dominant colour class inside the mask. The prompt design (2-pixel padding plus a point) was selected on training renders, where it gave an instance F1 of 0.991 and a mean IoU of 0.970.
+
+\paragraph{(ii) Fruit anchors (spatial memory)} At the first frame, before any occlusion, every mask is back-projected with the depth image and camera parameters, and the fruit centre is the median visible surface point pushed back along the viewing ray by the fruit radius,
+\begin{equation}
+\hat c_j = \tilde p_j + \hat\rho_j \frac{\tilde p_j - o_{\mathrm{cam}}}{\lVert \tilde p_j - o_{\mathrm{cam}} \rVert},\qquad \hat\rho_j = \frac{z_j}{f_x}\sqrt{\frac{|m_j|}{\pi}},
+\end{equation}
+where $\tilde p_j$ is the median back-projected point of mask $m_j$, $z_j$ its median depth, $f_x$ the focal length and $o_{\mathrm{cam}}$ the camera centre; anchors closer than 3~cm are merged. Each anchor stores its centre and ripeness and persists whether or not the fruit remains visible, which is how the module remembers a ripe fruit that wind later hides. SAM therefore runs only once per episode.
+
+\paragraph{(iii) Picked-fruit detection from two kinds of evidence} An anchor is marked \emph{picked} by either of two causal cues. \emph{Depth vacancy} (visual): the median depth around the anchor's projected surface point lies more than 5~cm behind the expected surface for 3 consecutive frames (more than 2~cm in front means occluded, and the anchor is left unchanged). \emph{Grasp holding} (proprioceptive): the gripper is commanded closed but the fingers stop between the empty-closed and open positions for 2 frames while the TCP is within $r$ of an unpicked anchor. Vacancy needs no contact sensing but is blind while the arm occludes the anchor during carrying; grasp holding fires exactly at detachment.
+
+\paragraph{(iv) Distance} $\hat d_t$ is the distance from the TCP to the nearest unpicked pickable anchor, exactly as in Eq.~(\ref{eq:signal}), and feeds the hysteresis detector and \pekm. Through this scalar interface, SAM can be replaced by any detector (e.g.\ YOLO-seg or a crop-specific network) without retraining the policy.
+
+\subsection{Phase-aware recovery demonstrations (DART-H)}
+\label{sec:dart}
+\label{sec:training}
+Imitation policies drift away from the demonstrated states in closed loop \citep{ross2011dagger}. Following DART \citep{laskey2017dart}, we inject noise while the demonstrator executes but record its clean actions, replanned from the perturbed state, as labels that show how to recover. Two choices adapt DART to harvesting. First, white joint noise is filtered out by the position controller, so we use \emph{temporally correlated} Ornstein--Uhlenbeck noise on the seven joint targets,
+\begin{equation}
+\epsilon_{t+1} = \epsilon_t - \frac{\epsilon_t}{\tau} + \sigma\sqrt{\frac{2}{\tau}}\,\xi_t,\qquad \xi_t \sim \mathcal{N}(0, I),
+\end{equation}
+with $\sigma=0.04$~rad and $\tau=10$ steps, which produces median TCP displacements of 2.50~cm (FruitCount) and 2.54~cm (FruitOccludedRipe), the scale of the drift observed in closed loop. Second, the noise is \emph{phase-gated}: scaled by 1 in reach, pull and carry, 0.5 in approach, and 0 in observe, grasp, release and settle, so grasping and releasing, where a perturbation would mostly produce failed attempts, stay clean. Failed perturbed attempts are discarded as for clean demonstrations (acceptance 0.57 in FruitCount and 0.66 in FruitOccludedRipe), and the training set combines 200 clean and 200 DART-H episodes.
+
+\paragraph{Training} All memory conditions are fine-tuned with identical settings and differ only in the keyframe cap $k$ used to compute the memory of each training sample: 12{,}000 steps; global batch size 64; AdamW with gradient clipping at 1.0; 500 warm-up steps to a peak learning rate of $2.5\times10^{-5}$, then cosine decay to $2.5\times10^{-6}$; EMA decay 0.999; frozen vision encoder; seed 42. Normalization statistics are recomputed on \bench\ because the RM75-B joint ranges differ from those of the pretraining robot. Each condition is trained with fully sharded data parallelism on four NVIDIA L20 (48~GB) GPUs.

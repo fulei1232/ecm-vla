@@ -1,0 +1,4479 @@
+{
+  "phase": 6,
+  "revision": 6,
+  "label": "探索性、非预登记，不改变D5结论，不写入论文",
+  "complete": true,
+  "generated_utc": "2026-11-05T03:04:20.318956+00:00",
+  "state": {
+    "phase": 6,
+    "revision": 6,
+    "label": "探索性、非预登记，不改变D5结论，不写入论文",
+    "state": "awaiting_D6_review",
+    "started_utc": "2026-11-04T14:11:46.806149+00:00",
+    "deadline_utc": "2026-11-05T14:11:46.806149+00:00",
+    "error": "",
+    "updated_utc": "2026-11-05T03:04:20.414857+00:00",
+    "reuse_G1_seed7": false,
+    "completed_utc": "2026-11-05T03:04:20.414843+00:00"
+  },
+  "posthoc": {
+    "label": "探索性、非预登记，不改变D5结论，不写入论文",
+    "part": "§14.3 posthoc",
+    "episodes": 1200,
+    "generated_utc": "2026-11-04T14:40:14.054522+00:00",
+    "new_val_rollouts": 0,
+    "val_source_layouts_or_demonstrations_opened": false,
+    "layout_labels_from_recorded_seed_verified_against_initial_gt": true,
+    "conditions": {
+      "main": {
+        "K0": {
+          "hidden": {
+            "episodes": 150,
+            "omission_hidden_ripe": {
+              "numerator": 16,
+              "denominator": 150,
+              "fraction": 0.10666666666666667
+            },
+            "checked_hidden_unripe": {
+              "numerator": 63,
+              "denominator": 150,
+              "fraction": 0.42
+            },
+            "wrong_fruit": {
+              "numerator": 12,
+              "denominator": 150,
+              "fraction": 0.08
+            },
+            "wrong_in_basket": {
+              "numerator": 8,
+              "denominator": 150,
+              "fraction": 0.05333333333333334
+            },
+            "wrong_hidden_unripe": {
+              "numerator": 3,
+              "denominator": 150,
+              "fraction": 0.02
+            },
+            "wrong_visible_unripe": {
+              "numerator": 9,
+              "denominator": 150,
+              "fraction": 0.06
+            },
+            "omission_or_wrong_fruit": {
+              "numerator": 26,
+              "denominator": 150,
+              "fraction": 0.17333333333333334
+            },
+            "checked_hidden_unripe_among_eligible": {
+              "numerator": 63,
+              "denominator": 81,
+              "fraction": 0.7777777777777778
+            },
+            "omission_plus_wrong_fruit": {
+              "score_sum": 28,
+              "episodes": 150,
+              "mean_score": 0.18666666666666668
+            },
+            "omitted_hidden_ripe_fruits": {
+              "numerator": 16,
+              "denominator": 219,
+              "fraction": 0.0730593607305936
+            }
+          },
+          "fruit_behavior": {
+            "hidden_ripe": {
+              "fruits": 219,
+              "approached": {
+                "numerator": 203,
+                "denominator": 219,
+                "fraction": 0.9269406392694064
+              },
+              "approached_then_detached": {
+                "numerator": 129,
+                "denominator": 219,
+                "fraction": 0.589041095890411
+              },
+              "approached_without_detachment": {
+                "numerator": 74,
+                "denominator": 219,
+                "fraction": 0.3378995433789954
+              },
+              "wrong_fruit": {
+                "numerator": 0,
+                "denominator": 219,
+                "fraction": 0.0
+              },
+              "actual_leaf_push": {
+                "numerator": 207,
+                "denominator": 219,
+                "fraction": 0.9452054794520548
+              }
+            },
+            "hidden_unripe": {
+              "fruits": 81,
+              "approached": {
+                "numerator": 66,
+                "denominator": 81,
+                "fraction": 0.8148148148148148
+              },
+              "approached_then_detached": {
+                "numerator": 3,
+                "denominator": 81,
+                "fraction": 0.037037037037037035
+              },
+              "approached_without_detachment": {
+                "numerator": 63,
+                "denominator": 81,
+                "fraction": 0.7777777777777778
+              },
+              "wrong_fruit": {
+                "numerator": 3,
+                "denominator": 81,
+                "fraction": 0.037037037037037035
+              },
+              "actual_leaf_push": {
+                "numerator": 77,
+                "denominator": 81,
+                "fraction": 0.9506172839506173
+              }
+            },
+            "visible_unripe": {
+              "fruits": 237,
+              "approached": {
+                "numerator": 188,
+                "denominator": 237,
+                "fraction": 0.7932489451476793
+              },
+              "approached_then_detached": {
+                "numerator": 9,
+                "denominator": 237,
+                "fraction": 0.0379746835443038
+              },
+              "approached_without_detachment": {
+                "numerator": 179,
+                "denominator": 237,
+                "fraction": 0.7552742616033755
+              },
+              "wrong_fruit": {
+                "numerator": 9,
+                "denominator": 237,
+                "fraction": 0.0379746835443038
+              },
+              "actual_leaf_push": {
+                "numerator": 0,
+                "denominator": 237,
+                "fraction": 0.0
+              }
+            }
+          },
+          "pre_gust_retained": {
+            "all": {
+              "numerator": 6656,
+              "denominator": 6656,
+              "fraction": 1.0
+            },
+            "frame_zero_selected": {
+              "numerator": 6656,
+              "denominator": 6656,
+              "fraction": 1.0
+            },
+            "by_phase": {
+              "before_target_1": {
+                "numerator": 1699,
+                "denominator": 1699,
+                "fraction": 1.0
+              },
+              "before_target_2": {
+                "numerator": 3243,
+                "denominator": 3243,
+                "fraction": 1.0
+              },
+              "before_target_3": {
+                "numerator": 1425,
+                "denominator": 1425,
+                "fraction": 1.0
+              },
+              "after_all_targets": {
+                "numerator": 289,
+                "denominator": 289,
+                "fraction": 1.0
+              }
+            }
+          },
+          "count_failure": {
+            "episodes": 150,
+            "failed_episodes": 39,
+            "dropped_fruit_events": 39,
+            "drop_phases": {
+              "grasp": {
+                "numerator": 1,
+                "denominator": 39,
+                "fraction": 0.02564102564102564
+              },
+              "pull": {
+                "numerator": 26,
+                "denominator": 39,
+                "fraction": 0.6666666666666666
+              },
+              "carry": {
+                "numerator": 11,
+                "denominator": 39,
+                "fraction": 0.28205128205128205
+              },
+              "release": {
+                "numerator": 1,
+                "denominator": 39,
+                "fraction": 0.02564102564102564
+              }
+            },
+            "timeout_episodes": 10,
+            "timeout_tail_labels": {
+              "ongoing_motion": 10
+            }
+          }
+        },
+        "K4": {
+          "hidden": {
+            "episodes": 150,
+            "omission_hidden_ripe": {
+              "numerator": 23,
+              "denominator": 150,
+              "fraction": 0.15333333333333332
+            },
+            "checked_hidden_unripe": {
+              "numerator": 61,
+              "denominator": 150,
+              "fraction": 0.4066666666666667
+            },
+            "wrong_fruit": {
+              "numerator": 21,
+              "denominator": 150,
+              "fraction": 0.14
+            },
+            "wrong_in_basket": {
+              "numerator": 14,
+              "denominator": 150,
+              "fraction": 0.09333333333333334
+            },
+            "wrong_hidden_unripe": {
+              "numerator": 8,
+              "denominator": 150,
+              "fraction": 0.05333333333333334
+            },
+            "wrong_visible_unripe": {
+              "numerator": 13,
+              "denominator": 150,
+              "fraction": 0.08666666666666667
+            },
+            "omission_or_wrong_fruit": {
+              "numerator": 37,
+              "denominator": 150,
+              "fraction": 0.24666666666666667
+            },
+            "checked_hidden_unripe_among_eligible": {
+              "numerator": 61,
+              "denominator": 81,
+              "fraction": 0.7530864197530864
+            },
+            "omission_plus_wrong_fruit": {
+              "score_sum": 44,
+              "episodes": 150,
+              "mean_score": 0.29333333333333333
+            },
+            "omitted_hidden_ripe_fruits": {
+              "numerator": 23,
+              "denominator": 219,
+              "fraction": 0.1050228310502283
+            }
+          },
+          "fruit_behavior": {
+            "hidden_ripe": {
+              "fruits": 219,
+              "approached": {
+                "numerator": 196,
+                "denominator": 219,
+                "fraction": 0.8949771689497716
+              },
+              "approached_then_detached": {
+                "numerator": 124,
+                "denominator": 219,
+                "fraction": 0.5662100456621004
+              },
+              "approached_without_detachment": {
+                "numerator": 72,
+                "denominator": 219,
+                "fraction": 0.3287671232876712
+              },
+              "wrong_fruit": {
+                "numerator": 0,
+                "denominator": 219,
+                "fraction": 0.0
+              },
+              "actual_leaf_push": {
+                "numerator": 201,
+                "denominator": 219,
+                "fraction": 0.9178082191780822
+              }
+            },
+            "hidden_unripe": {
+              "fruits": 81,
+              "approached": {
+                "numerator": 69,
+                "denominator": 81,
+                "fraction": 0.8518518518518519
+              },
+              "approached_then_detached": {
+                "numerator": 8,
+                "denominator": 81,
+                "fraction": 0.09876543209876543
+              },
+              "approached_without_detachment": {
+                "numerator": 61,
+                "denominator": 81,
+                "fraction": 0.7530864197530864
+              },
+              "wrong_fruit": {
+                "numerator": 8,
+                "denominator": 81,
+                "fraction": 0.09876543209876543
+              },
+              "actual_leaf_push": {
+                "numerator": 73,
+                "denominator": 81,
+                "fraction": 0.9012345679012346
+              }
+            },
+            "visible_unripe": {
+              "fruits": 237,
+              "approached": {
+                "numerator": 179,
+                "denominator": 237,
+                "fraction": 0.7552742616033755
+              },
+              "approached_then_detached": {
+                "numerator": 13,
+                "denominator": 237,
+                "fraction": 0.05485232067510549
+              },
+              "approached_without_detachment": {
+                "numerator": 166,
+                "denominator": 237,
+                "fraction": 0.70042194092827
+              },
+              "wrong_fruit": {
+                "numerator": 13,
+                "denominator": 237,
+                "fraction": 0.05485232067510549
+              },
+              "actual_leaf_push": {
+                "numerator": 0,
+                "denominator": 237,
+                "fraction": 0.0
+              }
+            }
+          },
+          "pre_gust_retained": {
+            "all": {
+              "numerator": 5239,
+              "denominator": 5239,
+              "fraction": 1.0
+            },
+            "frame_zero_selected": {
+              "numerator": 5239,
+              "denominator": 5239,
+              "fraction": 1.0
+            },
+            "by_phase": {
+              "before_target_1": {
+                "numerator": 1649,
+                "denominator": 1649,
+                "fraction": 1.0
+              },
+              "before_target_2": {
+                "numerator": 2350,
+                "denominator": 2350,
+                "fraction": 1.0
+              },
+              "before_target_3": {
+                "numerator": 991,
+                "denominator": 991,
+                "fraction": 1.0
+              },
+              "after_all_targets": {
+                "numerator": 249,
+                "denominator": 249,
+                "fraction": 1.0
+              }
+            }
+          },
+          "count_failure": {
+            "episodes": 150,
+            "failed_episodes": 42,
+            "dropped_fruit_events": 42,
+            "drop_phases": {
+              "grasp": {
+                "numerator": 6,
+                "denominator": 42,
+                "fraction": 0.14285714285714285
+              },
+              "pull": {
+                "numerator": 24,
+                "denominator": 42,
+                "fraction": 0.5714285714285714
+              },
+              "carry": {
+                "numerator": 11,
+                "denominator": 42,
+                "fraction": 0.2619047619047619
+              },
+              "release": {
+                "numerator": 1,
+                "denominator": 42,
+                "fraction": 0.023809523809523808
+              }
+            },
+            "timeout_episodes": 15,
+            "timeout_tail_labels": {
+              "ongoing_motion": 15
+            }
+          }
+        },
+        "K8": {
+          "hidden": {
+            "episodes": 150,
+            "omission_hidden_ripe": {
+              "numerator": 20,
+              "denominator": 150,
+              "fraction": 0.13333333333333333
+            },
+            "checked_hidden_unripe": {
+              "numerator": 57,
+              "denominator": 150,
+              "fraction": 0.38
+            },
+            "wrong_fruit": {
+              "numerator": 20,
+              "denominator": 150,
+              "fraction": 0.13333333333333333
+            },
+            "wrong_in_basket": {
+              "numerator": 12,
+              "denominator": 150,
+              "fraction": 0.08
+            },
+            "wrong_hidden_unripe": {
+              "numerator": 6,
+              "denominator": 150,
+              "fraction": 0.04
+            },
+            "wrong_visible_unripe": {
+              "numerator": 14,
+              "denominator": 150,
+              "fraction": 0.09333333333333334
+            },
+            "omission_or_wrong_fruit": {
+              "numerator": 34,
+              "denominator": 150,
+              "fraction": 0.22666666666666666
+            },
+            "checked_hidden_unripe_among_eligible": {
+              "numerator": 57,
+              "denominator": 81,
+              "fraction": 0.7037037037037037
+            },
+            "omission_plus_wrong_fruit": {
+              "score_sum": 40,
+              "episodes": 150,
+              "mean_score": 0.26666666666666666
+            },
+            "omitted_hidden_ripe_fruits": {
+              "numerator": 21,
+              "denominator": 219,
+              "fraction": 0.0958904109589041
+            }
+          },
+          "fruit_behavior": {
+            "hidden_ripe": {
+              "fruits": 219,
+              "approached": {
+                "numerator": 198,
+                "denominator": 219,
+                "fraction": 0.9041095890410958
+              },
+              "approached_then_detached": {
+                "numerator": 127,
+                "denominator": 219,
+                "fraction": 0.5799086757990868
+              },
+              "approached_without_detachment": {
+                "numerator": 71,
+                "denominator": 219,
+                "fraction": 0.3242009132420091
+              },
+              "wrong_fruit": {
+                "numerator": 0,
+                "denominator": 219,
+                "fraction": 0.0
+              },
+              "actual_leaf_push": {
+                "numerator": 206,
+                "denominator": 219,
+                "fraction": 0.9406392694063926
+              }
+            },
+            "hidden_unripe": {
+              "fruits": 81,
+              "approached": {
+                "numerator": 63,
+                "denominator": 81,
+                "fraction": 0.7777777777777778
+              },
+              "approached_then_detached": {
+                "numerator": 6,
+                "denominator": 81,
+                "fraction": 0.07407407407407407
+              },
+              "approached_without_detachment": {
+                "numerator": 57,
+                "denominator": 81,
+                "fraction": 0.7037037037037037
+              },
+              "wrong_fruit": {
+                "numerator": 6,
+                "denominator": 81,
+                "fraction": 0.07407407407407407
+              },
+              "actual_leaf_push": {
+                "numerator": 74,
+                "denominator": 81,
+                "fraction": 0.9135802469135802
+              }
+            },
+            "visible_unripe": {
+              "fruits": 237,
+              "approached": {
+                "numerator": 184,
+                "denominator": 237,
+                "fraction": 0.7763713080168776
+              },
+              "approached_then_detached": {
+                "numerator": 14,
+                "denominator": 237,
+                "fraction": 0.05907172995780591
+              },
+              "approached_without_detachment": {
+                "numerator": 170,
+                "denominator": 237,
+                "fraction": 0.7172995780590717
+              },
+              "wrong_fruit": {
+                "numerator": 14,
+                "denominator": 237,
+                "fraction": 0.05907172995780591
+              },
+              "actual_leaf_push": {
+                "numerator": 0,
+                "denominator": 237,
+                "fraction": 0.0
+              }
+            }
+          },
+          "pre_gust_retained": {
+            "all": {
+              "numerator": 6113,
+              "denominator": 6113,
+              "fraction": 1.0
+            },
+            "frame_zero_selected": {
+              "numerator": 6113,
+              "denominator": 6113,
+              "fraction": 1.0
+            },
+            "by_phase": {
+              "before_target_1": {
+                "numerator": 1233,
+                "denominator": 1233,
+                "fraction": 1.0
+              },
+              "before_target_2": {
+                "numerator": 2945,
+                "denominator": 2945,
+                "fraction": 1.0
+              },
+              "before_target_3": {
+                "numerator": 1666,
+                "denominator": 1666,
+                "fraction": 1.0
+              },
+              "after_all_targets": {
+                "numerator": 269,
+                "denominator": 269,
+                "fraction": 1.0
+              }
+            }
+          },
+          "count_failure": {
+            "episodes": 150,
+            "failed_episodes": 35,
+            "dropped_fruit_events": 35,
+            "drop_phases": {
+              "grasp": {
+                "numerator": 5,
+                "denominator": 35,
+                "fraction": 0.14285714285714285
+              },
+              "pull": {
+                "numerator": 18,
+                "denominator": 35,
+                "fraction": 0.5142857142857142
+              },
+              "carry": {
+                "numerator": 11,
+                "denominator": 35,
+                "fraction": 0.3142857142857143
+              },
+              "release": {
+                "numerator": 1,
+                "denominator": 35,
+                "fraction": 0.02857142857142857
+              }
+            },
+            "timeout_episodes": 9,
+            "timeout_tail_labels": {
+              "ongoing_motion": 9
+            }
+          }
+        }
+      },
+      "sensitivity": {
+        "K0": {
+          "hidden": {
+            "episodes": 50,
+            "omission_hidden_ripe": {
+              "numerator": 8,
+              "denominator": 50,
+              "fraction": 0.16
+            },
+            "checked_hidden_unripe": {
+              "numerator": 20,
+              "denominator": 50,
+              "fraction": 0.4
+            },
+            "wrong_fruit": {
+              "numerator": 7,
+              "denominator": 50,
+              "fraction": 0.14
+            },
+            "wrong_in_basket": {
+              "numerator": 6,
+              "denominator": 50,
+              "fraction": 0.12
+            },
+            "wrong_hidden_unripe": {
+              "numerator": 1,
+              "denominator": 50,
+              "fraction": 0.02
+            },
+            "wrong_visible_unripe": {
+              "numerator": 6,
+              "denominator": 50,
+              "fraction": 0.12
+            },
+            "omission_or_wrong_fruit": {
+              "numerator": 15,
+              "denominator": 50,
+              "fraction": 0.3
+            },
+            "checked_hidden_unripe_among_eligible": {
+              "numerator": 20,
+              "denominator": 27,
+              "fraction": 0.7407407407407407
+            },
+            "omission_plus_wrong_fruit": {
+              "score_sum": 15,
+              "episodes": 50,
+              "mean_score": 0.3
+            },
+            "omitted_hidden_ripe_fruits": {
+              "numerator": 8,
+              "denominator": 73,
+              "fraction": 0.1095890410958904
+            }
+          },
+          "fruit_behavior": {
+            "hidden_ripe": {
+              "fruits": 73,
+              "approached": {
+                "numerator": 65,
+                "denominator": 73,
+                "fraction": 0.8904109589041096
+              },
+              "approached_then_detached": {
+                "numerator": 40,
+                "denominator": 73,
+                "fraction": 0.547945205479452
+              },
+              "approached_without_detachment": {
+                "numerator": 25,
+                "denominator": 73,
+                "fraction": 0.3424657534246575
+              },
+              "wrong_fruit": {
+                "numerator": 0,
+                "denominator": 73,
+                "fraction": 0.0
+              },
+              "actual_leaf_push": {
+                "numerator": 64,
+                "denominator": 73,
+                "fraction": 0.8767123287671232
+              }
+            },
+            "hidden_unripe": {
+              "fruits": 27,
+              "approached": {
+                "numerator": 21,
+                "denominator": 27,
+                "fraction": 0.7777777777777778
+              },
+              "approached_then_detached": {
+                "numerator": 1,
+                "denominator": 27,
+                "fraction": 0.037037037037037035
+              },
+              "approached_without_detachment": {
+                "numerator": 20,
+                "denominator": 27,
+                "fraction": 0.7407407407407407
+              },
+              "wrong_fruit": {
+                "numerator": 1,
+                "denominator": 27,
+                "fraction": 0.037037037037037035
+              },
+              "actual_leaf_push": {
+                "numerator": 25,
+                "denominator": 27,
+                "fraction": 0.9259259259259259
+              }
+            },
+            "visible_unripe": {
+              "fruits": 79,
+              "approached": {
+                "numerator": 61,
+                "denominator": 79,
+                "fraction": 0.7721518987341772
+              },
+              "approached_then_detached": {
+                "numerator": 6,
+                "denominator": 79,
+                "fraction": 0.0759493670886076
+              },
+              "approached_without_detachment": {
+                "numerator": 55,
+                "denominator": 79,
+                "fraction": 0.6962025316455697
+              },
+              "wrong_fruit": {
+                "numerator": 6,
+                "denominator": 79,
+                "fraction": 0.0759493670886076
+              },
+              "actual_leaf_push": {
+                "numerator": 0,
+                "denominator": 79,
+                "fraction": 0.0
+              }
+            }
+          },
+          "pre_gust_retained": {
+            "all": {
+              "numerator": 1996,
+              "denominator": 1996,
+              "fraction": 1.0
+            },
+            "frame_zero_selected": {
+              "numerator": 1996,
+              "denominator": 1996,
+              "fraction": 1.0
+            },
+            "by_phase": {
+              "before_target_1": {
+                "numerator": 524,
+                "denominator": 524,
+                "fraction": 1.0
+              },
+              "before_target_2": {
+                "numerator": 981,
+                "denominator": 981,
+                "fraction": 1.0
+              },
+              "before_target_3": {
+                "numerator": 378,
+                "denominator": 378,
+                "fraction": 1.0
+              },
+              "after_all_targets": {
+                "numerator": 113,
+                "denominator": 113,
+                "fraction": 1.0
+              }
+            }
+          },
+          "count_failure": {
+            "episodes": 50,
+            "failed_episodes": 13,
+            "dropped_fruit_events": 13,
+            "drop_phases": {
+              "grasp": {
+                "numerator": 1,
+                "denominator": 13,
+                "fraction": 0.07692307692307693
+              },
+              "pull": {
+                "numerator": 5,
+                "denominator": 13,
+                "fraction": 0.38461538461538464
+              },
+              "carry": {
+                "numerator": 5,
+                "denominator": 13,
+                "fraction": 0.38461538461538464
+              },
+              "release": {
+                "numerator": 2,
+                "denominator": 13,
+                "fraction": 0.15384615384615385
+              }
+            },
+            "timeout_episodes": 3,
+            "timeout_tail_labels": {
+              "ongoing_motion": 3
+            }
+          }
+        },
+        "K4": {
+          "hidden": {
+            "episodes": 50,
+            "omission_hidden_ripe": {
+              "numerator": 7,
+              "denominator": 50,
+              "fraction": 0.14
+            },
+            "checked_hidden_unripe": {
+              "numerator": 21,
+              "denominator": 50,
+              "fraction": 0.42
+            },
+            "wrong_fruit": {
+              "numerator": 5,
+              "denominator": 50,
+              "fraction": 0.1
+            },
+            "wrong_in_basket": {
+              "numerator": 3,
+              "denominator": 50,
+              "fraction": 0.06
+            },
+            "wrong_hidden_unripe": {
+              "numerator": 2,
+              "denominator": 50,
+              "fraction": 0.04
+            },
+            "wrong_visible_unripe": {
+              "numerator": 3,
+              "denominator": 50,
+              "fraction": 0.06
+            },
+            "omission_or_wrong_fruit": {
+              "numerator": 10,
+              "denominator": 50,
+              "fraction": 0.2
+            },
+            "checked_hidden_unripe_among_eligible": {
+              "numerator": 21,
+              "denominator": 27,
+              "fraction": 0.7777777777777778
+            },
+            "omission_plus_wrong_fruit": {
+              "score_sum": 12,
+              "episodes": 50,
+              "mean_score": 0.24
+            },
+            "omitted_hidden_ripe_fruits": {
+              "numerator": 7,
+              "denominator": 73,
+              "fraction": 0.0958904109589041
+            }
+          },
+          "fruit_behavior": {
+            "hidden_ripe": {
+              "fruits": 73,
+              "approached": {
+                "numerator": 66,
+                "denominator": 73,
+                "fraction": 0.9041095890410958
+              },
+              "approached_then_detached": {
+                "numerator": 35,
+                "denominator": 73,
+                "fraction": 0.4794520547945205
+              },
+              "approached_without_detachment": {
+                "numerator": 31,
+                "denominator": 73,
+                "fraction": 0.4246575342465753
+              },
+              "wrong_fruit": {
+                "numerator": 0,
+                "denominator": 73,
+                "fraction": 0.0
+              },
+              "actual_leaf_push": {
+                "numerator": 68,
+                "denominator": 73,
+                "fraction": 0.9315068493150684
+              }
+            },
+            "hidden_unripe": {
+              "fruits": 27,
+              "approached": {
+                "numerator": 23,
+                "denominator": 27,
+                "fraction": 0.8518518518518519
+              },
+              "approached_then_detached": {
+                "numerator": 2,
+                "denominator": 27,
+                "fraction": 0.07407407407407407
+              },
+              "approached_without_detachment": {
+                "numerator": 21,
+                "denominator": 27,
+                "fraction": 0.7777777777777778
+              },
+              "wrong_fruit": {
+                "numerator": 2,
+                "denominator": 27,
+                "fraction": 0.07407407407407407
+              },
+              "actual_leaf_push": {
+                "numerator": 23,
+                "denominator": 27,
+                "fraction": 0.8518518518518519
+              }
+            },
+            "visible_unripe": {
+              "fruits": 79,
+              "approached": {
+                "numerator": 59,
+                "denominator": 79,
+                "fraction": 0.7468354430379747
+              },
+              "approached_then_detached": {
+                "numerator": 3,
+                "denominator": 79,
+                "fraction": 0.0379746835443038
+              },
+              "approached_without_detachment": {
+                "numerator": 56,
+                "denominator": 79,
+                "fraction": 0.7088607594936709
+              },
+              "wrong_fruit": {
+                "numerator": 3,
+                "denominator": 79,
+                "fraction": 0.0379746835443038
+              },
+              "actual_leaf_push": {
+                "numerator": 0,
+                "denominator": 79,
+                "fraction": 0.0
+              }
+            }
+          },
+          "pre_gust_retained": {
+            "all": {
+              "numerator": 1867,
+              "denominator": 1867,
+              "fraction": 1.0
+            },
+            "frame_zero_selected": {
+              "numerator": 1867,
+              "denominator": 1867,
+              "fraction": 1.0
+            },
+            "by_phase": {
+              "before_target_1": {
+                "numerator": 671,
+                "denominator": 671,
+                "fraction": 1.0
+              },
+              "before_target_2": {
+                "numerator": 882,
+                "denominator": 882,
+                "fraction": 1.0
+              },
+              "before_target_3": {
+                "numerator": 240,
+                "denominator": 240,
+                "fraction": 1.0
+              },
+              "after_all_targets": {
+                "numerator": 74,
+                "denominator": 74,
+                "fraction": 1.0
+              }
+            }
+          },
+          "count_failure": {
+            "episodes": 50,
+            "failed_episodes": 12,
+            "dropped_fruit_events": 12,
+            "drop_phases": {
+              "grasp": {
+                "numerator": 1,
+                "denominator": 12,
+                "fraction": 0.08333333333333333
+              },
+              "pull": {
+                "numerator": 8,
+                "denominator": 12,
+                "fraction": 0.6666666666666666
+              },
+              "carry": {
+                "numerator": 1,
+                "denominator": 12,
+                "fraction": 0.08333333333333333
+              },
+              "release": {
+                "numerator": 2,
+                "denominator": 12,
+                "fraction": 0.16666666666666666
+              }
+            },
+            "timeout_episodes": 9,
+            "timeout_tail_labels": {
+              "ongoing_motion": 9
+            }
+          }
+        },
+        "K8": {
+          "hidden": {
+            "episodes": 50,
+            "omission_hidden_ripe": {
+              "numerator": 8,
+              "denominator": 50,
+              "fraction": 0.16
+            },
+            "checked_hidden_unripe": {
+              "numerator": 17,
+              "denominator": 50,
+              "fraction": 0.34
+            },
+            "wrong_fruit": {
+              "numerator": 9,
+              "denominator": 50,
+              "fraction": 0.18
+            },
+            "wrong_in_basket": {
+              "numerator": 4,
+              "denominator": 50,
+              "fraction": 0.08
+            },
+            "wrong_hidden_unripe": {
+              "numerator": 4,
+              "denominator": 50,
+              "fraction": 0.08
+            },
+            "wrong_visible_unripe": {
+              "numerator": 5,
+              "denominator": 50,
+              "fraction": 0.1
+            },
+            "omission_or_wrong_fruit": {
+              "numerator": 14,
+              "denominator": 50,
+              "fraction": 0.28
+            },
+            "checked_hidden_unripe_among_eligible": {
+              "numerator": 17,
+              "denominator": 27,
+              "fraction": 0.6296296296296297
+            },
+            "omission_plus_wrong_fruit": {
+              "score_sum": 17,
+              "episodes": 50,
+              "mean_score": 0.34
+            },
+            "omitted_hidden_ripe_fruits": {
+              "numerator": 8,
+              "denominator": 73,
+              "fraction": 0.1095890410958904
+            }
+          },
+          "fruit_behavior": {
+            "hidden_ripe": {
+              "fruits": 73,
+              "approached": {
+                "numerator": 65,
+                "denominator": 73,
+                "fraction": 0.8904109589041096
+              },
+              "approached_then_detached": {
+                "numerator": 38,
+                "denominator": 73,
+                "fraction": 0.5205479452054794
+              },
+              "approached_without_detachment": {
+                "numerator": 27,
+                "denominator": 73,
+                "fraction": 0.3698630136986301
+              },
+              "wrong_fruit": {
+                "numerator": 0,
+                "denominator": 73,
+                "fraction": 0.0
+              },
+              "actual_leaf_push": {
+                "numerator": 68,
+                "denominator": 73,
+                "fraction": 0.9315068493150684
+              }
+            },
+            "hidden_unripe": {
+              "fruits": 27,
+              "approached": {
+                "numerator": 21,
+                "denominator": 27,
+                "fraction": 0.7777777777777778
+              },
+              "approached_then_detached": {
+                "numerator": 4,
+                "denominator": 27,
+                "fraction": 0.14814814814814814
+              },
+              "approached_without_detachment": {
+                "numerator": 17,
+                "denominator": 27,
+                "fraction": 0.6296296296296297
+              },
+              "wrong_fruit": {
+                "numerator": 4,
+                "denominator": 27,
+                "fraction": 0.14814814814814814
+              },
+              "actual_leaf_push": {
+                "numerator": 24,
+                "denominator": 27,
+                "fraction": 0.8888888888888888
+              }
+            },
+            "visible_unripe": {
+              "fruits": 79,
+              "approached": {
+                "numerator": 60,
+                "denominator": 79,
+                "fraction": 0.759493670886076
+              },
+              "approached_then_detached": {
+                "numerator": 5,
+                "denominator": 79,
+                "fraction": 0.06329113924050633
+              },
+              "approached_without_detachment": {
+                "numerator": 55,
+                "denominator": 79,
+                "fraction": 0.6962025316455697
+              },
+              "wrong_fruit": {
+                "numerator": 5,
+                "denominator": 79,
+                "fraction": 0.06329113924050633
+              },
+              "actual_leaf_push": {
+                "numerator": 0,
+                "denominator": 79,
+                "fraction": 0.0
+              }
+            }
+          },
+          "pre_gust_retained": {
+            "all": {
+              "numerator": 1989,
+              "denominator": 1989,
+              "fraction": 1.0
+            },
+            "frame_zero_selected": {
+              "numerator": 1989,
+              "denominator": 1989,
+              "fraction": 1.0
+            },
+            "by_phase": {
+              "before_target_1": {
+                "numerator": 473,
+                "denominator": 473,
+                "fraction": 1.0
+              },
+              "before_target_2": {
+                "numerator": 847,
+                "denominator": 847,
+                "fraction": 1.0
+              },
+              "before_target_3": {
+                "numerator": 581,
+                "denominator": 581,
+                "fraction": 1.0
+              },
+              "after_all_targets": {
+                "numerator": 88,
+                "denominator": 88,
+                "fraction": 1.0
+              }
+            }
+          },
+          "count_failure": {
+            "episodes": 50,
+            "failed_episodes": 12,
+            "dropped_fruit_events": 12,
+            "drop_phases": {
+              "grasp": {
+                "numerator": 3,
+                "denominator": 12,
+                "fraction": 0.25
+              },
+              "pull": {
+                "numerator": 7,
+                "denominator": 12,
+                "fraction": 0.5833333333333334
+              },
+              "carry": {
+                "numerator": 2,
+                "denominator": 12,
+                "fraction": 0.16666666666666666
+              },
+              "release": {
+                "numerator": 0,
+                "denominator": 12,
+                "fraction": 0.0
+              }
+            },
+            "timeout_episodes": 2,
+            "timeout_tail_labels": {
+              "ongoing_motion": 2
+            }
+          }
+        }
+      }
+    },
+    "layout_cluster_bootstrap_comparisons": {
+      "main/K4-K0/success": {
+        "difference": -0.006666666666666671,
+        "ci95": [
+          -0.09333333333333334,
+          0.08666666666666666
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 8071580399966665117,
+        "exploratory": true
+      },
+      "main/K4-K0/omission_hidden_ripe": {
+        "difference": 0.04666666666666667,
+        "ci95": [
+          -0.02666666666666666,
+          0.11999999999999998
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 11164876525890052033,
+        "exploratory": true
+      },
+      "main/K4-K0/checked_hidden_unripe": {
+        "difference": -0.013333333333333332,
+        "ci95": [
+          -0.06666666666666667,
+          0.03333333333333333
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 16424973963378868528,
+        "exploratory": true
+      },
+      "main/K4-K0/wrong_fruit": {
+        "difference": 0.06,
+        "ci95": [
+          -0.013333333333333334,
+          0.13333333333333333
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 2036808330579773358,
+        "exploratory": true
+      },
+      "main/K4-K0/wrong_hidden_unripe": {
+        "difference": 0.03333333333333333,
+        "ci95": [
+          -0.006666666666666666,
+          0.07999999999999999
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 17179048725429758142,
+        "exploratory": true
+      },
+      "main/K4-K0/wrong_visible_unripe": {
+        "difference": 0.02666666666666667,
+        "ci95": [
+          -0.03333333333333333,
+          0.08666666666666666
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 5038797214184205387,
+        "exploratory": true
+      },
+      "main/K4-K0/wrong_in_basket": {
+        "difference": 0.04,
+        "ci95": [
+          -0.019999999999999997,
+          0.09999999999999998
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 11130401531088650977,
+        "exploratory": true
+      },
+      "main/K4-K0/omission_plus_wrong_fruit": {
+        "difference": 0.10666666666666665,
+        "ci95": [
+          -2.775557561560367e-20,
+          0.21333333333333332
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 4125308835080475485,
+        "exploratory": true
+      },
+      "main/K8-K0/success": {
+        "difference": 0.013333333333333334,
+        "ci95": [
+          -0.08,
+          0.10666666666666666
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 6047154324145788288,
+        "exploratory": true
+      },
+      "main/K8-K0/omission_hidden_ripe": {
+        "difference": 0.026666666666666665,
+        "ci95": [
+          -0.03333333333333333,
+          0.09333333333333332
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 17543178980323758215,
+        "exploratory": true
+      },
+      "main/K8-K0/checked_hidden_unripe": {
+        "difference": -0.039999999999999994,
+        "ci95": [
+          -0.08666666666666666,
+          0.006666666666666666
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 6981946325675934977,
+        "exploratory": true
+      },
+      "main/K8-K0/wrong_fruit": {
+        "difference": 0.05333333333333334,
+        "ci95": [
+          -0.013333333333333332,
+          0.11999999999999998
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 12230363441312978345,
+        "exploratory": true
+      },
+      "main/K8-K0/wrong_hidden_unripe": {
+        "difference": 0.02,
+        "ci95": [
+          -0.013333333333333334,
+          0.06
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 15942211308114760072,
+        "exploratory": true
+      },
+      "main/K8-K0/wrong_visible_unripe": {
+        "difference": 0.03333333333333333,
+        "ci95": [
+          -0.02,
+          0.08666666666666666
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 11646353758097504373,
+        "exploratory": true
+      },
+      "main/K8-K0/wrong_in_basket": {
+        "difference": 0.026666666666666665,
+        "ci95": [
+          -0.03333333333333333,
+          0.08666666666666666
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 14363195741013780433,
+        "exploratory": true
+      },
+      "main/K8-K0/omission_plus_wrong_fruit": {
+        "difference": 0.07999999999999999,
+        "ci95": [
+          -0.013333333333333334,
+          0.18
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 3,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 1328016633339496882,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/success": {
+        "difference": -0.06,
+        "ci95": [
+          -0.22,
+          0.1
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 7197827849146965134,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/omission_hidden_ripe": {
+        "difference": -0.02,
+        "ci95": [
+          -0.14,
+          0.1
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 4617668560131478010,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/checked_hidden_unripe": {
+        "difference": 0.02,
+        "ci95": [
+          -0.08,
+          0.12
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 2607094457336626259,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/wrong_fruit": {
+        "difference": -0.04,
+        "ci95": [
+          -0.16,
+          0.08
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 8290657801497326992,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/wrong_hidden_unripe": {
+        "difference": 0.02,
+        "ci95": [
+          -0.04,
+          0.08
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 5326602919007552035,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/wrong_visible_unripe": {
+        "difference": -0.06,
+        "ci95": [
+          -0.16,
+          0.04
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 397504061777427885,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/wrong_in_basket": {
+        "difference": -0.06,
+        "ci95": [
+          -0.16,
+          0.04
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 13132439903361152033,
+        "exploratory": true
+      },
+      "sensitivity/K4-K0/omission_plus_wrong_fruit": {
+        "difference": -0.06,
+        "ci95": [
+          -0.22,
+          0.1
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 2987446403071708871,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/success": {
+        "difference": -0.06,
+        "ci95": [
+          -0.22,
+          0.1
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 12582592524274149369,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/omission_hidden_ripe": {
+        "difference": 0.0,
+        "ci95": [
+          -0.1,
+          0.1
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 3571711136340039731,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/checked_hidden_unripe": {
+        "difference": -0.06,
+        "ci95": [
+          -0.16,
+          0.04
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 12082817488932956802,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/wrong_fruit": {
+        "difference": 0.04,
+        "ci95": [
+          -0.08,
+          0.16
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 16815423072518882854,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/wrong_hidden_unripe": {
+        "difference": 0.06,
+        "ci95": [
+          -0.02,
+          0.14
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 3337843199623673641,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/wrong_visible_unripe": {
+        "difference": -0.02,
+        "ci95": [
+          -0.1,
+          0.06
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 14430240152218657275,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/wrong_in_basket": {
+        "difference": -0.04,
+        "ci95": [
+          -0.14,
+          0.06
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 8318237300682790071,
+        "exploratory": true
+      },
+      "sensitivity/K8-K0/omission_plus_wrong_fruit": {
+        "difference": 0.04,
+        "ci95": [
+          -0.12,
+          0.2
+        ],
+        "layouts": 50,
+        "seeds_per_layout": 1,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 4062239666358654622,
+        "exploratory": true
+      }
+    },
+    "expert_comparison": {
+      "clean": {
+        "episodes": 100,
+        "hidden": {
+          "episodes": 100,
+          "omission_hidden_ripe": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "checked_hidden_unripe": {
+            "numerator": 50,
+            "denominator": 100,
+            "fraction": 0.5
+          },
+          "wrong_fruit": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "wrong_in_basket": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "wrong_hidden_unripe": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "wrong_visible_unripe": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "omission_or_wrong_fruit": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "checked_hidden_unripe_among_eligible": {
+            "numerator": 50,
+            "denominator": 68,
+            "fraction": 0.7352941176470589
+          },
+          "omission_plus_wrong_fruit": {
+            "score_sum": 0,
+            "episodes": 100,
+            "mean_score": 0.0
+          },
+          "omitted_hidden_ripe_fruits": {
+            "numerator": 0,
+            "denominator": 132,
+            "fraction": 0.0
+          }
+        },
+        "fruit_behavior": {
+          "hidden_ripe": {
+            "fruits": 132,
+            "approached": {
+              "numerator": 132,
+              "denominator": 132,
+              "fraction": 1.0
+            },
+            "approached_then_detached": {
+              "numerator": 132,
+              "denominator": 132,
+              "fraction": 1.0
+            },
+            "approached_without_detachment": {
+              "numerator": 0,
+              "denominator": 132,
+              "fraction": 0.0
+            },
+            "wrong_fruit": {
+              "numerator": 0,
+              "denominator": 132,
+              "fraction": 0.0
+            },
+            "actual_leaf_push": {
+              "numerator": 132,
+              "denominator": 132,
+              "fraction": 1.0
+            }
+          },
+          "hidden_unripe": {
+            "fruits": 68,
+            "approached": {
+              "numerator": 50,
+              "denominator": 68,
+              "fraction": 0.7352941176470589
+            },
+            "approached_then_detached": {
+              "numerator": 0,
+              "denominator": 68,
+              "fraction": 0.0
+            },
+            "approached_without_detachment": {
+              "numerator": 50,
+              "denominator": 68,
+              "fraction": 0.7352941176470589
+            },
+            "wrong_fruit": {
+              "numerator": 0,
+              "denominator": 68,
+              "fraction": 0.0
+            },
+            "actual_leaf_push": {
+              "numerator": 54,
+              "denominator": 68,
+              "fraction": 0.7941176470588235
+            }
+          },
+          "visible_unripe": {
+            "fruits": 145,
+            "approached": {
+              "numerator": 115,
+              "denominator": 145,
+              "fraction": 0.7931034482758621
+            },
+            "approached_then_detached": {
+              "numerator": 0,
+              "denominator": 145,
+              "fraction": 0.0
+            },
+            "approached_without_detachment": {
+              "numerator": 115,
+              "denominator": 145,
+              "fraction": 0.7931034482758621
+            },
+            "wrong_fruit": {
+              "numerator": 0,
+              "denominator": 145,
+              "fraction": 0.0
+            },
+            "actual_leaf_push": {
+              "numerator": 0,
+              "denominator": 145,
+              "fraction": 0.0
+            }
+          }
+        },
+        "explicit_reach_to_hidden_ripe": {
+          "numerator": 132,
+          "denominator": 132,
+          "fraction": 1.0
+        },
+        "first_15cm_entry_target_matches": {
+          "numerator": 82,
+          "denominator": 132,
+          "fraction": 0.6212121212121212
+        },
+        "explicit_unripe_targets": 0
+      },
+      "DART": {
+        "episodes": 100,
+        "hidden": {
+          "episodes": 100,
+          "omission_hidden_ripe": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "checked_hidden_unripe": {
+            "numerator": 49,
+            "denominator": 100,
+            "fraction": 0.49
+          },
+          "wrong_fruit": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "wrong_in_basket": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "wrong_hidden_unripe": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "wrong_visible_unripe": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "omission_or_wrong_fruit": {
+            "numerator": 0,
+            "denominator": 100,
+            "fraction": 0.0
+          },
+          "checked_hidden_unripe_among_eligible": {
+            "numerator": 49,
+            "denominator": 60,
+            "fraction": 0.8166666666666667
+          },
+          "omission_plus_wrong_fruit": {
+            "score_sum": 0,
+            "episodes": 100,
+            "mean_score": 0.0
+          },
+          "omitted_hidden_ripe_fruits": {
+            "numerator": 0,
+            "denominator": 140,
+            "fraction": 0.0
+          }
+        },
+        "fruit_behavior": {
+          "hidden_ripe": {
+            "fruits": 140,
+            "approached": {
+              "numerator": 140,
+              "denominator": 140,
+              "fraction": 1.0
+            },
+            "approached_then_detached": {
+              "numerator": 140,
+              "denominator": 140,
+              "fraction": 1.0
+            },
+            "approached_without_detachment": {
+              "numerator": 0,
+              "denominator": 140,
+              "fraction": 0.0
+            },
+            "wrong_fruit": {
+              "numerator": 0,
+              "denominator": 140,
+              "fraction": 0.0
+            },
+            "actual_leaf_push": {
+              "numerator": 140,
+              "denominator": 140,
+              "fraction": 1.0
+            }
+          },
+          "hidden_unripe": {
+            "fruits": 60,
+            "approached": {
+              "numerator": 49,
+              "denominator": 60,
+              "fraction": 0.8166666666666667
+            },
+            "approached_then_detached": {
+              "numerator": 0,
+              "denominator": 60,
+              "fraction": 0.0
+            },
+            "approached_without_detachment": {
+              "numerator": 49,
+              "denominator": 60,
+              "fraction": 0.8166666666666667
+            },
+            "wrong_fruit": {
+              "numerator": 0,
+              "denominator": 60,
+              "fraction": 0.0
+            },
+            "actual_leaf_push": {
+              "numerator": 51,
+              "denominator": 60,
+              "fraction": 0.85
+            }
+          },
+          "visible_unripe": {
+            "fruits": 183,
+            "approached": {
+              "numerator": 145,
+              "denominator": 183,
+              "fraction": 0.7923497267759563
+            },
+            "approached_then_detached": {
+              "numerator": 0,
+              "denominator": 183,
+              "fraction": 0.0
+            },
+            "approached_without_detachment": {
+              "numerator": 145,
+              "denominator": 183,
+              "fraction": 0.7923497267759563
+            },
+            "wrong_fruit": {
+              "numerator": 0,
+              "denominator": 183,
+              "fraction": 0.0
+            },
+            "actual_leaf_push": {
+              "numerator": 0,
+              "denominator": 183,
+              "fraction": 0.0
+            }
+          }
+        },
+        "explicit_reach_to_hidden_ripe": {
+          "numerator": 140,
+          "denominator": 140,
+          "fraction": 1.0
+        },
+        "first_15cm_entry_target_matches": {
+          "numerator": 77,
+          "denominator": 140,
+          "fraction": 0.55
+        },
+        "explicit_unripe_targets": 0
+      }
+    },
+    "D5_confirmatory_conclusions_unchanged": true
+  },
+  "pilot_bitwise_check": {
+    "all_five_bitwise_equal": false,
+    "reuse_G1_seed7": false,
+    "comparisons": [
+      {
+        "bitwise_equal": true,
+        "first_differences": [],
+        "old": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/G1/FruitCount/ep248",
+        "new": "/media/fulei/fuleivla/ecm_vla/results/fruit_memory_usage_diag_20261104/pilot/FruitCount/ep248_seed7",
+        "label": "探索性、非预登记，不改变D5结论，不写入论文"
+      },
+      {
+        "bitwise_equal": false,
+        "first_differences": [
+          "result/outcome",
+          "result/executed_steps",
+          "result/final_in_basket",
+          "result/final_detached",
+          "raw_frames.jsonl/length:479!=1301",
+          "raw_frames.jsonl/31/wrist_sha256",
+          "control_actions.jsonl/length:478!=1300",
+          "control_actions.jsonl/30/action",
+          "policy_actions.jsonl/length:28!=80",
+          "policy_actions.jsonl/0/actions_sha256",
+          "policy_decisions.jsonl/length:28!=80",
+          "policy_decisions.jsonl/1/tensor_sha256"
+        ],
+        "old": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/G1/FruitCount/ep249",
+        "new": "/media/fulei/fuleivla/ecm_vla/results/fruit_memory_usage_diag_20261104/pilot/FruitCount/ep249_seed7",
+        "label": "探索性、非预登记，不改变D5结论，不写入论文"
+      },
+      {
+        "bitwise_equal": true,
+        "first_differences": [],
+        "old": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/G1/FruitOccludedRipe/ep242",
+        "new": "/media/fulei/fuleivla/ecm_vla/results/fruit_memory_usage_diag_20261104/pilot/FruitOccludedRipe/ep242_seed7",
+        "label": "探索性、非预登记，不改变D5结论，不写入论文"
+      },
+      {
+        "bitwise_equal": true,
+        "first_differences": [],
+        "old": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/G1/FruitOccludedRipe/ep254",
+        "new": "/media/fulei/fuleivla/ecm_vla/results/fruit_memory_usage_diag_20261104/pilot/FruitOccludedRipe/ep254_seed7",
+        "label": "探索性、非预登记，不改变D5结论，不写入论文"
+      },
+      {
+        "bitwise_equal": true,
+        "first_differences": [],
+        "old": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/G1/FruitOccludedRipe/ep256",
+        "new": "/media/fulei/fuleivla/ecm_vla/results/fruit_memory_usage_diag_20261104/pilot/FruitOccludedRipe/ep256_seed7",
+        "label": "探索性、非预登记，不改变D5结论，不写入论文"
+      }
+    ],
+    "label": "探索性、非预登记，不改变D5结论，不写入论文",
+    "plan_sha256": "4d3b70073acdf1fd687547d95a3d06a6f5d22276c5d751704054b97bc79317b2"
+  },
+  "inference_episodes": 480,
+  "conditions": {
+    "K0_normal": {
+      "all": {
+        "episodes": 160,
+        "success": {
+          "numerator": 78,
+          "denominator": 160,
+          "fraction": 0.4875
+        },
+        "fail": {
+          "numerator": 52,
+          "denominator": 160,
+          "fraction": 0.325
+        },
+        "timeout": {
+          "numerator": 30,
+          "denominator": 160,
+          "fraction": 0.1875
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "first_target_in_basket": {
+          "numerator": 132,
+          "denominator": 160,
+          "fraction": 0.825
+        },
+        "never_detached": {
+          "numerator": 3,
+          "denominator": 160,
+          "fraction": 0.01875
+        },
+        "near_miss": {
+          "numerator": 2,
+          "denominator": 160,
+          "fraction": 0.0125
+        },
+        "wrist_over_limit": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "wrist_deviation_executed": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "wrist_deviation_proposed": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "freeze_200": {
+          "numerator": 1,
+          "denominator": 160,
+          "fraction": 0.00625
+        },
+        "count_exact": {
+          "numerator": 52,
+          "denominator": 80,
+          "fraction": 0.65
+        },
+        "correct_in_basket": {
+          "total_fruits": 275,
+          "episodes_with_data": 160
+        },
+        "wrong_in_basket": {
+          "total_fruits": 8,
+          "episodes_with_data": 160
+        },
+        "freeze_200_basket_unsuccessful": {
+          "numerator": 1,
+          "denominator": 62,
+          "fraction": 0.016129032258064516
+        },
+        "start_idle": {
+          "median": 31.0,
+          "observed": 160,
+          "right_censored": 0
+        },
+        "leave_home_step": {
+          "median": 36.0,
+          "observed": 160,
+          "episodes_with_data": 160,
+          "never_left_home": {
+            "numerator": 0,
+            "denominator": 160,
+            "fraction": 0.0
+          },
+          "median_convention": "observed crossings only; never-left episodes counted separately"
+        },
+        "post_release_resume_steps": {
+          "median": 16,
+          "events": 283,
+          "observed_resumptions": 197,
+          "unresumed_at_end": {
+            "numerator": 86,
+            "denominator": 283,
+            "fraction": 0.303886925795053
+          },
+          "episodes_with_entries": {
+            "numerator": 140,
+            "denominator": 160,
+            "fraction": 0.875
+          },
+          "median_convention": "observed resumptions only; right-censored events counted separately"
+        },
+        "deviation_onset_context": {
+          "carrying_fruit": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "closed_empty": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_after_basket": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_before_first_detach": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          }
+        },
+        "guard_clip_rate": {
+          "any_joint": {
+            "numerator": 24699,
+            "denominator": 97374,
+            "fraction": 0.25365087189598867
+          },
+          "per_joint": [
+            {
+              "numerator": 16211,
+              "denominator": 97374,
+              "fraction": 0.16648181239345206
+            },
+            {
+              "numerator": 12954,
+              "denominator": 97374,
+              "fraction": 0.13303345862345184
+            },
+            {
+              "numerator": 7731,
+              "denominator": 97374,
+              "fraction": 0.07939491034567749
+            },
+            {
+              "numerator": 13218,
+              "denominator": 97374,
+              "fraction": 0.13574465463059954
+            },
+            {
+              "numerator": 14433,
+              "denominator": 97374,
+              "fraction": 0.14822231807258612
+            },
+            {
+              "numerator": 14343,
+              "denominator": 97374,
+              "fraction": 0.14729804670651303
+            },
+            {
+              "numerator": 11433,
+              "denominator": 97374,
+              "fraction": 0.11741327253681681
+            }
+          ]
+        }
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 80,
+          "success": {
+            "numerator": 52,
+            "denominator": 80,
+            "fraction": 0.65
+          },
+          "fail": {
+            "numerator": 21,
+            "denominator": 80,
+            "fraction": 0.2625
+          },
+          "timeout": {
+            "numerator": 7,
+            "denominator": 80,
+            "fraction": 0.0875
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 74,
+            "denominator": 80,
+            "fraction": 0.925
+          },
+          "never_detached": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "near_miss": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 1,
+            "denominator": 80,
+            "fraction": 0.0125
+          },
+          "count_exact": {
+            "numerator": 52,
+            "denominator": 80,
+            "fraction": 0.65
+          },
+          "correct_in_basket": {
+            "total_fruits": 160,
+            "episodes_with_data": 80
+          },
+          "wrong_in_basket": {
+            "total_fruits": 0,
+            "episodes_with_data": 80
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 1,
+            "denominator": 22,
+            "fraction": 0.045454545454545456
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 80,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 35.0,
+            "observed": 80,
+            "episodes_with_data": 80,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 80,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 15.0,
+            "events": 160,
+            "observed_resumptions": 108,
+            "unresumed_at_end": {
+              "numerator": 52,
+              "denominator": 160,
+              "fraction": 0.325
+            },
+            "episodes_with_entries": {
+              "numerator": 74,
+              "denominator": 80,
+              "fraction": 0.925
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 7326,
+              "denominator": 39805,
+              "fraction": 0.18404723024745634
+            },
+            "per_joint": [
+              {
+                "numerator": 4967,
+                "denominator": 39805,
+                "fraction": 0.12478331867855796
+              },
+              {
+                "numerator": 4830,
+                "denominator": 39805,
+                "fraction": 0.12134154000753675
+              },
+              {
+                "numerator": 2900,
+                "denominator": 39805,
+                "fraction": 0.07285516894862454
+              },
+              {
+                "numerator": 4446,
+                "denominator": 39805,
+                "fraction": 0.1116945107398568
+              },
+              {
+                "numerator": 3663,
+                "denominator": 39805,
+                "fraction": 0.09202361512372817
+              },
+              {
+                "numerator": 4677,
+                "denominator": 39805,
+                "fraction": 0.11749780178369551
+              },
+              {
+                "numerator": 4329,
+                "denominator": 39805,
+                "fraction": 0.10875518150986058
+              }
+            ]
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 80,
+          "success": {
+            "numerator": 26,
+            "denominator": 80,
+            "fraction": 0.325
+          },
+          "fail": {
+            "numerator": 31,
+            "denominator": 80,
+            "fraction": 0.3875
+          },
+          "timeout": {
+            "numerator": 23,
+            "denominator": 80,
+            "fraction": 0.2875
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 58,
+            "denominator": 80,
+            "fraction": 0.725
+          },
+          "never_detached": {
+            "numerator": 3,
+            "denominator": 80,
+            "fraction": 0.0375
+          },
+          "near_miss": {
+            "numerator": 2,
+            "denominator": 80,
+            "fraction": 0.025
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "count_exact": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "correct_in_basket": {
+            "total_fruits": 115,
+            "episodes_with_data": 80
+          },
+          "wrong_in_basket": {
+            "total_fruits": 8,
+            "episodes_with_data": 80
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 40,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 80,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 36.0,
+            "observed": 80,
+            "episodes_with_data": 80,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 80,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 30,
+            "events": 123,
+            "observed_resumptions": 89,
+            "unresumed_at_end": {
+              "numerator": 34,
+              "denominator": 123,
+              "fraction": 0.2764227642276423
+            },
+            "episodes_with_entries": {
+              "numerator": 66,
+              "denominator": 80,
+              "fraction": 0.825
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 17373,
+              "denominator": 57569,
+              "fraction": 0.30177699803713803
+            },
+            "per_joint": [
+              {
+                "numerator": 11244,
+                "denominator": 57569,
+                "fraction": 0.1953134499470201
+              },
+              {
+                "numerator": 8124,
+                "denominator": 57569,
+                "fraction": 0.1411176153832792
+              },
+              {
+                "numerator": 4831,
+                "denominator": 57569,
+                "fraction": 0.08391669127481804
+              },
+              {
+                "numerator": 8772,
+                "denominator": 57569,
+                "fraction": 0.15237367333113308
+              },
+              {
+                "numerator": 10770,
+                "denominator": 57569,
+                "fraction": 0.18707985200368255
+              },
+              {
+                "numerator": 9666,
+                "denominator": 57569,
+                "fraction": 0.16790286438882038
+              },
+              {
+                "numerator": 7104,
+                "denominator": 57569,
+                "fraction": 0.12339974639128698
+              }
+            ]
+          }
+        }
+      },
+      "hidden": {
+        "episodes": 80,
+        "omission_hidden_ripe": {
+          "numerator": 13,
+          "denominator": 80,
+          "fraction": 0.1625
+        },
+        "checked_hidden_unripe": {
+          "numerator": 29,
+          "denominator": 80,
+          "fraction": 0.3625
+        },
+        "wrong_fruit": {
+          "numerator": 9,
+          "denominator": 80,
+          "fraction": 0.1125
+        },
+        "wrong_in_basket": {
+          "numerator": 8,
+          "denominator": 80,
+          "fraction": 0.1
+        },
+        "wrong_hidden_unripe": {
+          "numerator": 1,
+          "denominator": 80,
+          "fraction": 0.0125
+        },
+        "wrong_visible_unripe": {
+          "numerator": 8,
+          "denominator": 80,
+          "fraction": 0.1
+        },
+        "omission_or_wrong_fruit": {
+          "numerator": 19,
+          "denominator": 80,
+          "fraction": 0.2375
+        },
+        "checked_hidden_unripe_among_eligible": {
+          "numerator": 29,
+          "denominator": 36,
+          "fraction": 0.8055555555555556
+        },
+        "omission_plus_wrong_fruit": {
+          "score_sum": 22,
+          "episodes": 80,
+          "mean_score": 0.275
+        },
+        "omitted_hidden_ripe_fruits": {
+          "numerator": 13,
+          "denominator": 124,
+          "fraction": 0.10483870967741936
+        }
+      },
+      "fruit_behavior": {
+        "hidden_ripe": {
+          "fruits": 124,
+          "approached": {
+            "numerator": 111,
+            "denominator": 124,
+            "fraction": 0.8951612903225806
+          },
+          "approached_then_detached": {
+            "numerator": 77,
+            "denominator": 124,
+            "fraction": 0.6209677419354839
+          },
+          "approached_without_detachment": {
+            "numerator": 34,
+            "denominator": 124,
+            "fraction": 0.27419354838709675
+          },
+          "wrong_fruit": {
+            "numerator": 0,
+            "denominator": 124,
+            "fraction": 0.0
+          },
+          "actual_leaf_push": {
+            "numerator": 112,
+            "denominator": 124,
+            "fraction": 0.9032258064516129
+          }
+        },
+        "hidden_unripe": {
+          "fruits": 36,
+          "approached": {
+            "numerator": 30,
+            "denominator": 36,
+            "fraction": 0.8333333333333334
+          },
+          "approached_then_detached": {
+            "numerator": 1,
+            "denominator": 36,
+            "fraction": 0.027777777777777776
+          },
+          "approached_without_detachment": {
+            "numerator": 29,
+            "denominator": 36,
+            "fraction": 0.8055555555555556
+          },
+          "wrong_fruit": {
+            "numerator": 1,
+            "denominator": 36,
+            "fraction": 0.027777777777777776
+          },
+          "actual_leaf_push": {
+            "numerator": 33,
+            "denominator": 36,
+            "fraction": 0.9166666666666666
+          }
+        },
+        "visible_unripe": {
+          "fruits": 142,
+          "approached": {
+            "numerator": 108,
+            "denominator": 142,
+            "fraction": 0.7605633802816901
+          },
+          "approached_then_detached": {
+            "numerator": 8,
+            "denominator": 142,
+            "fraction": 0.056338028169014086
+          },
+          "approached_without_detachment": {
+            "numerator": 100,
+            "denominator": 142,
+            "fraction": 0.704225352112676
+          },
+          "wrong_fruit": {
+            "numerator": 8,
+            "denominator": 142,
+            "fraction": 0.056338028169014086
+          },
+          "actual_leaf_push": {
+            "numerator": 0,
+            "denominator": 142,
+            "fraction": 0.0
+          }
+        }
+      },
+      "pre_gust_retained": {
+        "all": {
+          "numerator": 3487,
+          "denominator": 3487,
+          "fraction": 1.0
+        },
+        "frame_zero_selected": {
+          "numerator": 3487,
+          "denominator": 3487,
+          "fraction": 1.0
+        },
+        "by_phase": {
+          "before_target_1": {
+            "numerator": 762,
+            "denominator": 762,
+            "fraction": 1.0
+          },
+          "before_target_2": {
+            "numerator": 1749,
+            "denominator": 1749,
+            "fraction": 1.0
+          },
+          "before_target_3": {
+            "numerator": 815,
+            "denominator": 815,
+            "fraction": 1.0
+          },
+          "after_all_targets": {
+            "numerator": 161,
+            "denominator": 161,
+            "fraction": 1.0
+          }
+        }
+      },
+      "count_failure": {
+        "failed_episodes": 21,
+        "drop_events": 21,
+        "phases": {
+          "grasp": {
+            "numerator": 1,
+            "denominator": 21,
+            "fraction": 0.047619047619047616
+          },
+          "pull": {
+            "numerator": 12,
+            "denominator": 21,
+            "fraction": 0.5714285714285714
+          },
+          "carry": {
+            "numerator": 7,
+            "denominator": 21,
+            "fraction": 0.3333333333333333
+          },
+          "release": {
+            "numerator": 1,
+            "denominator": 21,
+            "fraction": 0.047619047619047616
+          }
+        },
+        "timeout_tails": {
+          "ongoing_motion": 7
+        }
+      }
+    },
+    "K0_recent16": {
+      "all": {
+        "episodes": 160,
+        "success": {
+          "numerator": 63,
+          "denominator": 160,
+          "fraction": 0.39375
+        },
+        "fail": {
+          "numerator": 65,
+          "denominator": 160,
+          "fraction": 0.40625
+        },
+        "timeout": {
+          "numerator": 32,
+          "denominator": 160,
+          "fraction": 0.2
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "first_target_in_basket": {
+          "numerator": 108,
+          "denominator": 160,
+          "fraction": 0.675
+        },
+        "never_detached": {
+          "numerator": 14,
+          "denominator": 160,
+          "fraction": 0.0875
+        },
+        "near_miss": {
+          "numerator": 11,
+          "denominator": 160,
+          "fraction": 0.06875
+        },
+        "wrist_over_limit": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "wrist_deviation_executed": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "wrist_deviation_proposed": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "freeze_200": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "count_exact": {
+          "numerator": 48,
+          "denominator": 80,
+          "fraction": 0.6
+        },
+        "correct_in_basket": {
+          "total_fruits": 226,
+          "episodes_with_data": 160
+        },
+        "wrong_in_basket": {
+          "total_fruits": 8,
+          "episodes_with_data": 160
+        },
+        "freeze_200_basket_unsuccessful": {
+          "numerator": 0,
+          "denominator": 56,
+          "fraction": 0.0
+        },
+        "start_idle": {
+          "median": 31.0,
+          "observed": 160,
+          "right_censored": 0
+        },
+        "leave_home_step": {
+          "median": 36.0,
+          "observed": 160,
+          "episodes_with_data": 160,
+          "never_left_home": {
+            "numerator": 0,
+            "denominator": 160,
+            "fraction": 0.0
+          },
+          "median_convention": "observed crossings only; never-left episodes counted separately"
+        },
+        "post_release_resume_steps": {
+          "median": 14.0,
+          "events": 234,
+          "observed_resumptions": 166,
+          "unresumed_at_end": {
+            "numerator": 68,
+            "denominator": 234,
+            "fraction": 0.2905982905982906
+          },
+          "episodes_with_entries": {
+            "numerator": 119,
+            "denominator": 160,
+            "fraction": 0.74375
+          },
+          "median_convention": "observed resumptions only; right-censored events counted separately"
+        },
+        "deviation_onset_context": {
+          "carrying_fruit": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "closed_empty": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_after_basket": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_before_first_detach": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          }
+        },
+        "guard_clip_rate": {
+          "any_joint": {
+            "numerator": 28036,
+            "denominator": 94161,
+            "fraction": 0.2977453510476737
+          },
+          "per_joint": [
+            {
+              "numerator": 10048,
+              "denominator": 94161,
+              "fraction": 0.1067108463164155
+            },
+            {
+              "numerator": 7362,
+              "denominator": 94161,
+              "fraction": 0.07818523592570173
+            },
+            {
+              "numerator": 8058,
+              "denominator": 94161,
+              "fraction": 0.08557683117214133
+            },
+            {
+              "numerator": 13794,
+              "denominator": 94161,
+              "fraction": 0.1464937713065919
+            },
+            {
+              "numerator": 14781,
+              "denominator": 94161,
+              "fraction": 0.15697581801382737
+            },
+            {
+              "numerator": 18053,
+              "denominator": 94161,
+              "fraction": 0.1917248117585837
+            },
+            {
+              "numerator": 12500,
+              "denominator": 94161,
+              "fraction": 0.13275135140875735
+            }
+          ]
+        }
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 80,
+          "success": {
+            "numerator": 48,
+            "denominator": 80,
+            "fraction": 0.6
+          },
+          "fail": {
+            "numerator": 22,
+            "denominator": 80,
+            "fraction": 0.275
+          },
+          "timeout": {
+            "numerator": 10,
+            "denominator": 80,
+            "fraction": 0.125
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 63,
+            "denominator": 80,
+            "fraction": 0.7875
+          },
+          "never_detached": {
+            "numerator": 3,
+            "denominator": 80,
+            "fraction": 0.0375
+          },
+          "near_miss": {
+            "numerator": 3,
+            "denominator": 80,
+            "fraction": 0.0375
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "count_exact": {
+            "numerator": 48,
+            "denominator": 80,
+            "fraction": 0.6
+          },
+          "correct_in_basket": {
+            "total_fruits": 145,
+            "episodes_with_data": 80
+          },
+          "wrong_in_basket": {
+            "total_fruits": 3,
+            "episodes_with_data": 80
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 19,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 80,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 35.5,
+            "observed": 80,
+            "episodes_with_data": 80,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 80,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 14.0,
+            "events": 148,
+            "observed_resumptions": 100,
+            "unresumed_at_end": {
+              "numerator": 48,
+              "denominator": 148,
+              "fraction": 0.32432432432432434
+            },
+            "episodes_with_entries": {
+              "numerator": 67,
+              "denominator": 80,
+              "fraction": 0.8375
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 8446,
+              "denominator": 42064,
+              "fraction": 0.20078927348801826
+            },
+            "per_joint": [
+              {
+                "numerator": 1068,
+                "denominator": 42064,
+                "fraction": 0.025389882084442754
+              },
+              {
+                "numerator": 1305,
+                "denominator": 42064,
+                "fraction": 0.031024153670597184
+              },
+              {
+                "numerator": 2718,
+                "denominator": 42064,
+                "fraction": 0.0646158235070369
+              },
+              {
+                "numerator": 2161,
+                "denominator": 42064,
+                "fraction": 0.05137409661468239
+              },
+              {
+                "numerator": 4291,
+                "denominator": 42064,
+                "fraction": 0.10201122099657664
+              },
+              {
+                "numerator": 3967,
+                "denominator": 42064,
+                "fraction": 0.09430867249904906
+              },
+              {
+                "numerator": 3136,
+                "denominator": 42064,
+                "fraction": 0.07455306200076074
+              }
+            ]
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 80,
+          "success": {
+            "numerator": 15,
+            "denominator": 80,
+            "fraction": 0.1875
+          },
+          "fail": {
+            "numerator": 43,
+            "denominator": 80,
+            "fraction": 0.5375
+          },
+          "timeout": {
+            "numerator": 22,
+            "denominator": 80,
+            "fraction": 0.275
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 45,
+            "denominator": 80,
+            "fraction": 0.5625
+          },
+          "never_detached": {
+            "numerator": 11,
+            "denominator": 80,
+            "fraction": 0.1375
+          },
+          "near_miss": {
+            "numerator": 8,
+            "denominator": 80,
+            "fraction": 0.1
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "count_exact": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "correct_in_basket": {
+            "total_fruits": 81,
+            "episodes_with_data": 80
+          },
+          "wrong_in_basket": {
+            "total_fruits": 5,
+            "episodes_with_data": 80
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 37,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 80,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 36.0,
+            "observed": 80,
+            "episodes_with_data": 80,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 80,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 15.0,
+            "events": 86,
+            "observed_resumptions": 66,
+            "unresumed_at_end": {
+              "numerator": 20,
+              "denominator": 86,
+              "fraction": 0.23255813953488372
+            },
+            "episodes_with_entries": {
+              "numerator": 52,
+              "denominator": 80,
+              "fraction": 0.65
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 19590,
+              "denominator": 52097,
+              "fraction": 0.37602932990383325
+            },
+            "per_joint": [
+              {
+                "numerator": 8980,
+                "denominator": 52097,
+                "fraction": 0.17237076990997563
+              },
+              {
+                "numerator": 6057,
+                "denominator": 52097,
+                "fraction": 0.11626389235464614
+              },
+              {
+                "numerator": 5340,
+                "denominator": 52097,
+                "fraction": 0.1025011037103864
+              },
+              {
+                "numerator": 11633,
+                "denominator": 52097,
+                "fraction": 0.22329500739006083
+              },
+              {
+                "numerator": 10490,
+                "denominator": 52097,
+                "fraction": 0.20135516440486018
+              },
+              {
+                "numerator": 14086,
+                "denominator": 52097,
+                "fraction": 0.270380252221817
+              },
+              {
+                "numerator": 9364,
+                "denominator": 52097,
+                "fraction": 0.17974163579476746
+              }
+            ]
+          }
+        }
+      },
+      "hidden": {
+        "episodes": 80,
+        "omission_hidden_ripe": {
+          "numerator": 11,
+          "denominator": 80,
+          "fraction": 0.1375
+        },
+        "checked_hidden_unripe": {
+          "numerator": 28,
+          "denominator": 80,
+          "fraction": 0.35
+        },
+        "wrong_fruit": {
+          "numerator": 9,
+          "denominator": 80,
+          "fraction": 0.1125
+        },
+        "wrong_in_basket": {
+          "numerator": 5,
+          "denominator": 80,
+          "fraction": 0.0625
+        },
+        "wrong_hidden_unripe": {
+          "numerator": 4,
+          "denominator": 80,
+          "fraction": 0.05
+        },
+        "wrong_visible_unripe": {
+          "numerator": 5,
+          "denominator": 80,
+          "fraction": 0.0625
+        },
+        "omission_or_wrong_fruit": {
+          "numerator": 18,
+          "denominator": 80,
+          "fraction": 0.225
+        },
+        "checked_hidden_unripe_among_eligible": {
+          "numerator": 28,
+          "denominator": 36,
+          "fraction": 0.7777777777777778
+        },
+        "omission_plus_wrong_fruit": {
+          "score_sum": 20,
+          "episodes": 80,
+          "mean_score": 0.25
+        },
+        "omitted_hidden_ripe_fruits": {
+          "numerator": 12,
+          "denominator": 124,
+          "fraction": 0.0967741935483871
+        }
+      },
+      "fruit_behavior": {
+        "hidden_ripe": {
+          "fruits": 124,
+          "approached": {
+            "numerator": 112,
+            "denominator": 124,
+            "fraction": 0.9032258064516129
+          },
+          "approached_then_detached": {
+            "numerator": 70,
+            "denominator": 124,
+            "fraction": 0.5645161290322581
+          },
+          "approached_without_detachment": {
+            "numerator": 42,
+            "denominator": 124,
+            "fraction": 0.3387096774193548
+          },
+          "wrong_fruit": {
+            "numerator": 0,
+            "denominator": 124,
+            "fraction": 0.0
+          },
+          "actual_leaf_push": {
+            "numerator": 113,
+            "denominator": 124,
+            "fraction": 0.9112903225806451
+          }
+        },
+        "hidden_unripe": {
+          "fruits": 36,
+          "approached": {
+            "numerator": 32,
+            "denominator": 36,
+            "fraction": 0.8888888888888888
+          },
+          "approached_then_detached": {
+            "numerator": 4,
+            "denominator": 36,
+            "fraction": 0.1111111111111111
+          },
+          "approached_without_detachment": {
+            "numerator": 28,
+            "denominator": 36,
+            "fraction": 0.7777777777777778
+          },
+          "wrong_fruit": {
+            "numerator": 4,
+            "denominator": 36,
+            "fraction": 0.1111111111111111
+          },
+          "actual_leaf_push": {
+            "numerator": 33,
+            "denominator": 36,
+            "fraction": 0.9166666666666666
+          }
+        },
+        "visible_unripe": {
+          "fruits": 142,
+          "approached": {
+            "numerator": 108,
+            "denominator": 142,
+            "fraction": 0.7605633802816901
+          },
+          "approached_then_detached": {
+            "numerator": 5,
+            "denominator": 142,
+            "fraction": 0.035211267605633804
+          },
+          "approached_without_detachment": {
+            "numerator": 103,
+            "denominator": 142,
+            "fraction": 0.7253521126760564
+          },
+          "wrong_fruit": {
+            "numerator": 5,
+            "denominator": 142,
+            "fraction": 0.035211267605633804
+          },
+          "actual_leaf_push": {
+            "numerator": 0,
+            "denominator": 142,
+            "fraction": 0.0
+          }
+        }
+      },
+      "pre_gust_retained": {
+        "all": {
+          "numerator": 0,
+          "denominator": 3146,
+          "fraction": 0.0
+        },
+        "frame_zero_selected": {
+          "numerator": 0,
+          "denominator": 3146,
+          "fraction": 0.0
+        },
+        "by_phase": {
+          "before_target_1": {
+            "numerator": 0,
+            "denominator": 1419,
+            "fraction": 0.0
+          },
+          "before_target_2": {
+            "numerator": 0,
+            "denominator": 1243,
+            "fraction": 0.0
+          },
+          "before_target_3": {
+            "numerator": 0,
+            "denominator": 404,
+            "fraction": 0.0
+          },
+          "after_all_targets": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          }
+        }
+      },
+      "count_failure": {
+        "failed_episodes": 22,
+        "drop_events": 22,
+        "phases": {
+          "grasp": {
+            "numerator": 2,
+            "denominator": 22,
+            "fraction": 0.09090909090909091
+          },
+          "pull": {
+            "numerator": 10,
+            "denominator": 22,
+            "fraction": 0.45454545454545453
+          },
+          "carry": {
+            "numerator": 9,
+            "denominator": 22,
+            "fraction": 0.4090909090909091
+          },
+          "release": {
+            "numerator": 1,
+            "denominator": 22,
+            "fraction": 0.045454545454545456
+          }
+        },
+        "timeout_tails": {
+          "ongoing_motion": 10
+        }
+      }
+    },
+    "K0_no_pregust": {
+      "all": {
+        "episodes": 160,
+        "success": {
+          "numerator": 69,
+          "denominator": 160,
+          "fraction": 0.43125
+        },
+        "fail": {
+          "numerator": 61,
+          "denominator": 160,
+          "fraction": 0.38125
+        },
+        "timeout": {
+          "numerator": 30,
+          "denominator": 160,
+          "fraction": 0.1875
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "first_target_in_basket": {
+          "numerator": 117,
+          "denominator": 160,
+          "fraction": 0.73125
+        },
+        "never_detached": {
+          "numerator": 7,
+          "denominator": 160,
+          "fraction": 0.04375
+        },
+        "near_miss": {
+          "numerator": 6,
+          "denominator": 160,
+          "fraction": 0.0375
+        },
+        "wrist_over_limit": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "wrist_deviation_executed": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "wrist_deviation_proposed": {
+          "numerator": 0,
+          "denominator": 160,
+          "fraction": 0.0
+        },
+        "freeze_200": {
+          "numerator": 3,
+          "denominator": 160,
+          "fraction": 0.01875
+        },
+        "count_exact": {
+          "numerator": 49,
+          "denominator": 80,
+          "fraction": 0.6125
+        },
+        "correct_in_basket": {
+          "total_fruits": 247,
+          "episodes_with_data": 160
+        },
+        "wrong_in_basket": {
+          "total_fruits": 7,
+          "episodes_with_data": 160
+        },
+        "freeze_200_basket_unsuccessful": {
+          "numerator": 2,
+          "denominator": 59,
+          "fraction": 0.03389830508474576
+        },
+        "start_idle": {
+          "median": 31.0,
+          "observed": 160,
+          "right_censored": 0
+        },
+        "leave_home_step": {
+          "median": 35.0,
+          "observed": 160,
+          "episodes_with_data": 160,
+          "never_left_home": {
+            "numerator": 0,
+            "denominator": 160,
+            "fraction": 0.0
+          },
+          "median_convention": "observed crossings only; never-left episodes counted separately"
+        },
+        "post_release_resume_steps": {
+          "median": 16.0,
+          "events": 254,
+          "observed_resumptions": 178,
+          "unresumed_at_end": {
+            "numerator": 76,
+            "denominator": 254,
+            "fraction": 0.2992125984251969
+          },
+          "episodes_with_entries": {
+            "numerator": 128,
+            "denominator": 160,
+            "fraction": 0.8
+          },
+          "median_convention": "observed resumptions only; right-censored events counted separately"
+        },
+        "deviation_onset_context": {
+          "carrying_fruit": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "closed_empty": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_after_basket": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_before_first_detach": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          }
+        },
+        "guard_clip_rate": {
+          "any_joint": {
+            "numerator": 28459,
+            "denominator": 97461,
+            "fraction": 0.29200398107961134
+          },
+          "per_joint": [
+            {
+              "numerator": 16214,
+              "denominator": 97461,
+              "fraction": 0.1663639814900319
+            },
+            {
+              "numerator": 13402,
+              "denominator": 97461,
+              "fraction": 0.1375114148223392
+            },
+            {
+              "numerator": 6731,
+              "denominator": 97461,
+              "fraction": 0.06906352284503545
+            },
+            {
+              "numerator": 11448,
+              "denominator": 97461,
+              "fraction": 0.11746236956320989
+            },
+            {
+              "numerator": 18683,
+              "denominator": 97461,
+              "fraction": 0.1916971916971917
+            },
+            {
+              "numerator": 15563,
+              "denominator": 97461,
+              "fraction": 0.1596843865751429
+            },
+            {
+              "numerator": 13096,
+              "denominator": 97461,
+              "fraction": 0.1343716973969075
+            }
+          ]
+        }
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 80,
+          "success": {
+            "numerator": 49,
+            "denominator": 80,
+            "fraction": 0.6125
+          },
+          "fail": {
+            "numerator": 24,
+            "denominator": 80,
+            "fraction": 0.3
+          },
+          "timeout": {
+            "numerator": 7,
+            "denominator": 80,
+            "fraction": 0.0875
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 69,
+            "denominator": 80,
+            "fraction": 0.8625
+          },
+          "never_detached": {
+            "numerator": 3,
+            "denominator": 80,
+            "fraction": 0.0375
+          },
+          "near_miss": {
+            "numerator": 3,
+            "denominator": 80,
+            "fraction": 0.0375
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 2,
+            "denominator": 80,
+            "fraction": 0.025
+          },
+          "count_exact": {
+            "numerator": 49,
+            "denominator": 80,
+            "fraction": 0.6125
+          },
+          "correct_in_basket": {
+            "total_fruits": 153,
+            "episodes_with_data": 80
+          },
+          "wrong_in_basket": {
+            "total_fruits": 0,
+            "episodes_with_data": 80
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 2,
+            "denominator": 21,
+            "fraction": 0.09523809523809523
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 80,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 35.0,
+            "observed": 80,
+            "episodes_with_data": 80,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 80,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 15.0,
+            "events": 153,
+            "observed_resumptions": 104,
+            "unresumed_at_end": {
+              "numerator": 49,
+              "denominator": 153,
+              "fraction": 0.3202614379084967
+            },
+            "episodes_with_entries": {
+              "numerator": 70,
+              "denominator": 80,
+              "fraction": 0.875
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 7064,
+              "denominator": 38947,
+              "fraction": 0.1813746886794875
+            },
+            "per_joint": [
+              {
+                "numerator": 2184,
+                "denominator": 38947,
+                "fraction": 0.05607620612627417
+              },
+              {
+                "numerator": 3422,
+                "denominator": 38947,
+                "fraction": 0.08786299329858525
+              },
+              {
+                "numerator": 2110,
+                "denominator": 38947,
+                "fraction": 0.05417618815313118
+              },
+              {
+                "numerator": 2240,
+                "denominator": 38947,
+                "fraction": 0.0575140575654094
+              },
+              {
+                "numerator": 4422,
+                "denominator": 38947,
+                "fraction": 0.1135389118545716
+              },
+              {
+                "numerator": 2758,
+                "denominator": 38947,
+                "fraction": 0.07081418337741033
+              },
+              {
+                "numerator": 3212,
+                "denominator": 38947,
+                "fraction": 0.08247105040182813
+              }
+            ]
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 80,
+          "success": {
+            "numerator": 20,
+            "denominator": 80,
+            "fraction": 0.25
+          },
+          "fail": {
+            "numerator": 37,
+            "denominator": 80,
+            "fraction": 0.4625
+          },
+          "timeout": {
+            "numerator": 23,
+            "denominator": 80,
+            "fraction": 0.2875
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 48,
+            "denominator": 80,
+            "fraction": 0.6
+          },
+          "never_detached": {
+            "numerator": 4,
+            "denominator": 80,
+            "fraction": 0.05
+          },
+          "near_miss": {
+            "numerator": 3,
+            "denominator": 80,
+            "fraction": 0.0375
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 80,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 1,
+            "denominator": 80,
+            "fraction": 0.0125
+          },
+          "count_exact": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "correct_in_basket": {
+            "total_fruits": 94,
+            "episodes_with_data": 80
+          },
+          "wrong_in_basket": {
+            "total_fruits": 7,
+            "episodes_with_data": 80
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 38,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 80,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 35.0,
+            "observed": 80,
+            "episodes_with_data": 80,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 80,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 53.0,
+            "events": 101,
+            "observed_resumptions": 74,
+            "unresumed_at_end": {
+              "numerator": 27,
+              "denominator": 101,
+              "fraction": 0.26732673267326734
+            },
+            "episodes_with_entries": {
+              "numerator": 58,
+              "denominator": 80,
+              "fraction": 0.725
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 21395,
+              "denominator": 58514,
+              "fraction": 0.3656389923778925
+            },
+            "per_joint": [
+              {
+                "numerator": 14030,
+                "denominator": 58514,
+                "fraction": 0.23977167857264928
+              },
+              {
+                "numerator": 9980,
+                "denominator": 58514,
+                "fraction": 0.1705574734251632
+              },
+              {
+                "numerator": 4621,
+                "denominator": 58514,
+                "fraction": 0.07897255357692176
+              },
+              {
+                "numerator": 9208,
+                "denominator": 58514,
+                "fraction": 0.15736404962914857
+              },
+              {
+                "numerator": 14261,
+                "denominator": 58514,
+                "fraction": 0.2437194517551355
+              },
+              {
+                "numerator": 12805,
+                "denominator": 58514,
+                "fraction": 0.21883651775643437
+              },
+              {
+                "numerator": 9884,
+                "denominator": 58514,
+                "fraction": 0.16891684041425983
+              }
+            ]
+          }
+        }
+      },
+      "hidden": {
+        "episodes": 80,
+        "omission_hidden_ripe": {
+          "numerator": 12,
+          "denominator": 80,
+          "fraction": 0.15
+        },
+        "checked_hidden_unripe": {
+          "numerator": 24,
+          "denominator": 80,
+          "fraction": 0.3
+        },
+        "wrong_fruit": {
+          "numerator": 12,
+          "denominator": 80,
+          "fraction": 0.15
+        },
+        "wrong_in_basket": {
+          "numerator": 7,
+          "denominator": 80,
+          "fraction": 0.0875
+        },
+        "wrong_hidden_unripe": {
+          "numerator": 4,
+          "denominator": 80,
+          "fraction": 0.05
+        },
+        "wrong_visible_unripe": {
+          "numerator": 8,
+          "denominator": 80,
+          "fraction": 0.1
+        },
+        "omission_or_wrong_fruit": {
+          "numerator": 21,
+          "denominator": 80,
+          "fraction": 0.2625
+        },
+        "checked_hidden_unripe_among_eligible": {
+          "numerator": 24,
+          "denominator": 36,
+          "fraction": 0.6666666666666666
+        },
+        "omission_plus_wrong_fruit": {
+          "score_sum": 24,
+          "episodes": 80,
+          "mean_score": 0.3
+        },
+        "omitted_hidden_ripe_fruits": {
+          "numerator": 12,
+          "denominator": 124,
+          "fraction": 0.0967741935483871
+        }
+      },
+      "fruit_behavior": {
+        "hidden_ripe": {
+          "fruits": 124,
+          "approached": {
+            "numerator": 112,
+            "denominator": 124,
+            "fraction": 0.9032258064516129
+          },
+          "approached_then_detached": {
+            "numerator": 66,
+            "denominator": 124,
+            "fraction": 0.532258064516129
+          },
+          "approached_without_detachment": {
+            "numerator": 46,
+            "denominator": 124,
+            "fraction": 0.3709677419354839
+          },
+          "wrong_fruit": {
+            "numerator": 0,
+            "denominator": 124,
+            "fraction": 0.0
+          },
+          "actual_leaf_push": {
+            "numerator": 111,
+            "denominator": 124,
+            "fraction": 0.8951612903225806
+          }
+        },
+        "hidden_unripe": {
+          "fruits": 36,
+          "approached": {
+            "numerator": 28,
+            "denominator": 36,
+            "fraction": 0.7777777777777778
+          },
+          "approached_then_detached": {
+            "numerator": 4,
+            "denominator": 36,
+            "fraction": 0.1111111111111111
+          },
+          "approached_without_detachment": {
+            "numerator": 24,
+            "denominator": 36,
+            "fraction": 0.6666666666666666
+          },
+          "wrong_fruit": {
+            "numerator": 4,
+            "denominator": 36,
+            "fraction": 0.1111111111111111
+          },
+          "actual_leaf_push": {
+            "numerator": 32,
+            "denominator": 36,
+            "fraction": 0.8888888888888888
+          }
+        },
+        "visible_unripe": {
+          "fruits": 142,
+          "approached": {
+            "numerator": 97,
+            "denominator": 142,
+            "fraction": 0.6830985915492958
+          },
+          "approached_then_detached": {
+            "numerator": 8,
+            "denominator": 142,
+            "fraction": 0.056338028169014086
+          },
+          "approached_without_detachment": {
+            "numerator": 89,
+            "denominator": 142,
+            "fraction": 0.6267605633802817
+          },
+          "wrong_fruit": {
+            "numerator": 8,
+            "denominator": 142,
+            "fraction": 0.056338028169014086
+          },
+          "actual_leaf_push": {
+            "numerator": 0,
+            "denominator": 142,
+            "fraction": 0.0
+          }
+        }
+      },
+      "pre_gust_retained": {
+        "all": {
+          "numerator": 0,
+          "denominator": 3547,
+          "fraction": 0.0
+        },
+        "frame_zero_selected": {
+          "numerator": 0,
+          "denominator": 3547,
+          "fraction": 0.0
+        },
+        "by_phase": {
+          "before_target_1": {
+            "numerator": 0,
+            "denominator": 1065,
+            "fraction": 0.0
+          },
+          "before_target_2": {
+            "numerator": 0,
+            "denominator": 1760,
+            "fraction": 0.0
+          },
+          "before_target_3": {
+            "numerator": 0,
+            "denominator": 574,
+            "fraction": 0.0
+          },
+          "after_all_targets": {
+            "numerator": 0,
+            "denominator": 148,
+            "fraction": 0.0
+          }
+        }
+      },
+      "count_failure": {
+        "failed_episodes": 24,
+        "drop_events": 24,
+        "phases": {
+          "grasp": {
+            "numerator": 6,
+            "denominator": 24,
+            "fraction": 0.25
+          },
+          "pull": {
+            "numerator": 11,
+            "denominator": 24,
+            "fraction": 0.4583333333333333
+          },
+          "carry": {
+            "numerator": 6,
+            "denominator": 24,
+            "fraction": 0.25
+          },
+          "release": {
+            "numerator": 1,
+            "denominator": 24,
+            "fraction": 0.041666666666666664
+          }
+        },
+        "timeout_tails": {
+          "ongoing_motion": 7
+        }
+      }
+    }
+  },
+  "paired_layout_bootstrap": {
+    "FruitCount/K0_recent16-K0_normal/success": {
+      "difference": -0.05,
+      "ci95": [
+        -0.175,
+        0.0625
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 14244048335556728252,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/success": {
+      "difference": -0.1375,
+      "ci95": [
+        -0.2375,
+        -0.0375
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 10930047748977040923,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/omission_hidden_ripe": {
+      "difference": -0.025,
+      "ci95": [
+        -0.1375,
+        0.0875
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 18330908987098826730,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/checked_hidden_unripe": {
+      "difference": -0.0125,
+      "ci95": [
+        -0.1,
+        0.075
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 8487932987966092621,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/wrong_fruit": {
+      "difference": 0.0,
+      "ci95": [
+        -0.0875,
+        0.0875
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 3202557837163430631,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/wrong_in_basket": {
+      "difference": -0.0375,
+      "ci95": [
+        -0.125,
+        0.05
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 10298410680190175489,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/wrong_hidden_unripe": {
+      "difference": 0.0375,
+      "ci95": [
+        0.0,
+        0.0875
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 7245429164466054210,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/wrong_visible_unripe": {
+      "difference": -0.0375,
+      "ci95": [
+        -0.125,
+        0.05
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 1592423630910258546,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/omission_plus_wrong_fruit": {
+      "difference": -0.025,
+      "ci95": [
+        -0.175,
+        0.125
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 15319211203557709214,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_recent16-K0_normal/omission_or_wrong_fruit": {
+      "difference": -0.0125,
+      "ci95": [
+        -0.15,
+        0.1125
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 2934257825329975998,
+      "exploratory": true
+    },
+    "FruitCount/K0_no_pregust-K0_normal/success": {
+      "difference": -0.0375,
+      "ci95": [
+        -0.175,
+        0.1
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 18061609279286958984,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/success": {
+      "difference": -0.075,
+      "ci95": [
+        -0.2,
+        0.05
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 18121486859434879359,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/omission_hidden_ripe": {
+      "difference": -0.0125,
+      "ci95": [
+        -0.125,
+        0.1
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 17157591198887972752,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/checked_hidden_unripe": {
+      "difference": -0.0625,
+      "ci95": [
+        -0.1375,
+        0.0
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 4879718352211822494,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/wrong_fruit": {
+      "difference": 0.0375,
+      "ci95": [
+        -0.0375,
+        0.1125
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 2867686836689639398,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/wrong_in_basket": {
+      "difference": -0.0125,
+      "ci95": [
+        -0.0875,
+        0.0625
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 467335169585995549,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/wrong_hidden_unripe": {
+      "difference": 0.0375,
+      "ci95": [
+        -0.0125,
+        0.0875
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 10387837306564887107,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/wrong_visible_unripe": {
+      "difference": 0.0,
+      "ci95": [
+        -0.05,
+        0.05
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 4127486215418877503,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/omission_plus_wrong_fruit": {
+      "difference": 0.025,
+      "ci95": [
+        -0.1125,
+        0.175
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 6538027264717054066,
+      "exploratory": true
+    },
+    "FruitOccludedRipe/K0_no_pregust-K0_normal/omission_or_wrong_fruit": {
+      "difference": 0.025,
+      "ci95": [
+        -0.1125,
+        0.1625
+      ],
+      "layouts": 40,
+      "seeds_per_layout": 2,
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 2758518832982428025,
+      "exploratory": true
+    }
+  },
+  "diagnosis_rule_14_5": {
+    "verdict": "C",
+    "success_drop_pp": 7.5,
+    "omission_plus_commission_rise_pp": 2.5,
+    "denominator": 80,
+    "rule": "§14.5 signed directional losses, pooled seeds7/8; threshold applied to point estimates, no p-value gate.",
+    "compound_definition": "I(any omitted hidden ripe)+I(any unripe detached or wrong fruit in basket); one episode may contribute2.",
+    "label": "探索性、非预登记，不改变D5结论，不写入论文"
+  },
+  "memory_audits_passed": 480,
+  "audited_decisions": 17398,
+  "preservation": {
+    "D5_artifacts_unchanged": true,
+    "sealed_files_sha256": "dd476f53c788aa0d95f900c8f555fd61f4a76181064a4a0a8472c03ebe3acf91",
+    "D5_tree_manifest_sha256": "edbe073aa8daeb77191437fee30fd236befa4b9c5541d958c8aa7ddcdd8b185f"
+  },
+  "D5_confirmatory_conclusions_unchanged": true,
+  "paper_modified": false,
+  "independent_validation": {
+    "passed": true,
+    "path": "/media/fulei/fuleivla/ecm_vla/results/fruit_memory_usage_diag_20261104/independent_validation.json",
+    "sha256": "8980adf7fe851457f5c05b69b9808ae568a2aa7cb955e0a97f7557bbceb716a9",
+    "verifier_sha256": "755f9d1fb359cd8b817fb9f42419585e44607c418e5fbfc5a42b9f7731de3ee8",
+    "episodes": 480,
+    "paired_groups": 160,
+    "audited_decisions": 17398,
+    "independent_verdict": "C",
+    "D5_preservation_passed": true
+  }
+}

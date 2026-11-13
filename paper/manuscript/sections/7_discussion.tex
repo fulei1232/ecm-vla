@@ -1,0 +1,43 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{From time-indexed to event-indexed memory}
+The central lesson of this work is that the memory of an embodied agricultural agent should be organized around what happens, not around when it happens. The coverage analysis and its close agreement with measurement (Fig.~\ref{fig:theory}) show that the failure of uniform memory is structural. For any fixed budget, the fraction of interaction events that time-indexed memory retains vanishes as operation lengthens. This is precisely the regime of practical harvesting, in which a robot works continuously along a row rather than in short, isolated episodes. Enlarging the budget only postpones the problem, at a cost that grows quadratically. Event indexing removes the dependence on operating time altogether. Picks are short (about a dozen frames out of several hundred) but physically unambiguous: event detection is exact over a 1--4~cm plateau of the radius, set by fruit size rather than tuned. Reserving two slots per remembered pick makes the memory complete for the information the task needs (99.6\% of picks) at no cost in budget, latency or architecture.
+
+The approach--act--leave structure is not specific to fruit picking. Pruning cuts, fruit thinning, flower pollination and spot spraying all consist of discrete interactions with plant organs. For each of them, the distance from the tool to the nearest organ still to be treated is an equally natural event signal, and the radius scales with organ size. We therefore expect event-centric memory to transfer to these operations with only a redefinition of the target set $\mathcal{P}_t$. It could serve as a general memory principle for agricultural manipulation, beyond the harvesting tasks studied here.
+
+\subsection{Designing perception for memory}
+The perception experiments yield two lessons for agricultural perception systems that feed a learned policy.
+
+First, \emph{what perception must deliver is a specification, not a maximum}. Event-based memory tolerates up to about 1.5~cm of white noise or 2~cm of correlated noise in the distance signal, together with arbitrary independent dropouts and centimetre-level bias. \fdm\ is an order of magnitude more accurate than this specification (0.34~cm median error), and remains so under consumer-grade depth noise. This margin indicates that a cheaper detector or sensor can be substituted, and the scalar interface makes such substitution straightforward.
+
+Second, \emph{memory starts with perception}. Leaf-hidden ripe fruits are recoverable only if they were anchored while visible: anchors built before the gust keep all 138 of them, anchors built after it none, and with them disappear 138 of the 251 picks and the correct count of every occluded-task episode (Section~\ref{sec:res_anchor}). The anchors themselves were equally accurate in both cases; what mattered was \emph{when} they were formed. Moreover, the failure is silent: every event that is still detected is correct, so precision-based monitoring would not reveal it. In practice this argues for a deliberate observation phase, or for anchoring fruits whenever they become visible during operation, as well as for redundant evidence of picking. The gripper-holding cue removed a 16-frame delay at essentially zero cost, so proprioceptive and tactile signals should be treated as perception inputs for event detection, not only as control feedback. Explicit anchors (geometric memory) and \pekm\ (visual memory of events) thus play complementary roles. Anchors remember \emph{where} fruits are, and the event memory lets the policy see \emph{what happened} to them.
+
+\subsection{Compounding errors in end-to-end harvesting}
+End-to-end policies are accurate in open loop: about 2~cm TCP error at the end of a chunk, and 98--99.5\% agreement on gripper actions. Accuracy at the demonstrated states, however, does not guarantee success in closed loop, where small deviations accumulate into states that clean demonstrations do not cover. For harvesting, where the gripper must enclose a 5-cm fruit, a few centimetres of drift is the difference between a grasp and a miss. Recovery data that covers this drift, generated without an expert in the loop and restricted to the phases where it is safe, addresses the data rather than the model. \tbd{Discussion of the closed-loop DART-H and PEKM results once available.}
+
+\subsection{Practical implications}
+For field robots, which run on embedded GPUs with tight memory and latency budgets, the budget efficiency of event memory matters directly. With \pekm, an 8-frame memory retains more pick information than a 16-frame uniform one, and a 16-frame memory more than a 32-frame one, at a selection cost of about 0.1~ms. Because the selection is a pure function of a logged scalar signal, every memory the policy saw can be reproduced and audited after the fact. This property is useful for diagnosing failures in the field and supports the transparency expected of autonomous agricultural machines.
+
+\subsection{Towards memory-aware agricultural foundation models}
+As vision--language--action and other foundation models enter agricultural robotics, the question of what such models remember will become as important as what they perceive. Agricultural tasks are long, repetitive and partially observable, and their success depends on a running account of the plants already treated, the fruits still hidden and the quota still open. HarvestMem shows that this account can be supplied without changing the model's architecture or adding parameters. A physically grounded event signal, a spatial memory of objects acquired while they are visible, and a parameter-free selection rule turn a generic memory-augmented policy into one that remembers what matters for the task. We view this decoupling as a practical path for adapting general-purpose robot foundation models to agriculture. The agricultural knowledge is encoded in \emph{what counts as an event}, which domain experts can specify and audit, rather than in additional network parameters.
+
+\subsection{Limitations}
+This study has several limitations.
+\begin{itemize}
+\item \textbf{Simulation.} The study is conducted in simulation. Fruits are rigid spheres; stems detach after a fixed holding time, and branch mechanics are simplified. Wind acts only during the observation phase, and fruits do not swing.
+\item \textbf{Perception scope.} Colour prompts suffice for red and green fruits on a rendered canopy under the calibrated lighting, but fixed thresholds do not transfer to strongly different illumination (Table~\ref{tab:light}), even though SAM's masks do. Green fruits against green foliage, natural illumination and clustered fruits (e.g.\ tomato trusses or grapes) will require learned or illumination-normalized prompt generators, and an event definition for clusters.
+\item \textbf{Robot and scene diversity.} One tree type and one arm were used for closed-loop evaluation, although the generator also supports a 6-DoF arm.
+\item \textbf{Real-world validation.} Transfer to a real orchard has not been tested yet. A RealMan RM75-B with an EG2 gripper and an RGB-D camera, matching the simulated system, is the planned platform.
+\item \textbf{Closed-loop scope.} \tbd{Add any limitation revealed by the closed-loop results.}
+\end{itemize}
+
+\subsection{Future work}
+Several extensions follow directly from the framework:
+\begin{enumerate}
+\item The event detector already counts picks, and this count can be given to the policy as a short text prompt (e.g.\ ``picked 2 of 3''), giving an explicit symbolic memory alongside the visual one.
+\item A lightweight learned memory manager could be trained from counterfactual action-loss signals and compared with the rule-based selection.
+\item Anchors of hidden ripe fruits could guide active leaf pushing before the approach.
+\item Wind can be extended to the whole episode with swinging fruits.
+\item Sim-to-real transfer with domain randomization of illumination, fruit colour and foliage density.
+\end{enumerate}

@@ -1,0 +1,416 @@
+{
+  "passed": true,
+  "kind": "Post-stop read-only verification, no task repair or replay",
+  "generated_utc": "2026-11-05T05:44:58.129158+00:00",
+  "valid_episodes": 45,
+  "decisions": 149,
+  "D5_D6_preservation_passed": true,
+  "runtime_sources_unchanged": true,
+  "records": [
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/history/ep200",
+      "task": "count",
+      "level": "history",
+      "episode": 200,
+      "success": true,
+      "result_sha256": "319704e51755777a1f04e166c17db7441e18a240d18fe5932b38f9afa91f6c73",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep200",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 200,
+      "success": true,
+      "result_sha256": "bc2b82c2f10503b5c64d786a74cb60282659d672f87ed2822f1f1155b3e66df3",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep201",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 201,
+      "success": true,
+      "result_sha256": "303644e71984bd992ebdab211e9c58286440f268d548db6170939e46eb14b69d",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep202",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 202,
+      "success": false,
+      "result_sha256": "750fb550036331d1e20d2bf544e3e49ba832cd1a5ce683eedba95d3767fde583",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep203",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 203,
+      "success": true,
+      "result_sha256": "a1a43f71a3de2112d37415b6f199cb282df96702ebd619504f277f6f65fcba70",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep204",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 204,
+      "success": false,
+      "result_sha256": "807d112a96f4efa967f693d2480aef0c0d861184b61fb8f00ed55e2ee2020754",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep205",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 205,
+      "success": true,
+      "result_sha256": "60c3ad24137cb7cb990d3e5e635216ddd61646b0341dfa5eb11ed4cc72e4b239",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep206",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 206,
+      "success": true,
+      "result_sha256": "91da35ed13f29bfe03e9d1da41699d032352eb26cc63e9cd62a73ad12836c68b",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep207",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 207,
+      "success": false,
+      "result_sha256": "3b62ddc5800cc28670a490d11028bd9622097b965ee14b360d962a50f57b2a6c",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep208",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 208,
+      "success": true,
+      "result_sha256": "595d253aa6ea0a225ad6127e9bb387ccb0cdfecc1d75298bc777023101a7927b",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep209",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 209,
+      "success": false,
+      "result_sha256": "cd811206c9df07653f888142207509ab6d4d7072a2f38131349df72a26fe67f7",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep210",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 210,
+      "success": true,
+      "result_sha256": "4852fcc295d6ecdd2d6f9b1814df8367915c8ffc65f87782c52bd47cf0dfb98a",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep211",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 211,
+      "success": true,
+      "result_sha256": "cb12eb419edff09278ddd91921b5cb1a8c8c4fbb48123386816a365c9280250d",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep212",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 212,
+      "success": true,
+      "result_sha256": "4cdec512b52e2ba1d31d7f716dc1af78e5a15818233a36f1d479b5e81d7a5300",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep213",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 213,
+      "success": true,
+      "result_sha256": "875e1edbc443ab45f4921455cdabc1c6086cd1af3e5fe424d9c3c5b5c4d3e27f",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep214",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 214,
+      "success": true,
+      "result_sha256": "a356c478fb5d9f60f5e86d0c5934e0ac1e25e9a5408c982412466577b316702d",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep215",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 215,
+      "success": false,
+      "result_sha256": "b4ec91764ebf4e358a7cb69f98ec50a88852b8f4464cffec343e1e192e23ee0e",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep216",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 216,
+      "success": true,
+      "result_sha256": "696464f20188ac686d3e65d0faf4e7aa96e57a0fcb56f2ae44339d07eabf843e",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep217",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 217,
+      "success": false,
+      "result_sha256": "d6e58254a84bf1997ff54d735192bc50d754c08d604da21f969b892eb40f827d",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep218",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 218,
+      "success": true,
+      "result_sha256": "3c9535cae4566b68cf432b075d69b448d5cf481d70cc83cd46e08cc9797ecb6d",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep219",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 219,
+      "success": true,
+      "result_sha256": "226756d43a102de08463bea10398f0af7fb08034ba2d1d5c55b4423e4e30bb4c",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep220",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 220,
+      "success": false,
+      "result_sha256": "003c6c57fcca7f09758c0c7fe78d6194876218b516651fe08ca32d6a3212ae13",
+      "decisions": 2
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep221",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 221,
+      "success": true,
+      "result_sha256": "7220511f1a8c71f558e0025bf3a7cc69cd0d71b8e1a00941b5d5fdee508bd572",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep222",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 222,
+      "success": true,
+      "result_sha256": "7b4ac4181141f7aaecc2c445e53f98af713fcb64ce827091e4221c60f71c9b3f",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep223",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 223,
+      "success": true,
+      "result_sha256": "90a712e2f807e361b9c6b634dede612dbcbfc4bf8d34d5332597924dbf72ee31",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep224",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 224,
+      "success": false,
+      "result_sha256": "700d77aa7abe005c439226042cb82dee432ef1917640ba8da425c463332cdc81",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep225",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 225,
+      "success": true,
+      "result_sha256": "b2ebd13e6bee8e0046815ed6418b9f65ed4b19363111600e0686045307fecbea",
+      "decisions": 5
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep226",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 226,
+      "success": false,
+      "result_sha256": "d177bf487ea7c4d2cd331cab8631af1aeb4033642a1fa13e330d6d5d200b4c62",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep227",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 227,
+      "success": false,
+      "result_sha256": "fd849d5248e6e6c33767c45e5305953f482fccf416b39599798633f46754611a",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep228",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 228,
+      "success": false,
+      "result_sha256": "bdc8a75635b80b970f06f8096833b7bcc1aaf306aa8a176b77fb03f393d2de0b",
+      "decisions": 5
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep229",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 229,
+      "success": true,
+      "result_sha256": "9da891815acd69c342fb137c1482c9b8f46a45be59e6e4ac39c84a51ba010f26",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep230",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 230,
+      "success": true,
+      "result_sha256": "446af59a3cbaa8bc2e490be7c09e60c049b440fa585725e4eca27a1e72996a7b",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep231",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 231,
+      "success": true,
+      "result_sha256": "b31e6829939e14d0917870120b9965ee6e07f6f7c50765e1ed6518a81d5d1633",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep232",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 232,
+      "success": true,
+      "result_sha256": "ffa42187c562dfcce0b7c914f067dec22c042918d5d33519ba03d6011f830c81",
+      "decisions": 5
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep234",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 234,
+      "success": true,
+      "result_sha256": "5b9709651ea8df0926b47c02d1acf23a11baacb15a2100019b27868577b00fbc",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep235",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 235,
+      "success": false,
+      "result_sha256": "a6159dbddd7d61921ffea36eeab7cad29f6a1a3a9bdc034697c4ccf98baaba7a",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep236",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 236,
+      "success": true,
+      "result_sha256": "a4902a07819e7d19395d52f0d297bd66d0e8326a656a412d224c27723dcf7c14",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep237",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 237,
+      "success": false,
+      "result_sha256": "7da99a64327b1b1fae3ae1eab1066f7853966ade16b8ffb6ab7ac71000374f0c",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep238",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 238,
+      "success": true,
+      "result_sha256": "de0d50eed1ef8e30d6d09a5ca958e89167d0d0caa5cf8409f6b13ad501450201",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep239",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 239,
+      "success": false,
+      "result_sha256": "4dfdbb405984261085270e597a1716c98a9d34a44cd1d0aa271af41ffb0fb312",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep240",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 240,
+      "success": false,
+      "result_sha256": "16080f7d177c47ac7f5838464e12004e1092e56782204132392f42dee67798c1",
+      "decisions": 5
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep242",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 242,
+      "success": true,
+      "result_sha256": "5018d4b1ec8bff615efd6b54db6966e049cd77d1dad68fecee8dc39c3fd47f6a",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep246",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 246,
+      "success": false,
+      "result_sha256": "8a01fc7c1c0bd0ef957297babc71900ae39796a2098b3d854422f216f366371e",
+      "decisions": 3
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/count/initial_current/ep247",
+      "task": "count",
+      "level": "initial_current",
+      "episode": 247,
+      "success": true,
+      "result_sha256": "b41cd205c75b2b2454930c0952f29429aa06e59d815221059ea8b0aad043b792",
+      "decisions": 4
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_20261105/replays/occluded_ripe/history/ep200",
+      "task": "occluded_ripe",
+      "level": "history",
+      "episode": 200,
+      "success": true,
+      "result_sha256": "ff41dd8c4195bd08c72139b74e85f74d7151b205804b025cf48d55f7289c30c7",
+      "decisions": 2
+    }
+  ]
+}

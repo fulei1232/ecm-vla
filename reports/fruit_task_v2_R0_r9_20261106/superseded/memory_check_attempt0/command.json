@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/media/fulei/fuleivla/adaptive_evidence_acquisition_20261009/vendor/robomme_policy_learning/.venv/bin/python",
+    "-u",
+    "/media/fulei/fuleivla/ecm_vla/scripts/check_fruit_r9_memory_tensors.py"
+  ],
+  "cwd": "/media/fulei/fuleivla/ecm_vla",
+  "utc": "2026-11-06T05:56:07.555058+00:00"
+}

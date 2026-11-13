@@ -1,0 +1,8 @@
+{
+  "viewpoints": 608,
+  "trajectory_viewpoints": 581,
+  "release_grid_viewpoints": 27,
+  "rays": 893760,
+  "minimum_positive_occluder_separation_mm": 2.0001752743349264,
+  "scope": "All sight directions to sampled basket-decoration surfaces; entire recorded trajectory and +/-3cm xyz release neighborhood. No FOV restriction or new replay."
+}

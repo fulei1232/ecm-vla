@@ -1,0 +1,238 @@
+\begin{longtable}{p{3.2cm}p{0.9cm}p{4.2cm}p{6.2cm}}
+\toprule
+键名 & 状态 & 当前值 & 说明\\
+\midrule
+\endhead
+\texttt{author1} & todo & 作者一 & \\
+\texttt{author2} & todo & 作者二 & \\
+\texttt{author3} & todo & 通信作者 & \\
+\texttt{affil} & todo & 单位，城市 邮编 & \\
+\texttt{email} & todo & email@example.com & \\
+\texttt{fund} & todo & 基金项目名称（编号） & \\
+\texttt{aud\_cnt\_o1} & ideal & 14 & 计数 v2：仅当前帧脚本策略成功率 \%\\
+\texttt{aud\_cnt\_o2} & ideal & 18 & 计数 v2：第 0 帧+当前帧\\
+\texttt{aud\_cnt\_o3} & ideal & 96 & 计数 v2：完整历史\\
+\texttt{aud\_occ\_o1} & ideal & 26 & 遮挡 v2：仅当前帧\\
+\texttt{aud\_occ\_o2} & ideal & 94 & 遮挡 v2：第 0 帧+当前帧\\
+\texttt{aud\_occ\_o3} & ideal & 96 & 遮挡 v2：完整历史\\
+\texttt{exp\_cnt} & ideal & 93.5 & 计数 v2 专家逐尝试成功率 \%\\
+\texttt{exp\_occ} & ideal & 95.0 & 遮挡 v2 专家逐尝试成功率 \%\\
+\texttt{clip\_cnt} & ideal & 0.21 & 示范通过安全包络的裁剪率 \%\\
+\texttt{clip\_occ} & ideal & 0.18 & \\
+\texttt{det\_n\_ep} & ideal & 300 & 检测评测回合数（专家示范 100 + 策略闭环回放 200）\\
+\texttt{det\_n\_ev} & ideal & 812 & 真值采摘事件数\\
+\texttt{det\_n\_fail} & ideal & 164 & 失败抓取尝试数\\
+\texttt{det\_geo\_p} & ideal & 0.832 & \\
+\texttt{det\_geo\_r} & ideal & 1.000 & \\
+\texttt{det\_geo\_f1} & ideal & 0.908 & \\
+\texttt{det\_geo\_cnt} & ideal & 61.3 & 计数正确回合 \%\\
+\texttt{det\_geo\_fp} & ideal & 100 & 失败尝试被计为采摘的比例 \%（几何定义下必然）\\
+\texttt{det\_geo\_light} & ideal & 1.000 & 光照扰动下 F1（不依赖图像）\\
+\texttt{det\_fdm\_p} & ideal & 0.903 & \\
+\texttt{det\_fdm\_r} & ideal & 0.981 & \\
+\texttt{det\_fdm\_f1} & ideal & 0.940 & \\
+\texttt{det\_fdm\_cnt} & ideal & 74.7 & \\
+\texttt{det\_fdm\_fp} & ideal & 38 & \\
+\texttt{det\_fdm\_light} & ideal & 0.214 & \\
+\texttt{det\_grip\_p} & ideal & 0.887 & \\
+\texttt{det\_grip\_r} & ideal & 0.952 & \\
+\texttt{det\_grip\_f1} & ideal & 0.918 & \\
+\texttt{det\_grip\_cnt} & ideal & 66.0 & \\
+\texttt{det\_grip\_fp} & ideal & 41 & \\
+\texttt{det\_grip\_light} & ideal & 0.918 & \\
+\texttt{det\_pv\_p} & ideal & 0.942 & \\
+\texttt{det\_pv\_r} & ideal & 0.957 & \\
+\texttt{det\_pv\_f1} & ideal & 0.949 & \\
+\texttt{det\_pv\_cnt} & ideal & 81.3 & \\
+\texttt{det\_pv\_fp} & ideal & 12 & \\
+\texttt{det\_pv\_light} & ideal & 0.902 & \\
+\texttt{det\_pp\_p} & ideal & 0.901 & \\
+\texttt{det\_pp\_r} & ideal & 0.963 & \\
+\texttt{det\_pp\_f1} & ideal & 0.931 & \\
+\texttt{det\_pp\_cnt} & ideal & 72.0 & \\
+\texttt{det\_pp\_fp} & ideal & 33 & \\
+\texttt{det\_pp\_light} & ideal & 0.931 & \\
+\texttt{det\_pe\_p} & ideal & 0.978 & \\
+\texttt{det\_pe\_r} & ideal & 0.983 & \\
+\texttt{det\_pe\_f1} & ideal & 0.980 & \\
+\texttt{det\_pe\_cnt} & ideal & 92.7 & \\
+\texttt{det\_pe\_fp} & ideal & 4 & \\
+\texttt{det\_pe\_light} & ideal & 0.962 & \\
+\texttt{det\_pe\_tc} & ideal & 1 & 接触关键帧误差中位数（帧）\\
+\texttt{det\_pe\_tr} & ideal & 0 & 脱离关键帧误差中位数（帧）\\
+\texttt{det\_pe\_tr90} & ideal & 2 & 脱离关键帧误差 P90（帧）\\
+\texttt{det\_pe\_kf} & ideal & 0.987 & K8 记忆关键帧召回（±3 帧）\\
+\texttt{pedet\_params} & ideal & 1.9 & 时序与融合模块参数量（M），以实际实现为准\\
+\texttt{pedet\_ms} & ideal & 1.6 & 检测头单帧延迟 ms（L20）\\
+\texttt{fig\_light\_pedet} & ideal & 0.951, 0.972, 0.98, 0.975, 0.958 & \\
+\texttt{fig\_light\_fdm} & ideal & 0.12, 0.48, 0.94, 0.61, 0.15 & \\
+\texttt{fig\_light\_grip} & ideal & 0.918, 0.918, 0.918, 0.918, 0.918 & \\
+\texttt{hem\_params} & ideal & 0.14 & 类型与时间嵌入新增参数（M），按实现修改\\
+\texttt{hem\_ms} & ideal & 0.21 & HEM 选帧与拼图构建耗时 ms（CPU）\\
+\texttt{fm\_steps} & todo & 10 & 流匹配积分步数，按实际配置确认\\
+\texttt{c\_k0} & ideal & 58, 45, 22, 9, 16 & K0 均匀记忆\\
+\texttt{c\_k4} & ideal & 78, 30, 16, 10, 16 & 平坦 PEKM k=4\\
+\texttt{c\_k8} & ideal & 88, 20, 12, 10, 20 & 平坦 PEKM k=8\\
+\texttt{c\_hem} & ideal & 96, 14, 10, 10, 20 & HEM（完整 HarvestMem）\\
+\texttt{c\_k0\_s} & ideal & 38.7 & 成功率 \%\\
+\texttt{c\_k4\_s} & ideal & 52.0 & \\
+\texttt{c\_k8\_s} & ideal & 58.7 & \\
+\texttt{c\_hem\_s} & ideal & 64.0 & \\
+\texttt{c\_k0\_mem} & ideal & 44.7 & 记忆类失败率 \%（多摘+少摘停止）\\
+\texttt{c\_k4\_mem} & ideal & 30.7 & \\
+\texttt{c\_k8\_mem} & ideal & 21.3 & \\
+\texttt{c\_hem\_mem} & ideal & 16.0 & \\
+\texttt{c\_k0\_op} & ideal & 16.7 & 操作类失败率 \%（掉果+操作失败）\\
+\texttt{c\_k4\_op} & ideal & 17.3 & \\
+\texttt{c\_k8\_op} & ideal & 20.0 & \\
+\texttt{c\_hem\_op} & ideal & 20.0 & \\
+\texttt{c\_k0\_err} & ideal & 0.52 & 平均计数误差 |入篮数−N|（颗）\\
+\texttt{c\_k8\_err} & ideal & 0.23 & \\
+\texttt{c\_hem\_err} & ideal & 0.17 & \\
+\texttt{c\_k4\_err} & ideal & 0.34 & \\
+\texttt{c\_d4} & ideal & +13.3 & K4−K0 百分点\\
+\texttt{c\_d4\_ci} & ideal & [4.7, 22.0] & \\
+\texttt{c\_d8} & ideal & +20.0 & K8−K0\\
+\texttt{c\_d8\_ci} & ideal & [11.3, 28.7] & \\
+\texttt{c\_dh} & ideal & +25.3 & HEM−K0\\
+\texttt{c\_dh\_ci} & ideal & [16.7, 34.0] & \\
+\texttt{c\_dh\_p} & ideal & \$<\$0.001 & Holm 校正 p（主假设 H1）\\
+\texttt{c\_dh8} & ideal & +5.3 & HEM−K8\\
+\texttt{c\_dh8\_ci} & ideal & [\$-\$1.3, 12.0] & \\
+\texttt{c\_dh\_noguard} & ideal & +22.7 & 关闭安全包络的敏感性分析 HEM−K0\\
+\texttt{c\_dh\_noguard\_ci} & ideal & [12.0, 33.3] & \\
+\texttt{c\_clip} & ideal & 22.1 & 闭环控制步裁剪率 \%（各条件接近）\\
+\texttt{cN\_k0} & ideal & 56.3, 37.3, 23.5 & K0 成功率 \%，N=2 / N=3 / N=4–5（n=48/51/51）\\
+\texttt{cN\_k8} & ideal & 68.8, 58.8, 49.0 & \\
+\texttt{cN\_hem} & ideal & 70.8, 62.7, 58.8 & \\
+\texttt{cN\_gain\_h0} & ideal & +14.5, +25.4, +35.3 & HEM−K0 按配额（由 cN 推出）\\
+\texttt{cN\_gain\_h8} & ideal & +2.0, +3.9, +9.8 & HEM−K8 按配额（由 cN 推出）\\
+\texttt{o\_k0} & ideal & 92, 22, 14, 8, 14 & \\
+\texttt{o\_k4} & ideal & 94, 20, 13, 9, 14 & \\
+\texttt{o\_k8} & ideal & 91, 21, 14, 9, 15 & \\
+\texttt{o\_hem} & ideal & 93, 21, 13, 9, 14 & \\
+\texttt{o\_k0\_s} & ideal & 61.3 & \\
+\texttt{o\_k4\_s} & ideal & 62.7 & \\
+\texttt{o\_k8\_s} & ideal & 60.7 & \\
+\texttt{o\_hem\_s} & ideal & 62.0 & \\
+\texttt{o\_k0\_mem} & ideal & 24.0 & \\
+\texttt{o\_k4\_mem} & ideal & 22.0 & \\
+\texttt{o\_k8\_mem} & ideal & 23.3 & \\
+\texttt{o\_hem\_mem} & ideal & 22.7 & \\
+\texttt{o\_d4} & ideal & +1.3 & \\
+\texttt{o\_d4\_ci} & ideal & [\$-\$6.0, 8.7] & \\
+\texttt{o\_d8} & ideal & \$-\$0.7 & \\
+\texttt{o\_d8\_ci} & ideal & [\$-\$8.0, 6.7] & \\
+\texttt{o\_dh} & ideal & +0.7 & \\
+\texttt{o\_dh\_ci} & ideal & [\$-\$6.7, 8.0] & \\
+\texttt{o\_dh\_tost} & ideal & 0.004 & TOST 等效检验 p（±10 pp）\\
+\texttt{pc\_cnt\_a} & ideal & 44.7 & 计数 v2 记忆类失败 K0 \%\\
+\texttt{pc\_cnt\_b} & ideal & 74.0 & recent16\\
+\texttt{pc\_cnt\_d} & ideal & +29.3 & \\
+\texttt{pc\_cnt\_ci} & ideal & [19.3, 39.3] & \\
+\texttt{pc\_occ\_a} & ideal & 24.0 & \\
+\texttt{pc\_occ\_b} & ideal & 61.3 & \\
+\texttt{pc\_occ\_d} & ideal & +37.3 & \\
+\texttt{pc\_occ\_ci} & ideal & [26.7, 48.0] & \\
+\texttt{row\_events} & ideal & 8.6 & 每回合平均采摘次数\\
+\texttt{row\_steps} & ideal & 2140 & 每回合平均步数\\
+\texttt{aud\_row\_o1} & ideal & 6 & 捷径审计 O1\\
+\texttt{aud\_row\_o2} & ideal & 10 & O2\\
+\texttt{aud\_row\_o3} & ideal & 94 & O3\\
+\texttt{exp\_row} & ideal & 91.0 & 专家逐尝试成功率 \%\\
+\texttt{l\_k0\_s} & ideal & 12.7 & K0 成功率 \%\\
+\texttt{l\_k8\_s} & ideal & 30.0 & 平坦 PEKM k=8\\
+\texttt{l\_hem\_s} & ideal & 52.7 & HEM\\
+\texttt{l\_err\_k0} & ideal & 2.41 & 平均计数误差（颗）\\
+\texttt{l\_err\_k8} & ideal & 1.37 & \\
+\texttt{l\_err\_hem} & ideal & 0.62 & \\
+\texttt{l\_k0\_mem} & ideal & 63.3 & 记忆类失败率 \%\\
+\texttt{l\_k8\_mem} & ideal & 45.3 & \\
+\texttt{l\_hem\_mem} & ideal & 22.0 & \\
+\texttt{l\_k0\_op} & ideal & 24.0 & 操作类失败率 \%\\
+\texttt{l\_k8\_op} & ideal & 24.7 & \\
+\texttt{l\_hem\_op} & ideal & 25.3 & \\
+\texttt{l\_dh0} & ideal & +40.0 & HEM−K0\\
+\texttt{l\_dh0\_ci} & ideal & [30.7, 49.3] & \\
+\texttt{l\_dh8} & ideal & +22.7 & HEM−K8（主假设 H3）\\
+\texttt{l\_dh8\_ci} & ideal & [13.3, 32.0] & \\
+\texttt{l\_p} & ideal & \$<\$0.001 & H2、H3 的 Holm 校正 p\\
+\texttt{lN\_k0} & ideal & 20.0, 10.2, 7.8 & N=6–7 / 8–9 / 10–12（n=50/49/51）\\
+\texttt{lN\_k8} & ideal & 44.0, 26.5, 19.6 & \\
+\texttt{lN\_hem} & ideal & 60.0, 51.0, 47.1 & \\
+\texttt{ab\_oracle} & ideal & 65.3 & 仿真物理事件（上界）\\
+\texttt{ab\_pedet} & ideal & 64.0 & PEDet（默认）\\
+\texttt{ab\_gap} & ideal & 1.3 & 上界与 PEDet 之差（百分点）\\
+\texttt{ab\_geo} & ideal & 58.0 & 几何距离事件（真值距离）\\
+\texttt{ab\_fdm} & ideal & 55.3 & SAM-FDM\\
+\texttt{ab\_grip} & ideal & 56.7 & 夹爪启发式\\
+\texttt{ab\_light\_k0} & ideal & 35.3 & 光照扰动：K0\\
+\texttt{ab\_light\_pedet} & ideal & 60.7 & 光照扰动：HEM+PEDet\\
+\texttt{ab\_light\_fdm} & ideal & 40.7 & 光照扰动：HEM+SAM-FDM\\
+\texttt{ab\_shift} & ideal & 41.3 & 关键帧错后 24 帧\\
+\texttt{ab\_random} & ideal & 40.0 & 预留位置随机选取\\
+\texttt{ab\_contact} & ideal & 55.3 & 只保留接触帧\\
+\texttt{ab\_release} & ideal & 60.0 & 只保留脱离帧\\
+\texttt{ab\_untrained} & ideal & 36.0 & K0 策略推理时直接换成 HEM（训练未见）\\
+\texttt{ab\_noept} & ideal & 59.3 & 去掉事件扰动训练（需重训）\\
+\texttt{ab\_noise\_ept} & ideal & 60.7 & 注入 10\% 漏检：有 EPT\\
+\texttt{ab\_noise\_noept} & ideal & 50.0 & 注入 10\% 漏检：无 EPT\\
+\texttt{al\_full} & ideal & 52.7 & 完整 HEM\\
+\texttt{al\_nosum} & ideal & 26.7 & 去掉情景摘要层（容量 2 次，低于 K8）\\
+\texttt{al\_single} & ideal & 38.7 & 摘要层用单帧代替拼图（容量 5 次）\\
+\texttt{al\_mosaic9} & ideal & 49.3 & 3×3 拼图（容量 29 次，单格分辨率更低）\\
+\texttt{al\_noemb} & ideal & 45.3 & 去掉类型-时间嵌入\\
+\texttt{al\_noept} & ideal & 46.0 & 去掉事件扰动训练\\
+\texttt{rb\_arm} & todo & RealMan RM75-B 七自由度机械臂 & 按实际设备确认\\
+\texttt{rb\_grip} & todo & EG2 两指电动夹爪（或同类） & \\
+\texttt{rb\_cam\_f} & todo & Intel RealSense D435i & 前置相机\\
+\texttt{rb\_cam\_w} & todo & Intel RealSense D405 & 腕部相机\\
+\texttt{rb\_cam\_3} & todo & 60 fps 第三视角相机 & 仅用于评测标注\\
+\texttt{rb\_gpu} & todo & NVIDIA RTX 4090 工作站 & \\
+\texttt{rb\_hz} & todo & 20 & 控制频率 Hz，应与仿真一致\\
+\texttt{rb\_fruit} & todo & 番茄（横径 5--6 cm） & 真实果实品种与尺寸\\
+\texttt{rb\_force} & todo & 3--5 & 果梗夹脱离力 N\\
+\texttt{rb\_demo} & todo & 120 & 每个任务的遥操作示范回合数\\
+\texttt{rb\_hsl\_ep} & ideal & 80 & 用于事后确认自训练的无标注真机回合数\\
+\texttt{rb\_sup\_ep} & ideal & 20 & 人工标注参照组的回合数\\
+\texttt{rb\_det\_ep} & ideal & 40 & 真机检测评测回合数\\
+\texttt{rb\_det\_ev} & ideal & 118 & 真机检测评测事件数\\
+\texttt{rb\_annot} & ideal & 1 & 两名标注者脱离帧差异中位数（帧）\\
+\texttt{rb\_annot2} & ideal & 96.8 & 两名标注者差异不超过 2 帧的事件比例 \%\\
+\texttt{hsl\_keep} & ideal & 83.5 & 通过一致性筛选、被用作伪标签的持物段比例 \%\\
+\texttt{hsl\_prec} & ideal & 0.991 & 伪标签相对人工标注的事件精确率\\
+\texttt{rd\_grip} & ideal & 0.872, 0.941, 0.905 & \\
+\texttt{rd\_fdm} & ideal & 0.861, 0.912, 0.886 & \\
+\texttt{rd\_zero} & ideal & 0.842, 0.873, 0.857 & PEDet 仅仿真训练\\
+\texttt{rd\_hsl} & ideal & 0.957, 0.946, 0.951 & PEDet + 事后确认自训练（无人工标注）\\
+\texttt{rd\_sup} & ideal & 0.963, 0.958, 0.960 & PEDet + 20 回合人工标注（参照）\\
+\texttt{rd\_tr} & ideal & 1 & 真机脱离关键帧误差中位数（帧）\\
+\texttt{fig\_hsl\_pedet} & ideal & 0.857, 0.902, 0.927, 0.944, 0.951 & \\
+\texttt{fig\_sup\_ref} & ideal & 0.96, 0.96, 0.96, 0.96, 0.96 & \\
+\texttt{fig\_hsl\_fdm} & ideal & 0.886, 0.886, 0.886, 0.886, 0.886 & \\
+\texttt{fig\_hsl\_grip} & ideal & 0.905, 0.905, 0.905, 0.905, 0.905 & \\
+\texttt{rc\_k0} & ideal & 10, 11, 5, 2, 2 & 真机计数：K0\\
+\texttt{rc\_k8} & ideal & 17, 5, 3, 2, 3 & 真机计数：平坦 PEKM k=8\\
+\texttt{rc\_hem} & ideal & 20, 2, 3, 2, 3 & 真机计数：HEM\\
+\texttt{rc\_k0\_s} & ideal & 33.3 & \\
+\texttt{rc\_k8\_s} & ideal & 56.7 & \\
+\texttt{rc\_hem\_s} & ideal & 66.7 & \\
+\texttt{rc\_d} & ideal & +33.3 & HEM−K0\\
+\texttt{rc\_p} & ideal & 0.004 & 布局配对符号翻转检验 p\\
+\texttt{rc\_d8} & ideal & +10.0 & HEM−K8\\
+\texttt{rc\_p8} & ideal & 0.38 & \\
+\texttt{rc\_err\_k0} & ideal & 0.63 & 平均计数误差\\
+\texttt{rc\_err\_hem} & ideal & 0.20 & \\
+\texttt{ro\_k0\_s} & ideal & 53.3 & 真机遮挡：K0 16/30\\
+\texttt{ro\_hem\_s} & ideal & 56.7 & 真机遮挡：HEM 17/30\\
+\texttt{rl\_pedet\_s} & ideal & 60.0 & 真机暖光扰动计数：HEM+PEDet 18/30\\
+\texttt{rl\_fdm\_s} & ideal & 36.7 & 真机暖光扰动计数：HEM+SAM-FDM 11/30\\
+\texttt{gh\_k0} & ideal & 5/15 & 温室盆栽番茄：K0\\
+\texttt{gh\_hem} & ideal & 10/15 & 温室盆栽番茄：HEM\\
+\texttt{rt\_k0} & ideal & 112 & 真机单回合平均用时 s\\
+\texttt{rt\_hem} & ideal & 115 & \\
+\texttt{rt\_vla} & ideal & 96 & 真机 VLA 单次推理 ms\\
+\texttt{rt\_pedet} & ideal & 2.4 & 真机 PEDet 单帧 ms\\
+\texttt{sim\_vla\_ms} & todo & 【待测】 & 仿真服务端 VLA 单次推理 ms（L20）\\
+\bottomrule
+\end{longtable}

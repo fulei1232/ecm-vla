@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "created_utc": "2026-11-09T02:33:18.924036+00:00",
+  "scope": "New R11 rules, concurrent ledger, native FCL distances, metrics, unchanged old validity and 76 sources; no GPU replay",
+  "accepted_previous_checks_repeated": false
+}

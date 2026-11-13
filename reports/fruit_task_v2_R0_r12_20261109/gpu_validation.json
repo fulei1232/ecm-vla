@@ -1,0 +1,952 @@
+{
+  "instruction_revision": 12,
+  "passed": true,
+  "created_utc": "2026-11-09T06:02:42.042188+00:00",
+  "ep113": {
+    "old_scheme_reproduced_previous_failure": true,
+    "old_failure": {
+      "reason": "BASKET_OR_CONTENT_VISIBLE",
+      "details": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 169
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 127,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      },
+      "step": 1230
+    },
+    "new_scheme_max_content_pixels": {
+      "front_camera": {
+        "basket_fruit": 0,
+        "inactive_reserve": 0
+      },
+      "hand_camera": {
+        "basket_fruit": 0,
+        "inactive_reserve": 0
+      }
+    },
+    "new_scheme_content_zero_all_frames": true,
+    "old_new_front_rgb_common_prefix_identical": true,
+    "old_replay": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/gpu_validation/ep113_old",
+    "new_replay": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r12_20261109/replays/gpu_validation/ep113_new"
+  },
+  "expert50": {
+    "old_R11_outcomes_and_full_traces_reproduced": true,
+    "new_outcomes_match_old": true,
+    "front_camera_rgb_identical_per_frame": true,
+    "new_basket_fruit_and_reserve_zero_all_frames": true,
+    "old_reproduction": [
+      {
+        "episode": 200,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1546,
+        "N": 8,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 201,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1902,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 202,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1330,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 203,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1293,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 204,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1514,
+        "N": 8,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 205,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1913,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 206,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1175,
+        "N": 5,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 207,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 776,
+        "N": 3,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 208,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1536,
+        "N": 9,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 209,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1259,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 210,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 2014,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 211,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1403,
+        "N": 7,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 212,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1332,
+        "N": 7,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 213,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1422,
+        "N": 7,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 214,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 494,
+        "N": 2,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 215,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1394,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 216,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1724,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 217,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 769,
+        "N": 4,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 218,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1046,
+        "N": 3,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 219,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 896,
+        "N": 5,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 220,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1254,
+        "N": 5,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 221,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 946,
+        "N": 2,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 222,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 886,
+        "N": 3,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 223,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 2452,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 224,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1959,
+        "N": 9,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 225,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1675,
+        "N": 7,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 226,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1684,
+        "N": 9,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 227,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1321,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 228,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1558,
+        "N": 8,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 229,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1894,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 230,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1149,
+        "N": 4,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 231,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 2217,
+        "N": 9,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 232,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1053,
+        "N": 4,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 233,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 962,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 234,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1924,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 235,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1390,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 236,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1485,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 237,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1023,
+        "N": 3,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 238,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1378,
+        "N": 7,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 239,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 495,
+        "N": 3,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 240,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1229,
+        "N": 4,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 241,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1866,
+        "N": 7,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 242,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 820,
+        "N": 4,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 243,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1212,
+        "N": 7,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 244,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1188,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 245,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1833,
+        "N": 10,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 246,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1121,
+        "N": 6,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 247,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1067,
+        "N": 5,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 248,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 730,
+        "N": 3,
+        "old_R11_trace_and_actions_reproduced": true
+      },
+      {
+        "episode": 249,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 735,
+        "N": 3,
+        "old_R11_trace_and_actions_reproduced": true
+      }
+    ],
+    "new_replays": [
+      {
+        "episode": 200,
+        "N": 8,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1546,
+        "observations": 1547,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 201,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1902,
+        "observations": 1903,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 202,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1330,
+        "observations": 1331,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 203,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1293,
+        "observations": 1294,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 204,
+        "N": 8,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1514,
+        "observations": 1515,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 205,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1913,
+        "observations": 1914,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 206,
+        "N": 5,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1175,
+        "observations": 1176,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 207,
+        "N": 3,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 776,
+        "observations": 777,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 208,
+        "N": 9,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1536,
+        "observations": 1537,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 209,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1259,
+        "observations": 1260,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 210,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 2014,
+        "observations": 2015,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 211,
+        "N": 7,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1403,
+        "observations": 1404,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 212,
+        "N": 7,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1332,
+        "observations": 1333,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 213,
+        "N": 7,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1422,
+        "observations": 1423,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 214,
+        "N": 2,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 494,
+        "observations": 495,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 215,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1394,
+        "observations": 1395,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 216,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1724,
+        "observations": 1725,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 217,
+        "N": 4,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 769,
+        "observations": 770,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 218,
+        "N": 3,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1046,
+        "observations": 1047,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 219,
+        "N": 5,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 896,
+        "observations": 897,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 220,
+        "N": 5,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1254,
+        "observations": 1255,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 221,
+        "N": 2,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 946,
+        "observations": 947,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 222,
+        "N": 3,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 886,
+        "observations": 887,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 223,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 2452,
+        "observations": 2453,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 224,
+        "N": 9,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1959,
+        "observations": 1960,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 225,
+        "N": 7,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1675,
+        "observations": 1676,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 226,
+        "N": 9,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1684,
+        "observations": 1685,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 227,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1321,
+        "observations": 1322,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 228,
+        "N": 8,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1558,
+        "observations": 1559,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 229,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1894,
+        "observations": 1895,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 230,
+        "N": 4,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1149,
+        "observations": 1150,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 231,
+        "N": 9,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 2217,
+        "observations": 2218,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 232,
+        "N": 4,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1053,
+        "observations": 1054,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 233,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 962,
+        "observations": 963,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 234,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1924,
+        "observations": 1925,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 235,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1390,
+        "observations": 1391,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 236,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1485,
+        "observations": 1486,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 237,
+        "N": 3,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1023,
+        "observations": 1024,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 238,
+        "N": 7,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1378,
+        "observations": 1379,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 239,
+        "N": 3,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 495,
+        "observations": 496,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 240,
+        "N": 4,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1229,
+        "observations": 1230,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 241,
+        "N": 7,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1866,
+        "observations": 1867,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 242,
+        "N": 4,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 820,
+        "observations": 821,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 243,
+        "N": 7,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1212,
+        "observations": 1213,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 244,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1188,
+        "observations": 1189,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 245,
+        "N": 10,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1833,
+        "observations": 1834,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 246,
+        "N": 6,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1121,
+        "observations": 1122,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 247,
+        "N": 5,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 1067,
+        "observations": 1068,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 248,
+        "N": 3,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 730,
+        "observations": 731,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      },
+      {
+        "episode": 249,
+        "N": 3,
+        "success": true,
+        "outcome": "finish_signal",
+        "steps": 735,
+        "observations": 736,
+        "front_rgb_identical_all_frames": true,
+        "hidden_content_zero_all_frames": true
+      }
+    ]
+  },
+  "R11_350_R0_reused_not_repeated": true,
+  "training": false
+}

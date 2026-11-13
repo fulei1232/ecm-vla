@@ -1,0 +1,21 @@
+{
+  "revision": 9,
+  "created_utc": "2026-11-06T06:11:54.005976+00:00",
+  "ready_for_GPU_launch": true,
+  "source_pins": 41,
+  "plan_sha256": "4f0cf2763e68bd5aa3706bd49b9d6699db009290a817d424cde544be2ba694b3",
+  "CPU_semantic_check_groups_passed": 7,
+  "D5_default_selection_comparisons_passed": 600,
+  "R8_default_regression_tests_passed": 14,
+  "R8_information_definition_crosscheck_passed": true,
+  "accepted_occluded_R0_rerun": false,
+  "GPU_memory_tensor_checks": "pending",
+  "new_Count_R0": "pending",
+  "training_data_generated": false,
+  "training": false,
+  "GPU_devices_in_this_terminal": [],
+  "next": "Run scripts/run_fruit_task_v2_r9.py --run in the authorized GPU terminal; stop at the first failed check or after data completion.",
+  "memory_check_attempt": 1,
+  "previous_failure_archive": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0",
+  "cwd_correction_verified": true
+}

@@ -1,0 +1,695 @@
+{
+  "revision": 9,
+  "created_utc": "2026-11-06T03:47:05.219610+00:00",
+  "passed": true,
+  "checks": {
+    "D5_default_selection": {
+      "passed": true,
+      "episodes": 20,
+      "times_per_episode": 10,
+      "conditions": [
+        "K0",
+        "K4",
+        "K8"
+      ],
+      "comparisons": 600,
+      "sources": [
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep100_seed7",
+          "times": [
+            0,
+            67,
+            134,
+            202,
+            269,
+            336,
+            404,
+            471,
+            538,
+            606
+          ],
+          "event_signal_sha256": "6f1975698d5cddc7e425d07bd23dd7c8182f4ae64f5cf39b41ff5b19568dfc6e"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep101_seed7",
+          "times": [
+            0,
+            49,
+            99,
+            148,
+            198,
+            247,
+            297,
+            346,
+            396,
+            446
+          ],
+          "event_signal_sha256": "f82e4066dbb71274b77e6bf3c601b83f534a7f9fda453c6bc5c53c0bb428fb58"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep102_seed7",
+          "times": [
+            0,
+            42,
+            84,
+            127,
+            169,
+            212,
+            254,
+            297,
+            339,
+            382
+          ],
+          "event_signal_sha256": "b5ca0d924a629165a3acee23a2b5393f0bf4272553115f3ad57f4e46f3a7ffb8"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep103_seed7",
+          "times": [
+            0,
+            44,
+            88,
+            132,
+            176,
+            221,
+            265,
+            309,
+            353,
+            398
+          ],
+          "event_signal_sha256": "f3656d231b75ead5045cecdb10a03175d7ced8fee634c604fc8f80f945da939a"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep104_seed7",
+          "times": [
+            0,
+            47,
+            95,
+            143,
+            191,
+            238,
+            286,
+            334,
+            382,
+            430
+          ],
+          "event_signal_sha256": "ceb641e28bb7d2e8b6a3fad4f54a0cf1c9aa231d3c8642fc084fe515d6c95fc7"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep105_seed7",
+          "times": [
+            0,
+            47,
+            95,
+            143,
+            191,
+            238,
+            286,
+            334,
+            382,
+            430
+          ],
+          "event_signal_sha256": "a62483f3c658d644ce91042efb8f4e9cb8fcb1b7301df4b2d3642d306fd2518d"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep106_seed7",
+          "times": [
+            0,
+            33,
+            67,
+            100,
+            134,
+            167,
+            201,
+            234,
+            268,
+            302
+          ],
+          "event_signal_sha256": "ffad0bf7a95b358072e35a5fceba3ff76c6c0440a1bd3fda6985cebc2512d6d5"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep107_seed7",
+          "times": [
+            0,
+            33,
+            67,
+            100,
+            134,
+            167,
+            201,
+            234,
+            268,
+            302
+          ],
+          "event_signal_sha256": "51352f220453a6f33aa20f4993e7b910ef5e80b4c0f7a95390222e49b5f77725"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep108_seed7",
+          "times": [
+            0,
+            49,
+            99,
+            148,
+            198,
+            247,
+            297,
+            346,
+            396,
+            446
+          ],
+          "event_signal_sha256": "5a762aacbbc112c7fbbba129076f7b4f2696bae5723bf65338017014d79d2794"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep109_seed7",
+          "times": [
+            0,
+            46,
+            92,
+            138,
+            184,
+            230,
+            276,
+            322,
+            368,
+            414
+          ],
+          "event_signal_sha256": "73f23ef1a4a9d14b0b7fbe4b16fed4ddf493add07f36d7d9b79966a8ea1e57d5"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep100_seed7",
+          "times": [
+            0,
+            51,
+            102,
+            154,
+            205,
+            256,
+            308,
+            359,
+            410,
+            462
+          ],
+          "event_signal_sha256": "ba05e44faa76369ed0b82a00199a436dcce1736eeed43d74bb920e141bf3bf06"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep101_seed7",
+          "times": [
+            0,
+            26,
+            52,
+            79,
+            105,
+            132,
+            158,
+            185,
+            211,
+            238
+          ],
+          "event_signal_sha256": "459cbd72a3c1ef7ea154bbcff890af1c9c309a1d71666b220f8a24514b2f7112"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep102_seed7",
+          "times": [
+            0,
+            79,
+            159,
+            239,
+            319,
+            398,
+            478,
+            558,
+            638,
+            718
+          ],
+          "event_signal_sha256": "4e31f9ee1702c7dda954895f86cbcd589b4103300747dd4e9944831fbe041780"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep103_seed7",
+          "times": [
+            0,
+            143,
+            287,
+            431,
+            575,
+            718,
+            862,
+            1006,
+            1150,
+            1294
+          ],
+          "event_signal_sha256": "61e539728d806c1594923cf87b4c2abc4ae27ee88dae37be16dc565b22b8b59c"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep104_seed7",
+          "times": [
+            0,
+            53,
+            106,
+            159,
+            212,
+            265,
+            318,
+            371,
+            424,
+            478
+          ],
+          "event_signal_sha256": "a78ba7b15a1c66d8d376c8e43b77b718d653310c8c81a6a09b7a3ec8da0429b9"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep105_seed7",
+          "times": [
+            0,
+            65,
+            131,
+            196,
+            262,
+            327,
+            393,
+            458,
+            524,
+            590
+          ],
+          "event_signal_sha256": "7dab0a6bb2182d25171d15791c72e4fcc5d86b7e0d1e1c467952746e483ba815"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep106_seed7",
+          "times": [
+            0,
+            10,
+            20,
+            31,
+            41,
+            52,
+            62,
+            73,
+            83,
+            94
+          ],
+          "event_signal_sha256": "630408272b735c5c4453217792803cb80bd0e3760c59b5e9f644c3b7e3f542a3"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep107_seed7",
+          "times": [
+            0,
+            44,
+            88,
+            132,
+            176,
+            221,
+            265,
+            309,
+            353,
+            398
+          ],
+          "event_signal_sha256": "812fa82f09f03c91a593dda4c27edeb67e7d8e4e1f2cef551e19d60c5ffc558f"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep108_seed7",
+          "times": [
+            0,
+            44,
+            88,
+            132,
+            176,
+            221,
+            265,
+            309,
+            353,
+            398
+          ],
+          "event_signal_sha256": "ce858260d0f691441e36fd1cd907a9c0901b6101a5987eac968cac3dc1acd0c5"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitOccludedRipe/ep109_seed7",
+          "times": [
+            0,
+            37,
+            74,
+            111,
+            148,
+            185,
+            222,
+            259,
+            296,
+            334
+          ],
+          "event_signal_sha256": "a614ffcd474c0bb7505a8521d564afe0e692a2c480405ddc853aa43dd1151a6f"
+        }
+      ]
+    },
+    "KA_completed_releases_latest12": {
+      "passed": true,
+      "keyframes": [
+        8,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38,
+        41
+      ]
+    },
+    "absolute_adapter_is_noop": {
+      "passed": true
+    },
+    "early_start_thresholds_and_default": {
+      "passed": true,
+      "arm_rad": 0.1,
+      "TCP_m": 0.03
+    },
+    "v1_and_R8_defaults_retained_R9_N2to10": {
+      "passed": true,
+      "samples": [
+        8,
+        10,
+        6,
+        6,
+        8,
+        10,
+        5,
+        3,
+        9,
+        6,
+        10,
+        7,
+        7,
+        7,
+        2,
+        6,
+        10,
+        4,
+        3,
+        5,
+        5,
+        2,
+        3,
+        10,
+        9,
+        7,
+        9,
+        6,
+        8,
+        10,
+        4,
+        9,
+        4,
+        6,
+        10,
+        6,
+        6,
+        3,
+        7,
+        3,
+        4,
+        7,
+        4,
+        7,
+        6,
+        10,
+        6,
+        5,
+        3,
+        3,
+        10,
+        6,
+        6,
+        10,
+        6,
+        3,
+        4,
+        9,
+        8,
+        10
+      ]
+    },
+    "K0_onset_uses_selected_visible_lamps": {
+      "passed": true
+    },
+    "occluded_frame0_readonly": {
+      "passed": true,
+      "episodes": 50,
+      "all_decisions_retain_frame0": {
+        "K0": 127,
+        "K8": 127,
+        "KA": 127
+      },
+      "sources": [
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200",
+          "decisions": 2,
+          "trace_sha256": "b305bbfda5d17ffe327a308408bba2a0ab139f71876fc80cf639028270a124f9"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep201",
+          "decisions": 3,
+          "trace_sha256": "4e635b4787f84b8ad2cdf1e48bfa42edf2663636d9e8807d380bf31fedf12fe1"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep202",
+          "decisions": 1,
+          "trace_sha256": "17d564c1bb5846bedf20bdd66769a41521ae091b90b5dc07b765a7b952305bda"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep203",
+          "decisions": 3,
+          "trace_sha256": "b166c9b1b8bd4a6750eb98fb394d638a4caeb1df705f5367b3d373c05adc1490"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep204",
+          "decisions": 3,
+          "trace_sha256": "4f2685fc57f2bf9a246bf6377765f6f03b2efa756b8d7eca7398286c74621a83"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep205",
+          "decisions": 2,
+          "trace_sha256": "67ccafc9ecb6a6f9e4382fd2d2855e39aa83d175dbd0bbe01298ebc421041712"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep206",
+          "decisions": 3,
+          "trace_sha256": "66a84f96eb0549a7b63e1cf159543a1bc912896cdc5f076336306f5a0380e727"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep207",
+          "decisions": 3,
+          "trace_sha256": "295e8b33f07227a62b8a6f1346fba9a9ebdc7e334178c6cfd7f0fdff2a924425"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep208",
+          "decisions": 2,
+          "trace_sha256": "71bfc2c25a710c497a302ada099db3118d96307ee59a4445b73c5296ff257605"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep209",
+          "decisions": 2,
+          "trace_sha256": "da75ee1cc69078095e292f0d67e079b3a127293d74e6d55929e65eb755583c30"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep210",
+          "decisions": 3,
+          "trace_sha256": "82c105d04415f2110562e121904ad8a5a8b19fb1fae0beb409db4954f64c132e"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep211",
+          "decisions": 2,
+          "trace_sha256": "cf6df6c02ea5c4886a4f9514caffca94032306cfee6efa6ef204c8c6669357e1"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep212",
+          "decisions": 2,
+          "trace_sha256": "d24cfdb708ab7325cd2541fea99549e506f6608c668c1492f9dbc255166584b2"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep213",
+          "decisions": 3,
+          "trace_sha256": "4d2cdbf34c7160c03ff236df286fb13ae4d6f8e6cfd11b16c65b242313a6ef74"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep214",
+          "decisions": 2,
+          "trace_sha256": "20cef91dfd9109cecd18b5fba0a0ad087b52d1f02c0f0de84a4fa0ffbea0ee05"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep215",
+          "decisions": 3,
+          "trace_sha256": "618c579083e8b6f706acc45e3f0b894e15324120e234297d83c8de5e9ef5b7bd"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep216",
+          "decisions": 2,
+          "trace_sha256": "bfa8596e1ad887d91a954df0167aa33e9d433708d30922c8eb2a9e827609716e"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep217",
+          "decisions": 2,
+          "trace_sha256": "cabfc6ea2c72a312d3c6f1c90fb6281369daba46472dae025b32c26d4a78b8d7"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep218",
+          "decisions": 2,
+          "trace_sha256": "fd09ea7bbc55e80c25d9aee485f5fbd4aa1fe6f8752919601e1891ac5fed0867"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep219",
+          "decisions": 2,
+          "trace_sha256": "26f06206d9de43399e138256f29e73ec12745bc2b9279910a5b837cad5884c75"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep220",
+          "decisions": 2,
+          "trace_sha256": "a58097114cc89fe9401117f84f58db13326f72b6e0f617a5090d6afbe8e7e3bc"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep221",
+          "decisions": 2,
+          "trace_sha256": "d3c183b84572e245a7a75114d2c9266d17317c483ba18643c013a7570e7596c2"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep222",
+          "decisions": 3,
+          "trace_sha256": "4307b6cf6e282e50d693f8d35472b000bcc6d3aea3bf9ea3d5d8861f49b0994a"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep223",
+          "decisions": 2,
+          "trace_sha256": "cf3d8b4db52cacb04aa300dbbfbb59f1ec6b5faad050cdf978eac8ccec190069"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep224",
+          "decisions": 3,
+          "trace_sha256": "595e67cb00fea144ae3b8eb301b64f0cdea57e8a1a0ef3c66e2fe5b2b4dd29b4"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep225",
+          "decisions": 3,
+          "trace_sha256": "7c7b4997c45cf5ac71ac2485ba2e0acd161276dad7ab98ba6849f0350ee3f25e"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep226",
+          "decisions": 2,
+          "trace_sha256": "01049e11d4aaefc13a63c11e5f6f61a3955c549b5fd5ca9dc1b5e6174c295406"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep227",
+          "decisions": 3,
+          "trace_sha256": "d4c47054ea5a5e5426b4831c28688f73eae5d886b4242fb98c3430c2ceeb3c4c"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep228",
+          "decisions": 3,
+          "trace_sha256": "214fa81bd63bc2df0365ed3581daa7e507a6e0495cef495ab90e67175af5d4de"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep229",
+          "decisions": 2,
+          "trace_sha256": "b8deee514d28d4f1363e4f0337cc88f4795747e5d605a4caa36e2d598e880418"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep230",
+          "decisions": 3,
+          "trace_sha256": "3d5b10e7a07b2c84c9d494fe8784af4f1b0ffec8b895e23dfcd082e39263b769"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep231",
+          "decisions": 3,
+          "trace_sha256": "7a4cc843bddcd84308fd414800a78b1ac9a85310c49b20d48abe6b33e6cdae66"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep232",
+          "decisions": 3,
+          "trace_sha256": "b9e21dd082af2d54e381b2b026d9f0ac962d1089685107440ab380e842f4b5ee"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep233",
+          "decisions": 3,
+          "trace_sha256": "4374cb884656ffc966543ba6ffd967d4e75b286941bd765b940f0169586e16a4"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep234",
+          "decisions": 3,
+          "trace_sha256": "2f92a371de0db33e9413d293d01f427c93e9f17d38170ad73c1122deadc7007b"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep235",
+          "decisions": 3,
+          "trace_sha256": "48b8e7eb86fb41db115b25d4f8a72b446560eb9775b3dbfa6ec02a5c221b81f0"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep236",
+          "decisions": 2,
+          "trace_sha256": "eb7d2c7cfd1c5b19d9a3e4f99ee6231e6bfac5f5d97d95fd0b2e6641568992b4"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep237",
+          "decisions": 3,
+          "trace_sha256": "dad1475b8b88c54abf1f6f18b3f6dbab1eeeeae7eb19e1d87b11c4d80645d4e2"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep238",
+          "decisions": 2,
+          "trace_sha256": "b0fd3a76961ea9604143e4f7a0c640d99d26b486ec0ce3666305bacc13bf6db5"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep239",
+          "decisions": 3,
+          "trace_sha256": "6ddc6d085a5c12dd2370e535c609f941506d84d3bfb5514d2f4d9bba7e4a29c6"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep240",
+          "decisions": 2,
+          "trace_sha256": "dbe337b99a7d3b5dd87ff98d552c3aa3b293f4f0ae72986eeee7fb160af45927"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep241",
+          "decisions": 2,
+          "trace_sha256": "0f5fa13116ceb3317cdd9f6621978cece09205a172917d496c5023b5994771ab"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep242",
+          "decisions": 3,
+          "trace_sha256": "f787e414a0a05faaa127f4a69e46e3e8505933722b4a880b3bc95ba302ad1cb2"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep243",
+          "decisions": 3,
+          "trace_sha256": "e000b9b99a752fabe0f366d7112590cfb4d86c076a1aad7f025e73caf22f7972"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep244",
+          "decisions": 3,
+          "trace_sha256": "b6a8b04a8f2b749e694feacc323ef04a2e2fe93961d3318907b7abb6e033549e"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep245",
+          "decisions": 3,
+          "trace_sha256": "993f222fdb9be219064d47cd862c91a2c6b898b19f1ef97149b8fa9bfb775f21"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep246",
+          "decisions": 3,
+          "trace_sha256": "bb95e8bfc81be22204aabf1b2c8f7063e8f9d0509bc3d1a53bd1ad50a98f4731"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep247",
+          "decisions": 3,
+          "trace_sha256": "82d8f1d7eb9aeef86921a903831cb7accf6bf58ec7d27a9a8245326ae3dcc4c9"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep248",
+          "decisions": 3,
+          "trace_sha256": "f1f3dbeeef898443c2ddee8cfb10754ae02212c9644ed8bc958eba76f8e4fcc1"
+        },
+        {
+          "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep249",
+          "decisions": 2,
+          "trace_sha256": "5f2ac029ab27468b36a431b801dbf066aaf7a7a9534b236121a45484bd5671d2"
+        }
+      ]
+    }
+  },
+  "GPU_tensor_checks": "pending; must pass before new R0 simulations"
+}

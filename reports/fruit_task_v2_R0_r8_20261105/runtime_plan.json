@@ -1,0 +1,163 @@
+{
+  "revision": 8,
+  "stage": "R0",
+  "dev_audit": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249
+  ],
+  "calibration_dev": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259
+  ],
+  "seed_rule": "4200000+16*episode; geometry seeds unchanged; no retries",
+  "source_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/agent.py": "256a75fff65a47dddb1b06a1b5eccd567153057891b1c6c87c6f453198e56e18",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/canonical_planning.py": "20892078887ac8f95c3bb0ddc3c05c617eb84a93a3a67e7d4e168783407a905e",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/canonical_solver.py": "05a4ea1bcb9d90073424b812319aa3416808fd720bf9e7ba183d737ff4be783c",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/canonical_v31_planning.py": "bf20ec60929b1b79b96c7dc9b87cb3e32cc31a4f645962c9a16f148f3d27ba19",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/canonical_v31_solver.py": "d4153d39356fd29c17598d2bae553684b2f0cfa585ec10a3bf7dc1350e2c9fd7",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/env.py": "a79b51ec65d384c8647edd02481d8e1c4f727b17a1b3da72063ee88527114749",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/joint_planning.py": "df9f912906f38e9640c6892254538ad1a8696dfb09be5b9b4d096544668a418a",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/layout.py": "e31b7cb45ffd2e0e1a1039fddfc52562415188e3b8c21aee5b5abb459ed263ee",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/solver.py": "88a959dbac9ae5e53fb21ec9feb3dfc877dd9c0ddd05caea1d09a64e92f9c2d4",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/task_v2_audit_r8.py": "fd5e7ebc59417d0acbd3d516fb1e17a930269c8d93288ed91f0066b055ed53b8",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/task_v2_env.py": "4358d8b443da0662bd0149c07f5ee9fd08fadb0975d476d7bcd20b0668decece",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/task_v2_spec.py": "bc4fed11dddc75547a61d323631249da467ca68a9c9e8600a3896e8562893bfa",
+    "/media/fulei/fuleivla/ecm_vla/scripts/audit_fruit_task_v2_r8_episode.py": "826809d8c7b2e6fde553dc34d6e6687cd08917907bf2491b046ea8e4b4567db0",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_r8_episode_support.py": "e58c3a62a12f4b841cbcf54f248e75bb143c938859cc6586f67b0a9754fe1450",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_r8_r0_support.py": "3bd206d6a2be95563179fcdf98168ebe4e823e7a391d4b50cd546433bebeb8f7",
+    "/media/fulei/fuleivla/ecm_vla/scripts/preflight_fruit_task_v2_r8.py": "49a8be59005f6921969cca8646bc44a5e88a5e8f006c40efdd8ada2080287674",
+    "/media/fulei/fuleivla/ecm_vla/scripts/replay_fruit_r8_ep245.py": "ce92217abd79d26cdae94c2f7aea2d69532f3010951dac376c9d033df7d60fe4",
+    "/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r8_r0.py": "28764ac12deec7825df0ab9cf1f30c5d732e38a01960f1cd6b1f021074b3fec4",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/event_keyframes.py": "d554086f2112a3c443879f4e81164b770e941fa78d8439af7b2a280080c76161",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_distance.py": "df4af894320d411089ab405e9208156e6e089a51b8a56337a3c24f6ba264d592",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_rescue_platform.py": "62131ece3a41995f0cd3e4e05c24a549e9dc01e46a4639450bbf294fc05120f3",
+    "/media/fulei/fuleivla/ecm_vla/src/memory_management/fruit_v2_distance.py": "717999666acff3f9631a25a31203388f78bb11414a62414e8283d1720f5947be",
+    "/media/fulei/fuleivla/ecm_vla/tests/fruit_picking/test_task_v2_r0.py": "a9130e0aae084d8687fd09c3d88afb5a08cfe3a4d7913236670581a82360f7da"
+  },
+  "plan_doc_sha256": "96e07610012fa37e2b8bf3267885b916084da7ebd23946f5d321aa5016112647",
+  "registry_sha256": "09a63d4cbcff7bb3ff23029363110beec3540da3c579744ba6353689b260e9ee",
+  "guard_sha256": "899c15bbd9927396b68cac063ab8b72dd2ef0f654b58bc3a4a7d79efe350a092",
+  "geometry_unit_sha256": "11df96b800c8cc38a76d67a763a957cf5bf2ea4a4d63e7c2c1721ea52470eaa7",
+  "D5_readonly_audit_sha256": "188561b08b867cef0561683461684fc2e2062adb902e323e5341a8eadcaef841",
+  "r7_regression_sources_sha256": "5002c3b71f9ca5fe906345007c47819dc5f6493829849f31d3a0e4ac400ebfe9",
+  "cohorts": [
+    [
+      "count",
+      "history"
+    ],
+    [
+      "occluded_ripe",
+      "history"
+    ],
+    [
+      "occluded_ripe",
+      "initial_current"
+    ],
+    [
+      "occluded_ripe",
+      "current"
+    ],
+    [
+      "count",
+      "current"
+    ],
+    [
+      "count",
+      "initial_current"
+    ],
+    [
+      "count",
+      "initial_ground"
+    ],
+    [
+      "count",
+      "clock_onset"
+    ],
+    [
+      "count",
+      "clock"
+    ]
+  ],
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "low_max_success": 15,
+  "high_min_success": 45,
+  "expert_clip_strict_max": 0.005,
+  "count_budget": 1800,
+  "occluded_budget": 1300,
+  "image_iou_min": 0.98,
+  "image_mean_color_max_255": 2.0,
+  "calibration_and_stress_cases": 30,
+  "formal_audit_cases": 450,
+  "train_data_generation": false,
+  "training": false,
+  "val_use": false,
+  "signal_version_selection": "await user review; both diagnostics only",
+  "extra_early_start_clock_queue": false,
+  "user_chose_to_record_early_start_risk_without_extra_queue": true
+}

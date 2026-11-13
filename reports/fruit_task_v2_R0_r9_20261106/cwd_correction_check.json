@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "created_utc": "2026-11-06T06:08:35.918989+00:00",
+  "authorized_correction": "cwd=POLICY for the memory tensor checker",
+  "changed_source_files": [
+    "/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py"
+  ],
+  "only_source_change_one_cwd_keyword": true,
+  "configuration_loaded_from_correct_cwd": true,
+  "configuration_file_sha256": "823c3948e75a9335ace3f250d0255e6a8618e8ecf0bb77c65af65077349d199a",
+  "budget": 512,
+  "num_views": 1,
+  "token_per_image": 16,
+  "GPU_tensor_checks": "not_run",
+  "new_rollouts": 0,
+  "previous_failure_preserved": true
+}

@@ -1,0 +1,57 @@
+{
+  "phase": 5,
+  "revision": 4,
+  "state": "ready_for_stage5_gpu_launch",
+  "generated_utc": "2026-11-03T02:59:03.298647+00:00",
+  "T1": {
+    "K0": {
+      "passed": true,
+      "arms": {
+        "k0": {
+          "complete": true,
+          "log": "/media/fulei/fuleivla/ecm_vla/runs/fruit_k0v2_lowlevel_rescue_20261102/logs/k0_20261102T155740.log",
+          "logged": 240,
+          "expected_logged": 240,
+          "finite": true,
+          "first_loss": 0.1543,
+          "last_loss": 0.0029,
+          "norm_stats_match": true
+        }
+      },
+      "time_utc": "2026-11-02T22:15:49.923788+00:00"
+    },
+    "K4": null,
+    "K8": null
+  },
+  "validity": {
+    "K4": null,
+    "K8": null
+  },
+  "smoke": null,
+  "new_unit_tests": {
+    "passed": 9,
+    "total": 9
+  },
+  "isolated_stop_A_postprocessor_passed": true,
+  "native_simulator_client_help_passed": true,
+  "prepare_idempotence_passed": true,
+  "K0_training_and_G1_sources_verified_unchanged": true,
+  "immutable_dataset_and_K0_files_verified": 411,
+  "runtime_sources_verified": 32,
+  "platform_identity_sha256": "0aec2ee6035113edb0af802335ef384a56ff4521f47c4356318b3f929fe7f8cb",
+  "training_protocol_sha256": "741c46a4871dd10d53fcf46771df3035a1258cd91e676e5c9deb77e1b9edc023",
+  "evaluation_draft_sha256": "06deee3a5368091716a3020f7763bbdfe0854428311bedebe27d020023a9ad66",
+  "normalization_recomputed": false,
+  "dataset_rebuilt": false,
+  "val_layouts_accessed": false,
+  "formal_evaluation_started": false,
+  "stop_A_reached": false,
+  "gpu_visible_in_this_session": false,
+  "training_estimate_hours": 13,
+  "artifacts": {
+    "plan": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/plan.json",
+    "draft": "/media/fulei/fuleivla/ecm_vla/reports/fruit_lowlevel_v2_protocol_20261103.md",
+    "training_run": "/media/fulei/fuleivla/ecm_vla/runs/fruit_lowlevel_v2_k4k8_20261103",
+    "status": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/status.json"
+  }
+}

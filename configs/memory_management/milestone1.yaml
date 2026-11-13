@@ -1,0 +1,27 @@
+memory:
+  capacity: 32
+  recent_slots: 4
+  tokens_per_frame: 16
+  num_views: 1
+  image_dim: 2048
+  position_dim: 768
+  state_dim: 8
+  rolling_capacity: 160
+  encoding_batch: 8
+  candidate_stride: 16
+  phase_locked_replacement: true
+  recent_overflow: nearest
+acceptance:
+  split: val
+  tasks: [BinFill, VideoUnmaskSwap, PatternLock]
+  episode_ids: [0]
+  modes: [fifo, random]
+  seed: 7
+  policy_gpu: 0
+  sim_gpu: 1
+  port: 28511
+  server_load_timeout_s: 900
+  episode_wall_timeout_s: 2400
+  max_steps: 1300
+  regression_task: VideoUnmaskSwap
+  regression_episode: 0

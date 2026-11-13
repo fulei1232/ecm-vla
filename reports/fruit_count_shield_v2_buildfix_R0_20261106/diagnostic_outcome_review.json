@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-11-06T13:26:19.266355+00:00",
+  "read_only_review": true,
+  "declared_full_success_gate_passed": false,
+  "construction_interface_fixed": true,
+  "basket_collision_records_unchanged": true,
+  "new_shield_collision_shapes": 0,
+  "prefix_original_failure_at_578": 1,
+  "prefix_shield_basket_pixels_at_578": 0,
+  "prefix_physical_max_abs_difference": {
+    "qpos": 0.0,
+    "tcp_position": 0.0,
+    "positions": 0.0
+  },
+  "original_failed_581_commands_exact_matches": 581,
+  "visibility_checks_passed_to_terminal": true,
+  "visibility_observations": 838,
+  "max_visibility": {
+    "front_camera": {
+      "basket": 0,
+      "basket_fruit": 0,
+      "inactive_reserve": 0,
+      "lamp": 169
+    },
+    "hand_camera": {
+      "basket": 0,
+      "basket_fruit": 0,
+      "inactive_reserve": 0,
+      "lamp": 664
+    }
+  },
+  "new_optical_obstacle_checks": 838,
+  "optical_obstacle_intersection_failures": 0,
+  "task_outcome": "robot_drop",
+  "task_success": false,
+  "terminal_step": 837,
+  "terminal_phase": "carry",
+  "N": 7,
+  "in_basket_at_terminal": 4,
+  "dropped_actor_ids": [
+    15
+  ],
+  "drop_detach_step": 790,
+  "failed_actor_final_position": [
+    0.46350619196891785,
+    -0.18890969455242157,
+    -0.0513334795832634
+  ],
+  "diagnostic_process_seconds": 55.025680501013994,
+  "new_R0_cases": 0,
+  "new_data_episodes": 0,
+  "training": false,
+  "all_76_sources_unchanged": true,
+  "evidence_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/result.json": "f0782caceb05a2a8f8205817f35fc66e88860d1aee9f83a7a262e6f1ae11a1fb",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/scene_manifest.json": "baccc40bc84affb58530d71c1743a18a9b0e54a0c1f9b300b4dbae2d4a2e3284",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/actions.json": "14865d3e3cdaa3b094de3f154d3b0551dd6d1e3a621c0d6b024a2eab4db77d8b",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/decisions.json": "fd1b6d3feb8e7bd089a191133875ecac9bbd6f39353400143bbabc9003d470b9",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/trace.jsonl": "84eb1842c1c1c1d4814fba18c671bfe4c044f14c90684772ea83843a66ab5dc3",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/status.json": "3e5bd871770c2aceb28adffa43059f47220b2bd3a00c0d66c649a2024d79cefc",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/plan.json": "eb191a645bd39a93ffb5ac0bd6530d29fe29bbd28defebf4990dd404b6abbb2d",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/commands/ep112_diagnostic/console.log": "a8797ceb7e0360a814c36205d6b277958995796c2adf0f9a9b54b0df70ae4816",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/commands/ep112_diagnostic/process_exit.json": "846c291f13718269f8f6f6d9c91c789843d3fdcfe2278e020786e474ba4a98db"
+  },
+  "stop_trigger": "The additional diagnostic assertion requires full DART task success; it raised on the ordinary robot_drop outcome.",
+  "recommended_user_decision": "Retain this ordinary DART task failure, accept the construction/zero-visibility/unchanged-command invariants through termination, and continue the original R0 gates without changing the seed, DART, expert, task or zero-visibility thresholds. Requires review of the predeclared full-success diagnostic requirement.",
+  "decision": "Remain stopped under the current diagnostic plan. Do not reclassify the gate, retry or start R0/data without user review."
+}

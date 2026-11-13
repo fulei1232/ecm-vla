@@ -1,0 +1,1112 @@
+{
+  "instruction_revision": 12,
+  "created_utc": "2026-11-09T05:32:06.327721+00:00",
+  "R11_R0_reused": true,
+  "R11_count_R0_replays": 350,
+  "R11_information_gate_passed": true,
+  "R11_successful_count_demonstrations_preserved": 109,
+  "R11_clean_manifests": 100,
+  "R11_DART_manifests": 9,
+  "R11_data_used_in_R12": false,
+  "R10_83_data_used": false,
+  "source_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/R0_gate.json": "1428f14e01c60a43a1403a1b68ef14a23f07ab81709a9164125c28d65cefee8b",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/summary.json": "4a57469813f497e8cde2d9cd7785653954823ed63033515c61254ffedcc0ce7d",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/information_audit.json": "cfe35175b716da98838db9f44b0b15b97ee5e0f3c26b9f50934b58a06ecef308",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/clock_fit.json": "43af37c2755b6e4d2d60ff4af73cc208463df6cd7a012e7a9232bc7ef687e1cf",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/data_attempt_ledger.json": "d1424ba4057314b9188de6b8ce1a805ed5dbccc6d2b51dc469ec3a90f4a8a6f0",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r11_20261106/visibility_stop_review.json": "4b2349da28bbf56bcf02d3b0830d5424e70e74cd1f60c0c1be01a33630ede672"
+  },
+  "manifest_inventory": [
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep0_manifest.json",
+      "sha256": "0620aba1d64a45592212380213fc22edf8fa0c032aaf3114ed851e248a2f2bb7",
+      "episode": 0,
+      "N": 2,
+      "seed": 4100000,
+      "h5_sha256": "88a770c4bfe19a51f45791f798ee1489d48ad70fad4260de72447af3a9fb716d",
+      "gt_sha256": "b20a1930c1243a7cc130f98666fc6342e89a083c1338304a62f56c8a1e5df7cc"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep10_manifest.json",
+      "sha256": "fc5d8fb5a1ebdcfcb9e9bc2f840a0149932bc4b8d84363be8e6b5d48a7f9dac7",
+      "episode": 10,
+      "N": 10,
+      "seed": 4100160,
+      "h5_sha256": "99dd1afa75e34d0dbae8a9d9d8f0c6780a33aea656546f099034f599af17c2e5",
+      "gt_sha256": "91e2de7d9ed634a5d75385b97b392c82602d04df2f87ee0f5a2e72cf3011abc7"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep11_manifest.json",
+      "sha256": "b7032349ac33b50c74081c67fbc59f31b81bf6a1ccefb60fcb62790f7e6e6695",
+      "episode": 11,
+      "N": 2,
+      "seed": 4100176,
+      "h5_sha256": "a0c3276f2adf9f66f2bb2d994779f816ce05489c671a3dff74732fb230d1d8d2",
+      "gt_sha256": "6d21db441915e65ace27ab4ebca77115d5171826f21ec68ffb0ad4d546f5e7e7"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep12_manifest.json",
+      "sha256": "576a511a673e3f8d4cdcf8aa9a85e8615488c958f40a00d62ef0d81b5ecbdd41",
+      "episode": 12,
+      "N": 6,
+      "seed": 4100192,
+      "h5_sha256": "ee3d0e3f02f93c846ff6562b5089b37925169f6f5c7acf0dac26d15a7a5532e5",
+      "gt_sha256": "66c184f1e36473588faead7bb501880890acc79be8c27025286faa1f67a1ecb1"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep13_manifest.json",
+      "sha256": "c2419567bcc87eb0c4da5cf3f1b249c95b519c05bb77e68d60339f53e60c2ccd",
+      "episode": 13,
+      "N": 5,
+      "seed": 4100208,
+      "h5_sha256": "41bea9686952896b6b526b9112a4d19a6902a97f65845080381c9391b61909bd",
+      "gt_sha256": "c90a5db6a0edbbb4bc73772161b588a6d13a7a38bbaa491f3d1f354b5880a2f7"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep14_manifest.json",
+      "sha256": "3644267972765222dd156f2f354e3dd790311eee92cbae17ee8650cc43a9fcf4",
+      "episode": 14,
+      "N": 9,
+      "seed": 4100224,
+      "h5_sha256": "6ec004b4ab8ad8967003f5302d127214fb0dec52f48a13e7f6f5922df403a161",
+      "gt_sha256": "ab695494e89723492dda044357e3c6ffd441a59170a3dd1475917f82513921fc"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep15_manifest.json",
+      "sha256": "d7a7ca8ee48f94c362632a81a55f1f9c0e2305dd4080dd85011a33d7bca81d65",
+      "episode": 15,
+      "N": 5,
+      "seed": 4100240,
+      "h5_sha256": "27221229ba701f1336066289971fab7df8ec725fa983a6f940ce3aba9af2c057",
+      "gt_sha256": "7c92b1f442a2380340a4e9e20f2d8580e495f2b25850e11839419ffd5f141880"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep16_manifest.json",
+      "sha256": "129c4856c0804c0c2f773526ebc5f89dc552447421b0b92d320657312293d473",
+      "episode": 16,
+      "N": 3,
+      "seed": 4100256,
+      "h5_sha256": "561a7c568552ed27816c97116e3cc9286aac81d7995083b59623e29211e21866",
+      "gt_sha256": "093e6e9ded9d4437cd619f27b262710fc22efecede15a85a7587fa62b32974f5"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep17_manifest.json",
+      "sha256": "0406e38bc7419ad578ae7e1902a16c0e5d78893f3ee780748267371d6686300c",
+      "episode": 17,
+      "N": 9,
+      "seed": 4100272,
+      "h5_sha256": "1ac271dd05ce96c27618636f543df9bc00239f7d0417d40a46bba0bf7ba9ca41",
+      "gt_sha256": "93190830a13094d993605917f7b3e311385cff5eccf5b60643086805ff84c32f"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep18_manifest.json",
+      "sha256": "820fb0a56623185c9dbae3be2230b3d4de4906d2fa16226be0e43b8227d3fc95",
+      "episode": 18,
+      "N": 10,
+      "seed": 4100288,
+      "h5_sha256": "db8077a86410be1b6d8e81d41725741b9960d45ad08677a9d265f437d03de58c",
+      "gt_sha256": "cd03cd4b51fbd85c2f7d91cfb37ab6dbd1b72f5199f996ee8c11dff0f9932431"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep19_manifest.json",
+      "sha256": "1e045a1ae3022bdfe70f5e85996b4ae594b2ce2f920b467df1af44d853a3a53a",
+      "episode": 19,
+      "N": 6,
+      "seed": 4100304,
+      "h5_sha256": "21cfc0561f15da9645d4074928d9de016470f626f0a0f2bc05bc2bbda928f3e7",
+      "gt_sha256": "e2fb6aace36d463c4b200e7988373455331c692517c7444b07c3a4fbc3c91244"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep1_manifest.json",
+      "sha256": "9e6c4c0af54b34b8058dc6c7a19a87814fff7b683a4c2b947b77bedd280e93d5",
+      "episode": 1,
+      "N": 7,
+      "seed": 4100016,
+      "h5_sha256": "b80a01ced97f5ed455e6e49d5895b81069c5696150cca606a0106891907bb9d3",
+      "gt_sha256": "6578fd1260f0f8ca1f212f8df9a5f6b320ac6113b3cb2842dac6c94a87425248"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep20_manifest.json",
+      "sha256": "05677769462cf89fd543a73178794961a0e46c7337661334342f967d66dbe50c",
+      "episode": 20,
+      "N": 2,
+      "seed": 4100320,
+      "h5_sha256": "67b93bb7818f66092fd5908eb999fc11e0d1337893327ba663887da19fd4bcb9",
+      "gt_sha256": "3225e7a8401550b093a86acd00df60a02f0d4dc949a9b42ff2f23fa8ae630b85"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep21_manifest.json",
+      "sha256": "fff12e7b624f77decbfaac422ae97d96ebb9ab1ba909189df63935f9ab3e2690",
+      "episode": 21,
+      "N": 7,
+      "seed": 4100336,
+      "h5_sha256": "62da95d39e7d3e0cb2076187593e3f8b50c3f7a987a7e451a875db5bf12472cb",
+      "gt_sha256": "8549bdb12eaa6e9e8120687f80a9b988a0d2ffe1dbe4b47cf8b95a27b9df08c4"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep22_manifest.json",
+      "sha256": "d244cbf43a831b9a8afa9b536ab0f1559beee6d81a197e9db773092e439fca8f",
+      "episode": 22,
+      "N": 10,
+      "seed": 4100352,
+      "h5_sha256": "f8fbd5235fa215e05feedb88b3fa7553568720102c7757ff33f6a5a1d4514989",
+      "gt_sha256": "4d6f22b5b3ffc9c3d3a489539469c14097abb03f21249367db396e44eb5ab91b"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep23_manifest.json",
+      "sha256": "04798dce783aad26add02e9752a699976d4464af4bce76ceb6960f2a2d021a76",
+      "episode": 23,
+      "N": 10,
+      "seed": 4100368,
+      "h5_sha256": "d7e6be88adbc74e7d19f34b923e702c2be9a12d737046ccf1553021dee1ad02f",
+      "gt_sha256": "33fdfcdf3e7243c79151f7eca6ed309768715dc4dc89b8a5412966c883a4e286"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep24_manifest.json",
+      "sha256": "6be2b01d3efedbcf804f8142e5317380d915792f20a380bfa8fe1192495b833e",
+      "episode": 24,
+      "N": 2,
+      "seed": 4100384,
+      "h5_sha256": "efe1cb603d9231b1ace652ed66d79dceb9fba96b16999e3c0c13e2d8ee9f6c57",
+      "gt_sha256": "bde4b931ef64e1f685490131f88fca714e848cb58bae392126ade7b9c75cb210"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep25_manifest.json",
+      "sha256": "4f1e3d5cd4ea581396239f19e5b5f01f5fd23b681db997e710b619249bdf2ef2",
+      "episode": 25,
+      "N": 3,
+      "seed": 4100400,
+      "h5_sha256": "9367bbfcdb764b6434a504343e50d0242d4050f17225167e884ff33ce943f846",
+      "gt_sha256": "e2b5202a3606af90a30d2d5e828cdeffa079a15203be18b484926a1befd1dc93"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep26_manifest.json",
+      "sha256": "c4283ea806993a2db0dbfa7895773f5b70ff928511927f76e133df0da644729c",
+      "episode": 26,
+      "N": 10,
+      "seed": 4100416,
+      "h5_sha256": "1adfa194f8c9c66062eebabaeba2390cd935169a9217a93f16f8d84cf3e5a521",
+      "gt_sha256": "fffba91a0c49121748b93b0ae59d8ee8bfdfc078a63414ec82161c1da78ca43c"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep27_manifest.json",
+      "sha256": "081e8bbb3018ac25c1ffe13044db2f8357212542f8d7f27ce135767ede31762f",
+      "episode": 27,
+      "N": 6,
+      "seed": 4100432,
+      "h5_sha256": "23a6c80af3b3935afea70ee5f4be677eccb258d337bbfcbc7e7d68748cf04194",
+      "gt_sha256": "fdb5388e41a567b8647e2e64e9f3c6ffc68c9d5edd71fcc35830f9dc345dbc40"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep28_manifest.json",
+      "sha256": "bf5281622b8682438a4ecff9746d68d2ac2833e6b9803855f33fb32874857e36",
+      "episode": 28,
+      "N": 7,
+      "seed": 4100448,
+      "h5_sha256": "ca1158fcec745c864c2624e23ea96a85246983d644863696e1e950d74ec2b6f2",
+      "gt_sha256": "51c56dafcf9eeda8abb7cb7795f3a3db951ecd4b9352348c5353eaefa0b02905"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep29_manifest.json",
+      "sha256": "0818f9c3e724a700bb10ad3525461a123c9675581d27a81c61bf4d0dda3016f3",
+      "episode": 29,
+      "N": 5,
+      "seed": 4100464,
+      "h5_sha256": "9596437efcd15a7415bccbc3d12a688729fdee691688ea7a91a93dcdc4dac8b8",
+      "gt_sha256": "b95e929be0f6a688267c9c3096bbb77c6d4a11f8ac49781c17b822ee3cb2511b"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep2_manifest.json",
+      "sha256": "0e1028e02227f5c3adc717b2e4438b89498cd7a6a50fd17385269f6a588a7950",
+      "episode": 2,
+      "N": 4,
+      "seed": 4100032,
+      "h5_sha256": "6fd0211c402003fb296d9eeb5c77deec3ecc76b22156b2011516f11193bc3c4d",
+      "gt_sha256": "1045326e222edd62d761e528a2f26c7805ce28b06438c07e0f946bb22900df56"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep30_manifest.json",
+      "sha256": "1a307195a3a675175923c32181b50a1b569655ffb4918ebc9b3dfe09f71563b4",
+      "episode": 30,
+      "N": 8,
+      "seed": 4100480,
+      "h5_sha256": "528a9866ea5ebf8c69b40081bd9e14503093e961ddbd2c4f32c439547623c54a",
+      "gt_sha256": "75e6e6338a9567da197a11cffdac410c8e049738dbc9637eddcb31bc6ffc5e4e"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep31_manifest.json",
+      "sha256": "28bc3e77774ef424e39df69acad9d65e050a62fc27f65b47e01b38bb34838b69",
+      "episode": 31,
+      "N": 4,
+      "seed": 4100496,
+      "h5_sha256": "863c38b28bb430f3b78af3c8d39396be74baadacb1db63ae5987295e42980bd6",
+      "gt_sha256": "7b3e5286c42d3bfa832ccdb67c23a2280bb3c404c78dae907d4657fc073bc3be"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep32_manifest.json",
+      "sha256": "98e4216a770a8438ffa6748f8bc2408dc7710e37b14a5395aff1c7ca60b2d130",
+      "episode": 32,
+      "N": 5,
+      "seed": 4100512,
+      "h5_sha256": "e6668e352f786a549d3620915634fdcc86aad6baef47e1849547b00fca6f4c5d",
+      "gt_sha256": "adcd2d431f2a741b1485cd09003a9061b5d790e70d38420189f2b62329cf8dde"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep33_manifest.json",
+      "sha256": "4cace371c1de13157323594b83452d2820bd380cdd004deae108fdbcd8951c27",
+      "episode": 33,
+      "N": 10,
+      "seed": 4100528,
+      "h5_sha256": "5bb726bac961bea71e3b60b43e5bf57c65359739fa2a4f148c0ee507a13a847a",
+      "gt_sha256": "a91abfcb132ab903484f7c13412a7d48fce9a826f39a884e54e57d6349fa6a88"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep34_manifest.json",
+      "sha256": "62b1ee0ea043a7218f169fcb570f01553cf3689833c302ebd5f148ef68612745",
+      "episode": 34,
+      "N": 5,
+      "seed": 4100544,
+      "h5_sha256": "5ed073ce8cb4ac328e8d3e28259a395cfca76fe17cda1c7db62ddc0b56a32332",
+      "gt_sha256": "061dccee0bb61bbf4e96dad087d60c96a707cf2397eacb96d5d4e8b06e0a8348"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep35_manifest.json",
+      "sha256": "9763efe2e1d84ed29f885a7537c36068f3deb688edeb9281dcd8571779de2bc3",
+      "episode": 35,
+      "N": 9,
+      "seed": 4100560,
+      "h5_sha256": "2f46788a6867863f2318e4b0ddd7a2ba47888ac1152601510301b8339fa5cddb",
+      "gt_sha256": "3ffa20165d96bbac13fffed8ebfd0ef3712e577248c4b09a71dcb353267f1a3f"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep36_manifest.json",
+      "sha256": "5ada0d8a6c448fd04e054cd68ec672581ba8d8ce562dbe8df12eb82ea633ec20",
+      "episode": 36,
+      "N": 9,
+      "seed": 4100576,
+      "h5_sha256": "2cba48dccc60df5be54cde6966cd3f6f182c385edcf9b92b1dc47e38ae651ee5",
+      "gt_sha256": "b0db184a24e81513e60aa7b0c2972ee42ffe00c0809fa1c57ea12917d2342907"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep37_manifest.json",
+      "sha256": "07ef8c2736cd6d81ee8546605d4c5ca40c13549d3c45190e7680866fcae083e5",
+      "episode": 37,
+      "N": 2,
+      "seed": 4100592,
+      "h5_sha256": "2e2b9edd2c904e7149b13d0f9ea3df6ffddbb967bc6dd427826162870a175765",
+      "gt_sha256": "c5937975ef91df8985afaf65f633dc0bc6bd989c40c10caa825ca713e615b0e2"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep38_manifest.json",
+      "sha256": "83a79a16fc9590335961858ef08302caf215dba08566346bddac37e6838b3cdd",
+      "episode": 38,
+      "N": 9,
+      "seed": 4100608,
+      "h5_sha256": "572d6e30b3ff2ddde9effd2239061991cc408f6167847d77de8798a849746a2c",
+      "gt_sha256": "96a66fe196687d38fec76a0ea5600be995f0af8e8c86f9ef8e980d5fd4fd14e8"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep39_manifest.json",
+      "sha256": "fc874bdf2161146be557253ede8499f616d3b019a28daec0207a0ff5497f3d44",
+      "episode": 39,
+      "N": 10,
+      "seed": 4100624,
+      "h5_sha256": "5ff4d717411ccb12a7abbabb82d82c3d33cd10f64d40c1f26bdfd3e13c2d7e75",
+      "gt_sha256": "59d6163d9d06d5286ab50f9f6e0030832ebeeb09dd2533aeb90936cb9d8acfb1"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep3_manifest.json",
+      "sha256": "e43e9325fed1c3709b0c94a86dac84e6b66b835e6ec0b10eaaf1d07bba4e6f75",
+      "episode": 3,
+      "N": 8,
+      "seed": 4100048,
+      "h5_sha256": "574b035a251d71f955c169125eb8ae938c696b3fc081bff3efda8878b70d9e3b",
+      "gt_sha256": "4e322ebae3370492907893ad4ed205800af628223ee2f15ba1029a5b31f72d0e"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep40_manifest.json",
+      "sha256": "39dc980cc0cf1b8414373bac4b077c9c9cc9ce39162178f57b8cb813c312e9c3",
+      "episode": 40,
+      "N": 6,
+      "seed": 4100640,
+      "h5_sha256": "4dd42564fb2e35a97f8d6d1fd8157d4acfde5f7fcba3b29a1afb81baabb42f18",
+      "gt_sha256": "55abcf0dfcbded3f02bad82746ae7ed2ab8df69ac2a9c65570ddbee06e87849f"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep41_manifest.json",
+      "sha256": "0932fcb2f9d78a08a7370775a8ea0b60b57f8ad0ffcd7427d9f5941edd209eb3",
+      "episode": 41,
+      "N": 8,
+      "seed": 4100656,
+      "h5_sha256": "e40ff87616ffdc26d6a5ee8be14f715956a1e50279b6fe252879e77d656a0456",
+      "gt_sha256": "4bc8a88a7ff472d6742a240cbb2a233c20f58929aded48aff8790e19c6696559"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep42_manifest.json",
+      "sha256": "fff3a6c22bdf167166107f3e296c1bc4ae24d8f39f5b4df6e57b1ad24da0a2c4",
+      "episode": 42,
+      "N": 8,
+      "seed": 4100672,
+      "h5_sha256": "52ef61c3718ff58233368a556be1bc89f0a1f13c4c5edd611e212168e107833d",
+      "gt_sha256": "bdbc12c1926fefd73f16fce3dde3b700bad79146cc50f59573536680538e6553"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep43_manifest.json",
+      "sha256": "6f9b0f54c120419bb702ebc087af722bf9d0925b107c056012ef883c637944a2",
+      "episode": 43,
+      "N": 4,
+      "seed": 4100688,
+      "h5_sha256": "a037606c263523ea0b93130b1269a1051ba13592a95ac06c087a15360661b1a7",
+      "gt_sha256": "b9548e342c00f0c4a9d02c07f0687b04178cc2f4da404d501d02b0cc5df00fd7"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep44_manifest.json",
+      "sha256": "5668f20fa17f98d77ba58a5ebf718127532917afb70600b343a0464027377d97",
+      "episode": 44,
+      "N": 4,
+      "seed": 4100704,
+      "h5_sha256": "2e4a440b27b605ac8fceaaa42ee18d44f1825a4133747bb7e01e7350e3545575",
+      "gt_sha256": "07051c20f4e27075b66e7a250202bb17db76001257f36fff889d43d982dc5b67"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep45_manifest.json",
+      "sha256": "aa396317ad0f3ebd75d6312a79ceb219cbb0ae94d90dcb79cc9b24ffccf9f886",
+      "episode": 45,
+      "N": 5,
+      "seed": 4100720,
+      "h5_sha256": "bb7eec893e73754889966ca6c34fd4143ba046fceb07b50642a4b74b00fbb7f6",
+      "gt_sha256": "e3e445afcf9b608311fff892e00e333bd901a115a15923beffe61b369c5f4538"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep46_manifest.json",
+      "sha256": "70562b87d95c0c40335f22f07c488f8cb8001d771c68dc5648b9aa86386cd666",
+      "episode": 46,
+      "N": 10,
+      "seed": 4100736,
+      "h5_sha256": "f6ba0b6cbcf80762689f3325ed44106f3f83d7ac7181ae519f7453f9aca7e1f0",
+      "gt_sha256": "c7f85c3776830a59b7948b3a5930de82bf85fbeec786a70ca9f954259f267332"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep47_manifest.json",
+      "sha256": "f873dee743df738ff48cf16dbac302a994e0bf384ee3e110d50d28914d7afff2",
+      "episode": 47,
+      "N": 2,
+      "seed": 4100752,
+      "h5_sha256": "06a9d53309158b117e83ed964124ec913fa0874a227952f445cffa3e10ad7df4",
+      "gt_sha256": "4eb4354d5743bf065b891a5e535783635a88804917fdb0f0f62f03a15b947e02"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep48_manifest.json",
+      "sha256": "59ad4e7b61f014ba02e94997e61a39165ad080c1f249395b19de8c74af4ebecf",
+      "episode": 48,
+      "N": 6,
+      "seed": 4100768,
+      "h5_sha256": "85dbf29432a92d60ef4bc45134124d409c1f67f20d0fc3958ab6d9db3711d4f2",
+      "gt_sha256": "0a0839c186c86841ecde6c6c0118e9950e65f778a70fc21d9c22fc8db6cfe5bb"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep49_manifest.json",
+      "sha256": "b81800d3b2b3cb2a21d08ec2336fe37ce862a2931d746ceb6600f3fd119ab778",
+      "episode": 49,
+      "N": 10,
+      "seed": 4100784,
+      "h5_sha256": "59b34bcf4c3f2a3a2cc1872e5c0776291db0b9bd8628ddf586b327a9ed200dde",
+      "gt_sha256": "04c111af21a72ea9fcadf88b3e554e578d9ae78db00f1cfd308b59787f3d040b"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep4_manifest.json",
+      "sha256": "6dbbe67de538015a55eb1e780a94bf53b46203aa8aae37ef6bde563be65b6fc9",
+      "episode": 4,
+      "N": 7,
+      "seed": 4100065,
+      "h5_sha256": "40d42b987e2cae62f0eccc997d5866f160887c36b83c31fbfb054b1049ad4fe2",
+      "gt_sha256": "9dd0e7440dcdcc7b2501a245d5f79e0f79b93867528ee8ce1f1a048c77dcfffd"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep50_manifest.json",
+      "sha256": "65a13d21d5a8cd82d652392a474c634d8f4004e15dd107c987d683dc6b2eb75a",
+      "episode": 50,
+      "N": 9,
+      "seed": 4100800,
+      "h5_sha256": "d71bea14275ade81a83a53096120a5d22afec294c099281f72c10f3c1bfa9f76",
+      "gt_sha256": "287737922efae340f647e872e1a07ce471a32f18388b7b93072380a05123c800"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep51_manifest.json",
+      "sha256": "ead806cc01a3bd63a15dd48d2931f8930fb871bd72408fd19d9e565580dd20d9",
+      "episode": 51,
+      "N": 8,
+      "seed": 4100816,
+      "h5_sha256": "068f77eda07bff8545bffd63881821f5eb22ff3afb307c7eac009bdef298db88",
+      "gt_sha256": "ad91925ba691b98d444244e24d8a77ca56d3eb799c3a3d9fa395d4af252ae519"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep52_manifest.json",
+      "sha256": "82137d97c865ed3e62abf8dc711deb192b875b6636fd2f9082437d55643eda7a",
+      "episode": 52,
+      "N": 8,
+      "seed": 4100832,
+      "h5_sha256": "4310643e3e6f872886f1eb27e0cd9f7488b153192ef566ef861a9ff4c1264206",
+      "gt_sha256": "2ea36ae7e2a3a3f9f461559578b4a78b420b5b1747ef4d560c96fd8777c45644"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep53_manifest.json",
+      "sha256": "94fdb785035000cf6625a046aa74e20e583bb8457b866e4fd604f885752d7665",
+      "episode": 53,
+      "N": 10,
+      "seed": 4100848,
+      "h5_sha256": "c32f1d48eaf148efa1893f6b6d270a874cef124ac8ab31d4d6506efc3f7222f1",
+      "gt_sha256": "96db3dcf223ac69de67a2ffbb7cd3f1ff8ef0a977006d5bacb99fd10e2ca18f0"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep54_manifest.json",
+      "sha256": "fff2d7e8397f981b87cde90c16c0d9469cb9c96c2d46d3a5651d77b02ef5e15f",
+      "episode": 54,
+      "N": 6,
+      "seed": 4100864,
+      "h5_sha256": "67811db0b8c8ae2719e84bd0f4b4d2a1ba20430ee2b309492309222deacf10e5",
+      "gt_sha256": "d1bf945e15975cfe2c4854b38e6c98dc8954d5a7d647b5985998e10f257cc5cc"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep55_manifest.json",
+      "sha256": "2bd069650535e81d1e4265f8a34894273e06fc54b9067a08c25f35539c103ea1",
+      "episode": 55,
+      "N": 8,
+      "seed": 4100880,
+      "h5_sha256": "c0a63c3c72651215eaee96bf6f9d1967252afe430638bdd2d061b3662bf92078",
+      "gt_sha256": "017583302d8609d7e6d045aaaf764f5e8cf5c3409640dd6c0fd415252992ff8f"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep56_manifest.json",
+      "sha256": "700ecfe815b81e5c62e3cd425b0a7c4b5a374b8f1a7c3246bc2cc46154ad9e12",
+      "episode": 56,
+      "N": 10,
+      "seed": 4100896,
+      "h5_sha256": "49f67a59ae27d8e8aa5c35cd8b04c0fe03e13cb3976278e2f3f73c727c5e402a",
+      "gt_sha256": "e57a88a8f8bf077be5202bf4d575dabf8a51cb21241aac3f344a49d135ff4eb4"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep57_manifest.json",
+      "sha256": "36eabd92fb6c134119e83f1c93ff19d7a375122d8a8c62114fc7e3ba165a7f45",
+      "episode": 57,
+      "N": 4,
+      "seed": 4100912,
+      "h5_sha256": "e5dd5600622c88434d592c7728cda6b5f15020c4b01b84392558f273b5a6a3c3",
+      "gt_sha256": "b961a0b703c041376bfb016af72a53f565caabb1b8c12143c0448c3821205d37"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep58_manifest.json",
+      "sha256": "bd4196ca04325c76d5b1d7fd6f9968a65d61604eb96d42e246393778c2d21bbc",
+      "episode": 58,
+      "N": 5,
+      "seed": 4100928,
+      "h5_sha256": "3b8bee9152c2dc6a8a73d54b05c02205af8b2b79d08366069c89944b7291bdb8",
+      "gt_sha256": "c29e2d4b6b839120c5b901745fcf480851df068c1fbb0bd7008d2f8c164ddb1c"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep59_manifest.json",
+      "sha256": "5f940eab0cfbd6aa7840cfbc8ac72dc9ad59b05f1a1510fd3a6f6a986d51a39b",
+      "episode": 59,
+      "N": 9,
+      "seed": 4100944,
+      "h5_sha256": "9595b75646d3e223cc89c1354221d5869b64dc764bbe04fe144d12b864102eb1",
+      "gt_sha256": "85c6f9c48ef370d79c7977043ca28ec59b5a242d2ee0951d4da83ef5acfb0eca"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep5_manifest.json",
+      "sha256": "5b3f54c1996660e93bf0ade8cd6b692d89349c7838d29af7f8943e5ee555615a",
+      "episode": 5,
+      "N": 9,
+      "seed": 4100080,
+      "h5_sha256": "447874cddcb41d1c35583b452ce39fad9a65ce0fe0091d4d0fbadba24bdcc72e",
+      "gt_sha256": "8d8839ef380f7d2e7060db3934810a400a431ede5a4f29933c2bf9378549c937"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep60_manifest.json",
+      "sha256": "5e942c70acf63f639675364da9e638e695ccbc00c0265675e602b463437f5d93",
+      "episode": 60,
+      "N": 5,
+      "seed": 4100960,
+      "h5_sha256": "0f27b09050a28ab977bceafce723520f9d9ca2509def397f48edfebe382eb8e3",
+      "gt_sha256": "e769b12c69c69f833523c808c67ff9731d2de276ecef20b170d49d0dcf2b892a"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep61_manifest.json",
+      "sha256": "1d192da80f49e0f67d5afb51039206f6e26f1001ca85ec1763a2f007eb5720a4",
+      "episode": 61,
+      "N": 10,
+      "seed": 4100976,
+      "h5_sha256": "4aa34aca86d4dab2d2cad2985a093d9cb53da281f717be08965d461cb7e9b09e",
+      "gt_sha256": "3d871ab2600a02d8f5e018f2e34655e2d09495c72aa05b37161867de4de292be"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep62_manifest.json",
+      "sha256": "1ff39d0ea6d1a924d1965c494545435eef5edd8e65ce975efbaa86c6cc9603c4",
+      "episode": 62,
+      "N": 10,
+      "seed": 4100992,
+      "h5_sha256": "b0304c7090fc84781552e83dc578c0b86b5bcbba89fba3672c0e07218e00d400",
+      "gt_sha256": "e9d77a83a1a2f88fb92e76d2e3478c1db26b82b5ea810d82cba5e32bf18c1b0c"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep63_manifest.json",
+      "sha256": "d76e39a302e4fae7a90983eed195a04a0e1baf967990a0ec391ba733bc6f3b28",
+      "episode": 63,
+      "N": 9,
+      "seed": 4101008,
+      "h5_sha256": "0005d31ec9895fa2c681064ddb6d5fc5677b0deef5defd6f70f3839f20727bd2",
+      "gt_sha256": "33593577fe5b4f769fcb2371d5e76e861b56efc80711efd1b0b9ca1aa6ee66a4"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep64_manifest.json",
+      "sha256": "5a9c3bc6be5117c123fa64bc76f6b8538286200b03cc62cf282ed2e28215cd3c",
+      "episode": 64,
+      "N": 6,
+      "seed": 4101024,
+      "h5_sha256": "16fed68f34e056d7517e930d820869dc1b81676380edfe2b6afffa3ce2510a18",
+      "gt_sha256": "45a6de0571e1d839a64edfb2cd044f9c7cdce92bf722f46e23bf7533da821fb7"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep65_manifest.json",
+      "sha256": "c440e329d6d45ff27ada4915a056cc2b34965f1bec71e85c800fccee12eccb10",
+      "episode": 65,
+      "N": 9,
+      "seed": 4101040,
+      "h5_sha256": "e1068bbdbaae1c0961c2ccbe956fd9a30df4363b87ee76af8cf09965414ebba4",
+      "gt_sha256": "a2cc6cee89599129ba52e3d2b58c1d3b4487f8c1365d34863f95b04a5cb20af4"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep66_manifest.json",
+      "sha256": "44b920c00fd044b3400bf40cc6bc42a6ff561f3a6ad51c4ab765072c8066e862",
+      "episode": 66,
+      "N": 6,
+      "seed": 4101056,
+      "h5_sha256": "b12878b9f583db60285d21d20d9d477dd8baac295371c8fe9ecf0d8ad9fff34f",
+      "gt_sha256": "21721e462eca078f2c95031858fa7be708402ab7537dc274aaca18729f911612"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep67_manifest.json",
+      "sha256": "444301581d6898e2176a131957f3d8c2a5fcc3d7a5b1cc7eba15f13f998749d7",
+      "episode": 67,
+      "N": 6,
+      "seed": 4101072,
+      "h5_sha256": "d710f9418642a7eba3b02d350398535339ec1ca8372ccc6346506d804ec30037",
+      "gt_sha256": "478aa8e4b87285b170c056ef42fc0b753e62fd052acbb8114e2762545c5e8778"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep68_manifest.json",
+      "sha256": "7823f744fd9ddf8654f0112b3901cc07dae3b40136971fba88d25c274f9f3873",
+      "episode": 68,
+      "N": 10,
+      "seed": 4101088,
+      "h5_sha256": "6a7cc4e742aaadbbb66591bb90393b40656bd49cdd313ded357099b38d666dc6",
+      "gt_sha256": "d019c318e442552a9e25c6e8485d538a489ec0e1b5cf68e3f8ff01cf130a834c"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep69_manifest.json",
+      "sha256": "52c9dcaeafb44ecdbabdc0be15fe70ca7159929d863d2b4f4e2f025010fa03c4",
+      "episode": 69,
+      "N": 2,
+      "seed": 4101104,
+      "h5_sha256": "7f5ba3bc88a844daea9fd1d3c29959c0b8e18ec4e7fed971875fc0faf4382e4c",
+      "gt_sha256": "c858f77243cd52cbfeb0e0183e9db05103ee1b39c5cc2166243804555cf60983"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep6_manifest.json",
+      "sha256": "02d69998a75078bc7248d0c51483fc6fd06db6874be070006716a9415765b114",
+      "episode": 6,
+      "N": 6,
+      "seed": 4100096,
+      "h5_sha256": "28d71e0c49769111bda38bca367c110645e88d87e6c49b15a8433ec42d8f2f08",
+      "gt_sha256": "9c305584a9216dd5fd1618e2c5e04464025eb1a5cb8e2e300af7eddae3792b7d"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep70_manifest.json",
+      "sha256": "a9502ea004fc2f0c26fdf66a5c70d9d52c86e7ad72948cba7bb2a6610ec37ede",
+      "episode": 70,
+      "N": 5,
+      "seed": 4101120,
+      "h5_sha256": "e0b27bc8ff2bd23323c9f633ff3ba36f91d48598a905df605e5e13b15bd7fad7",
+      "gt_sha256": "b9967b050829378736712833529aa714b71677420fc003f12151937559c4f28b"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep71_manifest.json",
+      "sha256": "05d70d7d27dd5c6c2a23bd1a244f613e93e8b3516ff8d593f2edb1fbc7d0675e",
+      "episode": 71,
+      "N": 6,
+      "seed": 4101136,
+      "h5_sha256": "69b6f8bc69bff287793408d334af564c64c9ec4a21acc2f3670bb164a72fdaf4",
+      "gt_sha256": "7700ca6cd695874e243d54af65d419568f2bb705e0c907ef9932d153127c4712"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep72_manifest.json",
+      "sha256": "6380ab72f816a5dcfbef837977c38fddd5a5c331c0f3bf2967c564c792937bfe",
+      "episode": 72,
+      "N": 5,
+      "seed": 4101152,
+      "h5_sha256": "46d0d1b018003fab6bd963a52acf6f1676c077e9a6dd9986d37ee4ce67d9391a",
+      "gt_sha256": "de053eb9368e943f3efbdbb38730ce3b3dea849cab471751ac6ea4ff59968115"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep73_manifest.json",
+      "sha256": "9541824148d2a91d0e5908b00a152aca0633da8a7f414849e5007d1320a21452",
+      "episode": 73,
+      "N": 10,
+      "seed": 4101168,
+      "h5_sha256": "28d4e2451df78145ffe95cb1323e3d1447361e50cf9c852258956e2bf39de5f2",
+      "gt_sha256": "f557120d53f3663e76f23ea31a26699291fc4cf467a1183f29889067b0e210c0"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep74_manifest.json",
+      "sha256": "e352760c192c4ddf1cbe16c1911bb9ff8cd13bb9219ff4586d07cbbfa3e0db1f",
+      "episode": 74,
+      "N": 2,
+      "seed": 4101184,
+      "h5_sha256": "2220b4682416db4d652fa51fb3364d9fe9890d132bc01b1392f82f2e9a7b2156",
+      "gt_sha256": "3676f562df2eda044070d93c612227901987bd8d0227d55c4d4f769d32720bd3"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep75_manifest.json",
+      "sha256": "3cb4a86f1fdb41034092d82e525c7073276b61a0bc859313fc8c303048027a33",
+      "episode": 75,
+      "N": 10,
+      "seed": 4101200,
+      "h5_sha256": "6fd9bed6ec84c7d9482f8b522fd6152f552879dd9c6dba72e1ce1d6241e0d879",
+      "gt_sha256": "2f54c6cb2076859c40be14924e596d89af0d3df32c853ae79f3615b5e0240803"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep76_manifest.json",
+      "sha256": "83d69ff60ae7aa376c3b0d6aba4f56e5dbca17da607ea2375387573da6b79936",
+      "episode": 76,
+      "N": 9,
+      "seed": 4101216,
+      "h5_sha256": "394436e4fc12c7cf077004f62be7ca2397165ab98ba7cfb83ba9682f44056353",
+      "gt_sha256": "8b348b9a08eb10e0fe6a75eef266d3e18ec699b0cadccdacba4a4b0f7b9818b8"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep77_manifest.json",
+      "sha256": "8bee85d42d890426eba7dd5f4beabd933f1ec74bd0dd1fae7fe3cb88cb7a6e0f",
+      "episode": 77,
+      "N": 6,
+      "seed": 4101232,
+      "h5_sha256": "8b8fdcae1ff44ea5382d01acff45cf36d329c10196a7e8ddfbd83a156cc98bb5",
+      "gt_sha256": "2ed40c86d207c9573113909fea0127f944e63089fbb8b6bd2f4cc33ca6bfa34e"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep78_manifest.json",
+      "sha256": "cb110c8b10a315b04342357e038a7b28521eb6ed9d26b2f4e3d777798549e547",
+      "episode": 78,
+      "N": 5,
+      "seed": 4101248,
+      "h5_sha256": "bfd6ba78894d0a507b25d6ad94514784f065874cafa46cb50299a4b53d178855",
+      "gt_sha256": "a5a7bb72983f45adcbc213875d1d86236a7cb2046e04f170d3abb6ad69542751"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep79_manifest.json",
+      "sha256": "3f2a3a08438057b67b062271d2c2ca0de928a057cbdaacfdd6fbf12ee5342375",
+      "episode": 79,
+      "N": 2,
+      "seed": 4101264,
+      "h5_sha256": "a2006169a73454b42645db02a361ac4594776ef6547fd60d172ffb95c4d1bc2f",
+      "gt_sha256": "ab8da83e6d8578e815336fd1fc18885f4765a24fdc53ebe334f0ab4440a6198e"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep7_manifest.json",
+      "sha256": "f67b80ff6ff920f9c2e467c4ccb6dce4f84e4c6d21075674ce4168ac245d1abd",
+      "episode": 7,
+      "N": 5,
+      "seed": 4100112,
+      "h5_sha256": "879e97775acf6554cf7518e735bc8d284e5fe45be777da58b2469314d1d25a78",
+      "gt_sha256": "fddede1552fb4f05d8ed1b525077b7f66e8cff551cf5f7cabb888558a7c1f2e1"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep80_manifest.json",
+      "sha256": "2e81f4e62a127775b09b5b255c55e1c4751daf9ee773357b14a5971c0d4f8a59",
+      "episode": 80,
+      "N": 3,
+      "seed": 4101280,
+      "h5_sha256": "000ce98557e069426eff7d9e05e69d661d9f491a3e1c47601722ca04254f29cf",
+      "gt_sha256": "b47bb0e57014cad57f4f3161b934d7be6ceac5978da54a47dddcefcab7447591"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep81_manifest.json",
+      "sha256": "be4597df1a0a4e7a11821f3d35188ab6e29c0bb63aba156a82f2ba8b533e9566",
+      "episode": 81,
+      "N": 8,
+      "seed": 4101296,
+      "h5_sha256": "454e4022359ba9c1670f0348cd80dbcd0d0f31ec871a973f38c27cc7409b2d3f",
+      "gt_sha256": "8cb3afc32b1507f14c9143c65a4806ce92c9d58baacf73434a7a47632556c195"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep82_manifest.json",
+      "sha256": "3e869077f11e3a05bc611f659115f476bd3b73f5a32a7ccb94edda68e7611ab9",
+      "episode": 82,
+      "N": 6,
+      "seed": 4101312,
+      "h5_sha256": "a4daf278e3782caae661a7ca52dda5d30ecea2b56f86f86eac37429cad288178",
+      "gt_sha256": "e85eef33774b2d367abc87e0c9374e95e3ca7e50393ee253fd7ed1f34be672ce"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep83_manifest.json",
+      "sha256": "47a99043aa077310cd6ec99de83addcbefd037b629754cc52fe07690084d0fab",
+      "episode": 83,
+      "N": 8,
+      "seed": 4101328,
+      "h5_sha256": "669d5d7e8b7447c783a23fce222d2589d8f54241f52060c394d82d5c9aac7711",
+      "gt_sha256": "c1e7e3ac4db23e4d8f0960c4a5956a7eda9b2a354751dbacb7dce70baceff844"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep84_manifest.json",
+      "sha256": "94ad53429d5e614a02c40223af3c538aab0628ce24ae0ba4b4fad5ca27ca308f",
+      "episode": 84,
+      "N": 9,
+      "seed": 4101344,
+      "h5_sha256": "b7bdf3d6d94630f77b6aa253a3b066c4c0fff54d0906226eed58420d25402ea8",
+      "gt_sha256": "a3748a96930866a6c436b48b512ae904e45e26e163622acf25403cc9c2e8466d"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep85_manifest.json",
+      "sha256": "d99312ce934cb6f62172766727c45f811f9298146dd4ab661862b78df40226bc",
+      "episode": 85,
+      "N": 3,
+      "seed": 4101360,
+      "h5_sha256": "9f9135c43959fdde59221b70874df9cef51b9cefa87fd31bb385228b16cc3008",
+      "gt_sha256": "2675940dfe06052167dd7637ece72ae797da7af751bd6d7f72934cba11881441"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep86_manifest.json",
+      "sha256": "a181175941a94662b964dff41cf23c0248533eb6fdc1ae9bbeb8b42bea6b8784",
+      "episode": 86,
+      "N": 3,
+      "seed": 4101376,
+      "h5_sha256": "d26dcb03a953fc2c4d060a9a75ebd3cf14e9a791d34b96eda90083b8736fb619",
+      "gt_sha256": "b03d5a8b2301a683c0761e0d7cff2f93d54e9b5127a6e913047d0a9ad8abecf1"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep87_manifest.json",
+      "sha256": "5cdc9aedb68a35af9610ed22501c84c97ab4d36c763fc2212a03cf1aeb60ce70",
+      "episode": 87,
+      "N": 7,
+      "seed": 4101392,
+      "h5_sha256": "748679e572944d08e67564ebf3262ace0e45d2b820e4d5a690b5c4db95538110",
+      "gt_sha256": "371bf56e590dc0ca6b1a32b7c4dcf324595726e81fcc4bfd57347cc08ac84c74"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep88_manifest.json",
+      "sha256": "40aff2da5967b74f43a9ff50f2e1f5f44e8428d09ef1292992ef8198cdf194f1",
+      "episode": 88,
+      "N": 3,
+      "seed": 4101408,
+      "h5_sha256": "6939e2d179aba2bd759ea894fa4225b80ad5bdc6664bf93d0d505781885f0262",
+      "gt_sha256": "ce7b82d38f2aef46ac930a6b6f75c9e74f47b18333f8d1a5c6d7710a3b0bc93a"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep89_manifest.json",
+      "sha256": "53dec5ff18fa2c4a5bdbcf2d17045973951c8bbe994b8131fb0365c48ed32dae",
+      "episode": 89,
+      "N": 4,
+      "seed": 4101424,
+      "h5_sha256": "04f38450663ab8694b3277c96b7b477c0914287eca44a0ae73a57be673f7bda7",
+      "gt_sha256": "f232231d0369840037fe84146f570f9acc3f2390221ebd8aa2bd8b5410366290"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep8_manifest.json",
+      "sha256": "3a0e135c72dbb726210f386ddc616929e3b4436803935603465dd0e69b91d3d2",
+      "episode": 8,
+      "N": 5,
+      "seed": 4100128,
+      "h5_sha256": "87c986ec5775308e6bc3f40b8c9ce778a9c20b55a25d1ad242856beba48044d1",
+      "gt_sha256": "560eb8ed7ac26e9d32cda019c3c19e9403989fdf6f9d54e9d00323f35f2cdbef"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep90_manifest.json",
+      "sha256": "53ffaf33b209e7feaedde8fe6a0c11b5b0eda24111ae09a616e505a100259979",
+      "episode": 90,
+      "N": 3,
+      "seed": 4101440,
+      "h5_sha256": "5e17985db9286561632fa98f0fe4c374b3c4b9640c6d0ec9a5030752078c9a32",
+      "gt_sha256": "22419b4f2d49f1441e83d59c48ae85220808b5c24377046ec41ebb12274684e5"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep91_manifest.json",
+      "sha256": "91febc86ce7613dcdbb692dd3e7da3af625d45d54b3b33aa5509542828a01e14",
+      "episode": 91,
+      "N": 6,
+      "seed": 4101456,
+      "h5_sha256": "5532318f1af675c3e76f70c837675b52c5efdf99fa87e72a1e99b089c416d121",
+      "gt_sha256": "56a51cc4751ae8e0c494b8f2b47b1903a056f7bce146ccbb68f1d6a6a2449aad"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep92_manifest.json",
+      "sha256": "da7c272c635641058785ae834043885c72334c30ac4ab4218eb44cb0284ead8c",
+      "episode": 92,
+      "N": 4,
+      "seed": 4101472,
+      "h5_sha256": "202a2d96d8b8694e96cea6beaa77b5f247e6fe4a34121b3281ee693df0ad97e5",
+      "gt_sha256": "e7978470571fcf7f040ce3d1573f08583d64bd5d7e022567ca548f04290277b1"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep93_manifest.json",
+      "sha256": "28ced52969c2fbcca5df03795644003aa1df9676c146bee532b3a444579138c9",
+      "episode": 93,
+      "N": 8,
+      "seed": 4101488,
+      "h5_sha256": "3bcd30d373d7b3a4c26e6fa6efed7818857aa4272b13c63a7af6b912ddb2bdc3",
+      "gt_sha256": "51002bef82bf60897568e6c502dd09df7b654770c29da9594f16866df7e73426"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep94_manifest.json",
+      "sha256": "95a78c550c25ef11ff69a79559da9c5498124be551cfdd842ad487add7e77ab5",
+      "episode": 94,
+      "N": 7,
+      "seed": 4101504,
+      "h5_sha256": "8b88c8ad9a4891797bb5871fdc81596e0cc970d3d50646d254216d88f710366d",
+      "gt_sha256": "bdd4527b6d0f44b59d9f820d8493d53af11abf500fb38956078ade2e146f27cc"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep95_manifest.json",
+      "sha256": "c947919f8c063a7271db8c2352046594612b49c265726403f37b3e24ac3aed3c",
+      "episode": 95,
+      "N": 8,
+      "seed": 4101520,
+      "h5_sha256": "b1f1764cf4ea89c891a7df122680e461465eb4a10dcce1492189bed296b285e9",
+      "gt_sha256": "5a73c1d59c9bf7088ce6bd5c3ce38a4f1773f8a86bbe6d4bc2af3afd4796539d"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep96_manifest.json",
+      "sha256": "33c63af3e047c3972993242eca893ffcf62af9b47912098299759e10e8c603ba",
+      "episode": 96,
+      "N": 5,
+      "seed": 4101536,
+      "h5_sha256": "760d09b4bf14b76ba920ac2783ba4f03ed0fbbedd4f7b35c503b7234d528c088",
+      "gt_sha256": "11497bdb7835e7dbe1862d83b379312d56122d25db4074e7aa76d9550ea07cd1"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep97_manifest.json",
+      "sha256": "7f6e75e19af5edb24ff6082be90eeb7825d8cecb9ad0a1f2c2ed5511690ff671",
+      "episode": 97,
+      "N": 8,
+      "seed": 4101552,
+      "h5_sha256": "cf5978a6c66f72691fa9936b143bfade1b490309c03ee3a880592d495c465885",
+      "gt_sha256": "15dcbc95ae9acebbf956766ca63233aaa2b1d48ecfd430b621467a48f41d3a55"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep98_manifest.json",
+      "sha256": "04dd4074392a8687b80bef37eba77154dbf152016bc97ab6df1d9fa321941c5e",
+      "episode": 98,
+      "N": 5,
+      "seed": 4101568,
+      "h5_sha256": "0d78dae74f4f17358b6e06cee79ce862fb9b4e9af68ce180a74a09d3d4bd40ba",
+      "gt_sha256": "e50a5345f439c26d04b5600527b6b92e65bb9ffc8d23b3b834eda5a34ca969b0"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep99_manifest.json",
+      "sha256": "740993e9e26da86603eb7f1eddb32a404776577b7a576d935ed8c4492699921e",
+      "episode": 99,
+      "N": 8,
+      "seed": 4101584,
+      "h5_sha256": "40d919fe48e40ece693e724f834e5822c714c82b3078fff106b09667da7e6d2c",
+      "gt_sha256": "eb2a6b04d774d1d0ae1bebb30cb40724e631d8e91446653ca29ea30c337fac49"
+    },
+    {
+      "purpose": "clean",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_clean_20261106/rm75b_eg2/train/count/ep9_manifest.json",
+      "sha256": "d1af6c9ce91a3645f06d7c7d0f4ef370f8139152370276311c67f0f492d7d070",
+      "episode": 9,
+      "N": 5,
+      "seed": 4100144,
+      "h5_sha256": "96aff568df96b1b231e22c863ee6be953a5d08c2cc8401e5b3b8d1798cec3cfa",
+      "gt_sha256": "6ff69a748cdd2a4b7ffff8cefee1dd6f9b9acffefa46ae8dd55ac3acd165cc24"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep100_manifest.json",
+      "sha256": "d8bf0f09461dfe9c29095f8c2067a29eb4af325916cb523f50a0e01500045d96",
+      "episode": 100,
+      "N": 4,
+      "seed": 4101602,
+      "h5_sha256": "eb546cad549757018a27a18f3f16cc5986b708f4c7d9d0a5fc3b1be46f39449b",
+      "gt_sha256": "3dc6e6303c31ac3cb43ee9ac75b1b78e053ddb790f507ed9f3c2224cdff235c7"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep103_manifest.json",
+      "sha256": "915b531c45265f25a086b53aaae104600de274a49a36bf8563d2585156664ddd",
+      "episode": 103,
+      "N": 5,
+      "seed": 4101652,
+      "h5_sha256": "253ae4ca15065235e5526b8fd6c0d1276fcfe274009e9b1870ed2402bb7438fd",
+      "gt_sha256": "9a2240c647826e9dab18ce1601de7da796442d2236886d99bd5eb0540f18b860"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep104_manifest.json",
+      "sha256": "55edb576a218f50cfb5684747bb765e066eaf72468c8e7b20273cd3b824f8d00",
+      "episode": 104,
+      "N": 2,
+      "seed": 4101664,
+      "h5_sha256": "d3b2ff54285a32668ead74aeaba9b9ffbe8904f2b93e84c33a7a67455ad28505",
+      "gt_sha256": "74c17189f977f57cdf299e2eade8f0a7b4934312a86f6657cd214a6ce85f7422"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep105_manifest.json",
+      "sha256": "52cb3362c7b1a9c890a5475b280e3ed01032ba1a6e8760be524dbec5df9852c9",
+      "episode": 105,
+      "N": 4,
+      "seed": 4101685,
+      "h5_sha256": "22be4627f5aaa6e0654958a12679ce0e529afa78f79ab3469b8293cafc28d1da",
+      "gt_sha256": "7da1392f6021ef64fdfb704b21ba2e70202c3dc5570ea842278b074a6f806cc4"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep108_manifest.json",
+      "sha256": "181850c1285ce108962e4c01661fa139fcb0a29af5b799f394e59a0e04a6078e",
+      "episode": 108,
+      "N": 9,
+      "seed": 4101736,
+      "h5_sha256": "474755917987b4782e1ec438b3bd3a6cff45f05e013303f8900a021adb2ac1c7",
+      "gt_sha256": "866636bd676ac5c1f0335935436bc3d74e430b7259ee529435bfaeb0bcd7bdbe"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep112_manifest.json",
+      "sha256": "d8ba16273950c00bee0156cf181f2abd7381338da9c3f2f522c7d8145d760ce7",
+      "episode": 112,
+      "N": 5,
+      "seed": 4101793,
+      "h5_sha256": "3dc12a6e505617a9ea571f773207d7c14c3098e58c232d9ff3a060c9d1641088",
+      "gt_sha256": "d296323273949ba8ccca65eceeaa5058be6e210584aa560093cdf013f419d52a"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep116_manifest.json",
+      "sha256": "7e081c7b2b7772e44b6d84bca3692c9a5b223efff2a1054a719265201d372dcd",
+      "episode": 116,
+      "N": 3,
+      "seed": 4101857,
+      "h5_sha256": "15ff8df114f263bd598ecb0e20bc75dee97126af0fbea9634e8f73f60dd1861c",
+      "gt_sha256": "a3eddf4fb6414cd7ce27e26f08f8448949a36cb387ba963b01406a60187cf3c6"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep120_manifest.json",
+      "sha256": "abe4ebaf122ecdc84952cb7beb88bd331944be6706b71ed8e15a7c4488691d39",
+      "episode": 120,
+      "N": 5,
+      "seed": 4101924,
+      "h5_sha256": "158a0892367daed59780db747a8430875965395f51d167d461055dc708530c9d",
+      "gt_sha256": "b5a8751f0d4050c0f2691a7d101c246f63ef8aabda1a308fd2cc38c7fc7e3c13"
+    },
+    {
+      "purpose": "dart",
+      "path": "/media/fulei/fuleivla/ecm_vla/data/fruit_task_v2_r11_dart_20261106/rm75b_eg2/train/count/ep128_manifest.json",
+      "sha256": "f84ddb2d08e89052c19d34eff74932a5deb1ae11f951a8420ac28729d5790f3e",
+      "episode": 128,
+      "N": 10,
+      "seed": 4102051,
+      "h5_sha256": "a3133d83a27bfb1aff7233c39e20e89b1cc67614478c5d63dd77172388df80dc",
+      "gt_sha256": "5e89ca76979150f24bed9d668bf85bb59d5291ee6c6f67de9081178d60f5c4cb"
+    }
+  ]
+}

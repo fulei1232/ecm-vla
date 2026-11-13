@@ -1,0 +1,3 @@
+Meshes and arm kinematics from RealManRobot/rm_models (Apache License 2.0, Copyright 2024 realman-robotics):
+  RM65/urdf/RM65-B and thirdparty/Two-finger Electric Gripper.urdf (EG2-4C2 base only). See LICENSE.rm_models.
+Modified: combined into one URDF; EG2 four-bar fingers replaced by parallel prismatic jaws; tcp link added.

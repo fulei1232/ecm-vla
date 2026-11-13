@@ -1,0 +1,83 @@
+from pathlib import Path
+import xml.etree.ElementTree as ET
+import json
+import numpy as np
+import h5py
+from scipy.optimize import least_squares
+from scipy.spatial.transform import Rotation
+ROOT=Path('/media/fulei/fuleivla/ecm_vla')
+P=ROOT/'results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full'
+PREFIX=P.parent/'ep112_shield_prefix'
+joints={j.find('child').get('link'):j for j in ET.parse(ROOT/'fruit_picking/assets/rm75b_eg2/rm75b_eg2.urdf').getroot().findall('joint')}
+def rot(axis,a):
+ axis=np.asarray(axis,float);axis/=np.linalg.norm(axis);x,y,z=axis;K=np.array([[0,-z,y],[z,0,-x],[-y,x,0]])
+ return np.eye(3)+np.sin(a)*K+(1-np.cos(a))*(K@K)
+def fk(q,link='eg2_base'):
+ if link=='base_link':return np.eye(4)
+ j=joints[link];o=j.find('origin');v=np.array([float(s) for s in o.get('xyz','0 0 0').split()]);r,p,y=[float(s) for s in o.get('rpy','0 0 0').split()]
+ A=np.eye(4);A[:3,:3]=rot([0,0,1],y)@rot([0,1,0],p)@rot([1,0,0],r);A[:3,3]=v
+ if j.get('type')=='revolute':
+  B=np.eye(4);B[:3,:3]=rot([float(s) for s in j.find('axis').get('xyz').split()],q[int(j.get('name').split('_')[1])-1]);A=A@B
+ return fk(q,j.find('parent').get('link'))@A
+f=np.array([0,.045,.225]);f/=np.linalg.norm(f);right=np.cross(f,[0,-1,0]);right/=np.linalg.norm(right);up=np.cross(right,f)
+CV=np.column_stack([right,-up,f]);EYE=np.array([0,-.06,.075])
+def cam(q):
+ T=fk(q);R=T[:3,:3]@CV;pos=T[:3,3]+T[:3,:3]@EYE;return pos,R
+cfg=json.loads((P/'scene_manifest.json').read_text());boxes=cfg['shield_boxes']
+centers=np.array([b['center'] for b in boxes]);halves=np.array([b['half'] for b in boxes])
+c=np.array([-.06,-.34,.15]);h=.09;t=.006;H=.12
+basket=[(c+[0,0,t/2],[h+t,h+t,t/2])]
+for sx,sy in [(1,0),(-1,0),(0,1),(0,-1)]:basket.append((c+[sx*(h+t/2),sy*(h+t/2),H/2],[t/2 if sx else h+t,t/2 if sy else h+t,H/2]))
+bc=np.array([x[0] for x in basket]);bh=np.array([x[1] for x in basket])
+def raycast(origin,directions,cs=centers,hs=halves):
+ directions=np.asarray(directions)
+ with np.errstate(divide='ignore',invalid='ignore'):
+  a=(cs[None]-hs[None]-origin[None,None])/directions[:,None,:]
+  b=(cs[None]+hs[None]-origin[None,None])/directions[:,None,:]
+ enter=np.max(np.minimum(a,b),axis=2);leave=np.min(np.maximum(a,b),axis=2)
+ values=np.where((leave>=enter)&(leave>0),np.where(enter>0,enter,leave),np.inf)
+ ids=np.argmin(values,axis=1);depth=values[np.arange(len(ids)),ids]
+ return depth,ids
+validation=[]
+with h5py.File(ROOT/'results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/demo.h5') as h5:
+ for step in [0,577]:
+  o=h5[f'episode_112/timestep_{step}/obs'];pos,R=cam(o['joint_state'][()]);ex=np.column_stack([R.T,-R.T@pos]);ref=o['wrist_camera_extrinsic'][()]
+  validation.append({'step':step,'max_extrinsic_abs_error':float(np.max(np.abs(ex-ref))), 'TCP_max_error_m':float(np.max(np.abs(fk(o['joint_state'][()],'tcp')[:3,3]-o['eef_state'][()][:3])))})
+  if step==0:c0=pos;R0=R
+raw0=np.load(PREFIX/'step0_raw_sensors.npz');seg0=raw0['hand_camera_segmentation'][...,0];dep0=raw0['hand_camera_depth'][...,0]
+y0,x0=np.where(seg0==57);idx=np.linspace(0,len(y0)-1,min(4000,len(y0)),dtype=int);y0=y0[idx];x0=x0[idx];observed0=dep0[y0,x0]/1000.
+calibration=[]
+for offset in [0.,.5]:
+ rays=np.stack([(x0+offset-128)/128,(y0+offset-128)/128,np.ones_like(x0)],axis=1)
+ predicted,_=raycast(c0,rays@R0.T);valid=np.isfinite(predicted);error=(predicted[valid]-observed0[valid])*1000
+ calibration.append({'sample_offset':offset,'finite_fraction':float(valid.mean()),'median_pred_minus_raw_mm':float(np.median(error)),'within_depth_bin_fraction':float(np.mean((error>=-1e-3)&(error<1.001))),'RMS_error_to_bin_center_mm':float(np.sqrt(np.mean((error-.5)**2)))})
+offset=min(calibration,key=lambda x:x['RMS_error_to_bin_center_mm'])['sample_offset']
+raw=np.load(P/'check_failure_raw_sensors.npz');seg=raw['hand_camera_segmentation'][...,0];dep=raw['hand_camera_depth'][...,0]
+actions=json.loads((P/'actions.json').read_text());q580=np.array(actions[-1]['measured_arm_qpos']);c580,R580=cam(q580)
+# Fit small camera-pose correction to fixed shield depth pixels, excluding every basket pixel.
+mask=seg==57
+safe=mask.copy()
+for dy,dx in [(1,0),(-1,0),(0,1),(0,-1),(2,0),(-2,0),(0,2),(0,-2)]:safe&=np.roll(mask,(dy,dx),(0,1))
+y,x=np.where(safe);idx=np.linspace(0,len(y)-1,min(3500,len(y)),dtype=int);y=y[idx];x=x[idx]
+rays=np.stack([(x+offset-128)/128,(y+offset-128)/128,np.ones_like(x)],axis=1)
+observed=dep[y,x]/1000.;target=observed+.0005
+initial,_=raycast(c580,rays@R580.T);keep=np.isfinite(initial)&(np.abs(initial-target)<.003)
+rays=rays[keep];target=target[keep];observed=observed[keep]
+def pose(v):return c580+v[:3],Rotation.from_rotvec(v[3:]).as_matrix()@R580
+def residual(v):
+ origin,R=pose(v);d,_=raycast(origin,rays@R.T);return (np.nan_to_num(d,posinf=10)-target)*1000
+fit=least_squares(residual,np.zeros(6),bounds=([-0.003]*3+[-.01]*3,[.003]*3+[.01]*3),loss='soft_l1',f_scale=.35,max_nfev=120,xtol=1e-12,ftol=1e-12,gtol=1e-10)
+origin,R=pose(fit.x);fiterr=residual(fit.x)
+pixels=np.argwhere(seg==20);prays=np.stack([(pixels[:,1]+offset-128)/128,(pixels[:,0]+offset-128)/128,np.ones(len(pixels))],axis=1);dirs=prays@R.T
+st,si=raycast(origin,dirs);bt,bi=raycast(origin,dirs,bc,bh)
+rows=[]
+for i,(y,x) in enumerate(pixels):
+ sp=origin+st[i]*dirs[i];bp=origin+bt[i]*dirs[i]
+ rows.append({'pixel_yx':[int(y),int(x)],'raw_depth_mm':int(dep[y,x]), 'shield_first_box':int(si[i]),'basket_first_box':int(bi[i]),'shield_depth_mm':float(st[i]*1000),'basket_depth_mm':float(bt[i]*1000),'shield_minus_basket_depth_mm':float((st[i]-bt[i])*1000), 'shield_hit_world':sp.tolist(),'basket_hit_world':bp.tolist()})
+result={'read_only_no_simulation':True,'FK_validation':validation,'pixel_center_calibration':calibration,'chosen_pixel_sample_offset':offset,
+ 'failure_pose_source':'step580 measured arm state, then six-parameter fit to step581 fixed-shield depth pixels only; basket pixels excluded',
+ 'pose_fit':{'pixels':len(rays),'success':bool(fit.success),'correction_translation_m':fit.x[:3].tolist(),'correction_rotation_rad':fit.x[3:].tolist(),'RMS_center_residual_mm':float(np.sqrt(np.mean(fiterr**2))),'max_center_residual_mm':float(np.max(np.abs(fiterr))),'camera_position':origin.tolist(),'camera_rotation_cv':R.tolist()},
+ 'basket_pixels':rows,'shared_surface_geometry':{'vertical_overlap_z_m':[.268,.27],'inner_x_planes':[-.15,.03],'inner_y_planes':[-.43,-.25],'outer_x_planes':[-.156,.036],'outer_y_planes':[-.436,-.244]},
+ 'source_files':['scene_manifest.json','check_failure_raw_sensors.npz','actions.json']}
+Path('/tmp/count_shield_ray_analysis.json').write_text(json.dumps(result,indent=2))
+print(json.dumps(result,ensure_ascii=False,indent=2))

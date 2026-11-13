@@ -1,0 +1,20 @@
+{
+  "revision": 8,
+  "ready_for_gpu_checks": true,
+  "created_utc": "2026-11-05T14:52:50.611967+00:00",
+  "unit_tests_passed": 14,
+  "D5_readonly_episodes": 1200,
+  "D5_affected_episodes": 0,
+  "v1_source_unchanged": true,
+  "ep245_recorded_state_frames_checked": 90,
+  "ep245_native_physics_replay": "pending",
+  "physical_R8_replays": 0,
+  "formal_audit_target": 450,
+  "calibration_and_stress_target": 30,
+  "source_pins": 23,
+  "plan_sha256": "bfdc4f1273d5301c8a27eecf88b6073a901879644e9dccedd058421403a4d9e4",
+  "extra_early_start_queue": false,
+  "no_training_data_or_training": true,
+  "no_val_use": true,
+  "GPU_visible_in_agent": false
+}

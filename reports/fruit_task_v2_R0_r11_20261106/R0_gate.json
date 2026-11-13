@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "instruction": 11,
+  "task_definition_revision": 9,
+  "created_utc": "2026-11-09T03:33:17.010205+00:00",
+  "proof_sha256": {
+    "ep112_reviewed_failure.json": "6232692e4402fdcfc653c2d0a8b37173caf8d36d53e5e6f8052e3573c2a85027",
+    "platform_manifest.json": "886d3e03245a5fe3207bd5f73f548d77d71d62c1f40555c69e15c9cbdf83fac2",
+    "revision11_tests.json": "73c37224d063cf8c8beb6b7d8f0d44ed26d81ebf34bbfe3fa8ef400adeffd4ef",
+    "approved_reuse.json": "6a8a50feca1dc6156734f1659e0564a24ad5d3afe576253fb174860bc1e7a6f5",
+    "performance_reassessment_r10.json": "a34e0a0f963f5a27a12e9730564576779ef6a56677a72509c79d45931c6bb415",
+    "budget_check.json": "19e2142df0e649bcf733a2e8add5c74dc5f91a8a76a1a27afe4dbe812863d3bb",
+    "information_audit.json": "cfe35175b716da98838db9f44b0b15b97ee5e0f3c26b9f50934b58a06ecef308",
+    "other_checks.json": "ba5e4de37c82c49ecd73a0851840f74f70b451b50747f610a18163fe531cede2"
+  },
+  "count_main_cases": 350,
+  "training": false,
+  "data_only_authorized": true
+}

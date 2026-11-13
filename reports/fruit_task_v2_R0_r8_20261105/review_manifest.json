@@ -1,0 +1,25 @@
+{
+  "kind": "R0 revision8 review delivery, not a sealed evaluation protocol",
+  "created_utc": "2026-11-06T02:53:33.658664+00:00",
+  "runtime_source_commit": "d09f3660b650ed497237423265bdbd15677deb24",
+  "plan_sha256": "bfdc4f1273d5301c8a27eecf88b6073a901879644e9dccedd058421403a4d9e4",
+  "formal_rollouts": 450,
+  "diagnostic_rollouts": 30,
+  "state": "awaiting_R0_review",
+  "files_sha256": {
+    "reports/fruit_task_v2_R0_r8_20261105/D5_readonly_basket_audit.json": "188561b08b867cef0561683461684fc2e2062adb902e323e5341a8eadcaef841",
+    "reports/fruit_task_v2_R0_r8_20261105/budget_check.json": "70780929d2ca277a3c10437b46cfbb15f89a62ca728dddf5e60f712756e5fd49",
+    "reports/fruit_task_v2_R0_r8_20261105/clock_fit.json": "818c31322cc3f725c8a3286c90146df82a200c218c30d6c7dfefd66051f55451",
+    "reports/fruit_task_v2_R0_r8_20261105/ep245_native_replay.json": "c3162697825f707f0a9034b702b8168b67067c4960f1210bcf5b6be923f73fea",
+    "reports/fruit_task_v2_R0_r8_20261105/fixed_preview_montage.png": "f8cf5b9361b250330499c04d6554b00b74552e2808de96771ec774e9d63a5d79",
+    "reports/fruit_task_v2_R0_r8_20261105/fixed_preview_sources.json": "e7c87bdbaf58aa629997f714abadf5772051eb90e3dd27d781c202b1c256f866",
+    "reports/fruit_task_v2_R0_r8_20261105/geometry_unit_checks.json": "11df96b800c8cc38a76d67a763a957cf5bf2ea4a4d63e7c2c1721ea52470eaa7",
+    "reports/fruit_task_v2_R0_r8_20261105/independent_validation.json": "dedd3937a92624f6453fe6bc856e1d374cb3d5efa4a67ab283ac4afcf969e173",
+    "reports/fruit_task_v2_R0_r8_20261105/preflight.json": "76f076a30cac84346c4336bb14bf432570c0fbc839a5b3a05f51491c9f7a0a5f",
+    "reports/fruit_task_v2_R0_r8_20261105/runtime_plan.json": "bfdc4f1273d5301c8a27eecf88b6073a901879644e9dccedd058421403a4d9e4",
+    "reports/fruit_task_v2_R0_r8_20261105/summary.json": "d4716ec9fcc56d85d6a16544a3635c4e15fe705286db035a42af58e19dd43433",
+    "reports/fruit_task_v2_design_r8_20261105.md": "00c885e84b72316a4a6daf667fd6f0479ccfc6866f1603a470eaddd4a4c64a74",
+    "reports/lowlevel_rescue_status.json": "32aa0105d92caa274477915053dce1c3a99abb4336a369c052f4bcb5ad6b2d85",
+    "scripts/verify_fruit_task_v2_r8_delivery.py": "3d3697cc75e09c48afc801c162bace11a2b8167b4b2a68aa12fdbcac38df4102"
+  }
+}

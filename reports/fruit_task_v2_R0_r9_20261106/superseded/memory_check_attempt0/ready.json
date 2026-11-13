@@ -1,0 +1,18 @@
+{
+  "revision": 9,
+  "created_utc": "2026-11-06T04:28:59.270746+00:00",
+  "ready_for_GPU_launch": true,
+  "source_pins": 41,
+  "plan_sha256": "a5c1849da6b43c0d8f2381141e9c36006170ae8a860bc7e8a2111a27c7a34fb7",
+  "CPU_semantic_check_groups_passed": 7,
+  "D5_default_selection_comparisons_passed": 600,
+  "R8_default_regression_tests_passed": 14,
+  "R8_information_definition_crosscheck_passed": true,
+  "accepted_occluded_R0_rerun": false,
+  "GPU_memory_tensor_checks": "pending",
+  "new_Count_R0": "pending",
+  "training_data_generated": false,
+  "training": false,
+  "GPU_devices_in_this_terminal": [],
+  "next": "Run scripts/run_fruit_task_v2_r9.py --run in the authorized GPU terminal; stop at the first failed check or after data completion."
+}

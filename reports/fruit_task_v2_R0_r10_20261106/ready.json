@@ -1,0 +1,15 @@
+{
+  "revision": 10,
+  "created_utc": "2026-11-06T08:07:34.470923+00:00",
+  "ready": true,
+  "source_files_verified": 48,
+  "R9_source_files_unchanged": 41,
+  "frozen_artifacts_unchanged": true,
+  "new_rollouts_started": 0,
+  "first_new_step": "Clock calibration on dev250–259, then freeze",
+  "new_continuation_tests": true,
+  "GPU_device_available_in_agent_terminal": false,
+  "accepted_checks_reused_without_repeating": true,
+  "training": false,
+  "stop_after_data": true
+}

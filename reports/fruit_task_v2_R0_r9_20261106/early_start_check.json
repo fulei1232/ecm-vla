@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "eligible_episodes": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    257,
+    258,
+    259
+  ],
+  "attempts": [
+    {
+      "episode": 250,
+      "green_step": 507,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 251,
+      "green_step": 411,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 252,
+      "green_step": 280,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 253,
+      "green_step": 202,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 254,
+      "green_step": 382,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 255,
+      "green_step": 55,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 257,
+      "green_step": 602,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 258,
+      "green_step": 524,
+      "failed_step": 31,
+      "outcome": "early_start"
+    },
+    {
+      "episode": 259,
+      "green_step": 567,
+      "failed_step": 31,
+      "outcome": "early_start"
+    }
+  ]
+}

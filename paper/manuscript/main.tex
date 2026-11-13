@@ -1,0 +1,116 @@
+%% Manuscript draft v0.3 (2026-10-28), compact version (<= 30 pages). Full v0.2 is in ../archive/manuscript_v0.2_full.
+%% Elsevier elsarticle, author-year (Biosystems Engineering style). Supporting tables/figures are in supplementary.tex.
+%% Red [TBD: ...] marks results that are still running (closed-loop evaluation) or text to verify.
+%% Numbers outside [TBD] come from paper/results/*.json (scripts in paper/experiments/).
+\documentclass[preprint,12pt,authoryear]{elsarticle}
+
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{siunitx}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{lineno}
+\usepackage{adjustbox}
+\usepackage[font=small,labelfont=bf,skip=4pt]{caption}
+\usepackage{etoolbox}
+\makeatletter\patchcmd{\pprintMaketitle}{\vskip36pt}{\vskip20pt}{}{}\makeatother
+\setlength{\emergencystretch}{2em}
+\linenumbers
+
+\graphicspath{{../figures/}}
+\newcommand{\tbd}[1]{\textcolor{red}{[TBD: #1]}}
+\newcommand{\pekm}{PEKM}
+\newcommand{\fdm}{SAM-FDM}
+\newcommand{\bench}{HarvestMem-Sim}
+\sisetup{detect-all}
+
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.85}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+
+\journal{Biosystems Engineering}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{HarvestMem: event-centric memory for vision--\hspace{0pt}language--\hspace{0pt}action harvesting robots under foliage occlusion}
+
+\author[a]{\tbd{Author 1}}
+\author[a]{\tbd{Author 2}}
+\author[a]{\tbd{Corresponding author}\corref{cor1}}
+\cortext[cor1]{Corresponding author. E-mail: \tbd{email}}
+\address[a]{\tbd{Affiliation, city, postcode, country}}
+
+\begin{abstract}
+Selective harvesting robots must act on information they can no longer see: wind-blown foliage hides ripe fruits, and quotas depend on picks made outside the camera view. Vision--language--action (VLA) policies, however, remember a fixed number of past frames sampled uniformly in time, and we show that their coverage of completed picks decays inversely with operating time. We propose HarvestMem, an event-centric memory framework that indexes memory by physical interaction events. Its spatial memory, built by a SAM-based fruit distance module (SAM-FDM), anchors every fruit in 3D while it is visible. Its episodic memory, Picking-Event Keyframe Memory (PEKM), detects picks from the end-effector-to-fruit distance and reserves memory slots for their contact and detachment keyframes, without extra parameters or inference cost. On HarvestMem-Sim, a new benchmark with a 7-DoF arm, foliage occlusion and quota counting, PEKM retained 99.6\% of completed picks versus 57.0\% for uniform memory, and with 8 frames outperformed uniform memory with 16. From RGB-D images and proprioception alone, SAM-FDM localized fruits within 0.48~cm and reproduced the ground-truth picking events exactly. Anchored before occlusion, it kept all 138 leaf-hidden ripe fruits (anchor recall 99.8\%); anchored after occlusion, it kept none (78.3\%), and no occluded episode was counted correctly. \tbd{one sentence on closed-loop success}
+\end{abstract}
+
+%% Highlights are submitted as a separate file (highlights.tex), as required by Elsevier.
+
+\begin{keyword}
+Selective harvesting \sep Vision--language--action model \sep Temporal memory \sep Keyframe selection \sep Foliage occlusion \sep Segment Anything Model
+\end{keyword}
+
+\end{frontmatter}
+
+\section*{Nomenclature}
+\begin{tabular}{lp{10.8cm}}
+$B$ & memory budget (number of past frames kept), here $B=16$\\
+$c_U(t)$ & coverage of a completed pick by uniform memory at decision time $t$\\
+$S_e$, $W$ & key set of event $e$ (frames within $\pm W$ of its contact and release keyframes), $W=3$\\
+$d_t$, $\hat d_t$ & ground-truth and perceived distance from the TCP to the nearest pickable fruit at frame $t$ (m)\\
+$\mathcal{P}_t$ & set of pickable fruits still attached at frame $t$\\
+$k$ & maximum number of event keyframes reserved in the memory\\
+$r$, $\mathrm{tol}$ & event radius and contact tolerance (m)\\
+$t^{\mathrm{c}}$, $t^{\mathrm{r}}$ & contact and release keyframes of an event\\
+$\mathcal{M}_t$ & set of past frames in the memory at decision time $t$\\
+$\alpha$, $\tau_d$ & mixing weight and distance scale of PEKM-S\\
+$\sigma$, $\tau$ & stationary standard deviation (rad) and correlation time (steps) of the DART-H noise\\
+DART & disturbances for augmenting robot trajectories \citep{laskey2017dart}\\
+EV & event memory; EVU, EVR, EVA: its uniform, random-replacement and anti-event controls\\
+FDM & fruit distance module\\
+PEKM & picking-event keyframe memory\\
+TCP & tool centre point\\
+VLA & vision--language--action (policy)\\
+\end{tabular}
+
+\input{sections/1_introduction}
+\input{sections/2_related_work}
+\input{sections/3_benchmark}
+\input{sections/4_method}
+\input{sections/5_experimental_design}
+\input{sections/6_results}
+\input{sections/7_discussion}
+\input{sections/8_conclusions}
+
+\section*{CRediT authorship contribution statement}
+\tbd{Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Writing -- original draft, Writing -- review \& editing, Visualization, Supervision, Funding acquisition.}
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Data availability}
+Supplementary material (benchmark details, full radius sweep, further memory examples and per-task perception results) accompanies this article. The HarvestMem-Sim generator, demonstrations, sealed evaluation protocols (with SHA-256 digests), analysis scripts and raw per-episode results will be released at \tbd{repository URL} upon publication.
+
+\section*{Acknowledgements}
+\tbd{Funding sources and grant numbers.}
+
+\bibliographystyle{elsarticle-harv}
+\renewcommand{\bibfont}{\footnotesize}
+\setlength{\bibsep}{0pt}
+\bibliography{references}
+
+\end{document}

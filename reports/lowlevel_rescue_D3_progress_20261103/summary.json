@@ -1,0 +1,1773 @@
+{
+  "phase": 3,
+  "state": "ready_for_G1_gpu_launch",
+  "generated_utc": "2026-11-03T02:23:09.686933+00:00",
+  "phase2_v31_completed": true,
+  "v31_all_core_gates_passed": true,
+  "training": {
+    "episodes": 400,
+    "physical_frames": 164639,
+    "history_only_frames": 12000,
+    "supervised_samples": 152639,
+    "steps": 12000,
+    "checkpoint": "/media/fulei/fuleivla/ecm_vla/runs/fruit_k0v2_lowlevel_rescue_20261102/ckpt/mme_vla_suite/k0/11999",
+    "T1": {
+      "passed": true,
+      "arms": {
+        "k0": {
+          "complete": true,
+          "log": "/media/fulei/fuleivla/ecm_vla/runs/fruit_k0v2_lowlevel_rescue_20261102/logs/k0_20261102T155740.log",
+          "logged": 240,
+          "expected_logged": 240,
+          "finite": true,
+          "first_loss": 0.1543,
+          "last_loss": 0.0029,
+          "norm_stats_match": true
+        }
+      },
+      "time_utc": "2026-11-02T22:15:49.923788+00:00"
+    }
+  },
+  "dev": {
+    "A0": {
+      "schema": "fruit-failure-modes-v2",
+      "generated_utc": "2026-11-03T02:11:11.589748+00:00",
+      "input": {
+        "root": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/A0",
+        "pattern": "ep{e}",
+        "episodes": "200-219",
+        "seeds": null
+      },
+      "definitions": {
+        "q7_center": -1.5764960646629333,
+        "wrist_limit": 6.28,
+        "wrist_deviation": 3,
+        "motion_threshold": 0.005,
+        "freeze_after_step": 60,
+        "freeze_strictly_over": 200,
+        "start_idle_index": "one-based control_step of first moving action; no motion = null",
+        "context": "post-action snapshot at max(0,onset_control_step-32); gripper from command",
+        "leave_home_step": "first control step with TCP >0.05m from frame0; null and never-left count if absent",
+        "post_release_resume_steps": "per basket-entry transition, first subsequent TCP >0.05m from entry position; simultaneous fruit entries one event, re-entries included, unresumed entries right-censored",
+        "legacy_proposed_action": "falls back to executed action",
+        "physical_observe_prefix": "explicit observe_hold_steps=30 keeps physical frames0..30 and hold actions in the1300-step clock; history-only flags do not remove physical time; legacy pre-execution video frames remain excluded",
+        "open_before_first_detach": "fourth residual class; includes open after detached loss",
+        "missing_metric": "null; excluded only from its own metric denominator"
+      },
+      "script_sha256": "b9e4b5229a189ca344ee3e9f5eb2c4bc150ae6811a4ef1fbb8e1fa902c428025",
+      "missing_expected_episodes": [],
+      "all": {
+        "episodes": 40,
+        "success": {
+          "numerator": 16,
+          "denominator": 40,
+          "fraction": 0.4
+        },
+        "fail": {
+          "numerator": 11,
+          "denominator": 40,
+          "fraction": 0.275
+        },
+        "timeout": {
+          "numerator": 13,
+          "denominator": 40,
+          "fraction": 0.325
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "first_target_in_basket": {
+          "numerator": 29,
+          "denominator": 40,
+          "fraction": 0.725
+        },
+        "never_detached": {
+          "numerator": 2,
+          "denominator": 40,
+          "fraction": 0.05
+        },
+        "near_miss": {
+          "numerator": 2,
+          "denominator": 40,
+          "fraction": 0.05
+        },
+        "wrist_over_limit": {
+          "numerator": 2,
+          "denominator": 40,
+          "fraction": 0.05
+        },
+        "wrist_deviation_executed": {
+          "numerator": 5,
+          "denominator": 40,
+          "fraction": 0.125
+        },
+        "wrist_deviation_proposed": {
+          "numerator": 5,
+          "denominator": 40,
+          "fraction": 0.125
+        },
+        "freeze_200": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "count_exact": {
+          "numerator": 14,
+          "denominator": 20,
+          "fraction": 0.7
+        },
+        "correct_in_basket": {
+          "total_fruits": 74,
+          "episodes_with_data": 40
+        },
+        "wrong_in_basket": {
+          "total_fruits": 2,
+          "episodes_with_data": 40
+        },
+        "freeze_200_basket_unsuccessful": {
+          "numerator": 0,
+          "denominator": 19,
+          "fraction": 0.0
+        },
+        "start_idle": {
+          "median": 31.0,
+          "observed": 40,
+          "right_censored": 0
+        },
+        "leave_home_step": {
+          "median": 36.0,
+          "observed": 40,
+          "episodes_with_data": 40,
+          "never_left_home": {
+            "numerator": 0,
+            "denominator": 40,
+            "fraction": 0.0
+          },
+          "median_convention": "observed crossings only; never-left episodes counted separately"
+        },
+        "post_release_resume_steps": {
+          "median": 15.0,
+          "events": 76,
+          "observed_resumptions": 58,
+          "unresumed_at_end": {
+            "numerator": 18,
+            "denominator": 76,
+            "fraction": 0.23684210526315788
+          },
+          "episodes_with_entries": {
+            "numerator": 35,
+            "denominator": 40,
+            "fraction": 0.875
+          },
+          "median_convention": "observed resumptions only; right-censored events counted separately"
+        },
+        "deviation_onset_context": {
+          "carrying_fruit": {
+            "numerator": 0,
+            "denominator": 5,
+            "fraction": 0.0
+          },
+          "closed_empty": {
+            "numerator": 0,
+            "denominator": 5,
+            "fraction": 0.0
+          },
+          "open_after_basket": {
+            "numerator": 3,
+            "denominator": 5,
+            "fraction": 0.6
+          },
+          "open_before_first_detach": {
+            "numerator": 2,
+            "denominator": 5,
+            "fraction": 0.4
+          }
+        },
+        "guard_clip_rate": {
+          "any_joint": {
+            "numerator": 0,
+            "denominator": 30258,
+            "fraction": 0.0
+          },
+          "per_joint": [
+            {
+              "numerator": 0,
+              "denominator": 30258,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 30258,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 30258,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 30258,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 30258,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 30258,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 30258,
+              "fraction": 0.0
+            }
+          ]
+        }
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "success": {
+            "numerator": 14,
+            "denominator": 20,
+            "fraction": 0.7
+          },
+          "fail": {
+            "numerator": 4,
+            "denominator": 20,
+            "fraction": 0.2
+          },
+          "timeout": {
+            "numerator": 2,
+            "denominator": 20,
+            "fraction": 0.1
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 18,
+            "denominator": 20,
+            "fraction": 0.9
+          },
+          "never_detached": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "near_miss": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "wrist_over_limit": {
+            "numerator": 1,
+            "denominator": 20,
+            "fraction": 0.05
+          },
+          "wrist_deviation_executed": {
+            "numerator": 1,
+            "denominator": 20,
+            "fraction": 0.05
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 1,
+            "denominator": 20,
+            "fraction": 0.05
+          },
+          "freeze_200": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "count_exact": {
+            "numerator": 14,
+            "denominator": 20,
+            "fraction": 0.7
+          },
+          "correct_in_basket": {
+            "total_fruits": 51,
+            "episodes_with_data": 20
+          },
+          "wrong_in_basket": {
+            "total_fruits": 0,
+            "episodes_with_data": 20
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 4,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 20,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 36.0,
+            "observed": 20,
+            "episodes_with_data": 20,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 20,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 15,
+            "events": 51,
+            "observed_resumptions": 37,
+            "unresumed_at_end": {
+              "numerator": 14,
+              "denominator": 51,
+              "fraction": 0.27450980392156865
+            },
+            "episodes_with_entries": {
+              "numerator": 18,
+              "denominator": 20,
+              "fraction": 0.9
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 1,
+              "fraction": 0.0
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 1,
+              "fraction": 0.0
+            },
+            "open_after_basket": {
+              "numerator": 1,
+              "denominator": 1,
+              "fraction": 1.0
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 1,
+              "fraction": 0.0
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 0,
+              "denominator": 11324,
+              "fraction": 0.0
+            },
+            "per_joint": [
+              {
+                "numerator": 0,
+                "denominator": 11324,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 11324,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 11324,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 11324,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 11324,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 11324,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 11324,
+                "fraction": 0.0
+              }
+            ]
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "success": {
+            "numerator": 2,
+            "denominator": 20,
+            "fraction": 0.1
+          },
+          "fail": {
+            "numerator": 7,
+            "denominator": 20,
+            "fraction": 0.35
+          },
+          "timeout": {
+            "numerator": 11,
+            "denominator": 20,
+            "fraction": 0.55
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 11,
+            "denominator": 20,
+            "fraction": 0.55
+          },
+          "never_detached": {
+            "numerator": 2,
+            "denominator": 20,
+            "fraction": 0.1
+          },
+          "near_miss": {
+            "numerator": 2,
+            "denominator": 20,
+            "fraction": 0.1
+          },
+          "wrist_over_limit": {
+            "numerator": 1,
+            "denominator": 20,
+            "fraction": 0.05
+          },
+          "wrist_deviation_executed": {
+            "numerator": 4,
+            "denominator": 20,
+            "fraction": 0.2
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 4,
+            "denominator": 20,
+            "fraction": 0.2
+          },
+          "freeze_200": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "count_exact": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "correct_in_basket": {
+            "total_fruits": 23,
+            "episodes_with_data": 20
+          },
+          "wrong_in_basket": {
+            "total_fruits": 2,
+            "episodes_with_data": 20
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 15,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 20,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 36.0,
+            "observed": 20,
+            "episodes_with_data": 20,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 20,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 41,
+            "events": 25,
+            "observed_resumptions": 21,
+            "unresumed_at_end": {
+              "numerator": 4,
+              "denominator": 25,
+              "fraction": 0.16
+            },
+            "episodes_with_entries": {
+              "numerator": 17,
+              "denominator": 20,
+              "fraction": 0.85
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 4,
+              "fraction": 0.0
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 4,
+              "fraction": 0.0
+            },
+            "open_after_basket": {
+              "numerator": 2,
+              "denominator": 4,
+              "fraction": 0.5
+            },
+            "open_before_first_detach": {
+              "numerator": 2,
+              "denominator": 4,
+              "fraction": 0.5
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 0,
+              "denominator": 18934,
+              "fraction": 0.0
+            },
+            "per_joint": [
+              {
+                "numerator": 0,
+                "denominator": 18934,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 18934,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 18934,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 18934,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 18934,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 18934,
+                "fraction": 0.0
+              },
+              {
+                "numerator": 0,
+                "denominator": 18934,
+                "fraction": 0.0
+              }
+            ]
+          }
+        }
+      },
+      "failed_runs": []
+    },
+    "v2": {
+      "schema": "fruit-failure-modes-v2",
+      "generated_utc": "2026-11-03T02:11:11.670259+00:00",
+      "input": {
+        "root": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2",
+        "pattern": "ep{e}",
+        "episodes": "200-219",
+        "seeds": null
+      },
+      "definitions": {
+        "q7_center": -1.5764960646629333,
+        "wrist_limit": 6.28,
+        "wrist_deviation": 3,
+        "motion_threshold": 0.005,
+        "freeze_after_step": 60,
+        "freeze_strictly_over": 200,
+        "start_idle_index": "one-based control_step of first moving action; no motion = null",
+        "context": "post-action snapshot at max(0,onset_control_step-32); gripper from command",
+        "leave_home_step": "first control step with TCP >0.05m from frame0; null and never-left count if absent",
+        "post_release_resume_steps": "per basket-entry transition, first subsequent TCP >0.05m from entry position; simultaneous fruit entries one event, re-entries included, unresumed entries right-censored",
+        "legacy_proposed_action": "falls back to executed action",
+        "physical_observe_prefix": "explicit observe_hold_steps=30 keeps physical frames0..30 and hold actions in the1300-step clock; history-only flags do not remove physical time; legacy pre-execution video frames remain excluded",
+        "open_before_first_detach": "fourth residual class; includes open after detached loss",
+        "missing_metric": "null; excluded only from its own metric denominator"
+      },
+      "script_sha256": "b9e4b5229a189ca344ee3e9f5eb2c4bc150ae6811a4ef1fbb8e1fa902c428025",
+      "missing_expected_episodes": [],
+      "all": {
+        "episodes": 40,
+        "success": {
+          "numerator": 15,
+          "denominator": 40,
+          "fraction": 0.375
+        },
+        "fail": {
+          "numerator": 12,
+          "denominator": 40,
+          "fraction": 0.3
+        },
+        "timeout": {
+          "numerator": 13,
+          "denominator": 40,
+          "fraction": 0.325
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "first_target_in_basket": {
+          "numerator": 29,
+          "denominator": 40,
+          "fraction": 0.725
+        },
+        "never_detached": {
+          "numerator": 1,
+          "denominator": 40,
+          "fraction": 0.025
+        },
+        "near_miss": {
+          "numerator": 1,
+          "denominator": 40,
+          "fraction": 0.025
+        },
+        "wrist_over_limit": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "wrist_deviation_executed": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "wrist_deviation_proposed": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "freeze_200": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "count_exact": {
+          "numerator": 13,
+          "denominator": 20,
+          "fraction": 0.65
+        },
+        "correct_in_basket": {
+          "total_fruits": 72,
+          "episodes_with_data": 40
+        },
+        "wrong_in_basket": {
+          "total_fruits": 2,
+          "episodes_with_data": 40
+        },
+        "freeze_200_basket_unsuccessful": {
+          "numerator": 0,
+          "denominator": 19,
+          "fraction": 0.0
+        },
+        "start_idle": {
+          "median": 31.0,
+          "observed": 40,
+          "right_censored": 0
+        },
+        "leave_home_step": {
+          "median": 36.0,
+          "observed": 40,
+          "episodes_with_data": 40,
+          "never_left_home": {
+            "numerator": 0,
+            "denominator": 40,
+            "fraction": 0.0
+          },
+          "median_convention": "observed crossings only; never-left episodes counted separately"
+        },
+        "post_release_resume_steps": {
+          "median": 15,
+          "events": 74,
+          "observed_resumptions": 57,
+          "unresumed_at_end": {
+            "numerator": 17,
+            "denominator": 74,
+            "fraction": 0.22972972972972974
+          },
+          "episodes_with_entries": {
+            "numerator": 34,
+            "denominator": 40,
+            "fraction": 0.85
+          },
+          "median_convention": "observed resumptions only; right-censored events counted separately"
+        },
+        "deviation_onset_context": {
+          "carrying_fruit": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "closed_empty": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_after_basket": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "open_before_first_detach": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          }
+        },
+        "guard_clip_rate": {
+          "any_joint": {
+            "numerator": 9108,
+            "denominator": 29657,
+            "fraction": 0.3071113059311461
+          },
+          "per_joint": [
+            {
+              "numerator": 5944,
+              "denominator": 29657,
+              "fraction": 0.20042485753784942
+            },
+            {
+              "numerator": 4535,
+              "denominator": 29657,
+              "fraction": 0.1529149947735779
+            },
+            {
+              "numerator": 3268,
+              "denominator": 29657,
+              "fraction": 0.11019320902316485
+            },
+            {
+              "numerator": 3609,
+              "denominator": 29657,
+              "fraction": 0.12169133762686718
+            },
+            {
+              "numerator": 5607,
+              "denominator": 29657,
+              "fraction": 0.18906160434298816
+            },
+            {
+              "numerator": 4101,
+              "denominator": 29657,
+              "fraction": 0.1382810129143204
+            },
+            {
+              "numerator": 3860,
+              "denominator": 29657,
+              "fraction": 0.13015476953164515
+            }
+          ]
+        }
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "success": {
+            "numerator": 13,
+            "denominator": 20,
+            "fraction": 0.65
+          },
+          "fail": {
+            "numerator": 4,
+            "denominator": 20,
+            "fraction": 0.2
+          },
+          "timeout": {
+            "numerator": 3,
+            "denominator": 20,
+            "fraction": 0.15
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 18,
+            "denominator": 20,
+            "fraction": 0.9
+          },
+          "never_detached": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "near_miss": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "count_exact": {
+            "numerator": 13,
+            "denominator": 20,
+            "fraction": 0.65
+          },
+          "correct_in_basket": {
+            "total_fruits": 48,
+            "episodes_with_data": 20
+          },
+          "wrong_in_basket": {
+            "total_fruits": 0,
+            "episodes_with_data": 20
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 5,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 20,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 36.0,
+            "observed": 20,
+            "episodes_with_data": 20,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 20,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 15,
+            "events": 48,
+            "observed_resumptions": 35,
+            "unresumed_at_end": {
+              "numerator": 13,
+              "denominator": 48,
+              "fraction": 0.2708333333333333
+            },
+            "episodes_with_entries": {
+              "numerator": 18,
+              "denominator": 20,
+              "fraction": 0.9
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 1930,
+              "denominator": 11379,
+              "fraction": 0.16961068635205204
+            },
+            "per_joint": [
+              {
+                "numerator": 1084,
+                "denominator": 11379,
+                "fraction": 0.09526320414799191
+              },
+              {
+                "numerator": 1102,
+                "denominator": 11379,
+                "fraction": 0.09684506547148256
+              },
+              {
+                "numerator": 945,
+                "denominator": 11379,
+                "fraction": 0.08304771948325863
+              },
+              {
+                "numerator": 1097,
+                "denominator": 11379,
+                "fraction": 0.09640565954829071
+              },
+              {
+                "numerator": 1412,
+                "denominator": 11379,
+                "fraction": 0.12408823270937692
+              },
+              {
+                "numerator": 1085,
+                "denominator": 11379,
+                "fraction": 0.09535108533263029
+              },
+              {
+                "numerator": 1221,
+                "denominator": 11379,
+                "fraction": 0.10730292644344845
+              }
+            ]
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "success": {
+            "numerator": 2,
+            "denominator": 20,
+            "fraction": 0.1
+          },
+          "fail": {
+            "numerator": 8,
+            "denominator": 20,
+            "fraction": 0.4
+          },
+          "timeout": {
+            "numerator": 10,
+            "denominator": 20,
+            "fraction": 0.5
+          },
+          "engineering_error": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "first_target_in_basket": {
+            "numerator": 11,
+            "denominator": 20,
+            "fraction": 0.55
+          },
+          "never_detached": {
+            "numerator": 1,
+            "denominator": 20,
+            "fraction": 0.05
+          },
+          "near_miss": {
+            "numerator": 1,
+            "denominator": 20,
+            "fraction": 0.05
+          },
+          "wrist_over_limit": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "wrist_deviation_executed": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "wrist_deviation_proposed": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "freeze_200": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "count_exact": {
+            "numerator": 0,
+            "denominator": 0,
+            "fraction": null
+          },
+          "correct_in_basket": {
+            "total_fruits": 24,
+            "episodes_with_data": 20
+          },
+          "wrong_in_basket": {
+            "total_fruits": 2,
+            "episodes_with_data": 20
+          },
+          "freeze_200_basket_unsuccessful": {
+            "numerator": 0,
+            "denominator": 14,
+            "fraction": 0.0
+          },
+          "start_idle": {
+            "median": 31.0,
+            "observed": 20,
+            "right_censored": 0
+          },
+          "leave_home_step": {
+            "median": 36.0,
+            "observed": 20,
+            "episodes_with_data": 20,
+            "never_left_home": {
+              "numerator": 0,
+              "denominator": 20,
+              "fraction": 0.0
+            },
+            "median_convention": "observed crossings only; never-left episodes counted separately"
+          },
+          "post_release_resume_steps": {
+            "median": 36.0,
+            "events": 26,
+            "observed_resumptions": 22,
+            "unresumed_at_end": {
+              "numerator": 4,
+              "denominator": 26,
+              "fraction": 0.15384615384615385
+            },
+            "episodes_with_entries": {
+              "numerator": 16,
+              "denominator": 20,
+              "fraction": 0.8
+            },
+            "median_convention": "observed resumptions only; right-censored events counted separately"
+          },
+          "deviation_onset_context": {
+            "carrying_fruit": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "closed_empty": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_after_basket": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            },
+            "open_before_first_detach": {
+              "numerator": 0,
+              "denominator": 0,
+              "fraction": null
+            }
+          },
+          "guard_clip_rate": {
+            "any_joint": {
+              "numerator": 7178,
+              "denominator": 18278,
+              "fraction": 0.39271255060728744
+            },
+            "per_joint": [
+              {
+                "numerator": 4860,
+                "denominator": 18278,
+                "fraction": 0.2658934237881606
+              },
+              {
+                "numerator": 3433,
+                "denominator": 18278,
+                "fraction": 0.18782142466352994
+              },
+              {
+                "numerator": 2323,
+                "denominator": 18278,
+                "fraction": 0.12709267972425867
+              },
+              {
+                "numerator": 2512,
+                "denominator": 18278,
+                "fraction": 0.13743297953824268
+              },
+              {
+                "numerator": 4195,
+                "denominator": 18278,
+                "fraction": 0.22951088740562425
+              },
+              {
+                "numerator": 3016,
+                "denominator": 18278,
+                "fraction": 0.16500711237553342
+              },
+              {
+                "numerator": 2639,
+                "denominator": 18278,
+                "fraction": 0.14438122332859174
+              }
+            ]
+          }
+        }
+      },
+      "failed_runs": []
+    }
+  },
+  "D1_A0_reference": {
+    "schema": "fruit-failure-modes-v2",
+    "generated_utc": "2026-11-02T12:36:21.019749+00:00",
+    "input": {
+      "root": "/media/fulei/fuleivla/ecm_vla/results/fruit_exec_guard_dev_20261102_v2/A0",
+      "pattern": "ep{e}",
+      "episodes": "200-219",
+      "seeds": null
+    },
+    "definitions": {
+      "q7_center": -1.56,
+      "wrist_limit": 6.28,
+      "wrist_deviation": 3,
+      "motion_threshold": 0.005,
+      "freeze_after_step": 60,
+      "freeze_strictly_over": 200,
+      "start_idle_index": "one-based control_step of first moving action; no motion = null",
+      "context": "post-action snapshot at max(0,onset_control_step-32); gripper from command",
+      "leave_home_step": "first control step with TCP >0.05m from frame0; null and never-left count if absent",
+      "post_release_resume_steps": "per basket-entry transition, first subsequent TCP >0.05m from entry position; simultaneous fruit entries one event, re-entries included, unresumed entries right-censored",
+      "legacy_proposed_action": "falls back to executed action",
+      "open_before_first_detach": "fourth residual class; includes open after detached loss",
+      "missing_metric": "null; excluded only from its own metric denominator"
+    },
+    "script_sha256": "db1c7d1d376f1b5d8a70c76508ad11fdea5db5a6300f9bfd5a6aba7a65c05351",
+    "missing_expected_episodes": [],
+    "all": {
+      "episodes": 40,
+      "success": {
+        "numerator": 2,
+        "denominator": 40,
+        "fraction": 0.05
+      },
+      "fail": {
+        "numerator": 14,
+        "denominator": 40,
+        "fraction": 0.35
+      },
+      "timeout": {
+        "numerator": 24,
+        "denominator": 40,
+        "fraction": 0.6
+      },
+      "engineering_error": {
+        "numerator": 0,
+        "denominator": 40,
+        "fraction": 0.0
+      },
+      "first_target_in_basket": {
+        "numerator": 10,
+        "denominator": 40,
+        "fraction": 0.25
+      },
+      "never_detached": {
+        "numerator": 14,
+        "denominator": 40,
+        "fraction": 0.35
+      },
+      "near_miss": {
+        "numerator": 9,
+        "denominator": 40,
+        "fraction": 0.225
+      },
+      "wrist_over_limit": {
+        "numerator": 18,
+        "denominator": 40,
+        "fraction": 0.45
+      },
+      "wrist_deviation_executed": {
+        "numerator": 24,
+        "denominator": 40,
+        "fraction": 0.6
+      },
+      "wrist_deviation_proposed": {
+        "numerator": 24,
+        "denominator": 40,
+        "fraction": 0.6
+      },
+      "freeze_200": {
+        "numerator": 4,
+        "denominator": 40,
+        "fraction": 0.1
+      },
+      "count_exact": {
+        "numerator": 1,
+        "denominator": 20,
+        "fraction": 0.05
+      },
+      "correct_in_basket": {
+        "total_fruits": 15,
+        "episodes_with_data": 40
+      },
+      "wrong_in_basket": {
+        "total_fruits": 0,
+        "episodes_with_data": 40
+      },
+      "freeze_200_basket_unsuccessful": {
+        "numerator": 3,
+        "denominator": 11,
+        "fraction": 0.2727272727272727
+      },
+      "start_idle": {
+        "median": 78.5,
+        "observed": 40,
+        "right_censored": 0
+      },
+      "leave_home_step": {
+        "median": 138.0,
+        "observed": 40,
+        "episodes_with_data": 40,
+        "never_left_home": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "median_convention": "observed crossings only; never-left episodes counted separately"
+      },
+      "post_release_resume_steps": {
+        "median": 214.5,
+        "events": 15,
+        "observed_resumptions": 12,
+        "unresumed_at_end": {
+          "numerator": 3,
+          "denominator": 15,
+          "fraction": 0.2
+        },
+        "episodes_with_entries": {
+          "numerator": 13,
+          "denominator": 40,
+          "fraction": 0.325
+        },
+        "median_convention": "observed resumptions only; right-censored events counted separately"
+      },
+      "deviation_onset_context": {
+        "carrying_fruit": {
+          "numerator": 2,
+          "denominator": 24,
+          "fraction": 0.08333333333333333
+        },
+        "closed_empty": {
+          "numerator": 2,
+          "denominator": 24,
+          "fraction": 0.08333333333333333
+        },
+        "open_after_basket": {
+          "numerator": 7,
+          "denominator": 24,
+          "fraction": 0.2916666666666667
+        },
+        "open_before_first_detach": {
+          "numerator": 13,
+          "denominator": 24,
+          "fraction": 0.5416666666666666
+        }
+      },
+      "guard_clip_rate": {
+        "any_joint": {
+          "numerator": 0,
+          "denominator": 37477,
+          "fraction": 0.0
+        },
+        "per_joint": [
+          {
+            "numerator": 0,
+            "denominator": 37477,
+            "fraction": 0.0
+          },
+          {
+            "numerator": 0,
+            "denominator": 37477,
+            "fraction": 0.0
+          },
+          {
+            "numerator": 0,
+            "denominator": 37477,
+            "fraction": 0.0
+          },
+          {
+            "numerator": 0,
+            "denominator": 37477,
+            "fraction": 0.0
+          },
+          {
+            "numerator": 0,
+            "denominator": 37477,
+            "fraction": 0.0
+          },
+          {
+            "numerator": 0,
+            "denominator": 37477,
+            "fraction": 0.0
+          },
+          {
+            "numerator": 0,
+            "denominator": 37477,
+            "fraction": 0.0
+          }
+        ]
+      }
+    },
+    "by_task": {
+      "FruitCount": {
+        "episodes": 20,
+        "success": {
+          "numerator": 1,
+          "denominator": 20,
+          "fraction": 0.05
+        },
+        "fail": {
+          "numerator": 7,
+          "denominator": 20,
+          "fraction": 0.35
+        },
+        "timeout": {
+          "numerator": 12,
+          "denominator": 20,
+          "fraction": 0.6
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 20,
+          "fraction": 0.0
+        },
+        "first_target_in_basket": {
+          "numerator": 6,
+          "denominator": 20,
+          "fraction": 0.3
+        },
+        "never_detached": {
+          "numerator": 9,
+          "denominator": 20,
+          "fraction": 0.45
+        },
+        "near_miss": {
+          "numerator": 7,
+          "denominator": 20,
+          "fraction": 0.35
+        },
+        "wrist_over_limit": {
+          "numerator": 8,
+          "denominator": 20,
+          "fraction": 0.4
+        },
+        "wrist_deviation_executed": {
+          "numerator": 11,
+          "denominator": 20,
+          "fraction": 0.55
+        },
+        "wrist_deviation_proposed": {
+          "numerator": 11,
+          "denominator": 20,
+          "fraction": 0.55
+        },
+        "freeze_200": {
+          "numerator": 1,
+          "denominator": 20,
+          "fraction": 0.05
+        },
+        "count_exact": {
+          "numerator": 1,
+          "denominator": 20,
+          "fraction": 0.05
+        },
+        "correct_in_basket": {
+          "total_fruits": 7,
+          "episodes_with_data": 20
+        },
+        "wrong_in_basket": {
+          "total_fruits": 0,
+          "episodes_with_data": 20
+        },
+        "freeze_200_basket_unsuccessful": {
+          "numerator": 0,
+          "denominator": 5,
+          "fraction": 0.0
+        },
+        "start_idle": {
+          "median": 73.0,
+          "observed": 20,
+          "right_censored": 0
+        },
+        "leave_home_step": {
+          "median": 139.5,
+          "observed": 20,
+          "episodes_with_data": 20,
+          "never_left_home": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "median_convention": "observed crossings only; never-left episodes counted separately"
+        },
+        "post_release_resume_steps": {
+          "median": 214.5,
+          "events": 7,
+          "observed_resumptions": 6,
+          "unresumed_at_end": {
+            "numerator": 1,
+            "denominator": 7,
+            "fraction": 0.14285714285714285
+          },
+          "episodes_with_entries": {
+            "numerator": 6,
+            "denominator": 20,
+            "fraction": 0.3
+          },
+          "median_convention": "observed resumptions only; right-censored events counted separately"
+        },
+        "deviation_onset_context": {
+          "carrying_fruit": {
+            "numerator": 0,
+            "denominator": 11,
+            "fraction": 0.0
+          },
+          "closed_empty": {
+            "numerator": 1,
+            "denominator": 11,
+            "fraction": 0.09090909090909091
+          },
+          "open_after_basket": {
+            "numerator": 2,
+            "denominator": 11,
+            "fraction": 0.18181818181818182
+          },
+          "open_before_first_detach": {
+            "numerator": 8,
+            "denominator": 11,
+            "fraction": 0.7272727272727273
+          }
+        },
+        "guard_clip_rate": {
+          "any_joint": {
+            "numerator": 0,
+            "denominator": 18861,
+            "fraction": 0.0
+          },
+          "per_joint": [
+            {
+              "numerator": 0,
+              "denominator": 18861,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18861,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18861,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18861,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18861,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18861,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18861,
+              "fraction": 0.0
+            }
+          ]
+        }
+      },
+      "FruitOccludedRipe": {
+        "episodes": 20,
+        "success": {
+          "numerator": 1,
+          "denominator": 20,
+          "fraction": 0.05
+        },
+        "fail": {
+          "numerator": 7,
+          "denominator": 20,
+          "fraction": 0.35
+        },
+        "timeout": {
+          "numerator": 12,
+          "denominator": 20,
+          "fraction": 0.6
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 20,
+          "fraction": 0.0
+        },
+        "first_target_in_basket": {
+          "numerator": 4,
+          "denominator": 20,
+          "fraction": 0.2
+        },
+        "never_detached": {
+          "numerator": 5,
+          "denominator": 20,
+          "fraction": 0.25
+        },
+        "near_miss": {
+          "numerator": 2,
+          "denominator": 20,
+          "fraction": 0.1
+        },
+        "wrist_over_limit": {
+          "numerator": 10,
+          "denominator": 20,
+          "fraction": 0.5
+        },
+        "wrist_deviation_executed": {
+          "numerator": 13,
+          "denominator": 20,
+          "fraction": 0.65
+        },
+        "wrist_deviation_proposed": {
+          "numerator": 13,
+          "denominator": 20,
+          "fraction": 0.65
+        },
+        "freeze_200": {
+          "numerator": 3,
+          "denominator": 20,
+          "fraction": 0.15
+        },
+        "count_exact": {
+          "numerator": 0,
+          "denominator": 0,
+          "fraction": null
+        },
+        "correct_in_basket": {
+          "total_fruits": 8,
+          "episodes_with_data": 20
+        },
+        "wrong_in_basket": {
+          "total_fruits": 0,
+          "episodes_with_data": 20
+        },
+        "freeze_200_basket_unsuccessful": {
+          "numerator": 3,
+          "denominator": 6,
+          "fraction": 0.5
+        },
+        "start_idle": {
+          "median": 80.0,
+          "observed": 20,
+          "right_censored": 0
+        },
+        "leave_home_step": {
+          "median": 137.0,
+          "observed": 20,
+          "episodes_with_data": 20,
+          "never_left_home": {
+            "numerator": 0,
+            "denominator": 20,
+            "fraction": 0.0
+          },
+          "median_convention": "observed crossings only; never-left episodes counted separately"
+        },
+        "post_release_resume_steps": {
+          "median": 465.0,
+          "events": 8,
+          "observed_resumptions": 6,
+          "unresumed_at_end": {
+            "numerator": 2,
+            "denominator": 8,
+            "fraction": 0.25
+          },
+          "episodes_with_entries": {
+            "numerator": 7,
+            "denominator": 20,
+            "fraction": 0.35
+          },
+          "median_convention": "observed resumptions only; right-censored events counted separately"
+        },
+        "deviation_onset_context": {
+          "carrying_fruit": {
+            "numerator": 2,
+            "denominator": 13,
+            "fraction": 0.15384615384615385
+          },
+          "closed_empty": {
+            "numerator": 1,
+            "denominator": 13,
+            "fraction": 0.07692307692307693
+          },
+          "open_after_basket": {
+            "numerator": 5,
+            "denominator": 13,
+            "fraction": 0.38461538461538464
+          },
+          "open_before_first_detach": {
+            "numerator": 5,
+            "denominator": 13,
+            "fraction": 0.38461538461538464
+          }
+        },
+        "guard_clip_rate": {
+          "any_joint": {
+            "numerator": 0,
+            "denominator": 18616,
+            "fraction": 0.0
+          },
+          "per_joint": [
+            {
+              "numerator": 0,
+              "denominator": 18616,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18616,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18616,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18616,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18616,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18616,
+              "fraction": 0.0
+            },
+            {
+              "numerator": 0,
+              "denominator": 18616,
+              "fraction": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "failed_runs": []
+  },
+  "guard_choice": {
+    "guard": "v2",
+    "expert_clip_validation": {
+      "clipped_steps": 626,
+      "all_steps": 164639,
+      "fraction": 0.003802258274163473,
+      "projection_steps": 55,
+      "passed": true
+    },
+    "guard_memory_audits_passed": true,
+    "fixed_before_G1_utc": "2026-11-03T02:15:35.220200+00:00",
+    "rule": "expert clip<.5%, first basket no lower, wrist deviation strictly lower; no engineering/memory errors",
+    "dev_comparison": {
+      "A0": {
+        "success": {
+          "numerator": 16,
+          "denominator": 40,
+          "fraction": 0.4
+        },
+        "first_target_in_basket": {
+          "numerator": 29,
+          "denominator": 40,
+          "fraction": 0.725
+        },
+        "wrist_deviation_executed": {
+          "numerator": 5,
+          "denominator": 40,
+          "fraction": 0.125
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        }
+      },
+      "v2": {
+        "success": {
+          "numerator": 15,
+          "denominator": 40,
+          "fraction": 0.375
+        },
+        "first_target_in_basket": {
+          "numerator": 29,
+          "denominator": 40,
+          "fraction": 0.725
+        },
+        "wrist_deviation_executed": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        },
+        "engineering_error": {
+          "numerator": 0,
+          "denominator": 40,
+          "fraction": 0.0
+        }
+      }
+    },
+    "dev_summary_sha256": {
+      "A0": "22dd655af8b135aa05e58e03c5c798ebd2eef27b86bd0e053872c3f6d34ad63d",
+      "v2": "7c3f817148bbd5a17ace0c28352154997c1b09d1a4733b9c84587001623a7920"
+    },
+    "note": "Total-task success is reported but is not an additional guard-adoption criterion."
+  },
+  "postprocessing_fix": {
+    "generated_utc": "2026-11-03T02:19:08.594917+00:00",
+    "cause": "Analyzer excluded physical hold frames because they were history-only, while the controls correctly included them.",
+    "fix": "Keep explicitly declared30-step physical prefix in physical time; validate all clocks, flags and fixed holds. Legacy video-demo exclusion is unchanged.",
+    "old_analyzer_sha256": "db1c7d1d376f1b5d8a70c76508ad11fdea5db5a6300f9bfd5a6aba7a65c05351",
+    "new_analyzer_sha256": "b9e4b5229a189ca344ee3e9f5eb2c4bc150ae6811a4ef1fbb8e1fa902c428025",
+    "original_rollout_files_verified_unchanged": 400,
+    "dev_memory_audits_passed": 80,
+    "dev_audited_policy_decisions": 3638,
+    "training_protocol_verified_unchanged": true,
+    "original_failed_analyses": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/analysis_before_physical_prefix_fix_20261103",
+    "no_policy_or_simulator_reruns_for_dev": true,
+    "no_retraining": true
+  },
+  "unit_tests_passed": 52,
+  "G1_started": false,
+  "G1_prepared_plan": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/G1_continuation_plan.json",
+  "next": "Launch continue_fruit_rescue_G1.py --run in the GPU-enabled terminal; reuse checkpoint/dev; evaluate frozen dev220-259 once."
+}

@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-06T13:00:42.504126+00:00",
+  "ready": true,
+  "observation_condition": "count_fixed_shield_v2",
+  "implementation_revision": "visual_records_before_attachment_v1",
+  "source_files_frozen": 76,
+  "old_68_sources_unchanged": true,
+  "builder_tests_passed": true,
+  "old_geometry_suite_reused_without_rerun": true,
+  "geometry_seed_and_thresholds_unchanged": true,
+  "old_initialization_failure_and_earlier_products_preserved": true,
+  "GPU_available_in_agent_terminal": false,
+  "GPU_work_started": false,
+  "new_R0_cases": 0,
+  "new_data_episodes": 0,
+  "training": false,
+  "stop_after_data": true
+}

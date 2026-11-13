@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "command": [
+    "/media/fulei/fuleivla/robomme_benchmark/.venv/bin/python",
+    "tests/fruit_picking/test_task_v2_r0.py"
+  ],
+  "console": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/R8_default_regression_console.log",
+  "output_tail": "/media/fulei/fuleivla/robomme_benchmark/.venv/lib/python3.11/site-packages/sapien/__init__.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n/media/fulei/fuleivla/robomme_benchmark/.venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find system libvulkan. Fallback to SAPIEN builtin libvulkan.\n  warn(\"Failed to find system libvulkan. Fallback to SAPIEN builtin libvulkan.\")\n/media/fulei/fuleivla/robomme_benchmark/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.\n  import pynvml  # type: ignore[import]\n/root/.config/matplotlib is not a writable directory\nMatplotlib created a temporary cache directory at /tmp/matplotlib-3gfn3pbz because there was an issue with the default path (/root/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.\n.......{'ready': True, 'revision': 8}\n.......\n----------------------------------------------------------------------\nRan 14 tests in 1.250s\n\nOK\n"
+}

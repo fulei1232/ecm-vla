@@ -1,0 +1,178 @@
+\section{Experimental design}
+\label{sec:design}
+
+\subsection{Research questions}
+The experiments are organized around eight research questions. Table~\ref{tab:rq} maps each question to an experiment, the data, the metrics and the contribution it supports. Experiments E1--E6 and E9--E11 analyse the components offline and in perception. E7 and E8 evaluate closed-loop harvesting under the pre-registered protocol of Section~\ref{sec:protocol}.
+\begin{itemize}
+\item[RQ1] Do \bench\ tasks actually require memory, and how strong is the occlusion? (E1)
+\item[RQ2] Can a scalar end-effector-to-fruit distance locate picking events accurately, and how sensitive is detection to its two parameters? (E2)
+\item[RQ3] How robust are event detection and the resulting memory to perception noise, dropouts and bias, and what accuracy must a perception module reach? (E3)
+\item[RQ4] How much event information does uniform memory lose at a fixed budget, does the loss follow the coverage analysis of Section~\ref{sec:coverage}, and how much does \pekm\ retain? (E4)
+\item[RQ5] Can SAM segment fruits and their ripeness reliably, including under partial occlusion, and at what cost? (E5)
+\item[RQ6] Does the full perception chain (RGB-D $\rightarrow$ \fdm\ $\rightarrow$ $\hat d_t$ $\rightarrow$ events $\rightarrow$ memory) reproduce the memory obtained from ground truth, and which components are necessary? (E6)
+\item[RQ7] Does event memory improve closed-loop harvesting, and is the gain due to event information rather than to changing frames? (E7, E8)
+\item[RQ8] Where do end-to-end harvesting policies fail in closed loop, and does DART-H address it? How costly is the approach at run time? (E9, E11)
+\end{itemize}
+
+\begin{table}[t]
+\centering
+\caption{Experiment map. C1--C5 refer to the contributions in Section~\ref{sec:intro}. GT: simulator ground truth.}
+\label{tab:rq}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{p{0.7cm}p{2.8cm}p{3.2cm}p{3.6cm}p{0.9cm}}
+\toprule
+Exp. & Purpose & Data & Main metrics & Contr.\\
+\midrule
+E1 & Benchmark statistics & 640 demonstrations (all splits) & Steps, picks, occlusion ratio, phase durations & C1\\
+E2 & Event detection, parameter sensitivity & Train 200 (selection), val 199 (report), DART-H 200 & Event P/R/F1, count exact rate, keyframe timing & C2\\
+E3 & Robustness to perception error & Val 199; 5 noise seeds per level & Event F1, count exact rate, memory Jaccard, keyframe recall & C2, C3\\
+E4 & Memory information retention; coverage model & Val 199--200; 5318 decisions; 7841--7884 decision--pick pairs & Event coverage, count recoverability, recency coverage, temporal gap; predicted vs measured coverage by decision time & C2\\
+E5 & Fruit segmentation and ripeness & 8644 rendered images with GT instance masks (val 0--49); 3 illumination shifts & Instance P/R/F1@0.5, IoU, ripeness accuracy, recall by visibility, latency, illumination robustness & C3\\
+E6 & Perception-to-memory chain & Val 199 front RGB-D + proprioception (no GT) & Anchor recall, localization error, distance error, event F1, memory agreement & C3\\
+E7 & Closed-loop harvesting & Val 50--99 $\times$ 3 seeds per task and condition & Success, harvest completion, wrong/over-pick, drop rate, steps & C2, C5\\
+E8 & Ablations and counterfactual controls & As E7 (test-time variants) & Paired differences to EV & C2, C3, C5\\
+E9 & Open- vs closed-loop error; DART-H & 10 episodes per set (open loop); E7 (closed loop) & TCP error by horizon, gripper agreement; C0 vs K0 success & C4\\
+E10 & Generalization and supporting evidence & Unseen layouts; general memory benchmark & Success by quota; memory ablations & C2\\
+E11 & Run-time cost & CPU / L20 GPU & Selection and segmentation latency, memory footprint & C2, C3\\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\end{table}
+
+\subsection{Data and splits}
+\label{sec:splits}
+Training, validation and test seeds are drawn from disjoint seed ranges (base seeds 100000, 200000 and 300000), so every evaluated layout is unseen during training. Table~\ref{tab:dataset} lists the splits. All parameters of the method (Table~\ref{tab:provenance}) were fixed on training data or by physical reasoning, never on validation data. Validation episodes 0--49 were used in earlier development evaluations. The formal closed-loop evaluation (E7, E8) therefore uses validation episodes 50--99, which had not been used for any evaluation or tuning. A separate development set (episodes 200--219 of the training seed range) is used only for a go/no-go gate before the formal runs. The perception set for E5 replays validation episodes 0--49 of both tasks and renders front and wrist RGB-D images with ground-truth instance segmentation every 10th frame (4322 time steps, 8644 images). Replay reproduces the recorded episodes, which we verified by comparing the rendered and recorded RGB. HSV thresholds and SAM prompt settings were calibrated on 20 rendered training episodes. The offline analyses on validation demonstrations use 199 of the 200 episodes. The ground-truth file of one episode was unreadable and was regenerated afterwards from its recorded seed, with identical joint trajectories. The coverage-by-time analysis, run after the regeneration, uses all 200 episodes.
+
+\subsection{Compared methods}
+\label{sec:baselines}
+\paragraph{Memory selection (E4, E7, E8)} All memories have exactly $B$ frames.
+\begin{itemize}
+\item \textbf{Uniform (U, K0)}: the base model's even sampling over frames 0 to $t$, identical to \pekm\ with $k=0$.
+\item \textbf{Recent}: the last $B$ frames (sliding window).
+\item \textbf{Random}: frame 0, frame $t$ and $B-2$ random frames (5 seeds).
+\item \textbf{\pekm\ (K$k$)}: $k \in \{2, 4, 8, 12\}$ offline; $k \in \{4, 8\}$ trained for closed loop.
+\item \textbf{PEKM-S}: the soft variant, $\alpha \in \{0.25, 0.5, 1.0\}$.
+\end{itemize}
+
+\paragraph{Counterfactual controls (E8)} A change of memory content can affect a policy simply because the frames are different, whatever information they carry. To separate the two effects, each event memory (EV) is compared at test time with three controls that keep the budget, the first frame and the recent window:
+\begin{itemize}
+\item \textbf{EVU}: the same sampler driven by a uniform density, i.e.\ the procedure without event information.
+\item \textbf{EVR}: uniform memory in which exactly the frames that EV dropped are replaced by the same number of random non-uniform frames.
+\item \textbf{EVA}: the anti-event selection, driven by $1-w_f$ (frames far from fruits).
+\end{itemize}
+Only EV$-$EVU and EV$-$EVR differences that favour EV, with EVA no better than U, are interpreted as an effect of event information.
+
+\paragraph{Event detectors (E2, E3, E6)} Plain thresholding (Section~\ref{sec:events}), a causal 5-frame median filter followed by thresholding (median5), and hysteresis with a 3-frame minimum run.
+
+\paragraph{Fruit segmentation (E5)}
+\begin{itemize}
+\item \textbf{HSV}: colour thresholds and connected components, a traditional baseline.
+\item \textbf{SAM-AUTO}: automatic SAM masks filtered by colour and compactness, i.e.\ zero-shot SAM without prompts (ViT-B and ViT-H, every 5th frame).
+\item \textbf{\fdm}: colour-prompted SAM with ViT-B, ViT-L and ViT-H backbones.
+\item \textbf{SAM-GTBOX}: SAM prompted with the ground-truth box, an upper bound on mask quality given a correct prompt.
+\end{itemize}
+
+\paragraph{Perception chain (E6)}
+\begin{itemize}
+\item \textbf{GT}: the simulator distance, an upper bound.
+\item \textbf{\fdm}: frame-0 anchors with depth and grasp evidence.
+\item \textbf{\fdm\ + noisy depth}: depth noise $\sigma(z) = 1~\mathrm{mm} + 2.5~\mathrm{mm}\cdot z^2$ ($z$ in m) and 2\% missing pixels, typical of consumer RGB-D cameras.
+\item \textbf{Depth-only}: no grasp evidence.
+\item \textbf{Post-gust anchors}: anchors built at frame 29, after the wind gust, i.e.\ without spatial memory acquired before occlusion.
+\item \textbf{Per-frame}: no anchors; the current frame's colour detections are back-projected, and an invisible fruit is unknown.
+\end{itemize}
+
+\paragraph{Training data (E9)} C0 is trained on clean demonstrations only and compared with K0, trained on clean plus DART-H demonstrations. Both use uniform memory and identical settings.
+
+\subsection{Metrics}
+\label{sec:metrics}
+\paragraph{Closed-loop harvesting (E7, E8)}
+\begin{itemize}
+\item \textbf{Success rate}, the primary metric, with the task-specific success conditions of Section~\ref{sec:tasks}.
+\item Process metrics:
+  \begin{itemize}
+  \item \textbf{harvest completion}: fruits correctly in the basket divided by the target number;
+  \item \textbf{wrong-pick rate}: episodes with an unripe fruit in the basket (FruitOccludedRipe);
+  \item \textbf{over-pick rate}: episodes with more than $N$ fruits in the basket (FruitCount);
+  \item \textbf{drop rate}: episodes in which a fruit is dropped outside the basket;
+  \item \textbf{steps} to completion and steps per pick.
+  \end{itemize}
+\item \textbf{Engineering-error rate}: episodes terminated by infrastructure faults, reported separately and not counted as policy failures.
+\end{itemize}
+
+\paragraph{Events (E2, E3, E6)} A detected event $[t_s, t^{\mathrm{r}}]$ is matched one-to-one, in time order, to a ground-truth detachment (the first frame at which the fruit is no longer attached) if the detachment falls within $[t_s-3, t^{\mathrm{r}}+3]$. We report:
+\begin{itemize}
+\item precision, recall and F1;
+\item the \emph{count exact rate}, the fraction of episodes in which the number of detected events equals the number of picks;
+\item the contact lead and release error, in frames relative to detachment.
+\end{itemize}
+
+\paragraph{Memory (E3, E4, E6)} Memories are evaluated at every decision point (every 16 frames). A completed pick is \emph{covered} if the memory holds a frame within $\pm 3$ frames of its contact or release keyframe. We report:
+\begin{itemize}
+\item \textbf{event coverage}: the fraction of completed picks that are covered;
+\item \textbf{run coverage}: at least one frame inside the pick's near run;
+\item \textbf{count recoverability}: the fraction of decisions at which every completed pick is covered, i.e.\ the memory suffices in principle to count the picks;
+\item \textbf{recency coverage}: coverage of the last, second-last and third-last pick;
+\item the near-frame fraction and the median gap between memory frames, as the cost in temporal coverage;
+\item for perturbed or perceived signals, the Jaccard similarity to the GT memory and the recall of GT keyframes within $\pm3$ frames.
+\end{itemize}
+
+\paragraph{Perception (E5, E6)}
+\begin{itemize}
+\item Instance precision, recall and F1 at IoU $\ge 0.5$. Fruits with fewer than 20 (front) or 60 (wrist) visible pixels are ignore regions.
+\item Mean IoU of matched instances, and ripeness accuracy of matched instances.
+\item Recall stratified by the visible fraction of the fruit ($>$75\%, 25--75\%, $<$25\%), and latency per image on an L20 GPU.
+\item Robustness to illumination: every third frame is re-rendered photometrically as overcast/dusk, direct sun and warm low sun, with the colour thresholds kept as calibrated.
+\item For anchors: recall and precision against the true fruit positions at frame 0 (5~cm gate), median and 90th-percentile localization error, ripeness accuracy, and the fraction of leaf-hidden ripe fruits that have an anchor.
+\item For distances: the error of $\hat d_t$ in the near range ($d_t \le 10$~cm).
+\end{itemize}
+
+\subsection{Closed-loop evaluation protocol}
+\label{sec:protocol}
+The closed-loop protocol was written and sealed (SHA-256 digest recorded) before the formal runs. The first completed run is the result, without re-runs or selection.
+\begin{itemize}
+\item \textbf{Episodes and seeds.} Validation episodes 50--99 of each task are evaluated with three policy sampling seeds (7, 8, 9), giving 150 trials per task and condition. A decision is made every 16 steps, and an episode ends at success, failure or 1300 steps.
+\item \textbf{Conditions.} K0, K4 and K8 (uniform and \pekm, all trained on clean plus DART-H data) and C0 (uniform, clean data only).
+\item \textbf{Pairing.} For each episode and seed, all conditions run in one block with the same environment seed and the same initial state, in randomized order, on policy servers whose identity is logged. Each server holds a fixed group of conditions so that their checkpoints fit in GPU memory.
+\item \textbf{Validity gates.} A run is valid only if:
+  \begin{itemize}
+  \item engineering errors are at most 2\% of trials;
+  \item every block is complete;
+  \item a per-decision audit confirms that the frame indices fed to the model equal those recomputed offline by the declared selection rule from the logged signal.
+  \end{itemize}
+\item \textbf{Development gate.} Before the formal run, K0 is evaluated on the development set. The formal evaluation proceeds only if its success rate exceeds 5\% and engineering errors are at most 2 episodes, so a broken pipeline cannot consume the validation episodes.
+\end{itemize}
+
+\subsection{Statistical analysis}
+\label{sec:stats}
+Differences between conditions are estimated as paired differences in success rate. Confidence intervals come from a cluster bootstrap that resamples episodes and keeps all seeds and conditions of an episode together (20{,}000 resamples, fixed random seed). Primary contrasts are K4$-$K0 and K8$-$K0 per task, and the family of primary tests is corrected by the Holm method \citep{holm1979simple}. We report 95\% confidence intervals for differences. A difference is called \emph{equivalent} if its 90\% confidence interval lies within $\pm\delta$ with $\delta=12$ percentage points (two one-sided tests, \citealp{schuirmann1987tost}). Secondary contrasts (DART-H: K0$-$C0; counterfactual controls) are reported with unadjusted intervals and labelled as secondary. Offline experiments (E2--E6) are deterministic given the data, except for noise and random baselines, which use 5 seeds; we report means over seeds.
+
+\subsection{Hyperparameter provenance}
+To prevent tuning on evaluation data, every parameter was fixed before the formal evaluation, either on training data or from physical or architectural considerations (Table~\ref{tab:provenance}).
+
+\begin{table}[t]
+\centering
+\caption{Provenance of all method parameters. No parameter was tuned on validation or test data.}
+\label{tab:provenance}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{p{4.2cm}p{2.6cm}p{5.4cm}}
+\toprule
+Parameter & Value & Source\\
+\midrule
+Memory budget $B$ & 16 frames & Fine-tuning configuration of the base model\\
+Keyframe cap $k$ & 4, 8 & Training-set event counts (at most 3 / 5 picks per episode)\\
+Event radius $r$, tolerance tol & 3 cm, 5 mm & Training-set sensitivity (E2); fruit radius 2.5--2.9 cm\\
+Hysteresis exit, minimum run & $1.5r$, 3 frames & Fixed a priori\\
+Coverage window & $\pm3$ frames & Fixed a priori (matching window of E2)\\
+PEKM-S $\tau_d$, recent slots & 5 cm, 4 & Fixed a priori\\
+DART-H $\sigma$, $\tau$, phase scales & 0.04 rad, 10, (1, 0.5, 1, 1) & Calibration on training generation: TCP displacement $\approx$2.5 cm\\
+HSV thresholds & see text & Pixel F1 on 20 rendered training episodes\\
+SAM prompt (box pad, point) & 2 px, centroid & Instance F1 on rendered training episodes\\
+Vacancy / occlusion margins & 5 cm / 2 cm, 3 frames & Physical scale (fruit diameter $\approx$5 cm)\\
+Grasp cue & 2 frames, within $r$ & Gripper geometry (empty-closed vs open)\\
+Training (steps, batch, LR, EMA) & 12k, 64, $2.5\times10^{-5}$, 0.999 & Base-model fine-tuning recipe, unchanged\\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\end{table}
+
+\subsection{Implementation}
+The simulation uses ManiSkill3 \citep{tao2025maniskill3} with SAPIEN rendering and mplib \citep{mplib} motion planning. The policy is implemented in JAX on the openpi code base \citep{black2024pi0}, and SAM in PyTorch with the official checkpoints. Experiments ran on a server with eight NVIDIA L20 (48~GB) GPUs. Each memory condition is trained on four GPUs. In closed-loop evaluation, policy servers run on GPUs separate from the simulators.

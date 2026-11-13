@@ -1,0 +1,346 @@
+\begin{thebibliography}{56}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\doi{\begingroup \urlstyle{same}\Url}
+  \def\cstr{\begingroup \urlstyle{same}\Url}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \def\cstr#1{\href{https://cstr.cn/#1}{\nolinkurl{#1}}}
+\fi
+
+\bibitem[Bac et~al.(2014)Bac，van Henten，Hemming，and Edan]{bac2014harvesting}
+Bac C~W，van Henten E~J，Hemming J，et~al.
+\newblock Harvesting robots for high-value crops：state-of-the-art review and challenges ahead\allowbreak[J/OL].
+\newblock Journal of Field Robotics，2014，31\allowbreak （6）：888-911.
+\newblock DOI:\doi{10.1002/rob.21525}.
+
+\bibitem[Kootstra et~al.(2021)Kootstra，Wang，Blok，Hemming，and van Henten]{kootstra2021selective}
+Kootstra G，Wang Xin，Blok P~M，et~al.
+\newblock Selective harvesting robotics：current research，trends，and future directions\allowbreak[J/OL].
+\newblock Current Robotics Reports，2021，2：95-104.
+\newblock DOI:\doi{10.1007/s43154-020-00034-1}.
+
+\bibitem[Zhou et~al.(2022)Zhou，Wang，Au，Kang，and Chen]{zhou2022intelligent}
+Zhou Hongyu，Wang Xing，Au W，et~al.
+\newblock Intelligent robots for fruit harvesting：recent developments and future challenges\allowbreak[J/OL].
+\newblock Precision Agriculture，2022，23：1856-1907.
+\newblock DOI:\doi{10.1007/s11119-022-09913-3}.
+
+\bibitem[Arad et~al.(2020)Arad，Balendonck，Barth，Ben-Shahar，Edan，Hellstr{\"o}m，Hemming，Kurtser，Ringdahl，Tielen，and van Tuijl]{arad2020sweetpepper}
+Arad B，Balendonck J，Barth R，et~al.
+\newblock Development of a sweet pepper harvesting robot\allowbreak[J/OL].
+\newblock Journal of Field Robotics，2020，37\allowbreak （6）：1027-1039.
+\newblock DOI:\doi{10.1002/rob.21937}.
+
+\bibitem[Williams et~al.(2019)Williams，Jones，Nejati，Seabright，Bell，Penhall，Barnett，Duke，Scarfe，Ahn，Lim，and MacDonald]{williams2019kiwifruit}
+Williams H A~M，Jones M~H，Nejati M，et~al.
+\newblock Robotic kiwifruit harvesting using machine vision，convolutional neural networks，and robotic arms\allowbreak[J/OL].
+\newblock Biosystems Engineering，2019，181：140-156.
+\newblock DOI:\doi{10.1016/j.biosystemseng.2019.03.007}.
+
+\bibitem[Silwal et~al.(2017)Silwal，Davidson，Karkee，Mo，Zhang，and Lewis]{silwal2017apple}
+Silwal A，Davidson J~R，Karkee M，et~al.
+\newblock Design，integration，and field evaluation of a robotic apple harvester\allowbreak[J/OL].
+\newblock Journal of Field Robotics，2017，34\allowbreak （6）：1140-1159.
+\newblock DOI:\doi{10.1002/rob.21715}.
+
+\bibitem[Brohan et~al.(2023)Brohan，Brown，Carbajal，Chebotar，Dabis，Finn，et~al.]{brohan2023rt1}
+Brohan A，Brown N，Carbajal J，et~al.
+\newblock {RT-1}：robotics transformer for real-world control at scale\allowbreak[C]//\allowbreak
+Robotics：science and systems（RSS）.
+\newblock 2023.
+
+\bibitem[Brohan et~al.(2023)Brohan，Brown，Carbajal，Chebotar，Chen，Choromanski，Ding，Driess，Dubey，Finn，et~al.]{brohan2023rt2}
+Brohan A，Brown N，Carbajal J，et~al.
+\newblock {RT-2}：vision-language-action models transfer web knowledge to robotic control\allowbreak[C]//\allowbreak
+PMLR: v.229\quad Proceedings of the conference on robot learning（CoRL）.
+\newblock 2023.
+
+\bibitem[{Octo Model Team} et~al.(2024){Octo Model Team}，Ghosh，Walke，Pertsch，Black，Mees，et~al.]{octo2024}
+{Octo Model Team}，Ghosh D，Walke H，et~al.
+\newblock Octo：an open-source generalist robot policy\allowbreak[C]//\allowbreak
+Proceedings of robotics：science and systems（RSS）.
+\newblock 2024.
+
+\bibitem[Kim et~al.(2024)Kim，Pertsch，Karamcheti，Xiao，Balakrishna，Nair，Rafailov，Foster，Lam，Sanketi，Vuong，Kollar，Burchfiel，Tedrake，Sadigh，Levine，Liang，and Finn]{kim2024openvla}
+Kim M~J，Pertsch K，Karamcheti S，et~al.
+\newblock {OpenVLA}：an open-source vision-language-action model\allowbreak[C]//\allowbreak
+Proceedings of the conference on robot learning（CoRL）.
+\newblock 2024.
+
+\bibitem[Black et~al.(2024)Black，Brown，Driess，Esmail，Equi，Finn，Fusai，Groom，Hausman，Ichter，et~al.]{black2024pi0}
+Black K，Brown N，Driess D，et~al.
+\newblock $\pi_0$：a vision-language-action flow model for general robot control\allowbreak[PP/OL].
+\newblock arXiv\allowbreak （2024）.
+\newblock \url{https://arxiv.org/abs/2410.24164}.
+
+\bibitem[{Physical Intelligence} et~al.(2025){Physical Intelligence}，Black，Brown，Darpinian，Dhabalia，Driess，et~al.]{pi05_2025}
+{Physical Intelligence}，Black K，Brown N，et~al.
+\newblock $\pi_{0.5}$：a vision-language-action model with open-world generalization\allowbreak[PP/OL].
+\newblock arXiv\allowbreak （2025）.
+\newblock \url{https://arxiv.org/abs/2504.16054}.
+
+\bibitem[Hemming et~al.(2014)Hemming，Ruizendaal，Hofstee，and van Henten]{hemming2014detectability}
+Hemming J，Ruizendaal J，Hofstee J~W，et~al.
+\newblock Fruit detectability analysis for different camera positions in sweet-pepper\allowbreak[J/OL].
+\newblock Sensors，2014，14\allowbreak （4）：6032-6044.
+\newblock DOI:\doi{10.3390/s140406032}.
+
+\bibitem[Vaswani et~al.(2017)Vaswani，Shazeer，Parmar，Uszkoreit，Jones，Gomez，Kaiser，and Polosukhin]{vaswani2017attention}
+Vaswani A，Shazeer N，Parmar N，et~al.
+\newblock Attention is all you need\allowbreak[C]//\allowbreak
+Advances in neural information processing systems（NeurIPS）：v.30.
+\newblock 2017.
+
+\bibitem[Zacks et~al.(2007)Zacks，Speer，Swallow，Braver，and Reynolds]{zacks2007event}
+Zacks J~M，Speer N~K，Swallow K~M，et~al.
+\newblock Event perception：a mind--brain perspective\allowbreak[J/OL].
+\newblock Psychological Bulletin，2007，133\allowbreak （2）：273-293.
+\newblock DOI:\doi{10.1037/0033-2909.133.2.273}.
+
+\bibitem[Tulving(1972)]{tulving1972episodic}
+Tulving E.
+\newblock Episodic and semantic memory\allowbreak[M]//\allowbreak
+Tulving E，Donaldson W.
+\newblock Organization of memory.
+\newblock New York：Academic Press，1972：381-403.
+
+\bibitem[Clayton et~al.(1998)Clayton and Dickinson]{clayton1998episodic}
+Clayton N~S，Dickinson A.
+\newblock Episodic-like memory during cache recovery by scrub jays\allowbreak[J/OL].
+\newblock Nature，1998，395：272-274.
+\newblock DOI:\doi{10.1038/26216}.
+
+\bibitem[Sa et~al.(2016)Sa，Ge，Dayoub，Upcroft，Perez，and McCool]{sa2016deepfruits}
+Sa I，Ge Zongyuan，Dayoub F，et~al.
+\newblock {DeepFruits}：a fruit detection system using deep neural networks\allowbreak[J/OL].
+\newblock Sensors，2016，16\allowbreak （8）：1222.
+\newblock DOI:\doi{10.3390/s16081222}.
+
+\bibitem[Koirala et~al.(2019)Koirala，Walsh，Wang，and McCarthy]{koirala2019review}
+Koirala A，Walsh K~B，Wang Zhenglin，et~al.
+\newblock Deep learning -- method overview and review of use for fruit detection and yield estimation\allowbreak[J/OL].
+\newblock Computers and Electronics in Agriculture，2019，162：219-234.
+\newblock DOI:\doi{10.1016/j.compag.2019.04.017}.
+
+\bibitem[Kamilaris et~al.(2018)Kamilaris and Prenafeta-Bold{\'u}]{kamilaris2018survey}
+Kamilaris A，Prenafeta-Bold{\'u} F~X.
+\newblock Deep learning in agriculture：a survey\allowbreak[J/OL].
+\newblock Computers and Electronics in Agriculture，2018，147：70-90.
+\newblock DOI:\doi{10.1016/j.compag.2018.02.016}.
+
+\bibitem[He et~al.(2017)He，Gkioxari，Doll{\'a}r，and Girshick]{he2017maskrcnn}
+He Kaiming，Gkioxari G，Doll{\'a}r P，et~al.
+\newblock Mask {R-CNN}\allowbreak[C]//\allowbreak
+Proceedings of the IEEE international conference on computer vision（ICCV）.
+\newblock 2017：2961-2969.
+
+\bibitem[Redmon et~al.(2016)Redmon，Divvala，Girshick，and Farhadi]{redmon2016yolo}
+Redmon J，Divvala S，Girshick R，et~al.
+\newblock You only look once：unified，real-time object detection\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition（CVPR）.
+\newblock 2016：779-788.
+
+\bibitem[Kirillov et~al.(2023)Kirillov，Mintun，Ravi，Mao，Rolland，Gustafson，Xiao，Whitehead，Berg，Lo，Doll{\'a}r，and Girshick]{kirillov2023sam}
+Kirillov A，Mintun E，Ravi N，et~al.
+\newblock Segment anything\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF international conference on computer vision（ICCV）.
+\newblock 2023：4015-4026.
+
+\bibitem[Ravi et~al.(2024)Ravi，Gabeur，Hu，Hu，Ryali，Ma，Khedr，R{\"a}dle，Rolland，Gustafson，et~al.]{ravi2024sam2}
+Ravi N，Gabeur V，Hu Yuan-Ting，et~al.
+\newblock {SAM 2}：segment anything in images and videos\allowbreak[PP/OL].
+\newblock arXiv\allowbreak （2024）.
+\newblock \url{https://arxiv.org/abs/2408.00714}.
+
+\bibitem[Gen{\'e}-Mola et~al.(2020)Gen{\'e}-Mola，Sanz-Cortiella，Rosell-Polo，Morros，Ruiz-Hidalgo，Vilaplana，and Gregorio]{gene2020fruit}
+Gen{\'e}-Mola J，Sanz-Cortiella R，Rosell-Polo J~R，et~al.
+\newblock Fruit detection and {3D} location using instance segmentation neural networks and structure-from-motion photogrammetry\allowbreak[J/OL].
+\newblock Computers and Electronics in Agriculture，2020，169：105165.
+\newblock DOI:\doi{10.1016/j.compag.2019.105165}.
+
+\bibitem[Kang et~al.(2020)Kang and Chen]{kang2020apple}
+Kang Hanwen，Chen Chao.
+\newblock Fruit detection，segmentation and {3D} visualisation of environments in apple orchards\allowbreak[J/OL].
+\newblock Computers and Electronics in Agriculture，2020，171：105302.
+\newblock DOI:\doi{10.1016/j.compag.2020.105302}.
+
+\bibitem[Lipman et~al.(2023)Lipman，Chen，Ben-Hamu，Nickel，and Le]{lipman2023flow}
+Lipman Y，Chen R T~Q，Ben-Hamu H，et~al.
+\newblock Flow matching for generative modeling\allowbreak[C]//\allowbreak
+International conference on learning representations（ICLR）.
+\newblock 2023.
+
+\bibitem[Zhao et~al.(2023)Zhao，Kumar，Levine，and Finn]{zhao2023act}
+Zhao T~Z，Kumar V，Levine S，et~al.
+\newblock Learning fine-grained bimanual manipulation with low-cost hardware\allowbreak[C]//\allowbreak
+Proceedings of robotics：science and systems（RSS）.
+\newblock 2023.
+
+\bibitem[Chi et~al.(2023)Chi，Feng，Du，Xu，Cousineau，Burchfiel，and Song]{chi2023diffusion}
+Chi Cheng，Feng Siyuan，Du Yilun，et~al.
+\newblock Diffusion policy：visuomotor policy learning via action diffusion\allowbreak[C]//\allowbreak
+Proceedings of robotics：science and systems（RSS）.
+\newblock 2023.
+
+\bibitem[Shi et~al.(2025)Shi，Xie，Liu，et~al.]{shi2025memoryvla}
+Shi Hao，Xie Bin，Liu Yingfei，et~al.
+\newblock {MemoryVLA}：perceptual-cognitive memory in vision-language-action models for robotic manipulation\allowbreak[PP/OL].
+\newblock arXiv\allowbreak （2025）.
+\newblock \url{https://arxiv.org/abs/2508.19236}.
+
+\bibitem[Fang et~al.(2025)Fang，Grotz，Pumacay，Wang，Fox，Krishna，and Duan]{fang2025sam2act}
+Fang Haoquan，Grotz M，Pumacay W，et~al.
+\newblock {SAM2Act}：integrating visual foundation model with a memory architecture for robotic manipulation\allowbreak[C]//\allowbreak
+International conference on machine learning（ICML）.
+\newblock 2025.
+
+\bibitem[He et~al.(2024)He，Li，Jang，Jia，Cao，Shah，Shrivastava，and Lim]{he2024malmm}
+He Bo，Li Hengduo，Jang Y~K，et~al.
+\newblock {MA-LMM}：memory-augmented large multimodal model for long-term video understanding\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF conference on computer vision and pattern recognition（CVPR）.
+\newblock 2024.
+
+\bibitem[Shridhar et~al.(2022)Shridhar，Manuelli，and Fox]{shridhar2022peract}
+Shridhar M，Manuelli L，Fox D.
+\newblock Perceiver-actor：a multi-task transformer for robotic manipulation\allowbreak[C]//\allowbreak
+PMLR: v.205\quad Proceedings of the conference on robot learning（CoRL）.
+\newblock 2022.
+
+\bibitem[James et~al.(2022)James and Davison]{james2022qattention}
+James S，Davison A~J.
+\newblock Q-attention：enabling efficient learning for vision-based robotic manipulation\allowbreak[J].
+\newblock IEEE Robotics and Automation Letters，2022，7\allowbreak （2）：1612-1619.
+
+\bibitem[Shi et~al.(2023)Shi，Sharma，Zhao，and Finn]{shi2023awe}
+Shi L~X，Sharma A，Zhao T~Z，et~al.
+\newblock Waypoint-based imitation learning for robotic manipulation\allowbreak[C]//\allowbreak
+PMLR: v.229\quad Proceedings of the conference on robot learning（CoRL）.
+\newblock 2023.
+
+\bibitem[Lea et~al.(2017)Lea，Flynn，Vidal，Reiter，and Hager]{lea2017tcn}
+Lea C，Flynn M~D，Vidal R，et~al.
+\newblock Temporal convolutional networks for action segmentation and detection\allowbreak[C]//\allowbreak
+IEEE conference on computer vision and pattern recognition（CVPR）.
+\newblock 2017：156-165.
+
+\bibitem[Bai et~al.(2018)Bai，Kolter，and Koltun]{bai2018tcn}
+Bai Shaojie，Kolter J~Z，Koltun V.
+\newblock An empirical evaluation of generic convolutional and recurrent networks for sequence modeling\allowbreak[PP/OL].
+\newblock arXiv\allowbreak （2018）.
+\newblock \url{https://arxiv.org/abs/1803.01271}.
+
+\bibitem[Kim et~al.(2024)Kim，Choi，Lee，and Rhee]{kim2024imagegrid}
+Kim W，Choi C，Lee W，et~al.
+\newblock An image grid can be worth a video：zero-shot video question answering using a {VLM}\allowbreak[PP/OL].
+\newblock arXiv\allowbreak （2024）.
+\newblock \url{https://arxiv.org/abs/2403.18406}.
+
+\bibitem[Tobin et~al.(2017)Tobin，Fong，Ray，Schneider，Zaremba，and Abbeel]{tobin2017domain}
+Tobin J，Fong R，Ray A，et~al.
+\newblock Domain randomization for transferring deep neural networks from simulation to the real world\allowbreak[C]//\allowbreak
+IEEE/RSJ international conference on intelligent robots and systems（IROS）.
+\newblock 2017：23-30.
+
+\bibitem[Zhao et~al.(2020)Zhao，Queralta，and Westerlund]{zhao2020sim2real}
+Zhao Wenshuai，Queralta J~P，Westerlund T.
+\newblock Sim-to-real transfer in deep reinforcement learning for robotics：a survey\allowbreak[C]//\allowbreak
+IEEE symposium series on computational intelligence（SSCI）.
+\newblock 2020：737-744.
+
+\bibitem[Lee(2013)]{lee2013pseudo}
+Lee D-H.
+\newblock Pseudo-label：the simple and efficient semi-supervised learning method for deep neural networks\allowbreak[C]//\allowbreak
+ICML workshop on challenges in representation learning.
+\newblock 2013.
+
+\bibitem[Xie et~al.(2020)Xie，Luong，Hovy，and Le]{xie2020noisy}
+Xie Qizhe，Luong M-T，Hovy E，et~al.
+\newblock Self-training with noisy student improves {ImageNet} classification\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF conference on computer vision and pattern recognition.
+\newblock 2020：10687-10698.
+
+\bibitem[Andrychowicz et~al.(2017)Andrychowicz，Wolski，Ray，Schneider，Fong，Welinder，McGrew，Tobin，Abbeel，and Zaremba]{andrychowicz2017her}
+Andrychowicz M，Wolski F，Ray A，et~al.
+\newblock Hindsight experience replay\allowbreak[C]//\allowbreak
+Advances in neural information processing systems.
+\newblock 2017：5048-5058.
+
+\bibitem[Geirhos et~al.(2020)Geirhos，Jacobsen，Michaelis，Zemel，Brendel，Bethge，and Wichmann]{geirhos2020shortcut}
+Geirhos R，Jacobsen J-H，Michaelis C，et~al.
+\newblock Shortcut learning in deep neural networks\allowbreak[J].
+\newblock Nature Machine Intelligence，2020，2\allowbreak （11）：665-673.
+
+\bibitem[Holm(1979)]{holm1979simple}
+Holm S.
+\newblock A simple sequentially rejective multiple test procedure\allowbreak[J].
+\newblock Scandinavian Journal of Statistics，1979，6\allowbreak （2）：65-70.
+
+\bibitem[Schuirmann(1987)]{schuirmann1987tost}
+Schuirmann D~J.
+\newblock A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability\allowbreak[J/OL].
+\newblock Journal of Pharmacokinetics and Biopharmaceutics，1987，15\allowbreak （6）：657-680.
+\newblock DOI:\doi{10.1007/BF01068419}.
+
+\bibitem[Zhai et~al.(2023)Zhai，Mustafa，Kolesnikov，and Beyer]{zhai2023siglip}
+Zhai Xiaohua，Mustafa B，Kolesnikov A，et~al.
+\newblock Sigmoid loss for language image pre-training\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF international conference on computer vision（ICCV）.
+\newblock 2023：11975-11986.
+
+\bibitem[Beyer et~al.(2024)Beyer，Steiner，Pinto，Kolesnikov，Wang，Salz，Neumann，Alabdulmohsin，Tschannen，Bugliarello，et~al.]{beyer2024paligemma}
+Beyer L，Steiner A，Pinto A~S，et~al.
+\newblock {PaliGemma}：a versatile {3B} {VLM} for transfer\allowbreak[PP/OL].
+\newblock arXiv\allowbreak （2024）.
+\newblock \url{https://arxiv.org/abs/2407.07726}.
+
+\bibitem[He et~al.(2016)He，Zhang，Ren，and Sun]{he2016resnet}
+He Kaiming，Zhang Xiangyu，Ren Shaoqing，et~al.
+\newblock Deep residual learning for image recognition\allowbreak[C]//\allowbreak
+IEEE conference on computer vision and pattern recognition（CVPR）.
+\newblock 2016：770-778.
+
+\bibitem[Lin et~al.(2017)Lin，Goyal，Girshick，He，and Doll{\'a}r]{lin2017focal}
+Lin T-Y，Goyal P，Girshick R，et~al.
+\newblock Focal loss for dense object detection\allowbreak[C]//\allowbreak
+IEEE international conference on computer vision（ICCV）.
+\newblock 2017：2980-2988.
+
+\bibitem[{Hao Su Lab}(2024)]{mplib}
+{Hao Su Lab}.
+\newblock {MPlib}：a lightweight motion planning library\allowbreak[EB/OL].
+\newblock \allowbreak （2024）.
+\newblock \url{https://github.com/haosulab/MPlib}.
+
+\bibitem[Laskey et~al.(2017)Laskey，Lee，Fox，Dragan，and Goldberg]{laskey2017dart}
+Laskey M，Lee J，Fox R，et~al.
+\newblock {DART}：noise injection for robust imitation learning\allowbreak[C]//\allowbreak
+PMLR: v.78\quad Proceedings of the conference on robot learning（CoRL）.
+\newblock 2017：143-156.
+
+\bibitem[Ross et~al.(2011)Ross，Gordon，and Bagnell]{ross2011dagger}
+Ross S，Gordon G，Bagnell D.
+\newblock A reduction of imitation learning and structured prediction to no-regret online learning\allowbreak[C]//\allowbreak
+PMLR: v.15\quad Proceedings of the fourteenth international conference on artificial intelligence and statistics（AISTATS）.
+\newblock 2011：627-635.
+
+\bibitem[Tao et~al.(2025)Tao，Xiang，Shukla，Qin，Hinrichsen，Yuan，Bao，Lin，Liu，Chan，et~al.]{tao2025maniskill3}
+Tao S，Xiang Fanbo，Shukla A，et~al.
+\newblock {ManiSkill3}：{GPU} parallelized robotics simulation and rendering for generalizable embodied {AI}\allowbreak[C]//\allowbreak
+Proceedings of robotics：science and systems（RSS）.
+\newblock 2025.
+
+\bibitem[Efron et~al.(1993)Efron and Tibshirani]{efron1993bootstrap}
+Efron B，Tibshirani R~J.
+\newblock An introduction to the bootstrap\allowbreak[M].
+\newblock New York：Chapman \& Hall，1993.
+
+\bibitem[Wilson(1927)]{wilson1927probable}
+Wilson E~B.
+\newblock Probable inference，the law of succession，and statistical inference\allowbreak[J].
+\newblock Journal of the American Statistical Association，1927，22\allowbreak （158）：209-212.
+
+\end{thebibliography}

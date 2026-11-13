@@ -1,0 +1,23 @@
+{
+  "revision": 9,
+  "created_utc": "2026-11-06T06:11:54.005976+00:00",
+  "user_authorization": "修正",
+  "correction": "memory checker run_command now has cwd=POLICY",
+  "source_diff_one_keyword": true,
+  "changed_source_files": [
+    "/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py"
+  ],
+  "all_method_parameters_seed_rules_and_gate_definitions_unchanged": true,
+  "configuration_load_check_passed": true,
+  "old_plan_sha256": "a5c1849da6b43c0d8f2381141e9c36006170ae8a860bc7e8a2111a27c7a34fb7",
+  "new_plan_sha256": "4f0cf2763e68bd5aa3706bd49b9d6699db009290a817d424cde544be2ba694b3",
+  "failed_attempt_archive": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0",
+  "archived_records_bytes_verified": 11,
+  "current_memory_check_attempt": 1,
+  "current_attempt_started": false,
+  "historical_failed_memory_check_attempts": 1,
+  "GPU_tensor_checks": "pending",
+  "new_Count_replays": 0,
+  "training_data_generated": false,
+  "training": false
+}

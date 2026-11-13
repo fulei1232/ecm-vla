@@ -1,0 +1,18 @@
+{
+  "files_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/scripts/analyze_fruit_failure_modes.py": "b9e4b5229a189ca344ee3e9f5eb2c4bc150ae6811a4ef1fbb8e1fa902c428025",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_lowlevel_v2_metrics.py": "48c11b7219b686f89c00d15227ba1da91c8c0281a5a283f3e158fdf46a85221c",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_lowlevel_v2_metrics_r5.py": "917c56975782c295dc45878dcb4983bde0daff1520f5f24d57cb77aafecc96e9",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_lowlevel_v2_statistics.py": "e3d7979da6edfa1b2dc35d1dfe7fe1f2b2eacf168919a861bbcd9276f34fde2c",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_lowlevel_v2_eval_common.py": "d8b7a3ceb581eae602f6c9345447b9d3f0cc6ea9cbe5f235180637add1ae3179",
+    "/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_lowlevel_v2_eval.py": "bfa4fa5c9b9656abde8b2e838667fc21656ddfc98e0c64836151854ab3756d65",
+    "/media/fulei/fuleivla/ecm_vla/scripts/report_fruit_lowlevel_v2_eval.py": "16dc96c9bf1db95472ee659165cdd567546555791877726724f2f817780f61c3",
+    "/media/fulei/fuleivla/ecm_vla/scripts/seal_fruit_lowlevel_v2_eval.py": "3dd288d461360d611db64a189b52ec7896454385ec3f8f79491fd6758f470ba8"
+  },
+  "bootstrap_draws": 10000,
+  "permutation_draws": 100000,
+  "Holm_family_size": 4,
+  "base_stats_seed": 20261103,
+  "classification_revision": 5,
+  "r4_classifier_preserved": true
+}

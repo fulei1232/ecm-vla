@@ -1,0 +1,265 @@
+{
+  "created_utc": "2026-11-06T12:39:16.306183+00:00",
+  "state": {
+    "stage": "Count shield v2/R0/data only",
+    "state": "SHIELD_check_failed",
+    "train_data_generated": false,
+    "training": false,
+    "updated_utc": "2026-11-06T12:39:08.944079+00:00",
+    "instruction_revision": "10+approved_shield_v2",
+    "observation_condition": "count_fixed_shield_v2",
+    "reason": "SHIELD process/check failed exit1: /media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/console.log",
+    "traceback": "Traceback (most recent call last):\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_count_shield_v2.py\", line 119, in main\n    run_command('ep112_diagnostic',[str(SIM_PYTHON),'-u',str(ECM/'scripts/diagnose_fruit_count_shield_v2_ep112.py')],gpu=0)\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_count_shield_v2.py\", line 71, in run_command\n    try:return child_run(command,OUT/'commands'/label,gpu,cpu,cwd)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_count_shield_v2.py\", line 68, in child_run\n    if code:raise RuntimeError(f'SHIELD process/check failed exit{code}: {d}/console.log')\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: SHIELD process/check failed exit1: /media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/console.log\n"
+  },
+  "condition": "count_fixed_shield_v2/occluded_original",
+  "count_R0_replays": 0,
+  "count_R0_target": 350,
+  "cohorts": {
+    "history": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "current": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "initial_current": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "initial_ground": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "clock_onset": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": true,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "clock_onset_k0": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": true,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "clock": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    }
+  },
+  "checks": {
+    "new_tests.json": {
+      "passed": true,
+      "exit_code": 0,
+      "scope": "Only new seam geometry/default-off/old-source preservation/output bindings. Optical ray coverage uses existing records and fixed viewpoint grids; no accepted tensor/simulation test repeated.",
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 3.345s\n\nOK\n"
+    },
+    "optical_geometry_check.json": {
+      "viewpoints": 608,
+      "trajectory_viewpoints": 581,
+      "release_grid_viewpoints": 27,
+      "rays": 893760,
+      "minimum_positive_occluder_separation_mm": 2.0001752743349264,
+      "scope": "All sight directions to sampled basket-decoration surfaces; entire recorded trajectory and +/-3cm xyz release neighborhood. No FOV restriction or new replay."
+    },
+    "approved_reuse.json": {
+      "authority": "User approved correcting lower seam and coplanar surfaces, then continuing the original gated data-only queue",
+      "created_utc": "2026-11-06T12:26:14.415950+00:00",
+      "proof_sha256": {
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/cpu_preflight.json": "228208bc89e506ea68862e9ef2e1ed5d42542630e50654d0d3409f736aa2ca0d",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/R8_information_definition_crosscheck.json": "17a5c2fa7d5ed7f9b310662fa4408e9b655e7883e4a493ad236aa28cc9601981",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/R8_default_regression.json": "a4c4b7483304bbd4bfa548cd08af41dd44495e38423fc188ec67c1f78fc81dbd",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/memory_tensor_checks.json": "ae68c10bb1833df73660025ae07518a9a6083a68a4474bec4634ed17c7199ab9",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/early_start_check.json": "bbd8d6df29ff128b55f88b3f5cdc1412a9ef9be9357345f97f795113c1387e64",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/performance_reassessment_r10.json": "a34e0a0f963f5a27a12e9730564576779ef6a56677a72509c79d45931c6bb415",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/budget_check.json": "19e2142df0e649bcf733a2e8add5c74dc5f91a8a76a1a27afe4dbe812863d3bb"
+      },
+      "unchanged_memory_and_early_start_checks_not_repeated": true,
+      "old_pressure_used_for_budget_only": true,
+      "budget_applicability_requires_zero_new_collision_shapes": true,
+      "basket_physics_and_expert_unchanged": true,
+      "new_visibility_must_be_rechecked": true,
+      "old_R0_results_not_carried_as_new_results": true
+    },
+    "ep112_diagnostic.json": null,
+    "clock_fit.json": null,
+    "information_audit.json": null,
+    "other_checks.json": null,
+    "R0_gate.json": null,
+    "data_phase_timing.json": null,
+    "data_delivery.json": null,
+    "initialization_failure_review.json": {
+      "created_utc": "2026-11-06T12:46:21.060756+00:00",
+      "read_only_review": true,
+      "passed": false,
+      "failure_kind": "engineering_initialization_error",
+      "error": "local pose cannot be modified once attached to component",
+      "source": "fruit_picking/count_shield_v2_env.py:37",
+      "cause": "Attempted to assign RenderShape.local_pose after the shape had been attached to its RenderBodyComponent.",
+      "original_prefix": {
+        "completed": true,
+        "observations": 579,
+        "original_first_visible_step": 578,
+        "hand_basket_pixels_at_578": 1
+      },
+      "new_shield_environment_initialized": false,
+      "new_shield_observation_available": false,
+      "new_full_DART_diagnostic_started": false,
+      "new_R0_cases": 0,
+      "new_data_episodes": 0,
+      "training": false,
+      "new_CPU_geometry_checks_remain_only_offline_checks": true,
+      "diagnostic_process_wall_seconds": 17.483967427164316,
+      "original_68_source_hashes_unchanged": true,
+      "frozen_old_products_preserved": true,
+      "evidence_sha256": {
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/command.json": "fb70e5ec4f9fa181819c124f44fd9a8cabfe3b6281a9a09edc18af22e66500e9",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/process_exit.json": "81b6f5515c90fc2c5a5e2f2956f6095a1504c7f9afe7f3e9a7c4cab40d88df7a",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/commands/ep112_diagnostic/console.log": "d2a041744f68b89d0dd16ae20d1eb92f9eeccabdf8dd0ceaaec8fa60ba8b2f20",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/status.json": "baa45654df70ef4223df4ea5cc7948931cd0e49d01886a8291e38a12770f8f46",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/plan.json": "8765962877266c268020ebc6645a3c96401badaf75f9d3b1cb813d31eea8b449",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_R0_20261106/diagnostics/ep112_original_prefix/physical_and_visibility.jsonl": "9c2de7dd4965c87b21cea6f19ddcc9a16b250c8bc0b21b434c1e7c3623482707"
+      },
+      "proposed_implementation_correction": "Apply the same fixed 2mm decoration offsets to actor-builder visual records before shapes are attached/built. Keep collision records and all geometric parameters unchanged.",
+      "decision": "Stop under approved plan and HANDOFF §17.7/§18.3; no repair or retry performed in this status turn. Await user review."
+    }
+  },
+  "data_progress": {},
+  "old_R10_83_episodes_archived_not_mixed": true,
+  "all_previous_artifacts_unchanged": true,
+  "occluded_R0_not_rerun": true,
+  "training": false,
+  "val150_199_used": false,
+  "cases": [],
+  "decision": "Native shield environment initialization failed on attached-shape local_pose mutation; no new-shield replay or new R0/data started."
+}

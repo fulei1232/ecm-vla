@@ -1,0 +1,10 @@
+{
+  "revision": 9,
+  "stage": "R0",
+  "state": "R9_check_failed",
+  "training": false,
+  "train_data_generated": false,
+  "updated_utc": "2026-11-06T05:56:27.094200+00:00",
+  "reason": "R9 process/check failed exit1: /media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/commands/memory_tensor_checks/console.log",
+  "traceback": "Traceback (most recent call last):\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py\", line 151, in main\n    run_command('memory_tensor_checks',[str(POLICY_PYTHON),'-u',str(ECM/'scripts/check_fruit_r9_memory_tensors.py')],gpu=0)\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py\", line 107, in run_command\n    try:child_run(command,OUT/'commands'/label,gpu,cpu,cwd)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_task_v2_r9.py\", line 105, in child_run\n    if code:raise RuntimeError(f'R9 process/check failed exit{code}: {d}/console.log')\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: R9 process/check failed exit1: /media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r9_20261106/commands/memory_tensor_checks/console.log\n"
+}

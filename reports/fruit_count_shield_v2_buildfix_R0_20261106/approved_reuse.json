@@ -1,0 +1,19 @@
+{
+  "authority": "User explicitly approved fixing the SAPIEN construction-order error and continuing with the same settings",
+  "created_utc": "2026-11-06T12:59:28.188108+00:00",
+  "proof_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/cpu_preflight.json": "228208bc89e506ea68862e9ef2e1ed5d42542630e50654d0d3409f736aa2ca0d",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/R8_information_definition_crosscheck.json": "17a5c2fa7d5ed7f9b310662fa4408e9b655e7883e4a493ad236aa28cc9601981",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/R8_default_regression.json": "a4c4b7483304bbd4bfa548cd08af41dd44495e38423fc188ec67c1f78fc81dbd",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/memory_tensor_checks.json": "ae68c10bb1833df73660025ae07518a9a6083a68a4474bec4634ed17c7199ab9",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/early_start_check.json": "bbd8d6df29ff128b55f88b3f5cdc1412a9ef9be9357345f97f795113c1387e64",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/performance_reassessment_r10.json": "a34e0a0f963f5a27a12e9730564576779ef6a56677a72509c79d45931c6bb415",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/budget_check.json": "19e2142df0e649bcf733a2e8add5c74dc5f91a8a76a1a27afe4dbe812863d3bb"
+  },
+  "unchanged_memory_and_early_start_checks_not_repeated": true,
+  "old_pressure_used_for_budget_only": true,
+  "budget_applicability_requires_zero_new_collision_shapes": true,
+  "basket_physics_and_expert_unchanged": true,
+  "new_visibility_must_be_rechecked": true,
+  "old_R0_results_not_carried_as_new_results": true
+}

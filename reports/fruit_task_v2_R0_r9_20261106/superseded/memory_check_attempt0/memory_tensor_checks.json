@@ -1,0 +1,12 @@
+{
+  "revision": 9,
+  "passed": false,
+  "created_utc": "2026-11-06T05:56:07.969411+00:00",
+  "any_hanging_inference_factory": {
+    "passed": true,
+    "maturity_and_legacy_distance_ignored": true,
+    "inactive_reserve_excluded": true,
+    "recorded_frame_hash_checked": true
+  },
+  "error": "[Errno 2] No such file or directory: '/media/fulei/fuleivla/ecm_vla/src/mme_vla_suite/models/config/robomme/perceptual-framesamp-modul.yaml'"
+}

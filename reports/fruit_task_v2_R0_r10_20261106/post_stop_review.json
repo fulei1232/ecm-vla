@@ -1,0 +1,1742 @@
+{
+  "revision": 10,
+  "created_utc": "2026-11-06T10:41:22.867361+00:00",
+  "read_only_post_stop_analysis": true,
+  "new_rollouts_or_checks": 0,
+  "state": "R10_check_failed",
+  "R0_passed": true,
+  "failure": {
+    "reason": "BASKET_OR_CONTENT_VISIBLE",
+    "details": {
+      "front_camera": {
+        "basket": 0,
+        "basket_fruit": 0,
+        "inactive_reserve": 0,
+        "lamp": 169
+      },
+      "hand_camera": {
+        "basket": 1,
+        "basket_fruit": 0,
+        "inactive_reserve": 0,
+        "lamp": 0
+      }
+    },
+    "step": 578,
+    "task": "count",
+    "purpose": "train_dart",
+    "episode": 112,
+    "attempt": 0,
+    "seed": 4101792,
+    "N": 7,
+    "phase": "carry",
+    "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0"
+  },
+  "data_successful_episodes": 83,
+  "data_target": 400,
+  "accepted_manifests_by_task_and_kind": {
+    "count": {
+      "clean": 82,
+      "dart": 1
+    },
+    "occluded_ripe": {
+      "clean": 0,
+      "dart": 0
+    }
+  },
+  "attempts_started": 92,
+  "attempts_completed_with_validity": 84,
+  "ordinary_task_failures": 1,
+  "consistency_check_failures": 1,
+  "cancelled_after_check_failure": 7,
+  "data_stage_elapsed_seconds_before_stop": 922.6595470309258,
+  "data_stage_completed": false,
+  "feature_build_started": false,
+  "normalization_started": false,
+  "training": false,
+  "partial_timing": {
+    "by_task_and_N": {
+      "count": {
+        "all_attempts": {
+          "2": {
+            "process_wall_seconds": {
+              "n": 10,
+              "mean": 34.78775621317327,
+              "std": 6.771552847689338,
+              "range": [
+                22.590765055269003,
+                44.65654710307717
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 10,
+              "mean": 34.99334718175233,
+              "std": 6.808936357716724,
+              "range": [
+                22.720332473516464,
+                44.931497033685446
+              ]
+            },
+            "physical_steps": {
+              "n": 10,
+              "mean": 659.3,
+              "std": 152.1598172974718,
+              "range": [
+                432,
+                945
+              ]
+            }
+          },
+          "3": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 45.51355130895972,
+              "std": 8.811229103303013,
+              "range": [
+                36.092030078172684,
+                60.984369579702616
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 45.841799543052915,
+              "std": 8.825645601044915,
+              "range": [
+                36.31299564614892,
+                61.30096111446619
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 859.6,
+              "std": 138.7005407343461,
+              "range": [
+                704,
+                1050
+              ]
+            }
+          },
+          "4": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 50.0704080760479,
+              "std": 6.467267506785038,
+              "range": [
+                43.417474400252104,
+                61.34472607821226
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 50.33258702903986,
+              "std": 6.506251547437187,
+              "range": [
+                43.657125893980265,
+                61.68101768195629
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 841.2,
+              "std": 179.70130773035572,
+              "range": [
+                680,
+                1154
+              ]
+            }
+          },
+          "5": {
+            "process_wall_seconds": {
+              "n": 13,
+              "mean": 67.60432478269705,
+              "std": 14.244366290257455,
+              "range": [
+                46.87122279033065,
+                92.27490056678653
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 13,
+              "mean": 67.97279945560373,
+              "std": 14.306044112862187,
+              "range": [
+                47.148803889751434,
+                92.74440212547779
+              ]
+            },
+            "physical_steps": {
+              "n": 13,
+              "mean": 1172.3846153846155,
+              "std": 201.31664246292303,
+              "range": [
+                861,
+                1543
+              ]
+            }
+          },
+          "6": {
+            "process_wall_seconds": {
+              "n": 12,
+              "mean": 73.46683458859722,
+              "std": 9.27139351284623,
+              "range": [
+                56.79559710249305,
+                88.00440085679293
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 12,
+              "mean": 73.84619999552767,
+              "std": 9.32046060929009,
+              "range": [
+                57.075504422187805,
+                88.50146851316094
+              ]
+            },
+            "physical_steps": {
+              "n": 12,
+              "mean": 1190.75,
+              "std": 155.2477187164651,
+              "range": [
+                918,
+                1504
+              ]
+            }
+          },
+          "7": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 79.47530991658569,
+              "std": 11.419716971966716,
+              "range": [
+                67.22300463542342,
+                97.39574697613716
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 79.88047502562404,
+              "std": 11.463933262399564,
+              "range": [
+                67.58889015763998,
+                97.84990759193897
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 1309.2,
+              "std": 174.5066187856495,
+              "range": [
+                1119,
+                1592
+              ]
+            }
+          },
+          "8": {
+            "process_wall_seconds": {
+              "n": 8,
+              "mean": 96.02696114126593,
+              "std": 10.923974689650708,
+              "range": [
+                81.51637996733189,
+                116.85582502558827
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 8,
+              "mean": 96.52047674078494,
+              "std": 10.948805675584916,
+              "range": [
+                82.03951420634985,
+                117.4073128439486
+              ]
+            },
+            "physical_steps": {
+              "n": 8,
+              "mean": 1490.5,
+              "std": 145.6682875577248,
+              "range": [
+                1313,
+                1745
+              ]
+            }
+          },
+          "9": {
+            "process_wall_seconds": {
+              "n": 11,
+              "mean": 113.86260624263774,
+              "std": 10.716876255466367,
+              "range": [
+                99.30105260387063,
+                137.02049458771944
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 11,
+              "mean": 114.44001724503256,
+              "std": 10.747668519183671,
+              "range": [
+                99.85683335736394,
+                137.66488138586283
+              ]
+            },
+            "physical_steps": {
+              "n": 11,
+              "mean": 1715.8181818181818,
+              "std": 135.02310790905935,
+              "range": [
+                1432,
+                1887
+              ]
+            }
+          },
+          "10": {
+            "process_wall_seconds": {
+              "n": 15,
+              "mean": 123.43075660839676,
+              "std": 30.94667426786049,
+              "range": [
+                28.496579371392727,
+                163.7791541852057
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 15,
+              "mean": 124.00648453235627,
+              "std": 31.07558679066017,
+              "range": [
+                28.60887448862195,
+                164.48728290572762
+              ]
+            },
+            "physical_steps": {
+              "n": 15,
+              "mean": 1709.1333333333334,
+              "std": 415.70660594008154,
+              "range": [
+                316,
+                2250
+              ]
+            }
+          }
+        },
+        "accepted": {
+          "2": {
+            "process_wall_seconds": {
+              "n": 10,
+              "mean": 34.78775621317327,
+              "std": 6.771552847689338,
+              "range": [
+                22.590765055269003,
+                44.65654710307717
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 10,
+              "mean": 34.99334718175233,
+              "std": 6.808936357716724,
+              "range": [
+                22.720332473516464,
+                44.931497033685446
+              ]
+            },
+            "physical_steps": {
+              "n": 10,
+              "mean": 659.3,
+              "std": 152.1598172974718,
+              "range": [
+                432,
+                945
+              ]
+            }
+          },
+          "3": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 45.51355130895972,
+              "std": 8.811229103303013,
+              "range": [
+                36.092030078172684,
+                60.984369579702616
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 45.841799543052915,
+              "std": 8.825645601044915,
+              "range": [
+                36.31299564614892,
+                61.30096111446619
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 859.6,
+              "std": 138.7005407343461,
+              "range": [
+                704,
+                1050
+              ]
+            }
+          },
+          "4": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 50.0704080760479,
+              "std": 6.467267506785038,
+              "range": [
+                43.417474400252104,
+                61.34472607821226
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 50.33258702903986,
+              "std": 6.506251547437187,
+              "range": [
+                43.657125893980265,
+                61.68101768195629
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 841.2,
+              "std": 179.70130773035572,
+              "range": [
+                680,
+                1154
+              ]
+            }
+          },
+          "5": {
+            "process_wall_seconds": {
+              "n": 13,
+              "mean": 67.60432478269705,
+              "std": 14.244366290257455,
+              "range": [
+                46.87122279033065,
+                92.27490056678653
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 13,
+              "mean": 67.97279945560373,
+              "std": 14.306044112862187,
+              "range": [
+                47.148803889751434,
+                92.74440212547779
+              ]
+            },
+            "physical_steps": {
+              "n": 13,
+              "mean": 1172.3846153846155,
+              "std": 201.31664246292303,
+              "range": [
+                861,
+                1543
+              ]
+            }
+          },
+          "6": {
+            "process_wall_seconds": {
+              "n": 12,
+              "mean": 73.46683458859722,
+              "std": 9.27139351284623,
+              "range": [
+                56.79559710249305,
+                88.00440085679293
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 12,
+              "mean": 73.84619999552767,
+              "std": 9.32046060929009,
+              "range": [
+                57.075504422187805,
+                88.50146851316094
+              ]
+            },
+            "physical_steps": {
+              "n": 12,
+              "mean": 1190.75,
+              "std": 155.2477187164651,
+              "range": [
+                918,
+                1504
+              ]
+            }
+          },
+          "7": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 79.47530991658569,
+              "std": 11.419716971966716,
+              "range": [
+                67.22300463542342,
+                97.39574697613716
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 79.88047502562404,
+              "std": 11.463933262399564,
+              "range": [
+                67.58889015763998,
+                97.84990759193897
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 1309.2,
+              "std": 174.5066187856495,
+              "range": [
+                1119,
+                1592
+              ]
+            }
+          },
+          "8": {
+            "process_wall_seconds": {
+              "n": 8,
+              "mean": 96.02696114126593,
+              "std": 10.923974689650708,
+              "range": [
+                81.51637996733189,
+                116.85582502558827
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 8,
+              "mean": 96.52047674078494,
+              "std": 10.948805675584916,
+              "range": [
+                82.03951420634985,
+                117.4073128439486
+              ]
+            },
+            "physical_steps": {
+              "n": 8,
+              "mean": 1490.5,
+              "std": 145.6682875577248,
+              "range": [
+                1313,
+                1745
+              ]
+            }
+          },
+          "9": {
+            "process_wall_seconds": {
+              "n": 11,
+              "mean": 113.86260624263774,
+              "std": 10.716876255466367,
+              "range": [
+                99.30105260387063,
+                137.02049458771944
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 11,
+              "mean": 114.44001724503256,
+              "std": 10.747668519183671,
+              "range": [
+                99.85683335736394,
+                137.66488138586283
+              ]
+            },
+            "physical_steps": {
+              "n": 11,
+              "mean": 1715.8181818181818,
+              "std": 135.02310790905935,
+              "range": [
+                1432,
+                1887
+              ]
+            }
+          },
+          "10": {
+            "process_wall_seconds": {
+              "n": 14,
+              "mean": 130.21176926818276,
+              "std": 18.340435144897135,
+              "range": [
+                107.06084644049406,
+                163.7791541852057
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 14,
+              "mean": 130.82059953548014,
+              "std": 18.389879064001146,
+              "range": [
+                107.6003480181098,
+                164.48728290572762
+              ]
+            },
+            "physical_steps": {
+              "n": 14,
+              "mean": 1808.642857142857,
+              "std": 191.37271306568877,
+              "range": [
+                1553,
+                2250
+              ]
+            }
+          }
+        },
+        "clean_accepted": {
+          "2": {
+            "process_wall_seconds": {
+              "n": 9,
+              "mean": 34.9529704372916,
+              "std": 7.118697314536511,
+              "range": [
+                22.590765055269003,
+                44.65654710307717
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 9,
+              "mean": 35.158740282886555,
+              "std": 7.158167085559721,
+              "range": [
+                22.720332473516464,
+                44.931497033685446
+              ]
+            },
+            "physical_steps": {
+              "n": 9,
+              "mean": 667.3333333333334,
+              "std": 158.3659615503842,
+              "range": [
+                432,
+                945
+              ]
+            }
+          },
+          "3": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 45.51355130895972,
+              "std": 8.811229103303013,
+              "range": [
+                36.092030078172684,
+                60.984369579702616
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 45.841799543052915,
+              "std": 8.825645601044915,
+              "range": [
+                36.31299564614892,
+                61.30096111446619
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 859.6,
+              "std": 138.7005407343461,
+              "range": [
+                704,
+                1050
+              ]
+            }
+          },
+          "4": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 50.0704080760479,
+              "std": 6.467267506785038,
+              "range": [
+                43.417474400252104,
+                61.34472607821226
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 50.33258702903986,
+              "std": 6.506251547437187,
+              "range": [
+                43.657125893980265,
+                61.68101768195629
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 841.2,
+              "std": 179.70130773035572,
+              "range": [
+                680,
+                1154
+              ]
+            }
+          },
+          "5": {
+            "process_wall_seconds": {
+              "n": 13,
+              "mean": 67.60432478269705,
+              "std": 14.244366290257455,
+              "range": [
+                46.87122279033065,
+                92.27490056678653
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 13,
+              "mean": 67.97279945560373,
+              "std": 14.306044112862187,
+              "range": [
+                47.148803889751434,
+                92.74440212547779
+              ]
+            },
+            "physical_steps": {
+              "n": 13,
+              "mean": 1172.3846153846155,
+              "std": 201.31664246292303,
+              "range": [
+                861,
+                1543
+              ]
+            }
+          },
+          "6": {
+            "process_wall_seconds": {
+              "n": 12,
+              "mean": 73.46683458859722,
+              "std": 9.27139351284623,
+              "range": [
+                56.79559710249305,
+                88.00440085679293
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 12,
+              "mean": 73.84619999552767,
+              "std": 9.32046060929009,
+              "range": [
+                57.075504422187805,
+                88.50146851316094
+              ]
+            },
+            "physical_steps": {
+              "n": 12,
+              "mean": 1190.75,
+              "std": 155.2477187164651,
+              "range": [
+                918,
+                1504
+              ]
+            }
+          },
+          "7": {
+            "process_wall_seconds": {
+              "n": 5,
+              "mean": 79.47530991658569,
+              "std": 11.419716971966716,
+              "range": [
+                67.22300463542342,
+                97.39574697613716
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 5,
+              "mean": 79.88047502562404,
+              "std": 11.463933262399564,
+              "range": [
+                67.58889015763998,
+                97.84990759193897
+              ]
+            },
+            "physical_steps": {
+              "n": 5,
+              "mean": 1309.2,
+              "std": 174.5066187856495,
+              "range": [
+                1119,
+                1592
+              ]
+            }
+          },
+          "8": {
+            "process_wall_seconds": {
+              "n": 8,
+              "mean": 96.02696114126593,
+              "std": 10.923974689650708,
+              "range": [
+                81.51637996733189,
+                116.85582502558827
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 8,
+              "mean": 96.52047674078494,
+              "std": 10.948805675584916,
+              "range": [
+                82.03951420634985,
+                117.4073128439486
+              ]
+            },
+            "physical_steps": {
+              "n": 8,
+              "mean": 1490.5,
+              "std": 145.6682875577248,
+              "range": [
+                1313,
+                1745
+              ]
+            }
+          },
+          "9": {
+            "process_wall_seconds": {
+              "n": 11,
+              "mean": 113.86260624263774,
+              "std": 10.716876255466367,
+              "range": [
+                99.30105260387063,
+                137.02049458771944
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 11,
+              "mean": 114.44001724503256,
+              "std": 10.747668519183671,
+              "range": [
+                99.85683335736394,
+                137.66488138586283
+              ]
+            },
+            "physical_steps": {
+              "n": 11,
+              "mean": 1715.8181818181818,
+              "std": 135.02310790905935,
+              "range": [
+                1432,
+                1887
+              ]
+            }
+          },
+          "10": {
+            "process_wall_seconds": {
+              "n": 14,
+              "mean": 130.21176926818276,
+              "std": 18.340435144897135,
+              "range": [
+                107.06084644049406,
+                163.7791541852057
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 14,
+              "mean": 130.82059953548014,
+              "std": 18.389879064001146,
+              "range": [
+                107.6003480181098,
+                164.48728290572762
+              ]
+            },
+            "physical_steps": {
+              "n": 14,
+              "mean": 1808.642857142857,
+              "std": 191.37271306568877,
+              "range": [
+                1553,
+                2250
+              ]
+            }
+          }
+        },
+        "DART_accepted": {
+          "2": {
+            "process_wall_seconds": {
+              "n": 1,
+              "mean": 33.30082819610834,
+              "std": 0.0,
+              "range": [
+                33.30082819610834,
+                33.30082819610834
+              ]
+            },
+            "validated_case_wall_seconds": {
+              "n": 1,
+              "mean": 33.50480927154422,
+              "std": 0.0,
+              "range": [
+                33.50480927154422,
+                33.50480927154422
+              ]
+            },
+            "physical_steps": {
+              "n": 1,
+              "mean": 587.0,
+              "std": 0.0,
+              "range": [
+                587,
+                587
+              ]
+            }
+          },
+          "3": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          },
+          "4": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          },
+          "5": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          },
+          "6": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          },
+          "7": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          },
+          "8": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          },
+          "9": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          },
+          "10": {
+            "process_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "validated_case_wall_seconds": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            },
+            "physical_steps": {
+              "n": 0,
+              "mean": null,
+              "std": null,
+              "range": null
+            }
+          }
+        }
+      }
+    },
+    "attempts": 84,
+    "accepted": 83,
+    "sum_attempt_process_seconds": 6855.797852803022,
+    "serial_sum_is_not_parallel_wall_time": true,
+    "process_scope": "Subprocess start to exit: imports, initialization, planning, simulation, rendering, and demonstration writes.",
+    "validated_case_scope": "Includes parent validity checking after process exit.",
+    "evaluation_cost_limit": "Generation includes planning and HDF5 recording; future evaluation also incurs policy inference. These costs are estimates, not measured VLA evaluation times.",
+    "scope": "Partial generation at first consistency-check failure. Completed attempts only in per-N episode averages; eight incomplete process costs are reported separately. No completed dataset or full-pipeline time.",
+    "group_labels": {
+      "all_attempts": "all completed attempts only, including ordinary task failures",
+      "accepted": "successful complete episodes"
+    }
+  },
+  "completed_cases": [
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep0_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 770
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep10_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1837
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep11_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 600
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep12_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1194
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep13_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1543
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep14_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1810
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep15_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1344
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep16_attempt0",
+      "N": 3,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 732
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep17_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1734
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep18_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1643
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep19_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 918
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep1_attempt0",
+      "N": 7,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1426
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep20_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 945
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep21_attempt0",
+      "N": 7,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1221
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep22_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 2250
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep23_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 2030
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep24_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 546
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep25_attempt0",
+      "N": 3,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 704
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep26_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1789
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep27_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1206
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep28_attempt0",
+      "N": 7,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1188
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep29_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1133
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep2_attempt0",
+      "N": 4,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1154
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep30_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1595
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep31_attempt0",
+      "N": 4,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 680
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep32_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1001
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep33_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1681
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep34_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1071
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep35_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1537
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep36_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1432
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep37_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 852
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep38_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1860
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep39_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1578
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep3_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1367
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep40_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1504
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep41_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1745
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep42_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1484
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep43_attempt0",
+      "N": 4,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 928
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep44_attempt0",
+      "N": 4,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 751
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep45_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1043
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep46_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1961
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep47_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 432
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep48_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1049
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep49_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1957
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep4_attempt0",
+      "N": 10,
+      "success": false,
+      "outcome": "planning_or_grasp_failure",
+      "steps": 316
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep4_attempt1",
+      "N": 7,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1119
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep50_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1756
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep51_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1484
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep52_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1620
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep53_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1718
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep54_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1156
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep55_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1316
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep56_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1950
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep57_attempt0",
+      "N": 4,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 693
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep58_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 979
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep59_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1703
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep5_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1740
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep60_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 861
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep61_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1722
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep63_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1822
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep64_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1425
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep65_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1593
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep66_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1212
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep67_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1300
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep68_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1652
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep69_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 501
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep6_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1123
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep71_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1041
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep72_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 946
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep74_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 654
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep75_attempt0",
+      "N": 10,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1553
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep76_attempt0",
+      "N": 9,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1887
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep77_attempt0",
+      "N": 6,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1161
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep79_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 706
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep7_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1253
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep80_attempt0",
+      "N": 3,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 819
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep85_attempt0",
+      "N": 3,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1050
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep87_attempt0",
+      "N": 7,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1592
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep88_attempt0",
+      "N": 3,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 993
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep8_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1337
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep93_attempt0",
+      "N": 8,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1313
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep96_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1431
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep9_attempt0",
+      "N": 5,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 1299
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep104_attempt0",
+      "N": 2,
+      "success": true,
+      "outcome": "finish_signal",
+      "steps": 587
+    }
+  ],
+  "incomplete_cases": [
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep62_attempt0",
+      "purpose": "train_clean",
+      "started_utc": "2026-11-06T09:31:22.506151+00:00",
+      "finished_utc": "2026-11-06T09:33:39.782664+00:00",
+      "process_wall_seconds": 137.27653062343597,
+      "exit_code": -15,
+      "kind": "cancelled_after_first_check_failure"
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep73_attempt0",
+      "purpose": "train_clean",
+      "started_utc": "2026-11-06T09:32:55.749385+00:00",
+      "finished_utc": "2026-11-06T09:33:39.882607+00:00",
+      "process_wall_seconds": 44.13323736190796,
+      "exit_code": -15,
+      "kind": "cancelled_after_first_check_failure"
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep82_attempt0",
+      "purpose": "train_clean",
+      "started_utc": "2026-11-06T09:33:21.850628+00:00",
+      "finished_utc": "2026-11-06T09:33:40.132810+00:00",
+      "process_wall_seconds": 18.282202560454607,
+      "exit_code": -15,
+      "kind": "cancelled_after_first_check_failure"
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep83_attempt0",
+      "purpose": "train_clean",
+      "started_utc": "2026-11-06T09:31:53.012357+00:00",
+      "finished_utc": "2026-11-06T09:33:39.971248+00:00",
+      "process_wall_seconds": 106.95890535786748,
+      "exit_code": -15,
+      "kind": "cancelled_after_first_check_failure"
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep84_attempt0",
+      "purpose": "train_clean",
+      "started_utc": "2026-11-06T09:31:53.861075+00:00",
+      "finished_utc": "2026-11-06T09:33:40.049316+00:00",
+      "process_wall_seconds": 106.1882576905191,
+      "exit_code": -15,
+      "kind": "cancelled_after_first_check_failure"
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_clean/count/history/ep95_attempt0",
+      "purpose": "train_clean",
+      "started_utc": "2026-11-06T09:33:17.376389+00:00",
+      "finished_utc": "2026-11-06T09:33:40.185426+00:00",
+      "process_wall_seconds": 22.80904982611537,
+      "exit_code": -15,
+      "kind": "cancelled_after_first_check_failure"
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep101_attempt0",
+      "purpose": "train_dart",
+      "started_utc": "2026-11-06T09:33:35.277134+00:00",
+      "finished_utc": "2026-11-06T09:33:39.696214+00:00",
+      "process_wall_seconds": 4.419097490608692,
+      "exit_code": -15,
+      "kind": "cancelled_after_first_check_failure"
+    },
+    {
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0",
+      "purpose": "train_dart",
+      "started_utc": "2026-11-06T09:33:01.005376+00:00",
+      "finished_utc": "2026-11-06T09:33:39.621144+00:00",
+      "process_wall_seconds": 38.61579396948218,
+      "exit_code": 1,
+      "kind": "check_failure"
+    }
+  ],
+  "all_started_process_wall_seconds_sum": 7334.480927683413,
+  "incomplete_process_wall_seconds_sum": 478.68307488039136,
+  "serial_sum_is_not_parallel_wall_time": true,
+  "evidence_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/started.json": "d18d7c94d1e15e47ae4714169979a660006ddbf22e9725a26a53e70e8c6773f3",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/command.json": "66c223e3cceaec233978f8d88800a4beedec94b0f04c373ba5777523f97dcdf2",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/process_exit.json": "10937d31fed8be7717acab86a7a761922903c3e25f54934b5532c720445f1b7e",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/check_failure.json": "55d8c7f3d075863cc44fbb22a21d57cce5a19a34cbc7f40bdfad16769afdf7f7",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/console.log": "2ccc9e84bfd50050ccfd73fc2badab61bc50f09c36d768c2c9e0c6b3cd500ba8",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/trace.jsonl": "06fb4168074de7e5130b88e2c78667799f382b831cf9522f6eef846290611156",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/demo.h5": "3ba761e63422e78df2d8c9d2902d0bb3a4ca80ae8ed101b9db2807abc5f92572",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/demo_gt.jsonl": "2a6d51d13602201dc55426e90d2f41c45c233212c33d35737202f7a0e9381fd4",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/check_failure_front_camera.png": "35924375fcf60894fed706ecf4982ca49bcfd6ba193ef8b45ab1da1c1cf6cb22",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/replays/train_dart/count/history/ep112_attempt0/check_failure_hand_camera.png": "f14c2eb8db33de80c4df157a02288f67f8c608cb407334335e3af9c28c6c8e11",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/status.json": "c93b58ba94aa0f19a179e079d2a405f139013699ce64a4c3402cfdf59b38d568",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/plan.json": "aafbfab5fc87ba44e8d85f6b50899d7b5bdbfcdce8a275c55053becc82359bc3",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/clock_fit.json": "0341cfedb31d966297b21c527cc746845f0ed713099df218238dc51da4b88b8b",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/R0_gate.json": "9ce5dd5bb701d59ce59ea1d6a16f4ab86c8b8a3b6d262b4ec78b3525990af3b7",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/information_audit.json": "cfe35175b716da98838db9f44b0b15b97ee5e0f3c26b9f50934b58a06ecef308",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/other_checks.json": "ba5e4de37c82c49ecd73a0851840f74f70b451b50747f610a18163fe531cede2",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/data_phase_timing.json": "ebf03ef19aa49f3dc1645027b3909c8585f239c2662a9d3a40f82d8921163ee8"
+  },
+  "frozen_artifact_and_48_source_checks": "Verified before this reporting-only analysis; unchanged.",
+  "decision": "Stop under HANDOFF §§17.7 and 18.3; no repair, parameter/seed changes, retry or training. Await user review."
+}

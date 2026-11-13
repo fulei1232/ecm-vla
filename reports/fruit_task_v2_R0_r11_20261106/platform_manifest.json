@@ -1,0 +1,33 @@
+{
+  "instruction_revision": 11,
+  "count_env_id": "FruitPickCountShieldV2-v0",
+  "count_shield": "fixed_v2",
+  "required_for": [
+    "Count R0",
+    "Count data",
+    "Count training observations",
+    "Count evaluation"
+  ],
+  "occluded_env_id": "FruitPickTaskV2-v0",
+  "occluded_shield": "off",
+  "constructor_implementation": "visual_records_before_attachment_v1",
+  "shield_geometry_sha256": "1b38bc259d034be7b029200f193b6e0620d282fa6f9da3e2442dbbb045049b60",
+  "constructor_sha256": "3bada31d6e689f8b84a707001c03ae432f01136711a0fe6c24d5e4ff5f91a0b5",
+  "zero_new_collision_shapes": true,
+  "task_revision": 9,
+  "budget": 2800,
+  "basket_body_pixels": "report_only",
+  "basket_fruit_and_inactive_reserve_pixels": "zero_fatal",
+  "fruit_intersection_R0": "fatal",
+  "fruit_intersection_data": "fail_attempt; global stop if count>=3 and count/started>0.02",
+  "gripper_distance": "report_only; exact visible finger boxes and TCP vs full rendered shield volume",
+  "legacy_defaults_unchanged": true,
+  "distance_signal": "any_hanging",
+  "temporal_index": "order",
+  "arms": [
+    "K0",
+    "K8",
+    "KA"
+  ],
+  "training": false
+}

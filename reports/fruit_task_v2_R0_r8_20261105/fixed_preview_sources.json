@@ -1,0 +1,222 @@
+[
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "before_green",
+    "camera": "front_camera",
+    "step": 0,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/before_green_front_camera.png",
+    "sha256": "01cc9c2c7a02aedb37b75354ef3fa0c60067ab765f6e25d3a7d80401bcc22969"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "after_green",
+    "camera": "front_camera",
+    "step": 630,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/after_green_front_camera.png",
+    "sha256": "0cefb094ba9a54584cc9d35d7d414e72bbdfb7b39f24898cc3b75a245841c7d9"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "after_wind",
+    "camera": "front_camera",
+    "step": 688,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/after_wind_front_camera.png",
+    "sha256": "465edaabf9f94fc29d5cbb08cd198398ed8a8f478e09a56c2771693f01e52561"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "before_grasp",
+    "camera": "front_camera",
+    "step": 688,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/before_grasp_front_camera.png",
+    "sha256": "465edaabf9f94fc29d5cbb08cd198398ed8a8f478e09a56c2771693f01e52561"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "release",
+    "camera": "front_camera",
+    "step": 757,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/release_front_camera.png",
+    "sha256": "59b96ffc3d190dc4279dde13cceeddf9f8bb2827da36a8ee35fe034a12b0997c"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "after_replenishment",
+    "camera": "front_camera",
+    "step": 762,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/after_replenishment_front_camera.png",
+    "sha256": "c32ad806cdb2bef286f998fa21503bfa7580dc9b4efae2ba2375e0be2f813554"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "finish_hold",
+    "camera": "front_camera",
+    "step": 1355,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/finish_hold_front_camera.png",
+    "sha256": "f673c3a571ab1abbe729665ebe9308b9d8ca82d872758c63835a4301c7671e9e"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "before_green",
+    "camera": "hand_camera",
+    "step": 0,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/before_green_hand_camera.png",
+    "sha256": "7f0cddf91745085661fa110d670f67ff01b8994abecd2bd88791436c1c4940e7"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "after_green",
+    "camera": "hand_camera",
+    "step": 630,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/after_green_hand_camera.png",
+    "sha256": "7f0cddf91745085661fa110d670f67ff01b8994abecd2bd88791436c1c4940e7"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "after_wind",
+    "camera": "hand_camera",
+    "step": 688,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/after_wind_hand_camera.png",
+    "sha256": "028a332f661c774c949f4a77193d8aa2782561ebad3f47f9b8109be569a8079d"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "before_grasp",
+    "camera": "hand_camera",
+    "step": 688,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/before_grasp_hand_camera.png",
+    "sha256": "028a332f661c774c949f4a77193d8aa2782561ebad3f47f9b8109be569a8079d"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "release",
+    "camera": "hand_camera",
+    "step": 757,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/release_hand_camera.png",
+    "sha256": "8777dd4ae87f5c4a89cd677341cbcf110f7f2e35227edf7f847ac53888979340"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "after_replenishment",
+    "camera": "hand_camera",
+    "step": 762,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/after_replenishment_hand_camera.png",
+    "sha256": "203d9a256b8915138bc81d06bcc4bdf63697d60e6cb81cbb78d4f86878f8ff77"
+  },
+  {
+    "task": "count",
+    "purpose": "budget_expert",
+    "episode": 250,
+    "stage": "finish_hold",
+    "camera": "hand_camera",
+    "step": 1355,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/budget_expert/count/history/ep250/finish_hold_hand_camera.png",
+    "sha256": "1d1f66cb2fb59d773dfb3bc4e777b79d8eb270ff1e80756720ba0917ea29d71e"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "opening",
+    "camera": "front_camera",
+    "step": 0,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/opening_front_camera.png",
+    "sha256": "25d271b26843681d0a0748f9e84e2978d022e1b8c135a2c567d5f51ddf6a5d01"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "post_gust",
+    "camera": "front_camera",
+    "step": 20,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/post_gust_front_camera.png",
+    "sha256": "086412dd70bd99199c1c10301622cdeecad9efbf9df881f257c8188f2bd7c6c4"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "before_grasp",
+    "camera": "front_camera",
+    "step": 93,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/before_grasp_front_camera.png",
+    "sha256": "2a43c2487939e0cf179c5e6c5574e8770acd27aafd7b1d1e59f1a1bc2b8ca0ab"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "release",
+    "camera": "front_camera",
+    "step": 167,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/release_front_camera.png",
+    "sha256": "19e029ceda347f0f3edddd4c3359525513730fa4c03aede0033a003050689281"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "opening",
+    "camera": "hand_camera",
+    "step": 0,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/opening_hand_camera.png",
+    "sha256": "7f0cddf91745085661fa110d670f67ff01b8994abecd2bd88791436c1c4940e7"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "post_gust",
+    "camera": "hand_camera",
+    "step": 20,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/post_gust_hand_camera.png",
+    "sha256": "7f0cddf91745085661fa110d670f67ff01b8994abecd2bd88791436c1c4940e7"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "before_grasp",
+    "camera": "hand_camera",
+    "step": 93,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/before_grasp_hand_camera.png",
+    "sha256": "c7c3af24a675755c558763674b93d3927daa448f3bd03a0733482e5a820f0bee"
+  },
+  {
+    "task": "occluded",
+    "purpose": "audit",
+    "episode": 200,
+    "stage": "release",
+    "camera": "hand_camera",
+    "step": 167,
+    "path": "results/fruit_task_v2_R0_r8_20261105/replays/audit/occluded_ripe/history/ep200/release_hand_camera.png",
+    "sha256": "b846b0fc0ea0376f61e1d438d479791550bfd54e30fce8f2dbb98af58c9d6809"
+  }
+]

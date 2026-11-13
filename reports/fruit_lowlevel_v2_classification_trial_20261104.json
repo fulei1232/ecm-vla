@@ -1,0 +1,4010 @@
+{
+  "revision": 5,
+  "generated_utc": "2026-11-04T08:16:31.394060+00:00",
+  "passed": true,
+  "episodes": 120,
+  "definitions_changed_from_trial_results": false,
+  "val_layouts_used": false,
+  "conditions": {
+    "K0": {
+      "episodes": 40,
+      "classes": {
+        "success": 15,
+        "memory": 5,
+        "operation": 20,
+        "invalid": 0
+      },
+      "subtags_episode_counts": {
+        "timeout_operating_or_stalled": 13,
+        "dropped_fruit_outcome_fail": 12,
+        "occluded_unripe_detached": 5,
+        "occluded_wrong_in_basket": 2,
+        "never_detached": 1,
+        "near_miss": 1,
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0,
+        "count_premature_stop_proxy": 0,
+        "adjacent_misgrasp_possible": 0,
+        "timeout_stopped": 0
+      },
+      "structural_anomalies": {
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0
+      },
+      "unripe_grasp_events": 5,
+      "adjacent_misgrasp_possible_fruit_events": 0,
+      "outcomes": {
+        "success": 15,
+        "timeout": 13,
+        "fail": 12
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "classes": {
+            "success": 13,
+            "memory": 0,
+            "operation": 7,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "timeout_operating_or_stalled": 3,
+            "dropped_fruit_outcome_fail": 4,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "occluded_unripe_detached": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 0,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 49,
+            "denominator": 52,
+            "fraction": 0.9423076923076923
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "classes": {
+            "success": 2,
+            "memory": 5,
+            "operation": 13,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "dropped_fruit_outcome_fail": 8,
+            "occluded_unripe_detached": 5,
+            "occluded_wrong_in_basket": 2,
+            "timeout_operating_or_stalled": 10,
+            "never_detached": 1,
+            "near_miss": 1,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "adjacent_misgrasp_possible": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 5,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 25,
+            "denominator": 32,
+            "fraction": 0.78125
+          }
+        }
+      },
+      "event_recall_proxy": {
+        "numerator": 74,
+        "denominator": 84,
+        "fraction": 0.8809523809523809
+      }
+    },
+    "K4": {
+      "episodes": 40,
+      "classes": {
+        "success": 18,
+        "memory": 3,
+        "operation": 19,
+        "invalid": 0
+      },
+      "subtags_episode_counts": {
+        "dropped_fruit_outcome_fail": 15,
+        "timeout_operating_or_stalled": 7,
+        "occluded_unripe_detached": 3,
+        "never_detached": 1,
+        "near_miss": 1,
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0,
+        "count_premature_stop_proxy": 0,
+        "occluded_wrong_in_basket": 0,
+        "adjacent_misgrasp_possible": 0,
+        "timeout_stopped": 0
+      },
+      "structural_anomalies": {
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0
+      },
+      "unripe_grasp_events": 3,
+      "adjacent_misgrasp_possible_fruit_events": 0,
+      "outcomes": {
+        "success": 18,
+        "fail": 15,
+        "timeout": 7
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "classes": {
+            "success": 13,
+            "memory": 0,
+            "operation": 7,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "dropped_fruit_outcome_fail": 7,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "occluded_unripe_detached": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0,
+            "timeout_operating_or_stalled": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 0,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 54,
+            "denominator": 58,
+            "fraction": 0.9310344827586207
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "classes": {
+            "success": 5,
+            "memory": 3,
+            "operation": 12,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "timeout_operating_or_stalled": 7,
+            "dropped_fruit_outcome_fail": 8,
+            "occluded_unripe_detached": 3,
+            "never_detached": 1,
+            "near_miss": 1,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "adjacent_misgrasp_possible": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 3,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 26,
+            "denominator": 33,
+            "fraction": 0.7878787878787878
+          }
+        }
+      },
+      "event_recall_proxy": {
+        "numerator": 80,
+        "denominator": 91,
+        "fraction": 0.8791208791208791
+      }
+    },
+    "K8": {
+      "episodes": 40,
+      "classes": {
+        "success": 18,
+        "memory": 4,
+        "operation": 18,
+        "invalid": 0
+      },
+      "subtags_episode_counts": {
+        "timeout_operating_or_stalled": 7,
+        "dropped_fruit_outcome_fail": 15,
+        "occluded_unripe_detached": 4,
+        "occluded_wrong_in_basket": 2,
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0,
+        "count_premature_stop_proxy": 0,
+        "adjacent_misgrasp_possible": 0,
+        "never_detached": 0,
+        "near_miss": 0,
+        "timeout_stopped": 0
+      },
+      "structural_anomalies": {
+        "count_over_quota": 0,
+        "count_continued_picking_after_quota": 0
+      },
+      "unripe_grasp_events": 4,
+      "adjacent_misgrasp_possible_fruit_events": 0,
+      "outcomes": {
+        "success": 18,
+        "timeout": 7,
+        "fail": 15
+      },
+      "by_task": {
+        "FruitCount": {
+          "episodes": 20,
+          "classes": {
+            "success": 14,
+            "memory": 0,
+            "operation": 6,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "timeout_operating_or_stalled": 3,
+            "dropped_fruit_outcome_fail": 3,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "occluded_wrong_in_basket": 0,
+            "occluded_unripe_detached": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 0,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 57,
+            "denominator": 58,
+            "fraction": 0.9827586206896551
+          }
+        },
+        "FruitOccludedRipe": {
+          "episodes": 20,
+          "classes": {
+            "success": 4,
+            "memory": 4,
+            "operation": 12,
+            "invalid": 0
+          },
+          "subtags_episode_counts": {
+            "dropped_fruit_outcome_fail": 12,
+            "timeout_operating_or_stalled": 4,
+            "occluded_unripe_detached": 4,
+            "occluded_wrong_in_basket": 2,
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0,
+            "count_premature_stop_proxy": 0,
+            "adjacent_misgrasp_possible": 0,
+            "never_detached": 0,
+            "near_miss": 0,
+            "timeout_stopped": 0
+          },
+          "structural_anomalies": {
+            "count_over_quota": 0,
+            "count_continued_picking_after_quota": 0
+          },
+          "unripe_grasp_events": 4,
+          "adjacent_misgrasp_possible_fruit_events": 0,
+          "event_recall_proxy": {
+            "numerator": 29,
+            "denominator": 37,
+            "fraction": 0.7837837837837838
+          }
+        }
+      },
+      "event_recall_proxy": {
+        "numerator": 86,
+        "denominator": 95,
+        "fraction": 0.9052631578947369
+      }
+    }
+  },
+  "analysis_source_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_lowlevel_v2_metrics_r5.py": "917c56975782c295dc45878dcb4983bde0daff1520f5f24d57cb77aafecc96e9",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_lowlevel_v2_metrics.py": "48c11b7219b686f89c00d15227ba1da91c8c0281a5a283f3e158fdf46a85221c",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/env.py": "a79b51ec65d384c8647edd02481d8e1c4f727b17a1b3da72063ee88527114749"
+  },
+  "grasp_time_inference": "DETACH_STEPS=2; first step of the successful grasp streak is detach frame minus1. Tree-fruit positions and attached-target set come from that frame.",
+  "records": [
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 200,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep200",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "4ab73a032649f4e845bd70968b0aea0d891f21e70cdf65c71953334f4748bbf3",
+        "raw_frames.jsonl": "b5bd37c218012bc538a694050e2fee1eb0fd31f05afaf2567bf4f11a8d24b3a4",
+        "control_actions.jsonl": "2bfc702a69ad6a4577a6ad402970e8a096cc0094e956983afd8eb25bbb704b0c",
+        "memory_audit.json": "88aa47d49cf7f6131efe65afc88df5d0d5bae814b795a92ca9aa7d488e70daf0"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 201,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep201",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "03e5495d08a17f7b67648f7da767acddb79bd705574968915725b3974dd974f9",
+        "raw_frames.jsonl": "aef3f73d4f6423b5205fc155468b575fec44399bae34c437f666d3ffec8b09d5",
+        "control_actions.jsonl": "e270b71d19c2dd8494ff8c70b29663cfe848ff935fa44aa65fd4a2133910add0",
+        "memory_audit.json": "88aa47d49cf7f6131efe65afc88df5d0d5bae814b795a92ca9aa7d488e70daf0"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 202,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep202",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 5,
+        "denominator": 5,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "c35fb3e332c7d5d1eed501dba733c86cad30528662c4829fbe03eecb1dd0565d",
+        "raw_frames.jsonl": "05e19fb9bce75aaf9884aeb05468e9861e90f245af4064250f63bd08a9741873",
+        "control_actions.jsonl": "392d7f675e6a0dd65f7592eec3e7857ccdfa0523ebbb3a856800fabf4a44c5ab",
+        "memory_audit.json": "57ddfbc3ed1b7becc3afa761851e9e5c0cb89befa68e166a4633c40fdd1f55b7"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 203,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep203",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "8779815b144732267f87238afcd7cc8015c24d0f161421fb478fdb5a2337a2a6",
+        "raw_frames.jsonl": "84f11a9c314121d288051910b14565a5832cad11ce1aa251664c5952db4dedf8",
+        "control_actions.jsonl": "f086263fad48ce5c21e3effbef7459db580bea8b9263c7395f9a039f549c6c61",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 204,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep204",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "6ce5f9b3b3aa16e8e6eca221338ce59b0be699a85727d5207d8d8e6d4fd0ebe9",
+        "raw_frames.jsonl": "e83ddfbba4fc4c99ab14cb9c3e2360946d48a84e46a624890d58832d21ecaee5",
+        "control_actions.jsonl": "095e1b12a90e311f17d60c0764297a4bf032cae00c5590d1ebb0e24f2ed9087e",
+        "memory_audit.json": "c10f438b0f451d3d822a4a7e720cde447e3ad4e13c56f5411532155f5079b82e"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 205,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep205",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 5,
+        "denominator": 5,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "f29b1236bbe70f170bcd25a0ace5f1d8ea249dee168e275b864c5f94c6d28699",
+        "raw_frames.jsonl": "f14719f82c1d593bc98cce235d44f45aeef1fbd8a91336f0283feddbc5f2c8f7",
+        "control_actions.jsonl": "aabfef39a27302cecead6e600cc7ee3e8bf4647674bac0d0b6c0fb3ba6f54d1f",
+        "memory_audit.json": "9466e66118fa5c7a7c6b4670a63cb43445115aad6ff4c04f20d666f9846b6b3e"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 206,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep206",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "ecac79564de2ccd4fb11f4c06553ed666a7604b12f7badd673be4ab613196134",
+        "raw_frames.jsonl": "d79b618ec0df40aea78a5ded99347da7a7adc409e1a4acace1309373b6a9d2bd",
+        "control_actions.jsonl": "9030500d47cf11ee024d6e3ca51985a2fc9265f0d0080bdc0d6d1adad1376636",
+        "memory_audit.json": "8fec3cb01b33d81d2ad0d52c5510c4fe58685074733ccd964e9816a9035adac3"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 207,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep207",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "fecbf89673090cc6f34b904d1401f91567b48f9e5f4dc27f6db75ed2475b0a59",
+        "raw_frames.jsonl": "4aa556a7ec97d193dfebdc21adddc4731c3c04522cb0fc5a0eeeb01ebfe62ddd",
+        "control_actions.jsonl": "64cde43c0100bc33106f6d62c1a237310a4fb0a5f20bcb1982f6a5b809c6eb48",
+        "memory_audit.json": "51d7c0fac9373f4b5b4cae51efbb0cd4d053bf42627ced239e35d6f031802699"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 208,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep208",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "c043818ede5797dd4f84d339b563879d1abd9e27dfc311d0826de75fa6a6db56",
+        "raw_frames.jsonl": "18808a27607ac3c3449095426fdce46704713669376db4d05adff5588873b4fd",
+        "control_actions.jsonl": "e8c6d85ad90e7ab4a2c270abacedde51a858a65ece31eac781ef98147e92a162",
+        "memory_audit.json": "a0fcae790022a7a619ee73ffe4b254eb9a2044fb619415c06369c62b56369559"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 209,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep209",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "cd64529d4b3ab724e9d586a25f1c7cfc1f1045eb5ae9c897183904321c0b8a6b",
+        "raw_frames.jsonl": "7f9b4ef9b212ffcee3693796b77342ce44a334ced80ed3cf129a246eae3604a6",
+        "control_actions.jsonl": "085b4ceec23e469aa2578af9cf335b231b9b0a106a81e1954ac3123e8a659d32",
+        "memory_audit.json": "2096710ecc2688a199f132550bbcd08eeb6d56931ca4393ed77e4f18c49d1f36"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 210,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep210",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "177a4c4f9806888c0ce230ca4e849eff305abafeb672ab51b1633b37a8a17ed8",
+        "raw_frames.jsonl": "b215eeaf2aec8e02d9c4dc992fef94d19a45788f1483e750c3bd8218edbab4e8",
+        "control_actions.jsonl": "1bfdaaa8c3173872bb27ac692bc5113bbc659797182bb7932fcddfae618e038d",
+        "memory_audit.json": "509fa78eb203f3d621a42ac86788c871500398e9ef6de44464cf42b5f6ecef70"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 211,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep211",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "4b414c2086b154139ef148709c7cc4a48b583811beecfde8f01abe793f91bdc2",
+        "raw_frames.jsonl": "47a9cf8f51a6bfa42af65b5a427d20453ecc79d1c4a57b73a6a9792882cb6f07",
+        "control_actions.jsonl": "ed260f9f29e2091821baf05a8df66ce86a667f807c620975a825ea1cdda538cf",
+        "memory_audit.json": "18d3e0ded6877e7ca3f5fa8c9f2a6d570a526714a37d7766da9f9ce5b1488a92"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 212,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep212",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 5,
+        "fraction": 0.8
+      },
+      "inputs_sha256": {
+        "result.json": "3a43e0383f2d7267b4e73e7008e2ae8b77aae8f52cea1d35bd3e8272d20ce042",
+        "raw_frames.jsonl": "5d46d62578a04b043d9288b6e3d0184751fcc0f03d153aa7141a5ffb77ec8733",
+        "control_actions.jsonl": "33b06adce16def726763c1be3e2713f6c0f56648ebdbb72557c57e5d1fa46ed3",
+        "memory_audit.json": "970aa76c34e1cb8875f213889c67d508a5c2e4754418de8fcda28a88521de5fd"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 213,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep213",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "facc829c73c390cde1e648e64c01396330b8c0d3b70922592a00a5ff87b658e4",
+        "raw_frames.jsonl": "a9aadc20fb3b0b5e00bbe2e3a8c861d3f594fb9901b179eb77172a6f7b9a8d9f",
+        "control_actions.jsonl": "ec4d2fa72894c2fce8294cb4255cf3a86e9274dba3f876a862f54d9ae4c549c1",
+        "memory_audit.json": "2096710ecc2688a199f132550bbcd08eeb6d56931ca4393ed77e4f18c49d1f36"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 214,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep214",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "fb59788115333edee56adf81b01eade8f8c81b0732d9429222f315c9754ef11d",
+        "raw_frames.jsonl": "c594cd0203df4cb96ec41c53e83f6b5bf089e9651100fdeaaf7ea0cbae47ab10",
+        "control_actions.jsonl": "757846cdd99199a80f2d9e02cc6b924fcd3eb4b88454147055295dda552dd561",
+        "memory_audit.json": "29d4d6bc7a12b7010e29fd06cafb5a8b955672eb61648e1a0f55f93602379416"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 215,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep215",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "81cbbef8beb22d3c19423f7c1c3ca6988be4f6e3d0e2619a6ce15b70e92b5ff6",
+        "raw_frames.jsonl": "50b740642dc8367a7e088a4a7ef28567ff0b8f520a468536fd5837e988d9be2c",
+        "control_actions.jsonl": "c8a2746fc2ebba711337fa4e055141d271f38980225acd782bdc08d29dfe67a8",
+        "memory_audit.json": "51d7c0fac9373f4b5b4cae51efbb0cd4d053bf42627ced239e35d6f031802699"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 216,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep216",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 4,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "f5a35eb3fff7e3fbf1e20f9aa0b7365573028242533c3fab9b3d89ffbe54fb9f",
+        "raw_frames.jsonl": "f6213d90c93bdabb734b4d4289b197a115be35a2816dff05e2045069f5cb2bca",
+        "control_actions.jsonl": "2d4d45ac33081b3ac922d3ada8661103bc9433cc9a2cc34248ded81032f3e1e5",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 217,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep217",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "f9092d81eab432f93c23bc3089392e48e775c1ae08d9f773e6afb071f862f5f7",
+        "raw_frames.jsonl": "2270d8db3ff729e36e2976f990a02122de15d0de471492b96cd4cf72d906789a",
+        "control_actions.jsonl": "26d8a05bf066514f2f996938c7f421c6f4cb34d0f377e6c0a45f8a7018dfdf94",
+        "memory_audit.json": "ac0ce235018ad31b9b374b78db743195a3b3ff049a52502683fe283e6b83190b"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 218,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep218",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "d010290ff9372267eb2c0a069d030eaadcd15a30387f95b36778c4d7366920ca",
+        "raw_frames.jsonl": "cc9158a2f4dfaf1a997b6ce1d7a4efc21cfa101f39a42bfcfa77c7e595ad3d8e",
+        "control_actions.jsonl": "375fad4d35fc8cc3815375dea3f141280b141ab61375012be3fff65e19690cd1",
+        "memory_audit.json": "c10f438b0f451d3d822a4a7e720cde447e3ad4e13c56f5411532155f5079b82e"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitCount",
+      "episode": 219,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitCount/ep219",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "ae0461e1a31450b417a5ecb10620c54e63e891ebaf74a1789352b45d3f23402f",
+        "raw_frames.jsonl": "4299ba731ad913316709f9bfc9e96273b15fa032ceb29dee56720d0471e475f3",
+        "control_actions.jsonl": "c849923dccb370e7882f52177ca185fdae6335b4071ff44fb9d3c2ec3328ebce",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 200,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep200",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "0c96f08cd18b31fbf5818ac5174b3daf6c96c6d62a39628585e64069a1833a1a",
+        "raw_frames.jsonl": "37ca45808cedffaf3859729dc0f0a47042ebd193bf27eea713711e0df292652f",
+        "control_actions.jsonl": "13922e5371a4dfdb30f8dc3a4a648bb63c107e3031070109abc889c116a2ea03",
+        "memory_audit.json": "a1af4126e45df7a8154e03a17118f68626c81dbd9f84f7d4cd7435291291530e"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 201,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep201",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 4,
+            "detach_frame": 377,
+            "grasp_start_frame": 376,
+            "grasp_start_control_step": 376,
+            "detach_steps": 2,
+            "nearest_attached_target": 5,
+            "distance_to_nearest_attached_target_m": 0.10402024129309399,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 3,
+        "fraction": 0.6666666666666666
+      },
+      "inputs_sha256": {
+        "result.json": "f2ef2624ce2663855b6cffe456b049a93f26b1a4b98b0e74c8152d60a2423403",
+        "raw_frames.jsonl": "e9cbb1f5433dce3f720595091cb9465d92f03a10dd5ff103bec02c043b1d8da2",
+        "control_actions.jsonl": "5cb1a3643d60e3368f11beb47f1018136092dbf1fc685b76e1fcf39f92bf79fe",
+        "memory_audit.json": "c10f438b0f451d3d822a4a7e720cde447e3ad4e13c56f5411532155f5079b82e"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 202,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep202",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_wrong_in_basket",
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 2,
+            "detach_frame": 218,
+            "grasp_start_frame": 217,
+            "grasp_start_control_step": 217,
+            "detach_steps": 2,
+            "nearest_attached_target": 1,
+            "distance_to_nearest_attached_target_m": 0.22768060288153494,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "d714670f8c8db10664585303d3d9a8c8365b6108c879b2bb789d2c29f234934c",
+        "raw_frames.jsonl": "e30ed7b721d3862eb1ea33b8b2caf25a44da2a4309de2651960a603f404f5193",
+        "control_actions.jsonl": "e52b88bd2b92a4d34c44d2eda4891eb58f47666c8f5b1a17dea69fe3f5aa47f5",
+        "memory_audit.json": "2096710ecc2688a199f132550bbcd08eeb6d56931ca4393ed77e4f18c49d1f36"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 203,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep203",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "15c830eceadaa6defc42ebc916520e29346adff3162293c1d6d6b7f01f0fc2da",
+        "raw_frames.jsonl": "2d7d40e4136d41201b93387a336c84b1ee730d86e19c0bd750ae739689d48e27",
+        "control_actions.jsonl": "f2ac690f12de422783f8d65131c82c2792e519ed76c2401cf99dcc2c788a5b63",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 204,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep204",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "696bbf59313d0533fc816485e0f2985e458583260f73fb3e6a6788300d1d969f",
+        "raw_frames.jsonl": "1c9431f151c34ebf427ca2d86737e775aafa38125c423e9d0a970ab3a9aad189",
+        "control_actions.jsonl": "7ace8894cf5ad71bfec9179b0845dba809ae8b5e0a6defa4cedc91f4ecad0512",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 205,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep205",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "c089149bb055b3c87f2c94b670b1702e45462b70b404ccf2a4c202965be19796",
+        "raw_frames.jsonl": "b6dc62e6c0f5a8b3f030943ef1eedd60a113ddaa40f98216da3a09bb4d868229",
+        "control_actions.jsonl": "6384a58498294a3703fda8d7a2e5d01193690785af22151d9bf11d90669b11b2",
+        "memory_audit.json": "13d5433f51e9f93ad59786767b262b22db651832a6bbc9498567245e16348088"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 206,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep206",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "e1144c553d875598ee20ce8028abdf9fdbbf78c8ea70da203aea9014ab947048",
+        "raw_frames.jsonl": "5c826ece7c9639ac50c39e8df3ac5d56c396d0870d9a47979d3f299bd1d79bae",
+        "control_actions.jsonl": "bc352ccfe47915fc3928a38be0b8b1a051b31e4437c5054ec2e72f116c339fbc",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 207,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep207",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "167e7d729bf98a20fc56fc3115b646513eb68d7cf77bd9e3ecae6f96003bae21",
+        "raw_frames.jsonl": "efe3739b5ee873177e2bea8839bb9fb4f59b2c50f9247f51f68c1a0fff675830",
+        "control_actions.jsonl": "6c46501319eeb01dabeb755bc3d647cecdef5fe5c79f400d6a7349857a2a6411",
+        "memory_audit.json": "639ec9c8f96ace666c81c5500c03c9d3cefe583cc192a75f5879c57cd17602eb"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 208,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep208",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 3,
+            "detach_frame": 315,
+            "grasp_start_frame": 314,
+            "grasp_start_control_step": 314,
+            "detach_steps": 2,
+            "nearest_attached_target": 2,
+            "distance_to_nearest_attached_target_m": 0.14874016599976916,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "b0c154cfe5d36cec3445e62a84780445ec1974dc404bbf9dd34e42cad9ddaa3d",
+        "raw_frames.jsonl": "6b47e1247847eb959774bfca9919915c0ba57fb0eb1fae20d572e393b0ba056a",
+        "control_actions.jsonl": "0574a4234b6ca5706c240c66cbad0839717499aaaaa29b8981ac70b33eb080a3",
+        "memory_audit.json": "1ffdb8c8ddc0c2cc77088fb06f7a905430eaf04a989d0b261734bc276f8bc6a8"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 209,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep209",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_wrong_in_basket",
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 0,
+            "detach_frame": 813,
+            "grasp_start_frame": 812,
+            "grasp_start_control_step": 812,
+            "detach_steps": 2,
+            "nearest_attached_target": 1,
+            "distance_to_nearest_attached_target_m": 0.31849779659231636,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 3,
+        "fraction": 0.6666666666666666
+      },
+      "inputs_sha256": {
+        "result.json": "30659587e60fd4076a3cb9ef7dca883d103e7e320bb00a6f3835f001474be2dc",
+        "raw_frames.jsonl": "a8fdde085d99530a15bb8d6a3260db5b4821290be9c9d40f2f6bcacd52712a0e",
+        "control_actions.jsonl": "5b7878a378d4feada5586accf7b6f9df37c0af1630ce9a631133a36481d3dca2",
+        "memory_audit.json": "09550818c7b638f8e7c2ae4b8eeffd941173169ecc41fba1ae41b0c2084ac394"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 210,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep210",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "88ee5b0c78f5d046cfc428cc6deefd005b2cf491fc8c80524c16b85b602e4589",
+        "raw_frames.jsonl": "dfcf0b43adb0237a66f2c3d73752ff6540c4daa7da3b0edde6f8e921bcfc63d0",
+        "control_actions.jsonl": "e8257c557318fd639012e6f99e020e1d4878d703424448fc7ed421ae0ebe7fac",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 211,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep211",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 3,
+            "detach_frame": 916,
+            "grasp_start_frame": 915,
+            "grasp_start_control_step": 915,
+            "detach_steps": 2,
+            "nearest_attached_target": 1,
+            "distance_to_nearest_attached_target_m": 0.15347169117095794,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "5b53e293c5a5f6373b78be789b3b56c5572ac2a677342143def3a0cea5b04734",
+        "raw_frames.jsonl": "052fbb6ae7a4afaed8e5ffeb7b0628277b85dadbc66e7f67171594de25e61f2c",
+        "control_actions.jsonl": "78e0b53f88cf62117c4022f73510196f6e10b3ca3b811a52f2597161f89ef048",
+        "memory_audit.json": "d01ebe766621084bb8a5e998ec21de972244ddad0c1b1e236acab462bbb9fb9f"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 212,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep212",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "50db39efb0cf69ce3f88968f66ce681fb51997232b8bfbca1016b1bd770d4129",
+        "raw_frames.jsonl": "597cf5a4c661bb0446e4c60fb91b8540fa568e212fea6747b85cadfcffd0e522",
+        "control_actions.jsonl": "6fdb0f8bd6d9b13eae5fb52d1650678ddac80d37bb78db3773fb10906c7c92bf",
+        "memory_audit.json": "509fa78eb203f3d621a42ac86788c871500398e9ef6de44464cf42b5f6ecef70"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 213,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep213",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "never_detached",
+          "near_miss",
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 0,
+        "fraction": null
+      },
+      "inputs_sha256": {
+        "result.json": "d0b056aa59a3c4644f9ca290c23ad460f9c1d93a437801f102cedbb6221c5fb1",
+        "raw_frames.jsonl": "a26a7f1cf2b49345da2d1ef0924deb22f369ae4a29c077c0d6526d55de0321ca",
+        "control_actions.jsonl": "264e8731b08a717d660506b7ecdb0afbda78841b3a30d840d9f9b3a96bf38409",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 214,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep214",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "4da483cf04b7d69f7382653be76abbd5f22a44889bd23bbfdde5f1e9048eb7b8",
+        "raw_frames.jsonl": "311663e2791dec091c667f9697cd59d57286f0bd9552868d70678444da273a50",
+        "control_actions.jsonl": "e254d75e7b0b9fb66c7af22ab96cfa272e820727136235c0bbd6cf4bd8a57faf",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 215,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep215",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "f5cab117c873ccc612c248ef32a695d301480d615f175885809ad24e2cd78b8a",
+        "raw_frames.jsonl": "45b41b7768975ac1449cbd762c58aebaf5b8a1475f99f8833a7bdfd4d2969eb4",
+        "control_actions.jsonl": "48ed7faf37e2d0acd2d92bf4f962e179e070123809a54110652d7d3b623c48fc",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 216,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep216",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "dd6393cbf53f968ad60fd56233610b4ba4d10418de4499cd328d51034aa5f60c",
+        "raw_frames.jsonl": "df20376c3deb498d32be038232423bcd9f8741cc295465b8000f273187ca60f0",
+        "control_actions.jsonl": "86b4f254fd74c0ec0fe20566f0db3f428b43ffc839697b130d09c63de2790ce4",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 217,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep217",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "3dea24924e73f4c0b88f04f3ae9841be897e3c217314d38fc71895738e837ad0",
+        "raw_frames.jsonl": "90019aad52348458ece9fe0817751b09620a14125c3df9ef206bf32be5b293e4",
+        "control_actions.jsonl": "802c6a2c6725c8894e7c03b26781a2fe5b92b7e222e33165c5a43ee5fdfad83b",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 218,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep218",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "a821c95900854d9383b6a4be5e08fe7e83ddf8b2f974fdc2fe8c680af36fbc63",
+        "raw_frames.jsonl": "e3365af098c0dbd885f2479414d66572210064ca1d1d3310c56e2974d1cedf8e",
+        "control_actions.jsonl": "92605959d4dc69f8007bc0a3571fc94aeff7deecf01b7c8345d9c41ed9f11994",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K0",
+      "task": "FruitOccludedRipe",
+      "episode": 219,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_k0v2_gate_20261102/dev/v2/FruitOccludedRipe/ep219",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "95da0e2a604e7b59f1eca59e34e21633f8c304ba8b2b9c408ab49afeffc98054",
+        "raw_frames.jsonl": "d656ddd53677fcbbbd3528b456051db3928e60c589a6501820c7abd58f2eb815",
+        "control_actions.jsonl": "3d6676ade8e3dc112d1df61d0e84dbe39ad2fdae64dc0da6da7e35a9bb4c20db",
+        "memory_audit.json": "d87ce97d75257b201a8f8346808eda1051d5b9497642d8fe7eae40ed8a67c20d"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 200,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep200",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "1c5871c02363e941223acbaff421b3825ca7c49d9dbd1700c03a486feb6747c0",
+        "raw_frames.jsonl": "3cdaf653bcf9516c0be1c4bfd0e01b1278ac5b7dd1ce1597fefd789e466f1f59",
+        "control_actions.jsonl": "89bb3930c184233ecf42b731e5341eae6d982937621335d7ed1a0a3929a76358",
+        "memory_audit.json": "509fa78eb203f3d621a42ac86788c871500398e9ef6de44464cf42b5f6ecef70"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 201,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep201",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "82d3dfabe47a4fa222e265e14b5a3ff50c72fdae4c7d3d067ff5a79d709d9ae9",
+        "raw_frames.jsonl": "847080eeae933239db5d9818ff4892138e594d860d8e2dc6c01a0887ca9aa1a8",
+        "control_actions.jsonl": "54e338d9ab937d9835a60ac95ec8bdff3bab6e0090e34189a6731a46e5f95464",
+        "memory_audit.json": "c10f438b0f451d3d822a4a7e720cde447e3ad4e13c56f5411532155f5079b82e"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 202,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep202",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 5,
+        "denominator": 5,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "0741b9e18e1a18f2e72b6dd55fd90d9be1ff98c00b0a8057840b9e935b811229",
+        "raw_frames.jsonl": "c42933aad3b67e6133fede4d28ad0a4c988bf25151dbbf3477d4beab233b4966",
+        "control_actions.jsonl": "2fa8eebef88c9944cfdbc2a16da2495d54b8897022ab227dbb2cb236560db277",
+        "memory_audit.json": "119a0d638cfa4210334e1352337037e76033450d1d71a9af452e379163196c40"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 203,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep203",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "a98d39497b21a126c7b34b55d417223f0b7489dda8a0891137cc7296a2646908",
+        "raw_frames.jsonl": "61a5e8571541b1f1fa9cc0d4ebb40d1aaa2364d1140706949f373773a75c702f",
+        "control_actions.jsonl": "1e84196a768ec8df67f1013304054c3b2813cfab63310c28e183cce009cbfe4f",
+        "memory_audit.json": "2096710ecc2688a199f132550bbcd08eeb6d56931ca4393ed77e4f18c49d1f36"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 204,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep204",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "194975df2827853a9924292e9d4062b9888bedb4fae1b828d4bf55927687bda1",
+        "raw_frames.jsonl": "3fa1e72515684199512067e83f334a61d4c0760e1f45ad75d7ad00d1f65d023d",
+        "control_actions.jsonl": "de278ac5a82a013a7b64b9706e4ccfce2a91acd0aec4b7c1c3f0603a05f6f8da",
+        "memory_audit.json": "88599c7af4267cff6bf4bcc7f0d287dd59d83feac436984e09047b4381cb1345"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 205,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep205",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 5,
+        "fraction": 0.8
+      },
+      "inputs_sha256": {
+        "result.json": "7a255ef60d95fcf81eeb3d884d65d27b4508e1131950af32bece250608441bec",
+        "raw_frames.jsonl": "58a56844cd96085d738e82b17373b3963aaa53f76a6c6687e226bf28d37ef963",
+        "control_actions.jsonl": "b71b7c92b92726c6fc7777d4503b7438d209ec13d02bbd97ffa55a03ca8c2e9a",
+        "memory_audit.json": "de0ba04a90c4e1aef8310892c22131810d2a95a9cd2232e72bf42dc9fca15b81"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 206,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep206",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "2a3e68c6c971d0a17ae03d3c6a18442226796af784ceff435dd087788957de94",
+        "raw_frames.jsonl": "264a0d073cd6b9de15f22fd0eaa9789d478f354328315aebb1924dc556851e37",
+        "control_actions.jsonl": "a8bcf0f799066494630a44d64acf575136a3b8d379e3d552b55a0ad47d7cc992",
+        "memory_audit.json": "871ec260640eaac3d5819cd66696fe293706ccb2f5a97a9d07c95f950fc864ac"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 207,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep207",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "9f17fbd41e0f09eb1ca158053e71c29a9c031fa795599754a53c8a76ce123526",
+        "raw_frames.jsonl": "3a17bb67ce0006310c684f30bec7cb04ee6a4fdb5811b489383659c98c34fc18",
+        "control_actions.jsonl": "31e244c6d34b535f2f869408129edbd29010e68d4e404d5c2d141667f24454a2",
+        "memory_audit.json": "29d4d6bc7a12b7010e29fd06cafb5a8b955672eb61648e1a0f55f93602379416"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 208,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep208",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "7f721cee08c7d19d82ffedda262c45c153533e4c3e63e2df2f5222cb9bcf7897",
+        "raw_frames.jsonl": "1fdff5d2e5e2c48cfc64fd092d4097a675624ec52468f0e0a4723d824f4976d7",
+        "control_actions.jsonl": "a568c9da2da1bcb5027c580a6e5e75f7298d0e59d09238ac6cf2705744a92162",
+        "memory_audit.json": "9a8e8958e85763d0fbffb8aab4597eca94178130b8fb762bdb79b7a85abc79de"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 209,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep209",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "4d30a1d4167cf79e67d20e7f153e33b7cec9411f5bd3fdbf4135c10816dd6d15",
+        "raw_frames.jsonl": "0e005a7c5c4637c988b62609c37e4ffcde7d720b0521ef2f82aad8d257395940",
+        "control_actions.jsonl": "db236749826cbc46155d6e388d5b872f089b143db8679831290ee120047bacd3",
+        "memory_audit.json": "1ffdb8c8ddc0c2cc77088fb06f7a905430eaf04a989d0b261734bc276f8bc6a8"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 210,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep210",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "b541c1921353580813e6335dabc35b141edcb0f7d9b0957012c80e1dfab79397",
+        "raw_frames.jsonl": "b471806cd317f79eb21c39bc1b0406a6c522c3f9a73f494aa1892f42335bdf63",
+        "control_actions.jsonl": "598e8587361680b35a72b4a799dae60121ccef6da01ba7d3fc4fec63d4cb6204",
+        "memory_audit.json": "871ec260640eaac3d5819cd66696fe293706ccb2f5a97a9d07c95f950fc864ac"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 211,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep211",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "09b815c0fcd7d47957f07822432c081358a72ea215e3c14ab875fe81708e4008",
+        "raw_frames.jsonl": "931491d70220dc2b18f017dbc04a40e784b9f46bc6cd0b4368e7f11ec0bec62c",
+        "control_actions.jsonl": "8109a8ac99564b9164c863e61ad8577d530dc8fd7da00f66e0c758d1733dbbf3",
+        "memory_audit.json": "29d4d6bc7a12b7010e29fd06cafb5a8b955672eb61648e1a0f55f93602379416"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 212,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep212",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 5,
+        "denominator": 5,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "556dd8dec73655ba902a0f8982b2687b6725e364bfa0040a7e78589317c27842",
+        "raw_frames.jsonl": "11a9c78224061b15f0f9b9d8dbf8c371426464ed5773a067cd1b7ff7fe579e3e",
+        "control_actions.jsonl": "a54c3bd8259e7d50c289b11e07be10879e28ff4d13bfb25b47f4d8e9c6b71716",
+        "memory_audit.json": "57ddfbc3ed1b7becc3afa761851e9e5c0cb89befa68e166a4633c40fdd1f55b7"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 213,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep213",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "4c4bc997e0b335377db6d0c37393483c7f9adef4d84bb4f67c739b51ef23879c",
+        "raw_frames.jsonl": "3ca1f9489c4feae1ffca294d6c190f79f70c59c928ceabebb18a2e7ac60c997d",
+        "control_actions.jsonl": "516e44d8bd1545c8ec37374f2aa118fdcca804e37994b7d165079969cd1706e5",
+        "memory_audit.json": "b0625015b2ed9cb04e4e5d107188326ca1c45d271ecb1a58781a8ceb87f6c42f"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 214,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep214",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 3,
+        "fraction": 0.6666666666666666
+      },
+      "inputs_sha256": {
+        "result.json": "697cc4e9daedf3914876457d84d586a65d13c4090ab563c46397518cca61075d",
+        "raw_frames.jsonl": "b7f2219b5ac4d71521652d791f267c70a7dbad0692d73d7bc9847b0a3c7b373a",
+        "control_actions.jsonl": "1cdeb16e2242d996fa0f9538903598c48687e3f41fd7dc5f38a615de2dd9d38b",
+        "memory_audit.json": "88aa47d49cf7f6131efe65afc88df5d0d5bae814b795a92ca9aa7d488e70daf0"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 215,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep215",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "c0dd660cda68d9f9e9dc3781068759a36b6092a5b9b74d0df5d4867638de4dfd",
+        "raw_frames.jsonl": "eaa252ca462472f9e88bc19b3ccbf7d0124f5a4b8bfa0be6b00c4603db690dfc",
+        "control_actions.jsonl": "50db03e4aa07dbfe1eef2f7df342fd6aa55fd7c169ba5d8992b4a37dc02cf4f5",
+        "memory_audit.json": "51d7c0fac9373f4b5b4cae51efbb0cd4d053bf42627ced239e35d6f031802699"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 216,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep216",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 5,
+        "denominator": 5,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "2bec8bb7dccd40215e86bf97c00a6a387406be3a6ce3d973a157fca2dffe117e",
+        "raw_frames.jsonl": "b785080aff6dcd5c49ee9367036f36fb6a98b14195224752ab1c2ff81e7609c5",
+        "control_actions.jsonl": "b8ecabb443d342dfef0cbb6659cb76b052e3bfb95171fb9cbaa7f9c3fa688d1b",
+        "memory_audit.json": "8cb99cec78b4b152046beb8da77b073ac2f0bf9308ef259a33c5a7aa26213cdb"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 217,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep217",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 4,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "e52b0e50c2f67b9618dd3759973b8c0696476a480e165b910f68a48e32b980f7",
+        "raw_frames.jsonl": "b8cca3406b8db5283a211db3c30c646f11cbf1291fb37b00b0ff86ca7334e5f6",
+        "control_actions.jsonl": "46b0da0a35178aefc82688a15712f6f714dca4db4bc4193d816197cbe6a93686",
+        "memory_audit.json": "88599c7af4267cff6bf4bcc7f0d287dd59d83feac436984e09047b4381cb1345"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 218,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep218",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "021d8ee317540b2c7edd4b6b0e8b832e2ba62565f9cbb832e4e3e45f717a2003",
+        "raw_frames.jsonl": "258ca381428f1c7b3f78e76c8cd55687206254f58b290cc2a76c4d48f36ea8a4",
+        "control_actions.jsonl": "7d3a71bf50db3a09dc1ac185ce5f036bae8738c1596e966bf788a9b92c61ab49",
+        "memory_audit.json": "c10f438b0f451d3d822a4a7e720cde447e3ad4e13c56f5411532155f5079b82e"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitCount",
+      "episode": 219,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitCount/ep219",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 4,
+        "fraction": 0.75
+      },
+      "inputs_sha256": {
+        "result.json": "d9e9c3a0a8e22b9a229c941d355369fb05aa91e8e556805aeec53f89f6ee5e17",
+        "raw_frames.jsonl": "5cd8df068fb4b5f65a854aa329df4bd2d94d80e5301706885963a45da8dd7095",
+        "control_actions.jsonl": "ff8a569e297b4d54702b8658db669d16640c389b419f38dac2528bea4d30686a",
+        "memory_audit.json": "88599c7af4267cff6bf4bcc7f0d287dd59d83feac436984e09047b4381cb1345"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 200,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep200",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "37d4a158b66bbf5752dcfa101ce5ce49ec03ee9fe082bc4271b62237f1772d20",
+        "raw_frames.jsonl": "ce15edb5731990e653426b0f99da481a4dde4654ae08dc68b139a08a5d4ec0f4",
+        "control_actions.jsonl": "7ef5559394a55c14e9e69d03dad7d34357e18654d5d96deaad693312f2583526",
+        "memory_audit.json": "871ec260640eaac3d5819cd66696fe293706ccb2f5a97a9d07c95f950fc864ac"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 201,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep201",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 3,
+        "fraction": 0.6666666666666666
+      },
+      "inputs_sha256": {
+        "result.json": "6068f5fcc25a1604384bff6a9a11ab2500b10f99475596ba2530e5b37ba7d55a",
+        "raw_frames.jsonl": "8488d53e6499113275196d1a6c95ae11173b2970037eaebe037ec8b23b33febd",
+        "control_actions.jsonl": "91f58661525f524bf5e32e7610a74622a3ae67b57f743cf58eb205ab328ee872",
+        "memory_audit.json": "a0fcae790022a7a619ee73ffe4b254eb9a2044fb619415c06369c62b56369559"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 202,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep202",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "cfc81bdaa3409b8d4943210c677e8fe79db76c717c2bd0ded7388019fa5d102c",
+        "raw_frames.jsonl": "5bb73b328d587fd7fcf8c7f7c24dd38c618e22eb8b3f8bc869de91becde9d7e9",
+        "control_actions.jsonl": "8001dd96f9f872577111bc8eb3d28fd73f2e0686408f71a8da23bf4f2295be65",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 203,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep203",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "1cded7dee0acaaae226110d6ae275c6f53fcd971ff944052eb6091a7eceda0b5",
+        "raw_frames.jsonl": "212d570cb4a9f584f3b0e113970f1e5d2fbde7b6eba34b4fd841f63af9f79ff2",
+        "control_actions.jsonl": "d96ad3ff4f0a309401203a881e2a2de18435eba2d6de40801e5f0bcf2c6646a5",
+        "memory_audit.json": "05a7bd92049942923164ef352734ed1a3300bdc785ef6ac2d727fc42dedbb594"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 204,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep204",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "f9740aa2185044da2b75a173a9ce32e447962601766c687bddd5d0b4f091519b",
+        "raw_frames.jsonl": "8b64f9bba4ed53118d94282988b43dc99197aaa8a1361155345c3f76e437e0a1",
+        "control_actions.jsonl": "7b459542b181cc745f0b3108f366b3f048271391807523925ac0d28ee66cc294",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 205,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep205",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 1,
+            "detach_frame": 1104,
+            "grasp_start_frame": 1103,
+            "grasp_start_control_step": 1103,
+            "detach_steps": 2,
+            "nearest_attached_target": 0,
+            "distance_to_nearest_attached_target_m": 0.21037049363823931,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "25c1424015ad12083fa01e1a2ee73586a74656c0d86a812da240b851eba2a92f",
+        "raw_frames.jsonl": "60e49749c470aade6aa5d7f70579e9d83f3ff17dadcab75ec3b10b4df53dc3b3",
+        "control_actions.jsonl": "679903fcbe0cf674c4ea399f7b2793d6d4ab94f9c8ed8609890fb2a75733f0d6",
+        "memory_audit.json": "f0f2c3d1bed8e969857e81162d1a213e0ab2c2fa706c6673d9679fa534e12a1e"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 206,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep206",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "c3a079b0dc62be94581222c74d4b26fd8c6572d5caabb547e8b90782782c4d50",
+        "raw_frames.jsonl": "31e99416d10297a19188413a49a9096794947bdfe6002d0cae9f69ef1ffeea8b",
+        "control_actions.jsonl": "d5b9faee0cc59631aa7023e5b53ab2e9e0f19c9e2173d1efc59b884eff848e42",
+        "memory_audit.json": "970aa76c34e1cb8875f213889c67d508a5c2e4754418de8fcda28a88521de5fd"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 207,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep207",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "49b51b44c2567199ce85e07d09a568cadc03984ac932d17d4d4f6d9fe07f2436",
+        "raw_frames.jsonl": "000e67b05f966d9713dd617264b1b5b11f68bea308dad59cbf83fbc9b19f67de",
+        "control_actions.jsonl": "03b4269f1f1cf9a3a5a21ec7441226115d46ff08a2bdb23d4627f4920990ef22",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 208,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep208",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 3,
+            "detach_frame": 279,
+            "grasp_start_frame": 278,
+            "grasp_start_control_step": 278,
+            "detach_steps": 2,
+            "nearest_attached_target": 2,
+            "distance_to_nearest_attached_target_m": 0.14874016599976916,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "051c5e099d27367b40a8a4e437914d63ff2309f0b160e43f9e48f0a1d3f1cb6b",
+        "raw_frames.jsonl": "4b96496e244d7385e8c48fb2250613f6a8e586a779e54207760ab75834c81423",
+        "control_actions.jsonl": "44fa06c9fd5f3e6afa3c70ea7b280070e9142aeee57799c88b18eca53ceea3cd",
+        "memory_audit.json": "2096710ecc2688a199f132550bbcd08eeb6d56931ca4393ed77e4f18c49d1f36"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 209,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep209",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 0,
+            "detach_frame": 590,
+            "grasp_start_frame": 589,
+            "grasp_start_control_step": 589,
+            "detach_steps": 2,
+            "nearest_attached_target": 1,
+            "distance_to_nearest_attached_target_m": 0.31849779659231636,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 3,
+        "fraction": 0.6666666666666666
+      },
+      "inputs_sha256": {
+        "result.json": "3b51c92a66787a8b7e4620c8faeb66f2d8db2cef5f597be0cc21feeef39e59d1",
+        "raw_frames.jsonl": "3adade5f077c1f4bc471b1cd84760c4d3e240b9608c81c9e728efdd36cf0851a",
+        "control_actions.jsonl": "ef6833348c04396385aae318bd7fda320c8de06ae98072fa12c627967dc4991e",
+        "memory_audit.json": "57ddfbc3ed1b7becc3afa761851e9e5c0cb89befa68e166a4633c40fdd1f55b7"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 210,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep210",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "cbdb6d442b8eadab8d5070f5fee0dba1a7dcf2b325a3dea59b21c98d973c1647",
+        "raw_frames.jsonl": "b203b0f61c3d4ba63da21ebd776063d5fa7b13b8326cdbffd5c99997815ffef9",
+        "control_actions.jsonl": "0230ab1119195734e6173bc9bec39f90c6b0416b72b72a0488bd5b132f9d08b0",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 211,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep211",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "c82b03adb4381c9915b673022bc771f566c86bcfe6122db9734b05069d5a9bda",
+        "raw_frames.jsonl": "3ccfe3f79d34a12e441bb9b1bafb55fc028f1cb717622c12f03b187fc1dea13b",
+        "control_actions.jsonl": "aa93621f2f28065b08a8c002bd329e4ec0f34557c3cbe920280bcafe90a48bf6",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 212,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep212",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "c220978188aea34fbe45800bdc1a5fc07455e639c9553ccf43823339befaabb6",
+        "raw_frames.jsonl": "b42bf81fef89e2291c1322b388b634bf3c26ed9403f03c07cd268fcc5814dcf5",
+        "control_actions.jsonl": "dd564c24e9760059ee38134fcf2b6d802bfdab6dbf75468e390897a9611a07a6",
+        "memory_audit.json": "a1af4126e45df7a8154e03a17118f68626c81dbd9f84f7d4cd7435291291530e"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 213,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep213",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "f9cd4981ef6179c5d0825d6382ead11ab3603ffd47e807cab99de48087869250",
+        "raw_frames.jsonl": "e7534f2ec0e0a146f2f8c171b9c8ae7dc04f834032ac1afa1b3aa9f322c3fa32",
+        "control_actions.jsonl": "0c516e7414199e5168887d5118f8757a396b1ad89a88ff2e12758fd9e8e8e624",
+        "memory_audit.json": "a1af4126e45df7a8154e03a17118f68626c81dbd9f84f7d4cd7435291291530e"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 214,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep214",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "4bbf1b66a7ea19b20e4e066b885b07860cbc51004d32888ef23a7d9241c14cf6",
+        "raw_frames.jsonl": "0cd4e1bd71cd01021322b3321f0e7d8b824965a88615d98e1d7b853bef192068",
+        "control_actions.jsonl": "e47438d717401543effc691f8e39e2dc5ea59ef82c91b473e2073157029da46e",
+        "memory_audit.json": "b873d309f491a90ffe1ae1921a1a0166fab215090024b4d96dd834eaf0132103"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 215,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep215",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "e9a6d52c3719425f9db26686f7bb38a1e34d5ecc3d6a9a99c8afc6fb931dd8f6",
+        "raw_frames.jsonl": "b214f5bc4a3a148c9433e8711f4587d706d10b5f126d10dbd89e80c60422be40",
+        "control_actions.jsonl": "73a62791e5026bc99b4543fe99eb05b9a239447f14a80f649bcedaabed50dc09",
+        "memory_audit.json": "a0fcae790022a7a619ee73ffe4b254eb9a2044fb619415c06369c62b56369559"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 216,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep216",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "never_detached",
+          "near_miss",
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 0,
+        "fraction": null
+      },
+      "inputs_sha256": {
+        "result.json": "df8a3fee14c04632f0e5ba4e3b3161e236163f7577277471f6c6b8c84bc95d3d",
+        "raw_frames.jsonl": "351551a2cca22db9901bb5d75ea5561ce2e09228b87e603bab215d0c26605e0a",
+        "control_actions.jsonl": "40571a6528145b472e6b36325fddf8eccd895f13a2b3450c36141e967dba4c6d",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 217,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep217",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "56b35f09ccf6c372012c10104a47b8a0bb85f2f3102b188978837620e10c29c5",
+        "raw_frames.jsonl": "d977ad17c322d4768381fa2d813f70c33f30aceefc05abec1d933ab3f7807480",
+        "control_actions.jsonl": "bebe5ffa8d8481393ecc4498198ade83e1a2072cc59f1d39ba95eaf6d14c0632",
+        "memory_audit.json": "228adc80a6d75dc531b4347daf09afc8fbb980a401a7076c87016a9cfa59b578"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 218,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep218",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "1abd1f6a26414287269b99b2599c0392764b5e65abe7fff6052fe3b5ccbb18aa",
+        "raw_frames.jsonl": "0da9606b289d9b89980578a37c8d621f0dc14f19c01b746410b2c224aab11e78",
+        "control_actions.jsonl": "62145535235a22848b16cce8de5ee4e40a79500a29f41aa09de57e69ff830ebd",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K4",
+      "task": "FruitOccludedRipe",
+      "episode": 219,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K4/FruitOccludedRipe/ep219",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "18da6b9140a24998ae18d70ed221d22be380ab16b4d097c73f7c4ecf8f829029",
+        "raw_frames.jsonl": "1819fb72661a61145ccceee389f4938329b111d1207d284ac2bf101f39459d3f",
+        "control_actions.jsonl": "907f5247504d9050ded44a26057e5b9bbf5648d76fc190a0e0f0493f9f68e145",
+        "memory_audit.json": "871ec260640eaac3d5819cd66696fe293706ccb2f5a97a9d07c95f950fc864ac"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 200,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep200",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "1536bfc2ebc2b23e8c4d05a2684929440ec2463deb2053ed4a1b838dfcec1e88",
+        "raw_frames.jsonl": "9f50c1d1df0d44f88e141a1911db08f9f21cc49fb82b568009bbc1cfd564405f",
+        "control_actions.jsonl": "6d1145ab9e2205f864c6612cb86f9a3bb8c50d86efc03ef0cbff8fccfd2a7b4d",
+        "memory_audit.json": "639ec9c8f96ace666c81c5500c03c9d3cefe583cc192a75f5879c57cd17602eb"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 201,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep201",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "83ae63db60d621e289cb040179b53869b54719657cbe83b3924f69e8f574b690",
+        "raw_frames.jsonl": "63a133b88d10b8dba5ca5c5597a032785c64c36a9c7ecb0608ebf91f1281feb2",
+        "control_actions.jsonl": "f242273890d2d6481ba67318335c6aae2dff8f074ff8c8a7eaaf55a9d5212af1",
+        "memory_audit.json": "7038233fdb208d00cd34e4bd25599e08f344a1a457e9730fcb9b845e6e373b95"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 202,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep202",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 5,
+        "denominator": 5,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "9524f5abcfd47fe7c7ae3aedabed7a274fb26244ddd56ed1f0b54a8fee9504ec",
+        "raw_frames.jsonl": "47c1984fae07c32b0ae8adfe6a8512e7fa4bd372933b81bd62e42ecc4fb54097",
+        "control_actions.jsonl": "97d9c3690d0cd15d03dc9bfbf1cd7d577dd249722c824f575e672ca869caa5c9",
+        "memory_audit.json": "119a0d638cfa4210334e1352337037e76033450d1d71a9af452e379163196c40"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 203,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep203",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "275577890d5ecbc3784d890def64b915c6ed9a27d96ea98e6a34b1984bc6d358",
+        "raw_frames.jsonl": "3b8337ea11a751819196b0ef29232352cd6d81fad97565d2a9ef4ea0cab8a3c8",
+        "control_actions.jsonl": "7efd3336b65b610a66b7d16e69a2f23d2d0ee7e147ac7479b97ababa6895084a",
+        "memory_audit.json": "b0625015b2ed9cb04e4e5d107188326ca1c45d271ecb1a58781a8ceb87f6c42f"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 204,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep204",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "4027c60c3297bcca0a0dea0cabb7255439f7c4cc7e365c47c78c850db71c3119",
+        "raw_frames.jsonl": "1e59bb34d4fdab88e4e2b2f99b5de59fb1a64de20f3bac712e9eb4837d9231c9",
+        "control_actions.jsonl": "e4e7b92e26092062c5cf40d8a2a55961b2bc7cbcc19635bc7115fa32b1b66ffe",
+        "memory_audit.json": "c10f438b0f451d3d822a4a7e720cde447e3ad4e13c56f5411532155f5079b82e"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 205,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep205",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 4,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "ac7c274a024803637eb9a59eab609713aed0d72ba3b082ed08ad2a3b14312968",
+        "raw_frames.jsonl": "d173178c243c55e357983fb9b683183d71d82184431afa694a9c7442a7560fa3",
+        "control_actions.jsonl": "919be9d1fd1e20bc6aefccfe09a480fa507d20c797371e3ba0ecbc7c809ce61c",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 206,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep206",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "d4e3be2c93e1d9b87500e453f7aace3b189f34082487151aa28fe085184e1c75",
+        "raw_frames.jsonl": "a18f0f695167857e589f06099049002528310dd1c862514e672d247181dca07d",
+        "control_actions.jsonl": "4beb44452c1a43390f9a6b4eb63f639d5b5b3e2e9818cc09f0a39b95e97ea07b",
+        "memory_audit.json": "509fa78eb203f3d621a42ac86788c871500398e9ef6de44464cf42b5f6ecef70"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 207,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep207",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "982cafc151b78ee1ac673438b41bd8351d468d6bb93a84fae62f2e48a8d46ff6",
+        "raw_frames.jsonl": "696b64b0e070f1ede00e5757c22ab4470bfada51f8f46308507e7af11bf659b4",
+        "control_actions.jsonl": "789f5fbea762e9c0a3d9ab2226d7d3c89d4d812dbdf835baedc1ee075e7d82bf",
+        "memory_audit.json": "509fa78eb203f3d621a42ac86788c871500398e9ef6de44464cf42b5f6ecef70"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 208,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep208",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "882c10a7cfcd6c2b50aff6af61ecb130e501ce3e8cce3df833e432564ce8e8c9",
+        "raw_frames.jsonl": "09847f8d0f3f6a6f842deae87df6a6c7cc5839f360c62d27c2297cbce01a398b",
+        "control_actions.jsonl": "0a4e50c43edf333a65767df976388b946f6bf9c0a58bfbdb192acd61e6fd9e59",
+        "memory_audit.json": "88aa47d49cf7f6131efe65afc88df5d0d5bae814b795a92ca9aa7d488e70daf0"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 209,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep209",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "a9624f889ea718365d19ad7516424ba97816c054834070a476057ba3d301814c",
+        "raw_frames.jsonl": "3e4558c8576f32e20c1f3468cd135d4c6ff80fbb1cc0503b838e8d4ae12c50bc",
+        "control_actions.jsonl": "85e2f2c5f33dac912871c96111f8bf3f7831dc90ec400e9e0d33c8bea8d37dd9",
+        "memory_audit.json": "8308746f27e285f372c7a2d6763200df5f945ae32a9fe5b8fdb759c9667caa2f"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 210,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep210",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "f88a47bb99934219c7e5d21906bf2dcfc095952c85dbd2a8ad9488c04af0d033",
+        "raw_frames.jsonl": "a554094841e6cb6eb74faa39ecff1a212d358178139e3d94c42e79da8897306d",
+        "control_actions.jsonl": "1f5d90c6af9c488ebc092a241fae9f456ca2f6194465bde861a5d991b8560991",
+        "memory_audit.json": "509fa78eb203f3d621a42ac86788c871500398e9ef6de44464cf42b5f6ecef70"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 211,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep211",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "83db946c3af1d7227c5da38a8ec4d69ced126bb54e82e7177aae63d795cbf583",
+        "raw_frames.jsonl": "43fa9085020540c5cf5537c5548ddbe1031542c51ba36ffa8d3129a64510b0d3",
+        "control_actions.jsonl": "45aade254ca42d970eeaad243c022f5d128f09e03af14f17e6b1ca69d9c4bc6e",
+        "memory_audit.json": "a0fcae790022a7a619ee73ffe4b254eb9a2044fb619415c06369c62b56369559"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 212,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep212",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 5,
+        "denominator": 5,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "078c22e886416361edc90a7024ad8b60584f142451114eab3a0c3dfbe94e424a",
+        "raw_frames.jsonl": "96f077648b3e1cc7c84266ccd153e26c7741abad7462d778a8ea354a45a059ca",
+        "control_actions.jsonl": "26654ebea3f7fa7e98b05a73fbe7ce29a0622a50b600a931f90ffafd7a892ae8",
+        "memory_audit.json": "6ff2a3b99eafb28164d20470a13cb0048cacb02721fceb74f6744f1e079ebdcc"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 213,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep213",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "9ab35617e3f69e6bd3b9b6d2e6c8bfeabbdd072a6feda0805111a201805e9bec",
+        "raw_frames.jsonl": "e4d5984fbdd2e0890f683444caa41daf30939ea88e665bfbfbc3634429445499",
+        "control_actions.jsonl": "f31e9aeb44063c854677a110a7682bcb9c944278b1ee2ceb9e55bfe0a44ca07a",
+        "memory_audit.json": "a0fcae790022a7a619ee73ffe4b254eb9a2044fb619415c06369c62b56369559"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 214,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep214",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "ecab0d39c6aa71b3648acc2484364fc3d28a26c22a519c48eba1861dfd997c60",
+        "raw_frames.jsonl": "c75f28119d126ae43dda73802c16c8523ad8f69ee1ea176cd80fc219a5f6f5b8",
+        "control_actions.jsonl": "7db60ee554fe882d87a32ddea51f378294518f5945cc51786a463b123cf87e4a",
+        "memory_audit.json": "6ff2a3b99eafb28164d20470a13cb0048cacb02721fceb74f6744f1e079ebdcc"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 215,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep215",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "ea992d339ae93c9d70361ceb4bc34badaa3044f5f605d5f37566af6d8150d5ae",
+        "raw_frames.jsonl": "a1959c69f07b48dd186077191ae1c209532552228fbb4245051a01831abacf19",
+        "control_actions.jsonl": "da832010b1b95337b1e7171d7f50100bf9280d846ce727f9b562db0e9592b63b",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 216,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep216",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 4,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "17809fb9781af2526cc09cd068e3e78bb75e77f102fe3b49002efefe80f8578e",
+        "raw_frames.jsonl": "f3085b420f5173ed18d81b7ae7e3a97eb8633c5df17056347b3f22fe612cba49",
+        "control_actions.jsonl": "dd649d4a8d484715bed2138978ffbca025d4ff46163277cf15cb5288ee5f6e5d",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 217,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep217",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 4,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "468bf8026c7196de48846b955a5cc466dc08ac3c951999ee00c413ec17bf78b4",
+        "raw_frames.jsonl": "d255dc4fe209c247ec2007bb651466281bb3461ed84cf5e935d8b61808f2f129",
+        "control_actions.jsonl": "2bd444d582b790c301825c93d9e63a798cd03f9e394ca21ef78bb52fc3cba42a",
+        "memory_audit.json": "871ec260640eaac3d5819cd66696fe293706ccb2f5a97a9d07c95f950fc864ac"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 218,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep218",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "dbeaceb9b89982e7698a63369eb91560e6b143e28d204f54188764e3f78c3b2d",
+        "raw_frames.jsonl": "0dbd56fbfb407eee84bb2ef66eeb05b1bd4a38c3d4fae5ca4b9b127e50320d8b",
+        "control_actions.jsonl": "af5427d555eeb3dc6bc6d4a14675ea4d2629928fbe9ae52ca07d30c0655baed9",
+        "memory_audit.json": "18d3e0ded6877e7ca3f5fa8c9f2a6d570a526714a37d7766da9f9ce5b1488a92"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitCount",
+      "episode": 219,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitCount/ep219",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 4,
+        "denominator": 4,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "b806e34ca2e3d4cdaddc371ac5ed5b6e1d3f7c148a9d03e29a83c37b62112448",
+        "raw_frames.jsonl": "490fa7253175bbc63646dff01f66972263188905a2fdf3a5a288371875e36c29",
+        "control_actions.jsonl": "cfeb0a4267e69d5f76430366527204e5ca4f6dc3e6d732aec9a1c1284e7ffa10",
+        "memory_audit.json": "bb2fa0c40a0becd2a46a955be69d62bef0c1f9cb37a36ed62bbd70fecbaf477b"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 200,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep200",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "f09087effc0ed73d1054f8560e7c04f6ed122e4eb72f20a6ecfa3da854ab8020",
+        "raw_frames.jsonl": "10698492c37946ede617a8579c0ca48bca5b9847442aeb06b834392a93c495e6",
+        "control_actions.jsonl": "f1e0497b84fe7529055ec1a0f013cd3c29b090c41831609fdb4f1de778ea2bae",
+        "memory_audit.json": "2096710ecc2688a199f132550bbcd08eeb6d56931ca4393ed77e4f18c49d1f36"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 201,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep201",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "d9049db9d2c68e348a5fc032690548af494124caeb89997c0920b738ada1ac8c",
+        "raw_frames.jsonl": "ae083cc4a05bad614317d8b2a64571dc17112f3bb3ca6712f605fec2ddf16371",
+        "control_actions.jsonl": "9a67ed7c8d80a3480a89fadf2c49c61846dad2516f6b84fba4faa5b5b0395c70",
+        "memory_audit.json": "88aa47d49cf7f6131efe65afc88df5d0d5bae814b795a92ca9aa7d488e70daf0"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 202,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep202",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "021f50fe374ef6568dd005e7b8e94b5adff11068896b86c258f9189b5d20311f",
+        "raw_frames.jsonl": "232e334212e3e528f0b9849325b4fee78f3aba178dde34ca78708162435b202b",
+        "control_actions.jsonl": "f903321b198bc5f564d1fd57909392415993939d8b1619cb34ad65f0fca2835a",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 203,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep203",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "2e39dfe0133633bf95906949c1887510198409648322cc7ee2b625ae489ea6a9",
+        "raw_frames.jsonl": "99a326b34ee042c081a11e9a6ed7d01062aefb8b7d141294fcb643173d52635c",
+        "control_actions.jsonl": "ca6a9f1a75c42394948621ff4bfbc2a6ec85fb17e600036f144c3ea58726d200",
+        "memory_audit.json": "8fec3cb01b33d81d2ad0d52c5510c4fe58685074733ccd964e9816a9035adac3"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 204,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep204",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "d13a0d73bfd076451c45b919406b1fca3e6a12eb482e65f2c760f7b759707c68",
+        "raw_frames.jsonl": "2ef4ac49c3417f63ba9059e33e91e6010b1c0e729a02ddffd69c646b32872fa3",
+        "control_actions.jsonl": "68f127bd054fe2d52d542c6807bfb9a673a32acdf18a1726e6237fb707e2974e",
+        "memory_audit.json": "29d4d6bc7a12b7010e29fd06cafb5a8b955672eb61648e1a0f55f93602379416"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 205,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep205",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "ea8a8138cb232f90cecb3fac0d6b12b58938bfcdc62506757e5ab21c5796eb59",
+        "raw_frames.jsonl": "7f9afc899e299f9cabe9a80da90b0e9bca00462ee8c6d422b529fdee09601d8c",
+        "control_actions.jsonl": "8951fcee07adfab9ed6b4e5cae4dd5e2275f56b21a4cc97ca1e0642378bc7f61",
+        "memory_audit.json": "970aa76c34e1cb8875f213889c67d508a5c2e4754418de8fcda28a88521de5fd"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 206,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep206",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "d3c20554b920cb4abdae956414279f337368f5367c4584d30d141b33e5bf2de3",
+        "raw_frames.jsonl": "6686823c5da82679209fe9493deb2c7ea8efaec9019aec1066574bb71a5f19d3",
+        "control_actions.jsonl": "8f5f80723dab49853f02d885d65551549a94fe4a3f9e7026065d2ac06d7e3b26",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 207,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep207",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "55aabd21f7fb1685af18ac2d03306d1cb6611a131db748afdf06a1a41cc865bf",
+        "raw_frames.jsonl": "f5c3f7b056b978ed99ea2ccc302084629bd9fd46a5522ef92bf8d56bd3d84a61",
+        "control_actions.jsonl": "2a4a2f40ecd0145dcbc69eb362699e2aeacc2c8af79d38bc5de47b9ad1753f7d",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 208,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep208",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 3,
+            "detach_frame": 617,
+            "grasp_start_frame": 616,
+            "grasp_start_control_step": 616,
+            "detach_steps": 2,
+            "nearest_attached_target": 2,
+            "distance_to_nearest_attached_target_m": 0.14874016599976916,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "ce151f9b8870c1062eb953f11c580fb1b568b7cf0a599f1621b8064251ab344a",
+        "raw_frames.jsonl": "0128f59c86d7e3b0cc2021f89645c0e56b7842308691949f5402b4f02cafdcee",
+        "control_actions.jsonl": "1e50f01a8ee763ee339b4ea17ffd12f115fa3b7f18d6e65af2e7629ce86d1f83",
+        "memory_audit.json": "8cb99cec78b4b152046beb8da77b073ac2f0bf9308ef259a33c5a7aa26213cdb"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 209,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep209",
+      "outcome": "timeout",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "timeout_operating_or_stalled"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "969bffe15e598c8e2c4ffc539275ee6e980b93da298b4d268129e79759b2a76d",
+        "raw_frames.jsonl": "89b154e6d944cc52f26ac0f75fdee6fd7aec610fbb164a1d90fd600b5eafc5b9",
+        "control_actions.jsonl": "8209ebd3baeac4e242982a609dd91ab1258f8d34577bbd5e1237c5f8a82609b9",
+        "memory_audit.json": "06577e06cf56e1b9f533cf1f9b9b8bef09bf20dd5203851a4aba33df33129a87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 210,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep210",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "1d83ef358a9e0369d09369d7cbffbdfbb943b06efad20f2baf14724b89e2f337",
+        "raw_frames.jsonl": "a75dc314d7aa4fed890236b517a884a2f27f91088ce0ed5d4050fcfcf3951d67",
+        "control_actions.jsonl": "cf0b24fa02b812867e1d55c286b93b2b80dcf71925520e923d245fae4ffda66a",
+        "memory_audit.json": "477bacc7aca76d61a808fedcee231f41dad3e7f353553e247b3ad894f0a54c87"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 211,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep211",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_wrong_in_basket",
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 3,
+            "detach_frame": 294,
+            "grasp_start_frame": 293,
+            "grasp_start_control_step": 293,
+            "detach_steps": 2,
+            "nearest_attached_target": 1,
+            "distance_to_nearest_attached_target_m": 0.15347169117095794,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "8f59770c0c6b6d9766001ea856501b06728ebdc1b323d9e1d57969e7f2c7bae2",
+        "raw_frames.jsonl": "39850568cb75e473293080382f70c56466789909743b8f778dbda07d814d9031",
+        "control_actions.jsonl": "bc17fe2683c5d335885f1aa81d2145a984b87107df9ea0228d7d507f01ead40e",
+        "memory_audit.json": "c10f438b0f451d3d822a4a7e720cde447e3ad4e13c56f5411532155f5079b82e"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 212,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep212",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 3,
+        "denominator": 3,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "bebdbb9e89d555111abf572ef884006f2cfaae15e2cc60f3524300e4d59d2b59",
+        "raw_frames.jsonl": "4100bdc0b15bada620ca0c0ba57ac26e32a9f39e3d07919a4afbf743ed5ebb32",
+        "control_actions.jsonl": "c9a270fbeb8c170fa06202e49ad2554c3a78af269ee2bc4fabf976b151e3c2d8",
+        "memory_audit.json": "a6b0883d7d88a68a39d5ea91331e9ce381747dccb2fdd979b3dd7fa32e3930c9"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 213,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep213",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "bae9e21275da62c99100e2245503d0b683e6fe3bdd2a9981b0e0c79a8e9b0a32",
+        "raw_frames.jsonl": "d5ca4e8e062f41699e4453691a288d33b6cc7ab06e91239f2a56cd60ebc0ef43",
+        "control_actions.jsonl": "43cbfb3e293a901e0655fd7dcee8a7a810849b2abcbbd41c236eb676731d7f5c",
+        "memory_audit.json": "b873d309f491a90ffe1ae1921a1a0166fab215090024b4d96dd834eaf0132103"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 214,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep214",
+      "outcome": "success",
+      "classification": {
+        "class": "success",
+        "memory_errors": [],
+        "operation_tags": [],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 2,
+        "fraction": 1.0
+      },
+      "inputs_sha256": {
+        "result.json": "e9ef5e6911c1abbe7b8c444f1981801e7fc60a787e0060c1ea4dd72909bd1c9b",
+        "raw_frames.jsonl": "04f5652655000f1bee6de21c9ac0a51909018701c39a311d498e9d7738188a0f",
+        "control_actions.jsonl": "3c7635f1f79c9c82dee560d27967dad68c78f0b4710017269c4c1e88cc77b0d4",
+        "memory_audit.json": "bb2fa0c40a0becd2a46a955be69d62bef0c1f9cb37a36ed62bbd70fecbaf477b"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 215,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep215",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_wrong_in_basket",
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 1,
+            "detach_frame": 507,
+            "grasp_start_frame": 506,
+            "grasp_start_control_step": 506,
+            "detach_steps": 2,
+            "nearest_attached_target": 0,
+            "distance_to_nearest_attached_target_m": 0.2699642852761709,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 2,
+        "denominator": 3,
+        "fraction": 0.6666666666666666
+      },
+      "inputs_sha256": {
+        "result.json": "153ce2cfe946e56dc37d5a3bf39386e623eee119299b0d5987d21aa0ce25656d",
+        "raw_frames.jsonl": "b7b57cabb035271f67ab7ef66013f4603db6b6b128c5355f831b39c3a137c82a",
+        "control_actions.jsonl": "e4b7383e8ab0b5fd51b165cec2d9318c3636be5f4018773d641be42a8910d0c5",
+        "memory_audit.json": "60513ebc0779f33e62e8f3447eda744a310903f98f334130c1ac1e4e38697b34"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 216,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep216",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "a3226534f933f6a2b478a0db7f85d1c5fca335703eaa823a7940a97a343ee9bb",
+        "raw_frames.jsonl": "8ce7c938ef6e8b75f8dd09ff36d52ab493c30b96b476b8df903ef129653660e0",
+        "control_actions.jsonl": "6cee5b6478aedf22427c856800af1dbe8f107430474d218332a8e6321f3bb465",
+        "memory_audit.json": "639ec9c8f96ace666c81c5500c03c9d3cefe583cc192a75f5879c57cd17602eb"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 217,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep217",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 0,
+        "denominator": 1,
+        "fraction": 0.0
+      },
+      "inputs_sha256": {
+        "result.json": "f9f8487f63636e3f6b63f0cd21f7a082f62072ee2eb095fb77a9f24b34468290",
+        "raw_frames.jsonl": "4b9daf5537405b3e16501b74bd050330240d63d190ea8c58b7f748854ec33d20",
+        "control_actions.jsonl": "dcce608597a4b3c58746351c129cd5d86144e83b6be7b2da1babcbf7fb902ade",
+        "memory_audit.json": "18d3e0ded6877e7ca3f5fa8c9f2a6d570a526714a37d7766da9f9ce5b1488a92"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 218,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep218",
+      "outcome": "fail",
+      "classification": {
+        "class": "operation",
+        "memory_errors": [],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "90e0eccbce12ddbc7ed87e755c125108d00d489d5d38ff073b75879830c25e46",
+        "raw_frames.jsonl": "7e36e41c0be98d0719c9b9139368d1df522b53e58da6be260de9e1222e6f21f1",
+        "control_actions.jsonl": "f0c7b38ea1468e484e74de807f849af490133e81acfce557381d2953e1035f2a",
+        "memory_audit.json": "9466e66118fa5c7a7c6b4670a63cb43445115aad6ff4c04f20d666f9846b6b3e"
+      }
+    },
+    {
+      "condition": "K8",
+      "task": "FruitOccludedRipe",
+      "episode": 219,
+      "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_stage5_20261103/validity/K8/FruitOccludedRipe/ep219",
+      "outcome": "fail",
+      "classification": {
+        "class": "memory",
+        "memory_errors": [
+          "occluded_unripe_detached"
+        ],
+        "operation_tags": [
+          "dropped_fruit_outcome_fail"
+        ],
+        "premature_stop_proxy_window": 200,
+        "environment_anomalies": [],
+        "descriptive_subtags": [],
+        "unripe_grasp_events": [
+          {
+            "fruit": 3,
+            "detach_frame": 1104,
+            "grasp_start_frame": 1103,
+            "grasp_start_control_step": 1103,
+            "detach_steps": 2,
+            "nearest_attached_target": 1,
+            "distance_to_nearest_attached_target_m": 0.10801282726217412,
+            "adjacent_misgrasp_possible": false,
+            "timing": "First control step of the DETACH_STEPS consecutive grasps ending in this first detachment."
+          }
+        ],
+        "revision": 5
+      },
+      "event_recall_proxy": {
+        "numerator": 1,
+        "denominator": 2,
+        "fraction": 0.5
+      },
+      "inputs_sha256": {
+        "result.json": "2906c194c2b27761fa8c92ea8913c5ec25def1ed75d6a30289c621774b9ff6e0",
+        "raw_frames.jsonl": "29db894c17a5213e7cf5279f8d721a5cecab37088b2f73fa8e51547676f4680b",
+        "control_actions.jsonl": "4ce1f7fe8f7adc085b078d68224e29be8b41bfd99f898640894cb3a15575bc7b",
+        "memory_audit.json": "1c6bd569d156fd352d283927eb0fbd7fd129a7db86c6c0a82cdb6767faee427e"
+      }
+    }
+  ]
+}

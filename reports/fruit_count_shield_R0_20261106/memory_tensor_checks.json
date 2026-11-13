@@ -1,0 +1,709 @@
+{
+  "revision": 9,
+  "passed": true,
+  "created_utc": "2026-11-06T06:17:02.631517+00:00",
+  "any_hanging_inference_factory": {
+    "passed": true,
+    "maturity_and_legacy_distance_ignored": true,
+    "inactive_reserve_excluded": true,
+    "recorded_frame_hash_checked": true
+  },
+  "absolute_default": {
+    "passed": true,
+    "source": "/media/fulei/fuleivla/ecm_vla/results/fruit_lowlevel_v2_eval_20261104/main/K0/FruitCount/ep100_seed7",
+    "checks": [
+      {
+        "step": 0,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 0,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 0,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 67,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 67,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 67,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 134,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 134,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 134,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 202,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 202,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 202,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 269,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 269,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 269,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 336,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 336,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 336,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 404,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 404,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 404,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 471,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 471,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 471,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 538,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 538,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 538,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 606,
+        "events": 0,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 606,
+        "events": 4,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      },
+      {
+        "step": 606,
+        "events": 8,
+        "elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        }
+      }
+    ],
+    "scope": "Before/after packing on identical frozen-encoder features of recorded D5 input; historical files unchanged."
+  },
+  "order_train_inference": {
+    "passed": true,
+    "times": [
+      0,
+      67,
+      134,
+      202,
+      269,
+      336,
+      404,
+      471,
+      538,
+      606
+    ],
+    "checks": [
+      {
+        "condition": "K0",
+        "step": 0,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 67,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 134,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 202,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 269,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 336,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 404,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 471,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 538,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K0",
+        "step": 606,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 0,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 67,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 134,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 202,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 269,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 336,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 404,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 471,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 538,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "K8",
+        "step": 606,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 0,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 67,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 134,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 202,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 269,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 336,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 404,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 471,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 538,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      },
+      {
+        "condition": "KA",
+        "step": 606,
+        "train_inference_elementwise_equal": {
+          "image": true,
+          "position": true,
+          "state": true,
+          "mask": true
+        },
+        "temporal_rank_equal": true,
+        "spatial_unchanged": true
+      }
+    ]
+  },
+  "feature_length_boundary": {
+    "passed": true,
+    "initial_temporal_cache": 2048,
+    "PosEmb3D_automatically_expands": true,
+    "buffer_max_steps_default": 4096,
+    "R9_budget": 2800,
+    "R9_safe_under_default_table": true,
+    "beyond_max_steps": "Empty position slice; explicitly allocate max_steps above the largest frame index for longer future data. Default unchanged."
+  },
+  "selected_raw_frames": 227,
+  "checkpoint": "/media/fulei/fuleivla/ecm_vla/runs/fruit_k0v2_lowlevel_rescue_20261102/ckpt/mme_vla_suite/k0/11999",
+  "default_selection_source_sha256": "6f1975698d5cddc7e425d07bd23dd7c8182f4ae64f5cf39b41ff5b19568dfc6e",
+  "shared_packer_sha256": "d6181fe0d502ef1d79557f8eb7c6de1bba75b6e39f5b63e7c49810ba28b204f9",
+  "train_sampler_sha256": "6bf60694f3221442c0923e38925b201c8bd9dd4f04e1c1a3aefa2cdb295df6e1"
+}

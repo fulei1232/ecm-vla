@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-11-09T03:33:17.013896+00:00",
+  "raw_generation_wall_seconds": null,
+  "feature_build_wall_seconds": null,
+  "normalization_and_delivery_wall_seconds": null,
+  "completed": false,
+  "total_wall_seconds": null,
+  "elapsed_wall_seconds_at_stop": 1734.4660653211176,
+  "stopped_utc": "2026-11-09T04:02:11.479963+00:00"
+}

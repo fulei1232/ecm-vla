@@ -1,0 +1,259 @@
+{
+  "read_only_no_simulation": true,
+  "FK_validation": [
+    {
+      "step": 0,
+      "max_extrinsic_abs_error": 6.370601395300213e-07,
+      "TCP_max_error_m": 2.408805717113438e-07
+    },
+    {
+      "step": 577,
+      "max_extrinsic_abs_error": 3.765156184609708e-07,
+      "TCP_max_error_m": 1.4140306382748324e-07
+    }
+  ],
+  "pixel_center_calibration": [
+    {
+      "sample_offset": 0.0,
+      "finite_fraction": 0.989,
+      "median_pred_minus_raw_mm": 1.1398324120170251,
+      "within_depth_bin_fraction": 0.26466127401415573,
+      "RMS_error_to_bin_center_mm": 2.0636105356109904
+    },
+    {
+      "sample_offset": 0.5,
+      "finite_fraction": 1.0,
+      "median_pred_minus_raw_mm": 0.5571112356239916,
+      "within_depth_bin_fraction": 1.0,
+      "RMS_error_to_bin_center_mm": 0.28219491995933155
+    }
+  ],
+  "chosen_pixel_sample_offset": 0.5,
+  "failure_pose_source": "step580 measured arm state, then six-parameter fit to step581 fixed-shield depth pixels only; basket pixels excluded",
+  "pose_fit": {
+    "pixels": 3498,
+    "success": true,
+    "correction_translation_m": [
+      8.77825069964603e-05,
+      6.582930914868103e-05,
+      4.409708723272441e-05
+    ],
+    "correction_rotation_rad": [
+      -0.00042956273927345596,
+      5.1485797911768395e-05,
+      0.00025679965515780766
+    ],
+    "RMS_center_residual_mm": 0.28653613493383806,
+    "max_center_residual_mm": 0.531484655088843,
+    "camera_position": [
+      -0.05229384669687742,
+      -0.2958725291502963,
+      0.5079757741913842
+    ],
+    "camera_rotation_cv": [
+      [
+        -0.9871706332177705,
+        0.03381739349483483,
+        -0.15604654693276918
+      ],
+      [
+        0.1596237195496607,
+        0.23225516592793913,
+        -0.9594674596133608
+      ],
+      [
+        0.0037959280231176966,
+        -0.9720668299026567,
+        -0.23467353735230229
+      ]
+    ]
+  },
+  "basket_pixels": [
+    {
+      "pixel_yx": [
+        254,
+        175
+      ],
+      "raw_depth_mm": 199,
+      "shield_first_box": 10,
+      "basket_first_box": 2,
+      "shield_depth_mm": 199.8251234634086,
+      "basket_depth_mm": 199.8251234634086,
+      "shield_minus_basket_depth_mm": 0.0,
+      "shield_hit_world": [
+        -0.15,
+        -0.4298949735368257,
+        0.2693965035529389
+      ],
+      "basket_hit_world": [
+        -0.15,
+        -0.4298949735368257,
+        0.2693965035529389
+      ]
+    },
+    {
+      "pixel_yx": [
+        255,
+        173
+      ],
+      "raw_depth_mm": 199,
+      "shield_first_box": 3,
+      "basket_first_box": 4,
+      "shield_depth_mm": 274.2529388358391,
+      "basket_depth_mm": 199.77927730933567,
+      "shield_minus_basket_depth_mm": 74.47366152650339,
+      "shield_hit_world": [
+        -0.18208941539161252,
+        -0.48000000000000004,
+        0.17843511653915722
+      ],
+      "basket_hit_world": [
+        -0.1468432980969579,
+        -0.43000000000000005,
+        0.26792221374726977
+      ]
+    },
+    {
+      "pixel_yx": [
+        255,
+        174
+      ],
+      "raw_depth_mm": 200,
+      "shield_first_box": 3,
+      "basket_first_box": 4,
+      "shield_depth_mm": 274.7633014875709,
+      "basket_depth_mm": 200.1510504694027,
+      "shield_minus_basket_depth_mm": 74.61225101816821,
+      "shield_hit_world": [
+        -0.18445000342543685,
+        -0.48000000000000004,
+        0.17783001618602468
+      ],
+      "basket_hit_world": [
+        -0.14856286607469535,
+        -0.43000000000000005,
+        0.26748142900395366
+      ]
+    },
+    {
+      "pixel_yx": [
+        255,
+        175
+      ],
+      "raw_depth_mm": 199,
+      "shield_first_box": 3,
+      "basket_first_box": 2,
+      "shield_depth_mm": 275.27556716834493,
+      "basket_depth_mm": 199.93315315870902,
+      "shield_minus_basket_depth_mm": 75.34241400963593,
+      "shield_hit_world": [
+        -0.18681939356805546,
+        -0.48000000000000004,
+        0.1772226595479905
+      ],
+      "basket_hit_world": [
+        -0.15,
+        -0.42960465150609706,
+        0.267749175775998
+      ]
+    }
+  ],
+  "shared_surface_geometry": {
+    "vertical_overlap_z_m": [
+      0.268,
+      0.27
+    ],
+    "inner_x_planes": [
+      -0.15,
+      0.03
+    ],
+    "inner_y_planes": [
+      -0.43,
+      -0.25
+    ],
+    "outer_x_planes": [
+      -0.156,
+      0.036
+    ],
+    "outer_y_planes": [
+      -0.436,
+      -0.244
+    ]
+  },
+  "source_files": [
+    "scene_manifest.json",
+    "check_failure_raw_sensors.npz",
+    "actions.json"
+  ],
+  "created_utc": "2026-11-06T12:06:28.348787+00:00",
+  "scope": "Read-only offline cause analysis; no simulator, replay, gate rerun or live source change.",
+  "conclusion": "Fixed inner-baffle lower edge leaves sight lines to the inner basket wall; its overlapping faces are also coplanar with basket faces. DART-displaced pose is retained on release.",
+  "inference_limit": "Step581 camera extrinsics were not saved. World hit locations are estimated from validated URDF FK at step580 and a six-parameter fit to 3498 step581 shield-only depth samples; depth is quantized to integer millimeters. Individual micrometer-level edge assignments are not direct measurements.",
+  "release_hold": {
+    "source": "solver.hold reads current measured qpos once and repeats it; release phase adds no new DART noise",
+    "target_qpos": [
+      -1.6899462938308716,
+      -0.536446213722229,
+      -0.0438048355281353,
+      2.1246936321258545,
+      -0.20096474885940552,
+      0.021875251084566116,
+      -1.3955986499786377
+    ],
+    "target_minus_rest_rad": [
+      0.040653706169128334,
+      0.011953786277770995,
+      -0.0377048355281353,
+      0.05809363212585428,
+      -0.019964748859405523,
+      -0.03152474891543389,
+      -0.0022986499786377124
+    ],
+    "max_target_deviation_from_rest_rad": 0.05809363212585428,
+    "TCP_z_at_580_m": 0.44598448276519775,
+    "approx_camera_height_below_rest_m": 0.02202872715138926,
+    "approx_extra_downward_tilt_deg": 2.26407015106118
+  },
+  "direct_geometry_facts": {
+    "basket_inner_wall_height_m": [
+      0.15,
+      0.27
+    ],
+    "new_collar_height_m": [
+      0.268,
+      0.36
+    ],
+    "same_inner_vertical_planes_x": [
+      -0.15,
+      0.03
+    ],
+    "same_inner_vertical_planes_y": [
+      -0.43,
+      -0.25
+    ],
+    "coincident_overlap_height_m": [
+      0.268,
+      0.27
+    ],
+    "two_mm_vertical_overlap_is_not_positive_optical_depth_separation": true
+  },
+  "action": "Remain stopped. Do not change geometry, camera, DART, thresholds, seeds or expert holds in this analysis.",
+  "evidence_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure.json": "a009963ab5f5f305820cd172575ca14aa720efb0ada64544d71fc52b65878c85",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure_raw_sensors.npz": "5f597e63bc379ff433e2289ffe753740554f59368a200219ffa3cc9dcb9a62a5",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure_pixel_coordinates.json": "d004761f96d0acf3517289a72efd50fe91f59e1df1c378ca6ad9f6e32a7ba43e",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure_hand_camera.png": "dac564c537bead208e849977e89d9e0e1d4bb0643f964c495541491c623b2434",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/actions.json": "e8ba308833869a31deaf528be4555d3be2e888cfbee7dcda16b86b25b23f62a6",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/trace.jsonl": "70a7a77edf05b523b68b79a103517d0d2c397bc5ee4fb1cb7e96e1806a285a7c",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/scene_manifest.json": "650479c9920de9a99b0c46e433900f39ec9f4fd3bef771fee9e244f0694724eb",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step0_raw_sensors.npz": "82aba391e6b69e1b1ac0526b1ad97967a3f81badfb912a5f2b3f80e9e4b4c369",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/count_shield_spec.py": "54b29046c37c8a2896495c5bddc9574d14373d4211a0f66174d73678758bed34",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/env.py": "a79b51ec65d384c8647edd02481d8e1c4f727b17a1b3da72063ee88527114749",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/solver.py": "88a959dbac9ae5e53fb21ec9feb3dfc877dd9c0ddd05caea1d09a64e92f9c2d4",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/canonical_solver.py": "05a4ea1bcb9d90073424b812319aa3416808fd720bf9e7ba183d737ff4be783c",
+    "/media/fulei/fuleivla/ecm_vla/scripts/fruit_r9_episode_support.py": "e9a1e443f4c297ff1852c28d43b7d8e6ffd6973827657f95a19d66d31aafa91c",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/agent.py": "256a75fff65a47dddb1b06a1b5eccd567153057891b1c6c87c6f453198e56e18",
+    "/media/fulei/fuleivla/ecm_vla/fruit_picking/assets/rm75b_eg2/rm75b_eg2.urdf": "8e31adad817462f1943124e97f8fc2f958d51e1f39391ba424c71132088944c2",
+    "/tmp/analyze_count_shield_depth.py": "d1ad812d3eb948c41fbc353611c48cb40077497a35edcfeb5b9c0e96cdf7523e"
+  }
+}

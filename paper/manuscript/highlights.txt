@@ -1,0 +1,7 @@
+Highlights (submitted as a separate file; each <= 85 characters)
+
+- Fruit harvesting is cast as a fixed-budget memory problem for VLA robots.
+- Uniform memory loses picks at a rate that grows with operating time.
+- Event-indexed memory keeps 99.6% of picks vs 57.0%, at zero extra cost.
+- SAM-based 3D fruit anchors recover every leaf-hidden ripe fruit.
+- Spatial memory before occlusion is a precondition for event memory.

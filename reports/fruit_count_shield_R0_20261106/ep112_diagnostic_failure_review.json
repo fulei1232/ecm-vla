@@ -1,0 +1,144 @@
+{
+  "created_utc": "2026-11-06T11:54:15.978406+00:00",
+  "read_only_post_stop_analysis": true,
+  "passed": false,
+  "condition": "count_fixed_shield_v1",
+  "original_seed": 4101792,
+  "N": 7,
+  "attempt": 0,
+  "recorded_prefix": {
+    "passed": true,
+    "observations_per_condition": 579,
+    "original_failure_first_step": 578,
+    "original_hand_basket_pixels_at_578": 1,
+    "shield_hand_basket_pixels_at_578": 0,
+    "shield_all_frames_zero_visibility": true,
+    "physical_max_abs_diff": {
+      "qpos": 0.0,
+      "tcp_position": 0.0,
+      "positions": 0.0
+    },
+    "view_invariance": {
+      "front_tree_mask_sha256": true,
+      "front_tree_rgb_sha256": true,
+      "lamp_front_pixels": true,
+      "hand_target_pixels_equal_outside_port": true
+    },
+    "hand_target_visibility_check_frames": 204,
+    "old_collision_shape_counts_equal": true,
+    "shield_collision_shapes": 0
+  },
+  "full_native": {
+    "passed": false,
+    "failure": {
+      "reason": "BASKET_OR_CONTENT_VISIBLE",
+      "details": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 169
+        },
+        "hand_camera": {
+          "basket": 4,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 0
+        }
+      },
+      "step": 581
+    },
+    "phase": "release",
+    "last_successfully_recorded_step": 580,
+    "actual_recorded_actions": 581,
+    "original_noise_and_phase_exact_matches": 578,
+    "original_executed_command_exact_matches": 578,
+    "original_reference_actions": 578,
+    "failure_pixel_coordinates": {
+      "front_camera": {
+        "basket_pixels_yx": [],
+        "basket_fruit_pixels_yx": [],
+        "inactive_reserve_pixels_yx": []
+      },
+      "hand_camera": {
+        "basket_pixels_yx": [
+          [
+            254,
+            175
+          ],
+          [
+            255,
+            173
+          ],
+          [
+            255,
+            174
+          ],
+          [
+            255,
+            175
+          ]
+        ],
+        "basket_fruit_pixels_yx": [],
+        "inactive_reserve_pixels_yx": []
+      }
+    },
+    "failure_pixels_scope": "raw sensor segmentation, row(y)/column(x), 256x256; hand-camera bottom two rows"
+  },
+  "diagnostic_process_seconds": 46.71724044531584,
+  "new_R0_cases": 0,
+  "new_training_data_episodes": 0,
+  "new_data_stage_started": false,
+  "training": false,
+  "all_58_frozen_sources_unchanged": true,
+  "new_GPU_replays_after_stop": 0,
+  "source_sha256": {
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/status.json": "56a1dfbe68d8be34c79611cc366b0f31e694182f80b8dbfeb0c807d5c9da1980",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/plan.json": "0197cd2a2b1202ab0d5295c5fb49cbcf3c317e8adc23a3845030f9a648f95305",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/commands/ep112_diagnostic/command.json": "12fa20cfdb8af345f8e8eca133809608a9c89cc6bc3bc711e4466d9c8c1218e4",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/commands/ep112_diagnostic/process_exit.json": "19180520db4cfbf20d79bda176fb831568042c768c0e9cd91ff7ea03698ef0ac",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/commands/ep112_diagnostic/console.log": "2c17f2846beeb6952b0a352d2ab5f5f5c621621f9e1913aa8f303cd7afd5c20f",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/physical_and_visibility.jsonl": "9c2de7dd4965c87b21cea6f19ddcc9a16b250c8bc0b21b434c1e7c3623482707",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/scene_manifest.json": "4cfcca94cd104d1d4d75e9e7baa642eb87a68d9ad9a4eb0fd1484afd97f4148b",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step0_pixel_coordinates.json": "063bba586a4b3963f18b5932969d55718914b2883acbbc817605b8c86e3592cb",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step578_front_camera.png": "35924375fcf60894fed706ecf4982ca49bcfd6ba193ef8b45ab1da1c1cf6cb22",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step578_raw_sensors.npz": "4e40a41a2993abf03bc34e6e994e3d201308886ecd9ed19c8e172176029a4b9d",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step0_hand_camera.png": "7f0cddf91745085661fa110d670f67ff01b8994abecd2bd88791436c1c4940e7",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step578_hand_camera.png": "f14c2eb8db33de80c4df157a02288f67f8c608cb407334335e3af9c28c6c8e11",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step0_front_camera.png": "272c25f5c31deb2e8f317a49133a262bfcd349602316aae5f790e1cf57066688",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step0_raw_sensors.npz": "8b1ee3ec0428a0e542d254a690b2ac73a61c6b83c6632c5428ac9c0c87f0b5dc",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_original_prefix/step578_pixel_coordinates.json": "7db3ac5840ebb70c0cff9daf89b7e02824ed9f9484fd406ef6a0a087cbf5098d",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/physical_and_visibility.jsonl": "48ee99dc6850274e88063fa77758fa13ceab2f477c1ffc94adacb78c8d477c6d",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/scene_manifest.json": "650479c9920de9a99b0c46e433900f39ec9f4fd3bef771fee9e244f0694724eb",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step0_pixel_coordinates.json": "af2e3ff79230179d1ba58a382d0a406613eb43097849c2ff1e9b10aa181a084c",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step578_front_camera.png": "35924375fcf60894fed706ecf4982ca49bcfd6ba193ef8b45ab1da1c1cf6cb22",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step578_raw_sensors.npz": "9294695d39167c688e2a35677378764c848bc4ef4bbe289ad28006a67947d9b1",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step0_hand_camera.png": "bba7128ba2c2072c4eeb6632a9a3885fc3831c15afd139762634ed4da024cad4",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step578_hand_camera.png": "17e680010619cc47857f635f0ef81810efd9bd1d11c2c569b5edd52487a9ea5f",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step0_front_camera.png": "272c25f5c31deb2e8f317a49133a262bfcd349602316aae5f790e1cf57066688",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step0_raw_sensors.npz": "82aba391e6b69e1b1ac0526b1ad97967a3f81badfb912a5f2b3f80e9e4b4c369",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_prefix/step578_pixel_coordinates.json": "735c4764be0c050a594a09ea24d66a0e1c27921da61a4890e3cbbc91d10a36a6",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/decisions.json": "698e996998d5d6d3267d5383ed4f282989cbcacaf5da0d25b96cf6ff1a1d6244",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/trace.jsonl": "70a7a77edf05b523b68b79a103517d0d2c397bc5ee4fb1cb7e96e1806a285a7c",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/actions.json": "e8ba308833869a31deaf528be4555d3be2e888cfbee7dcda16b86b25b23f62a6",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure_pixel_coordinates.json": "d004761f96d0acf3517289a72efd50fe91f59e1df1c378ca6ad9f6e32a7ba43e",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/release_front_camera.png": "989ef3bf98bf4e478115ce08a5d3f35121d5366f2da03432570ff54019e7b086",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure_front_camera.png": "259d4c33f861b1235e2519709f7f300a9eb9211a6556b64e68392c4b3c80782d",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure_hand_camera.png": "dac564c537bead208e849977e89d9e0e1d4bb0643f964c495541491c623b2434",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/after_replenishment_front_camera.png": "59a1f41c076c1b34fe06331523db7954fceff7ac2c08b4185f1a75e8d7bc5c21",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/before_grasp_front_camera.png": "7409e60d511dcf10e25593b5f1a6e68d5a1a3eac3e0fd830a4fcee3ad5b20cc4",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/scene_manifest.json": "650479c9920de9a99b0c46e433900f39ec9f4fd3bef771fee9e244f0694724eb",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/after_wind_front_camera.png": "589f76e9df8f261d8d9f48d9d07ec064a0b0d0a763a214cf3419b19d6002b176",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/before_grasp_hand_camera.png": "59ce5da9843d5ca74317f5a8e85dd9e2a10d8528cf2751c315c4e1609cc0e4a2",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/after_green_front_camera.png": "a28c76c2417aa11704326db5c130d6d89985e0aeeb1c2212b96972d28919439b",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/before_green_hand_camera.png": "bba7128ba2c2072c4eeb6632a9a3885fc3831c15afd139762634ed4da024cad4",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure_raw_sensors.npz": "5f597e63bc379ff433e2289ffe753740554f59368a200219ffa3cc9dcb9a62a5",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/after_green_hand_camera.png": "bba7128ba2c2072c4eeb6632a9a3885fc3831c15afd139762634ed4da024cad4",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/after_wind_hand_camera.png": "9b39d7df6af3a40abbfe7499dbbe0cfb399f9ccc24333747db01779bd1137004",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/before_green_front_camera.png": "272c25f5c31deb2e8f317a49133a262bfcd349602316aae5f790e1cf57066688",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/after_replenishment_hand_camera.png": "f7e1c53b5428bcb95c1b81e2c8b11567e592afcc2fc0720c7f6cbe0c971c3e31",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/check_failure.json": "a009963ab5f5f305820cd172575ca14aa720efb0ada64544d71fc52b65878c85",
+    "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_R0_20261106/diagnostics/ep112_shield_full/release_hand_camera.png": "edf26469f5e24ea8865b937eacb0dfafc5e87a9a37b7963bfb49b8fe070befbc"
+  },
+  "decision": "Stop under approved shield plan and HANDOFF §17.7/§18.3. The enclosure passes the old prefix but fails the subsequent release pose. No resize, crop, tolerance change, new seed or retry. Await user review."
+}

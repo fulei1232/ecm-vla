@@ -1,0 +1,28 @@
+\section{Related work}
+\label{sec:related}
+
+\paragraph{Harvesting robots, fruit perception and occlusion} Reviews identify fruit detection under occlusion, localization accuracy and cycle time as the main bottlenecks of harvesting robots \citep{bac2014harvesting,kootstra2021selective,zhou2022intelligent}, whose field systems follow a detect--localize--plan--grasp pipeline. Deep networks such as Mask R-CNN \citep{he2017maskrcnn} and YOLO \citep{redmon2016yolo} have replaced hand-crafted colour and shape features \citep{sa2016deepfruits,kamilaris2018survey,koirala2019review}, often combined with depth or multi-view geometry for 3D localization \citep{gene2020fruit,kang2020apple}. Promptable segmentation models, SAM and SAM~2 \citep{kirillov2023sam,ravi2024sam2}, give zero-shot masks from point or box prompts and are increasingly used in agriculture \tbd{cite verified agricultural SAM works}. Occlusion by leaves is a primary cause of missed fruits \citep{hemming2014detectability}; multi-view cameras, next-best-view planning and foliage manipulation \tbd{cite verified works} address what is not visible in the \emph{current} view, but not fruits that were seen earlier and are hidden now, which calls for memory rather than a better viewpoint. \fdm\ uses SAM in promptable mode, but its output is a distance signal that organizes the memory of a learned policy, not a detection map for a planner.
+
+\paragraph{VLA policies and imitation learning} VLA models extend vision--language models with action outputs: RT-2 \citep{brohan2023rt2}, OpenVLA \citep{kim2024openvla}, Octo \citep{octo2024}, and the flow-matching policies $\pi_0$ and $\pi_{0.5}$ \citep{black2024pi0,pi05_2025}, built on PaliGemma \citep{beyer2024paligemma}, SigLIP \citep{zhai2023siglip} and flow matching \citep{lipman2023flow}. Policies trained from demonstrations, including Diffusion Policy \citep{chi2023diffusion} and ACT \citep{zhao2023act}, suffer from covariate shift \citep{ross2011dagger}, remedied by interactive corrections (DAgger) or by noise injection during demonstration (DART, \citealp{laskey2017dart}), which DART-H follows because it needs no expert in the loop. Applications of VLA policies to agricultural manipulation are still rare \tbd{cite verified early agricultural VLA works, if any}.
+
+\paragraph{Memory and keyframes in robot policies} Long-horizon manipulation benchmarks show that policies without history fail on tasks that require recalling past observations \tbd{cite RoboMME (verify)}, and memory-augmented VLAs keep a bounded history of visual tokens \tbd{cite MME-VLA (verify)}. Keyframes are used in manipulation as action targets \citep{shridhar2022peract} and as waypoints that compress demonstrations \citep{shi2023awe}; in video understanding, memory banks compress long videos for multimodal models \citep{he2024malmm}. To our knowledge, no prior work selects the memory frames of a VLA policy from task-defined physical events, nor studies memory selection for agricultural manipulation.
+
+\paragraph{Positioning} Table~\ref{tab:positioning} contrasts memory designs for a VLA policy under a fixed budget. Time-indexed designs keep the recent past or the whole past at a resolution that falls with elapsed time, so short interaction events are kept only by chance; learned memory banks and token compression discover what matters only implicitly, with additional parameters, and are hard to audit. HarvestMem differs in three ways: (i) the unit of memory is a \emph{physical interaction event} defined by task geometry; (ii) selection is a parameter-free deterministic function, identical in training and deployment, that contains uniform memory as a special case; and (iii) episodic memory of events is coupled to an explicit \emph{spatial} memory of objects acquired before occlusion, a coupling that Section~\ref{sec:res_chain} shows to be necessary.
+
+\begin{table}[t]
+\centering
+\caption{Memory designs for a VLA policy under a fixed budget. $\checkmark$: yes; $\times$: no; $\circ$: only by chance or implicitly.}
+\label{tab:positioning}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{lcccccc}
+\toprule
+Memory design & Distant past & Pick events kept & Fixed cost & No extra params & Train = deploy & Physically grounded\\
+\midrule
+No memory (current frame) & $\times$ & $\times$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\times$\\
+Recent window & $\times$ & $\circ$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\times$\\
+Uniform sampling (base model) & $\checkmark$ & $\circ$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\times$\\
+Learned memory bank / compression & $\checkmark$ & $\circ$ & $\checkmark$ & $\times$ & $\checkmark$ & $\times$\\
+\textbf{PEKM (HarvestMem)} & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$\\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\end{table}

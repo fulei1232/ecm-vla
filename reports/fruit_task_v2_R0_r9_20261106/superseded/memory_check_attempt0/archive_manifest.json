@@ -1,0 +1,52 @@
+{
+  "attempt": 0,
+  "outcome": "configuration_error_before_tensor_comparison",
+  "source_commit": "43244a3",
+  "records": {
+    "results/fruit_task_v2_R0_r9_20261106/status.json": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/status.json",
+      "sha256": "f2a9a12c7b9050c3dadf6e1fdefc2fefd76daa6bb4c39a82f445ca28c831b049"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/plan.json": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/plan.json",
+      "sha256": "a5c1849da6b43c0d8f2381141e9c36006170ae8a860bc7e8a2111a27c7a34fb7"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/memory_tensor_checks.json": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/memory_tensor_checks.json",
+      "sha256": "df5ad60a0bb418d6f31d3de51bad41d0be97aa1e5a161c094f5ca50caba6d03d"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/summary.json": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/summary.json",
+      "sha256": "02b55fdbaa60ec0a7d5e6c806ebff7a87d6511bdb1096344867768f922de8f8d"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/REPORT.md": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/REPORT.md",
+      "sha256": "81dd90201187d11b88b1e5f61af7b6dc8cb07b58c582308720f7383bc3ccf836"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/launcher.log": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/launcher.log",
+      "sha256": "dbcd39fb7384229c3f61375a759b8b0006bb43533a79c288d07d5309e98cf6ec"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/failure_diagnosis.json": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/failure_diagnosis.json",
+      "sha256": "520fe37b0154474377a5c5ae81566cf4e6310fc3564a4d5f27be6514a003f78d"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/ready.json": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/ready.json",
+      "sha256": "b9007a875988889a4102dfee921489b7c626a14397202e403688c359206108ad"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/commands/memory_tensor_checks/command.json": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/commands/memory_tensor_checks/command.json",
+      "sha256": "5d22a6e31f0ff548ac45deb8fdb001ff41f0a219ad98006be39beab5799e3765"
+    },
+    "results/fruit_task_v2_R0_r9_20261106/commands/memory_tensor_checks/console.log": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/commands/memory_tensor_checks/console.log",
+      "sha256": "17c79058f6ecde60265df31da4db1d82469ef40b65879035b203c4f1a636b625"
+    },
+    "scripts/run_fruit_task_v2_r9.py": {
+      "archived": "results/fruit_task_v2_R0_r9_20261106/superseded/memory_check_attempt0/run_fruit_task_v2_r9.py",
+      "sha256": "ab959e66883d20b35c388a4c16438829fb104decfa917283be6076649ad43ec8"
+    }
+  },
+  "all_archived_bytes_verified": true
+}

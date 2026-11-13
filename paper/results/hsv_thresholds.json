@@ -1,0 +1,22 @@
+{
+ "ripe": {
+  "h_hi": 23,
+  "h_wrap": 150,
+  "s_min": 8,
+  "v_min": 160,
+  "pixel_f1": 0.9855306904227072
+ },
+ "unripe": {
+  "h_lo": 10,
+  "h_hi": 45,
+  "s_min": 112,
+  "v_min": 144,
+  "pixel_f1": 0.9757200551377234
+ },
+ "calibration_files": 20,
+ "pixels": {
+  "ripe": 4763676,
+  "unripe": 248801,
+  "other": 107709443
+ }
+}

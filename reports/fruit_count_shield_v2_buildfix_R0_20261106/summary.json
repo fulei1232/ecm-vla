@@ -1,0 +1,306 @@
+{
+  "created_utc": "2026-11-06T13:04:04.406836+00:00",
+  "state": {
+    "stage": "Count shield v2/R0/data only",
+    "state": "SHIELD_check_failed",
+    "train_data_generated": false,
+    "training": false,
+    "updated_utc": "2026-11-06T13:03:56.938870+00:00",
+    "instruction_revision": "10+approved_shield_v2_buildfix",
+    "observation_condition": "count_fixed_shield_v2",
+    "implementation_revision": "visual_records_before_attachment_v1",
+    "reason": "SHIELD process/check failed exit1: /media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/commands/ep112_diagnostic/console.log",
+    "traceback": "Traceback (most recent call last):\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_count_shield_v2_buildfix.py\", line 119, in main\n    run_command('ep112_diagnostic',[str(SIM_PYTHON),'-u',str(ECM/'scripts/diagnose_fruit_count_shield_buildfix_ep112.py')],gpu=0)\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_count_shield_v2_buildfix.py\", line 71, in run_command\n    try:return child_run(command,OUT/'commands'/label,gpu,cpu,cwd)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/fulei/fuleivla/ecm_vla/scripts/run_fruit_count_shield_v2_buildfix.py\", line 68, in child_run\n    if code:raise RuntimeError(f'SHIELD process/check failed exit{code}: {d}/console.log')\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: SHIELD process/check failed exit1: /media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/commands/ep112_diagnostic/console.log\n"
+  },
+  "condition": "count_fixed_shield_v2/occluded_original",
+  "count_R0_replays": 0,
+  "count_R0_target": 350,
+  "cohorts": {
+    "history": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "current": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "initial_current": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "initial_ground": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "clock_onset": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": true,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "clock_onset_k0": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": true,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    },
+    "clock": {
+      "episodes": 0,
+      "successes": 0,
+      "report_only": false,
+      "passed": null,
+      "guard_checked_steps": 0,
+      "guard_clipped_steps": 0,
+      "guard_clip_rate": null,
+      "early_start": 0,
+      "budget_exact_N": 0,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0
+        }
+      }
+    }
+  },
+  "checks": {
+    "new_tests.json": {
+      "passed": true,
+      "exit_code": 0,
+      "scope": "Only new seam geometry/default-off/old-source preservation/output bindings. Optical ray coverage uses existing records and fixed viewpoint grids; no accepted tensor/simulation test repeated.",
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 3.345s\n\nOK\n"
+    },
+    "optical_geometry_check.json": {
+      "viewpoints": 608,
+      "trajectory_viewpoints": 581,
+      "release_grid_viewpoints": 27,
+      "rays": 893760,
+      "minimum_positive_occluder_separation_mm": 2.0001752743349264,
+      "scope": "All sight directions to sampled basket-decoration surfaces; entire recorded trajectory and +/-3cm xyz release neighborhood. No FOV restriction or new replay."
+    },
+    "approved_reuse.json": {
+      "authority": "User explicitly approved fixing the SAPIEN construction-order error and continuing with the same settings",
+      "created_utc": "2026-11-06T12:59:28.188108+00:00",
+      "proof_sha256": {
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/cpu_preflight.json": "228208bc89e506ea68862e9ef2e1ed5d42542630e50654d0d3409f736aa2ca0d",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/R8_information_definition_crosscheck.json": "17a5c2fa7d5ed7f9b310662fa4408e9b655e7883e4a493ad236aa28cc9601981",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/R8_default_regression.json": "a4c4b7483304bbd4bfa548cd08af41dd44495e38423fc188ec67c1f78fc81dbd",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/memory_tensor_checks.json": "ae68c10bb1833df73660025ae07518a9a6083a68a4474bec4634ed17c7199ab9",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/early_start_check.json": "bbd8d6df29ff128b55f88b3f5cdc1412a9ef9be9357345f97f795113c1387e64",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/performance_reassessment_r10.json": "a34e0a0f963f5a27a12e9730564576779ef6a56677a72509c79d45931c6bb415",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_task_v2_R0_r10_20261106/budget_check.json": "19e2142df0e649bcf733a2e8add5c74dc5f91a8a76a1a27afe4dbe812863d3bb"
+      },
+      "unchanged_memory_and_early_start_checks_not_repeated": true,
+      "old_pressure_used_for_budget_only": true,
+      "budget_applicability_requires_zero_new_collision_shapes": true,
+      "basket_physics_and_expert_unchanged": true,
+      "new_visibility_must_be_rechecked": true,
+      "old_R0_results_not_carried_as_new_results": true
+    },
+    "ep112_diagnostic.json": null,
+    "clock_fit.json": null,
+    "information_audit.json": null,
+    "other_checks.json": null,
+    "R0_gate.json": null,
+    "data_phase_timing.json": null,
+    "data_delivery.json": null,
+    "builder_tests.json": {
+      "passed": true,
+      "exit_code": 0,
+      "scope": "New build-order regression uses real SAPIEN Pose, VisualShapeRecord, CollisionShapeRecord and ManiSkill ActorBuilder.build_static; final GPU entity creation is substituted. Also verifies restoration, non-basket isolation, geometry and old 68 source hashes. No accepted simulation/tensor/geometry suite repeated.",
+      "output": "/media/fulei/fuleivla/robomme_benchmark/.venv/lib/python3.11/site-packages/sapien/__init__.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n/media/fulei/fuleivla/robomme_benchmark/.venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find system libvulkan. Fallback to SAPIEN builtin libvulkan.\n  warn(\"Failed to find system libvulkan. Fallback to SAPIEN builtin libvulkan.\")\n/media/fulei/fuleivla/robomme_benchmark/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.\n  import pynvml  # type: ignore[import]\n/root/.config/matplotlib is not a writable directory\nMatplotlib created a temporary cache directory at /tmp/matplotlib-0lz7zkh7 because there was an issue with the default path (/root/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.040s\n\nOK\n"
+    },
+    "diagnostic_outcome_review.json": {
+      "created_utc": "2026-11-06T13:26:19.266355+00:00",
+      "read_only_review": true,
+      "declared_full_success_gate_passed": false,
+      "construction_interface_fixed": true,
+      "basket_collision_records_unchanged": true,
+      "new_shield_collision_shapes": 0,
+      "prefix_original_failure_at_578": 1,
+      "prefix_shield_basket_pixels_at_578": 0,
+      "prefix_physical_max_abs_difference": {
+        "qpos": 0.0,
+        "tcp_position": 0.0,
+        "positions": 0.0
+      },
+      "original_failed_581_commands_exact_matches": 581,
+      "visibility_checks_passed_to_terminal": true,
+      "visibility_observations": 838,
+      "max_visibility": {
+        "front_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 169
+        },
+        "hand_camera": {
+          "basket": 0,
+          "basket_fruit": 0,
+          "inactive_reserve": 0,
+          "lamp": 664
+        }
+      },
+      "new_optical_obstacle_checks": 838,
+      "optical_obstacle_intersection_failures": 0,
+      "task_outcome": "robot_drop",
+      "task_success": false,
+      "terminal_step": 837,
+      "terminal_phase": "carry",
+      "N": 7,
+      "in_basket_at_terminal": 4,
+      "dropped_actor_ids": [
+        15
+      ],
+      "drop_detach_step": 790,
+      "failed_actor_final_position": [
+        0.46350619196891785,
+        -0.18890969455242157,
+        -0.0513334795832634
+      ],
+      "diagnostic_process_seconds": 55.025680501013994,
+      "new_R0_cases": 0,
+      "new_data_episodes": 0,
+      "training": false,
+      "all_76_sources_unchanged": true,
+      "evidence_sha256": {
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/result.json": "f0782caceb05a2a8f8205817f35fc66e88860d1aee9f83a7a262e6f1ae11a1fb",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/scene_manifest.json": "baccc40bc84affb58530d71c1743a18a9b0e54a0c1f9b300b4dbae2d4a2e3284",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/actions.json": "14865d3e3cdaa3b094de3f154d3b0551dd6d1e3a621c0d6b024a2eab4db77d8b",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/decisions.json": "fd1b6d3feb8e7bd089a191133875ecac9bbd6f39353400143bbabc9003d470b9",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/diagnostics/ep112_shield_full/trace.jsonl": "84eb1842c1c1c1d4814fba18c671bfe4c044f14c90684772ea83843a66ab5dc3",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/status.json": "3e5bd871770c2aceb28adffa43059f47220b2bd3a00c0d66c649a2024d79cefc",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/plan.json": "eb191a645bd39a93ffb5ac0bd6530d29fe29bbd28defebf4990dd404b6abbb2d",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/commands/ep112_diagnostic/console.log": "a8797ceb7e0360a814c36205d6b277958995796c2adf0f9a9b54b0df70ae4816",
+        "/media/fulei/fuleivla/ecm_vla/results/fruit_count_shield_v2_buildfix_R0_20261106/commands/ep112_diagnostic/process_exit.json": "846c291f13718269f8f6f6d9c91c789843d3fdcfe2278e020786e474ba4a98db"
+      },
+      "stop_trigger": "The additional diagnostic assertion requires full DART task success; it raised on the ordinary robot_drop outcome.",
+      "recommended_user_decision": "Retain this ordinary DART task failure, accept the construction/zero-visibility/unchanged-command invariants through termination, and continue the original R0 gates without changing the seed, DART, expert, task or zero-visibility thresholds. Requires review of the predeclared full-success diagnostic requirement.",
+      "decision": "Remain stopped under the current diagnostic plan. Do not reclassify the gate, retry or start R0/data without user review."
+    }
+  },
+  "data_progress": {},
+  "old_R10_83_episodes_archived_not_mixed": true,
+  "all_previous_artifacts_unchanged": true,
+  "occluded_R0_not_rerun": true,
+  "training": false,
+  "val150_199_used": false,
+  "cases": [],
+  "implementation_revision": "visual_records_before_attachment_v1",
+  "decision": "Construction and observed visibility invariants pass; native DART task ended robot_drop at step837 and failed the predeclared full-success diagnostic assertion. Await review."
+}
