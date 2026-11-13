@@ -1,0 +1,27 @@
+{
+  "SUMMARY.md": {
+    "source": "results/harvestmem_v3_E4b_r1/SUMMARY.md",
+    "sha256": "161db576fffb7ca5671f445c6cbc84bbdcd3fe5215b584d03779ec4c321e9ce2",
+    "bytes": 467
+  },
+  "formal_status.json": {
+    "source": "results/harvestmem_v3_E4b_r1/formal_status.json",
+    "sha256": "953ec6b81349a3999991ece5dcb129fe95eb7d55d5614fb4f5a0a1ab5e1797db",
+    "bytes": 123
+  },
+  "engineering_totals.json": {
+    "source": "results/harvestmem_v3_E4b_r1/engineering_totals.json",
+    "sha256": "f0f854f07a43452ab1e29c186d4c9d6fb95b12f595d58bfdc1592f208998e2df",
+    "bytes": 1211
+  },
+  "rows.json": {
+    "source": "results/harvestmem_v3_E4b_r1/rows.json",
+    "sha256": "9c6312fd5c6d6408a90c93b81b6e312b0eb951d963ca0de8263362a8d81be4c1",
+    "bytes": 1094353
+  },
+  "formal_admission.json": {
+    "source": "results/harvestmem_v3_E4b_r1/formal_admission.json",
+    "sha256": "03f31c7bcbbe7a6f6470ffad39e09d1d766504fe8a8c725fc0138f5656ecea6e",
+    "bytes": 9155
+  }
+}

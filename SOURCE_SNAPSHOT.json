@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-13T12:32:25.681137+00:00",
+  "created_utc": "2026-11-13T14:41:57.709889+00:00",
   "source_root": "/media/fulei/fuleivla/ecm_vla",
   "source_head": "414ef44b9afb7a84e6cec9573382700cba4b3151",
   "policy_root": "/media/fulei/fuleivla/acm_vla/vendor/robomme_policy_learning",
@@ -1527,6 +1527,34 @@
     "reports/harvestmem_v3_E4b_r1_preflight.md": {
       "sha256": "91439ef72d5fe09003825f741d9a04f77d7fbb36cc642ad35fc83c460d4e05d3",
       "bytes": 5841
+    },
+    "reports/harvestmem_v3_E4b_r1_results/EXPORT_MANIFEST.json": {
+      "sha256": "eaa4d59446a6d30aec197ab56ee4fd65dba9be5163d70d715758684de95b90ec",
+      "bytes": 966
+    },
+    "reports/harvestmem_v3_E4b_r1_results/README.md": {
+      "sha256": "122297fa637d381ceb9ea3d492ee360de6c4d049e672d7fc50f81bbceb69577b",
+      "bytes": 1191
+    },
+    "reports/harvestmem_v3_E4b_r1_results/SUMMARY.md": {
+      "sha256": "161db576fffb7ca5671f445c6cbc84bbdcd3fe5215b584d03779ec4c321e9ce2",
+      "bytes": 467
+    },
+    "reports/harvestmem_v3_E4b_r1_results/engineering_totals.json": {
+      "sha256": "f0f854f07a43452ab1e29c186d4c9d6fb95b12f595d58bfdc1592f208998e2df",
+      "bytes": 1211
+    },
+    "reports/harvestmem_v3_E4b_r1_results/formal_admission.json": {
+      "sha256": "03f31c7bcbbe7a6f6470ffad39e09d1d766504fe8a8c725fc0138f5656ecea6e",
+      "bytes": 9155
+    },
+    "reports/harvestmem_v3_E4b_r1_results/formal_status.json": {
+      "sha256": "953ec6b81349a3999991ece5dcb129fe95eb7d55d5614fb4f5a0a1ab5e1797db",
+      "bytes": 123
+    },
+    "reports/harvestmem_v3_E4b_r1_results/rows.json": {
+      "sha256": "9c6312fd5c6d6408a90c93b81b6e312b0eb951d963ca0de8263362a8d81be4c1",
+      "bytes": 1094353
     },
     "reports/harvestmem_v3_S0.md": {
       "sha256": "482449163a4a3596277f77740e822e1e57eaadec6c966fdc1d18eff7206613ad",
@@ -3717,13 +3745,13 @@
       "bytes": 442891
     },
     "README.md": {
-      "sha256": "65416fa7fe7186df33e2681f9978702788be990f443a19189afe61d611819cea",
-      "bytes": 1970,
+      "sha256": "6e3f6fd61b25544ca748d71002fa374fae64149313f68464c0ea85ab2d94a7ca",
+      "bytes": 2118,
       "note": "Generated review navigation"
     },
     "AI_REVIEW.md": {
-      "sha256": "04ddd6b3db15b6e9c1823ce60e33775065dfffe68af237625812b76ade28461d",
-      "bytes": 3185,
+      "sha256": "0fb8bdff993397d4f68ef7d9f22e688b4dc20f586f26edee2223b4eced53527f",
+      "bytes": 3430,
       "note": "Generated review navigation"
     }
   },

@@ -12,6 +12,8 @@ r1 修复后推理使用 planner 结束时观测，planner 帧保留在待发送
 
 DR ep210 在不同服务进程有结局差异。固定输入探针确认观测、RNG和历史输入相同时动作仍可能跨进程不同，但未定位到具体计算环节。用户已同意将off抽查差异列为非阻塞诊断；其他门槛、原预测1–5和判定树保持不变。
 
+当前360回合已完成，停在审阅点。先读取 `reports/harvestmem_v3_E4b_r1_results/README.md` 和该目录的 `rows.json`、`engineering_totals.json`；这些是队列完成汇总，尚不能当作全部预登记分析已经完成。
+
 ## 建议的阅读顺序
 
 - `scripts/harvestmem_v3/eval_episode.py`：观测/状态同步、历史缓冲、动作日志、planner调度、强制停止。

@@ -1,0 +1,59 @@
+{
+  "arms": {
+    "DP1R": {
+      "episodes": 60,
+      "planner_calls": 60,
+      "planner_failures": 0,
+      "jump_good": 60,
+      "jump_n": 60,
+      "distance8_good": 57,
+      "distance8_n": 60
+    },
+    "DPaR": {
+      "episodes": 60,
+      "planner_calls": 384,
+      "planner_failures": 0,
+      "jump_good": 381,
+      "jump_n": 381,
+      "distance8_good": 57,
+      "distance8_n": 60
+    },
+    "DPa": {
+      "episodes": 60,
+      "planner_calls": 153,
+      "planner_failures": 0,
+      "jump_good": 153,
+      "jump_n": 153,
+      "distance8_good": 60,
+      "distance8_n": 60
+    },
+    "EP1R": {
+      "episodes": 60,
+      "planner_calls": 60,
+      "planner_failures": 0,
+      "jump_good": 60,
+      "jump_n": 60,
+      "distance8_good": 57,
+      "distance8_n": 60
+    },
+    "EPaR": {
+      "episodes": 60,
+      "planner_calls": 382,
+      "planner_failures": 0,
+      "jump_good": 379,
+      "jump_n": 379,
+      "distance8_good": 57,
+      "distance8_n": 60
+    },
+    "EPa": {
+      "episodes": 60,
+      "planner_calls": 158,
+      "planner_failures": 0,
+      "jump_good": 158,
+      "jump_n": 158,
+      "distance8_good": 60,
+      "distance8_n": 60
+    }
+  },
+  "problems": []
+}

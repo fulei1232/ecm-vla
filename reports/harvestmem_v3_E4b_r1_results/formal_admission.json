@@ -1,0 +1,255 @@
+{
+  "smoke": [
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep202",
+      "outcome": "fail",
+      "checks": [
+        {
+          "index": 0,
+          "step": 71,
+          "jump_rad": 0.0032359743804931673,
+          "jump_pass": true,
+          "policy_at_end": true,
+          "distance8_m": 0.10314010138437292,
+          "distance8_pass": true
+        }
+      ],
+      "planner_failure_rate": 0.0,
+      "pass": true,
+      "count_stop_pass": true
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep207",
+      "outcome": "fail",
+      "checks": [
+        {
+          "index": 0,
+          "step": 72,
+          "jump_rad": 0.006723011209487928,
+          "jump_pass": true,
+          "policy_at_end": true,
+          "distance8_m": 0.0959337761888635,
+          "distance8_pass": true
+        }
+      ],
+      "planner_failure_rate": 0.0,
+      "pass": true,
+      "count_stop_pass": true
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep200",
+      "outcome": "success",
+      "checks": [
+        {
+          "index": 0,
+          "step": 72,
+          "jump_rad": 0.004287000591278067,
+          "jump_pass": true,
+          "policy_at_end": true,
+          "distance8_m": 0.09651751565474471,
+          "distance8_pass": true
+        },
+        {
+          "index": 1,
+          "step": 206,
+          "jump_rad": 0.049121975387573236,
+          "jump_pass": true,
+          "policy_at_end": true
+        }
+      ],
+      "planner_failure_rate": 0.0,
+      "pass": true,
+      "count_stop_pass": true
+    },
+    {
+      "path": "/media/fulei/fuleivla/ecm_vla/results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep201",
+      "outcome": "success",
+      "checks": [
+        {
+          "index": 0,
+          "step": 70,
+          "jump_rad": 0.0023099962186813316,
+          "jump_pass": true,
+          "policy_at_end": true,
+          "distance8_m": 0.10217311478792193,
+          "distance8_pass": true
+        },
+        {
+          "index": 1,
+          "step": 202,
+          "jump_rad": 0.035605000898361217,
+          "jump_pass": true,
+          "policy_at_end": true
+        },
+        {
+          "index": 2,
+          "step": 367,
+          "jump_rad": 0.07294801224327085,
+          "jump_pass": true,
+          "policy_at_end": true
+        }
+      ],
+      "planner_failure_rate": 0.0,
+      "pass": true,
+      "count_stop_pass": true
+    }
+  ],
+  "controls": [
+    {
+      "episode": 201,
+      "actual": [
+        "success",
+        "finish_signal"
+      ],
+      "baseline": [
+        "success",
+        "finish_signal"
+      ],
+      "matches": true
+    },
+    {
+      "episode": 206,
+      "actual": [
+        "success",
+        "finish_signal"
+      ],
+      "baseline": [
+        "success",
+        "finish_signal"
+      ],
+      "matches": true
+    },
+    {
+      "episode": 210,
+      "actual": [
+        "fail",
+        "robot_drop"
+      ],
+      "baseline": [
+        "success",
+        "finish_signal"
+      ],
+      "matches": false
+    }
+  ],
+  "artifact_hashes": {
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep202/result.json": "e31dd83d74f3b98937e4f1cfff98cfdc13e7ffe1c8c23e308a8d1f24723170a2",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep202/actions.jsonl": "74f83969010223d87beebbda00f2a0847be4f96345ec23ef18f33665607404fb",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep202/trace.jsonl": "d7ddd042e1930632fd5abd886188eb78add6fd16485406faf28e81a6167350f5",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep207/result.json": "25b82c23542a561625f27a8340f8bffa4d817e5cc0c7d13d6392edd066ad96c7",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep207/actions.jsonl": "ff0a9738d15fd01afddc0cf3703f15eecccf1ef8417cbbe87dda60671a0350e0",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DP1R/count/ep207/trace.jsonl": "6997e8edb276dbc595889c64bdb14da3532a3f65a813a181e6f5b94e83645c5f",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep200/result.json": "a71b5cf6594ba5d3816320134512a7a4bfbec58339ceed2140353d76c7eba7cb",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep200/actions.jsonl": "db2614a9e1d8e2f4f8b32db50fd7ecfbe163c83358f65b1f7884e2a029bad232",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep200/trace.jsonl": "39b35dafe8397484785679a672233e397ae7b0072021b77fe0e0c001a4a744ad",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep201/result.json": "aef7dfdfa41fbaa5ddbce1c71e01bbf3cd7d2d91215e022c31526547ea5e00b4",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep201/actions.jsonl": "6a24a1549a559fcd01c31fc0b2b304fd1c9e8a88d240131a84a6535693bc0e23",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DPa/occluded_ripe/ep201/trace.jsonl": "a0b6ff06475b45a8887065c9fb1353231824c1aedc4f9b4ed12fe9d3af84b62b",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DR/count/ep201/result.json": "884854c9e067882d956bf9dc51a6244b0a0c035737474c15636c248f99bda958",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DR/count/ep206/result.json": "f8afd7ddfa257d0154e0fe136c332db7eda29fdfb78444ef49e9ac3b38a1bbad",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/smoke/DR/count/ep210/result.json": "08543952361fe46e6143a09e0b5c5ade445aca5d24bcf89df582aeaa1771f7aa",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/open_loop_k0.json": "855d51df26a22ad9818ade29f333809c4b68188431c08361185f5badf0878e0a",
+    "results/harvestmem_v3_E4b_r1/preflight_r2/open_loop_nm.json": "e77cf13e4b5ecc04d0313333bda9fa13d01033187971317a1a923b1d8a288b1e",
+    "results/harvestmem_v3_E4b_r1/reset_ripe_verification.json": "ee2c92d9da299f81e489461203e29da34a8d3e4352c363f304bee76c672104d9",
+    "results/harvestmem_v3_E4b_r1/preflight_frozen_probe/comparison.json": "080686f1dc6e2fa09a2d449b40725cc4606bf094c557e94bc2cfd611184ca401",
+    "results/harvestmem_v3_E4b_r1/preflight_control_diagnostic/diagnostic.json": "3fe22f293c46467aa3b51da7396a8a29d4751d736a69a2d0a350c46a94a528fa"
+  },
+  "source_hashes": {
+    "scripts/harvestmem_v3/eval_episode.py": "d2820c184c86affb5b23de33d9d5835af0b347a1f4324338964cd2ba0decb4d8",
+    "scripts/harvestmem_v3/oracle.py": "79dde152e4ec2cde643ca3f767ccffbd474ba0aef9fde4ac41bf1945ac21d6f0",
+    "scripts/harvestmem_v3/subgoal.py": "081cb9f7df3df8d02006cf997740d9120b71378e80cada4b780cee58a42c9505",
+    "scripts/harvestmem_v3/e4b_r1_gates.py": "71a675758f8038625d26f96fd8fcbe53855257e6acb45fd6020c4f21bd2a52c2",
+    "scripts/harvestmem_v3/run_e4b_r1.py": "434579c46fde1321325709d65d181c07f70a5b73aa1743ae6aa08823b5a05991",
+    "scripts/harvestmem_v3/run_e4b.py": "282463377dce8ac182879e210157b544e04062351adc054e7e6242dd9a2323fb",
+    "scripts/overnight_r12/serve.py": "f89aa4abc7bd149d59e605207ede79923857c3b1a90a6f703f4965b2aa46ddd3",
+    "fruit_picking/task_v2_env.py": "4f7092b09be28877c44a12b6750a1ac68b21b254dcc3aa23590ce1de75775853",
+    "src/memory_management/fruit_rescue_platform.py": "62131ece3a41995f0cd3e4e05c24a549e9dc01e46a4639450bbf294fc05120f3",
+    "src/memory_management/policy_adapter.py": "d6181fe0d502ef1d79557f8eb7c6de1bba75b6e39f5b63e7c49810ba28b204f9",
+    "src/memory_management/event_keyframes.py": "3a07b123e4a1b0d32f8bcd82de6dc53ee350fa1e51ba5f8a196fcb103a954fb6"
+  },
+  "arms": [
+    "DP1R",
+    "DPaR",
+    "DPa",
+    "EP1R",
+    "EPaR",
+    "EPa"
+  ],
+  "episodes": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259
+  ],
+  "control_mismatch_policy": "User explicitly authorized recording DR ep210 mismatch as nonblocking after fixed-input probe; reuse existing controls.",
+  "controls_reused": {
+    "DR": "results/harvestmem_v3_E4a/DR/count",
+    "ER": "results/harvestmem_v3_E4a/ER/count",
+    "D": "results/harvestmem_v3_E4b/D/occluded_ripe",
+    "E": "results/harvestmem_v3_E4b/E/occluded_ripe"
+  },
+  "preregistration": "reports/harvestmem_v3_codex_tasks_20261112_E4b.md",
+  "new_thresholds": {
+    "handoff_jump_rad": 0.3,
+    "handoff_jump_pass_rate": 0.95,
+    "first_handoff_distance8_m": 0.2,
+    "first_handoff_distance8_pass_rate": 0.9
+  },
+  "autostop": "Per arm, before 60 episodes use failure-count allowances with planner denominator max(calls,60), jump denominator max(jump_n,60), and distance8 denominator 60. At 60 episodes use actual denominators. Count stop violations and finish before first completed reach stop immediately. No new jobs start after failure; in-flight episodes finish and are retained."
+}
